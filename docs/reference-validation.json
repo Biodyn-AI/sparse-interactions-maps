@@ -1,0 +1,1421 @@
+{
+  "checked_date": "2026-11-17",
+  "included_reference_count": 41,
+  "all_references_cited_in_manuscript": true,
+  "validation_scope": "Each reference was explicitly checked online for bibliographic identity, available publication metadata, and relevance to its cited statement. Primary publisher/proceedings/preprint pages or publisher-registered DOI metadata were used. Access limitations are recorded per entry. This is not an independent replication of cited studies or an exhaustive literature review.",
+  "references": [
+    {
+      "reference_number": 1,
+      "key": "conmy2023acdc",
+      "title": "Towards Automated Circuit Discovery for Mechanistic Interpretability",
+      "authors": [
+        "Arthur Conmy",
+        "Augustine N. Mavor-Parker",
+        "Aengus Lynch",
+        "Stefan Heimersheim",
+        "Adrià Garriga-Alonso"
+      ],
+      "year": 2023,
+      "venue": "Advances in Neural Information Processing Systems 36",
+      "id": "doi:10.52202/075280-0719; arXiv:2304.14997",
+      "pages": "16318-16352",
+      "primary_url": "https://proceedings.neurips.cc/paper_files/paper/2023/hash/34e1dbe95d34d7ebaf99b9bcaeb5b2be-Abstract-Conference.html",
+      "additional_primary_urls": [
+        "https://arxiv.org/abs/2304.14997",
+        "https://proceedings.neurips.cc/paper_files/paper/2023/file/34e1dbe95d34d7ebaf99b9bcaeb5b2be-Paper-Conference.pdf"
+      ],
+      "checked_date": "2026-11-17",
+      "metadata_verified": true,
+      "metadata_note": "Official conference metadata omits the middle initial N.; both the conference PDF and arXiv byline include it. Full name retained from those primary bylines.",
+      "evidence_relevance": "Automates finding connections between components using activation-patching-based circuit discovery; suitable for the existing circuit-discovery comparison, not evidence that our pair scores recover direct edges.",
+      "validation_status": "validated_primary_sources",
+      "validation_ledger": "legacy_and_circuits_validation.json"
+    },
+    {
+      "reference_number": 2,
+      "key": "hanna2024faithfulness",
+      "title": "Have Faith in Faithfulness: Going Beyond Circuit Overlap When Finding Model Mechanisms",
+      "authors": [
+        "Michael Hanna",
+        "Sandro Pezzelle",
+        "Yonatan Belinkov"
+      ],
+      "year": 2024,
+      "venue": "Conference on Language Modeling",
+      "id": "OpenReview:TZ0CCGDcuT; arXiv:2403.17806",
+      "primary_url": "https://arxiv.org/abs/2403.17806",
+      "additional_primary_urls": [
+        "https://openreview.net/pdf?id=TZ0CCGDcuT"
+      ],
+      "checked_date": "2026-11-17",
+      "metadata_verified": true,
+      "metadata_note": "arXiv explicitly identifies COLM 2024; indexed official conference PDF independently labels the venue and authors. Direct forum access returned browser verification, not an unverifiable replacement page.",
+      "evidence_relevance": "Introduces EAP-IG and shows why overlap with known components does not substitute for testing retained-circuit faithfulness. Directly supports separating localization from behavior preservation.",
+      "validation_status": "validated_primary_sources",
+      "validation_ledger": "legacy_and_circuits_validation.json"
+    },
+    {
+      "reference_number": 3,
+      "key": "kramar2024atp",
+      "title": "AtP*: An efficient and scalable method for localizing LLM behaviour to components",
+      "authors": [
+        "János Kramár",
+        "Tom Lieberum",
+        "Rohin Shah",
+        "Neel Nanda"
+      ],
+      "year": 2024,
+      "venue": "arXiv preprint",
+      "id": "arXiv:2403.00745; doi:10.48550/arXiv.2403.00745",
+      "primary_url": "https://arxiv.org/abs/2403.00745",
+      "checked_date": "2026-11-17",
+      "metadata_verified": true,
+      "evidence_relevance": "Studies scalable gradient approximations to activation patching, their false negatives and diagnostic corrections. Supports efficiency-versus-validation discussion, not a claim to infer direct wiring.",
+      "validation_status": "validated_primary_sources",
+      "validation_ledger": "legacy_and_circuits_validation.json"
+    },
+    {
+      "reference_number": 4,
+      "key": "vaidyanathan2026mediators",
+      "title": "The Curse of Multiple Mediators: Hidden Interaction Effects in Activation Patching",
+      "authors": [
+        "Sankaran Vaidyanathan",
+        "David Arbour",
+        "Aaron Mueller",
+        "Scott Niekum",
+        "David Jensen"
+      ],
+      "year": 2026,
+      "venue": "arXiv preprint",
+      "id": "arXiv:2606.27510; doi:10.48550/arXiv.2606.27510",
+      "primary_url": "https://arxiv.org/abs/2606.27510",
+      "checked_date": "2026-11-17",
+      "metadata_verified": true,
+      "evidence_relevance": "Derives interaction terms in activation-patching effects, examines GPT-2 IOI and higher-order interactions, and explains state-dependent component effects. Acknowledge as prior interaction theory; do not present our finite-difference interaction as a newly discovered causal principle.",
+      "validation_status": "validated_primary_sources",
+      "validation_ledger": "legacy_and_circuits_validation.json"
+    },
+    {
+      "reference_number": 5,
+      "key": "gong2026coax",
+      "title": "Conditional Co-Ablation: Recovering Self-Repair Backups in Transformer Circuits",
+      "authors": [
+        "Zhiren Gong",
+        "He Lu",
+        "Tiantong Wang",
+        "Yichi Zhang",
+        "Yixin Wang",
+        "Zihao Zeng",
+        "Ming Xiao",
+        "Chau Yuen",
+        "Wei Yang Bryan Lim"
+      ],
+      "year": 2026,
+      "venue": "arXiv preprint",
+      "id": "arXiv:2607.01940; doi:10.48550/arXiv.2607.01940",
+      "primary_url": "https://arxiv.org/abs/2607.01940",
+      "checked_date": "2026-11-17",
+      "metadata_verified": true,
+      "evidence_relevance": "Finds backup components that become important after primary components are removed, with GPT-2 IOI and broader experiments. Supports the concrete compensation example; it is not the same score or claim as direct-edge discovery.",
+      "validation_status": "validated_primary_sources",
+      "validation_ledger": "legacy_and_circuits_validation.json"
+    },
+    {
+      "reference_number": 6,
+      "key": "vaswani2017attention",
+      "title": "Attention Is All You Need",
+      "authors": [
+        "Ashish Vaswani",
+        "Noam Shazeer",
+        "Niki Parmar",
+        "Jakob Uszkoreit",
+        "Llion Jones",
+        "Aidan N. Gomez",
+        "Łukasz Kaiser",
+        "Illia Polosukhin"
+      ],
+      "year": 2017,
+      "venue": "Advances in Neural Information Processing Systems 30",
+      "primary_url": "https://proceedings.neurips.cc/paper/2017/hash/3f5ee243547dee91fbd053c1c4a845aa-Abstract.html",
+      "additional_primary_url": "https://proceedings.neurips.cc/paper_files/paper/2017/file/3f5ee243547dee91fbd053c1c4a845aa-Bibtex.bib",
+      "checked_date": "2026-11-17",
+      "metadata_verified": [
+        "title",
+        "complete author list and order",
+        "year",
+        "conference",
+        "volume",
+        "publisher"
+      ],
+      "evidence_relevance": "Original Transformer architecture; supports the architectural provenance of attention and feed-forward components, not any claim that our intervention score identifies direct wiring.",
+      "validation_status": "validated_primary_online",
+      "limits": "The publisher-supplied BibTeX has an empty pages field; no page range or DOI was invented.",
+      "validation_ledger": "architecture_validation.json"
+    },
+    {
+      "reference_number": 7,
+      "key": "radford2019language",
+      "title": "Language Models Are Unsupervised Multitask Learners",
+      "authors": [
+        "Alec Radford",
+        "Jeffrey Wu",
+        "Rewon Child",
+        "David Luan",
+        "Dario Amodei",
+        "Ilya Sutskever"
+      ],
+      "year": 2019,
+      "venue": "OpenAI technical report",
+      "primary_url": "https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf",
+      "additional_primary_url": "https://openai.com/index/better-language-models/",
+      "checked_date": "2026-11-17",
+      "metadata_verified": [
+        "title",
+        "complete author list and order",
+        "technical report publisher",
+        "year from dated publisher release linking the report"
+      ],
+      "evidence_relevance": "Primary description of GPT-2 and its next-token language-model training; supports model provenance, not our measured interaction results.",
+      "validation_status": "validated_primary_online",
+      "limits": "Cited as a technical report, not as a peer-reviewed conference paper. The report author list is used, not the different author list of the release blog post.",
+      "validation_ledger": "architecture_validation.json"
+    },
+    {
+      "reference_number": 8,
+      "key": "syed2024attributionpatching",
+      "title": "Attribution Patching Outperforms Automated Circuit Discovery",
+      "completeauthors": [
+        "Aaquib Syed",
+        "Can Rager",
+        "Arthur Conmy"
+      ],
+      "year": 2024,
+      "venue": "Proceedings of the 7th BlackboxNLP Workshop: Analyzing and Interpreting Neural Networks for NLP, 407-416",
+      "id": {
+        "doi": "10.18653/v1/2024.blackboxnlp-1.25",
+        "acl": "2024.blackboxnlp-1.25",
+        "arxiv": "2310.10348"
+      },
+      "primary_url": "https://aclanthology.org/2024.blackboxnlp-1.25/",
+      "checked_date": "2026-11-17",
+      "metadata_verified": [
+        "exact title",
+        "all three authors and order",
+        "workshop proceedings title",
+        "year",
+        "pages",
+        "publisher",
+        "DOI",
+        "abstract and publisher BibTeX"
+      ],
+      "evidence_relevance": "Uses a linear approximation to activation patching to score and prune edges, an explicit edge-localization/discovery baseline precedent. Do not equate its derivative-based edge scores with the present finite pair-interaction score.",
+      "status": "validated_primary_proceedings",
+      "notes": "The initial preprint is from 2023; the cited peer-reviewed workshop version is 2024. Its reported superiority is limited to the comparisons in that work, not a current universal claim.",
+      "authors": [
+        "Aaquib Syed",
+        "Can Rager",
+        "Arthur Conmy"
+      ],
+      "validation_status": "validated_primary_proceedings",
+      "validation_ledger": "interventions_validation.json"
+    },
+    {
+      "reference_number": 9,
+      "key": "wang2023ioi",
+      "title": "Interpretability in the Wild: a Circuit for Indirect Object Identification in GPT-2 small",
+      "authors": [
+        "Kevin Wang",
+        "Alexandre Variengien",
+        "Arthur Conmy",
+        "Buck Shlegeris",
+        "Jacob Steinhardt"
+      ],
+      "year": 2023,
+      "venue": "International Conference on Learning Representations",
+      "id": "arXiv:2211.00593; ICLR 2023 conference paper",
+      "primary_url": "https://arxiv.org/abs/2211.00593",
+      "additional_primary_urls": [
+        "https://openreview.net/pdf/1e69126a0944a99f44e32245d87e213a30cc2eb2.pdf"
+      ],
+      "checked_date": "2026-11-17",
+      "metadata_verified": true,
+      "metadata_note": "The preprint is dated 2022; the indexed official PDF explicitly says published as a conference paper at ICLR 2023. Do not mistake the conference year for the arXiv submission year.",
+      "evidence_relevance": "Provides the IOI task and a component-level circuit evaluated for faithfulness, completeness and minimality. Supports the existing task provenance and the need to check circuit behavior beyond a shortlist.",
+      "validation_status": "validated_primary_sources",
+      "validation_ledger": "legacy_and_circuits_validation.json"
+    },
+    {
+      "reference_number": 10,
+      "key": "olsson2022induction",
+      "title": "In-context Learning and Induction Heads",
+      "authors": [
+        "Catherine Olsson",
+        "Nelson Elhage",
+        "Neel Nanda",
+        "Nicholas Joseph",
+        "Nova DasSarma",
+        "Tom Henighan",
+        "Ben Mann",
+        "Amanda Askell",
+        "Yuntao Bai",
+        "Anna Chen",
+        "Tom Conerly",
+        "Dawn Drain",
+        "Deep Ganguli",
+        "Zac Hatfield-Dodds",
+        "Danny Hernandez",
+        "Scott Johnston",
+        "Andy Jones",
+        "Jackson Kernion",
+        "Liane Lovitt",
+        "Kamal Ndousse",
+        "Dario Amodei",
+        "Tom Brown",
+        "Jack Clark",
+        "Jared Kaplan",
+        "Sam McCandlish",
+        "Chris Olah"
+      ],
+      "year": 2022,
+      "venue": "arXiv preprint; originally Transformer Circuits Thread",
+      "id": "arXiv:2209.11895; doi:10.48550/arXiv.2209.11895",
+      "primary_url": "https://arxiv.org/abs/2209.11895",
+      "additional_primary_urls": [
+        "https://transformer-circuits.pub/2022/in-context-learning-and-induction-heads/index.html?curius=2019"
+      ],
+      "checked_date": "2026-11-17",
+      "metadata_verified": true,
+      "evidence_relevance": "Concrete mechanistic case study of induction heads performing repeated-token continuation. Cite as an example of explaining a computation, with strong causal evidence for small attention-only models and correlational evidence for larger models with MLPs; not a universal proof about in-context learning.",
+      "validation_status": "validated_primary_sources",
+      "validation_ledger": "legacy_and_circuits_validation.json"
+    },
+    {
+      "reference_number": 11,
+      "key": "nanda2023grokking",
+      "title": "Progress measures for grokking via mechanistic interpretability",
+      "authors": [
+        "Neel Nanda",
+        "Lawrence Chan",
+        "Tom Lieberum",
+        "Jess Smith",
+        "Jacob Steinhardt"
+      ],
+      "year": 2023,
+      "venue": "International Conference on Learning Representations",
+      "id": "OpenReview:9XFSbDPmdW; arXiv:2301.05217",
+      "primary_url": "https://arxiv.org/abs/2301.05217",
+      "additional_primary_urls": [
+        "https://openreview.net/pdf?id=9XFSbDPmdW"
+      ],
+      "checked_date": "2026-11-17",
+      "metadata_verified": true,
+      "metadata_note": "The indexed official PDF supplies ICLR 2023 venue. The direct OpenReview URL returned browser verification; arXiv supplies the same full authors and title.",
+      "evidence_relevance": "Reverse engineers modular-addition computation using Fourier structure and confirms it with activation/weight analysis and Fourier-space ablations. Good example of a stronger algorithm-level explanation than score repeatability alone.",
+      "validation_status": "validated_primary_sources",
+      "validation_ledger": "legacy_and_circuits_validation.json"
+    },
+    {
+      "reference_number": 12,
+      "key": "hanna2023greaterthan",
+      "title": "How does GPT-2 compute greater-than?: Interpreting mathematical abilities in a pre-trained language model",
+      "authors": [
+        "Michael Hanna",
+        "Ollie Liu",
+        "Alexandre Variengien"
+      ],
+      "year": 2023,
+      "venue": "Advances in Neural Information Processing Systems 36",
+      "id": "doi:10.52202/075280-3322",
+      "pages": "76033-76060",
+      "primary_url": "https://proceedings.neurips.cc/paper_files/paper/2023/hash/efbba7719cc5172d175240f24be11280-Abstract-Conference.html",
+      "checked_date": "2026-11-17",
+      "metadata_verified": true,
+      "evidence_relevance": "Explains a GPT-2 circuit for choosing valid two-digit end years, including the role of late MLPs, and checks related tasks. Another concrete example that a circuit explanation describes what components compute, not just which pairs score highly.",
+      "validation_status": "validated_primary_sources",
+      "validation_ledger": "legacy_and_circuits_validation.json"
+    },
+    {
+      "reference_number": 13,
+      "key": "meng2022rome",
+      "title": "Locating and Editing Factual Associations in GPT",
+      "authors": [
+        "Kevin Meng",
+        "David Bau",
+        "Alex Andonian",
+        "Yonatan Belinkov"
+      ],
+      "year": 2022,
+      "venue": "Advances in Neural Information Processing Systems 35",
+      "id": "doi:10.52202/068431-1262",
+      "pages": "17359-17372",
+      "primary_url": "https://proceedings.neurips.cc/paper_files/paper/2022/hash/6f1d43d5a82a37e89b0665b33bf3a182-Abstract-Conference.html",
+      "checked_date": "2026-11-17",
+      "metadata_verified": true,
+      "evidence_relevance": "Uses causal interventions to localize factual-recall computations and tests a proposed role by editing feed-forward weights. Supports the distinction between localizing an effect and testing a concrete mechanism; it does not validate our pair-score method.",
+      "validation_status": "validated_primary_sources",
+      "validation_ledger": "legacy_and_circuits_validation.json"
+    },
+    {
+      "reference_number": 14,
+      "key": "pearl2009causality",
+      "title": "Causality: Models, Reasoning, and Inference",
+      "completeauthors": [
+        "Judea Pearl"
+      ],
+      "year": 2009,
+      "venue": "Cambridge University Press, second edition",
+      "id": {
+        "doi": "10.1017/CBO9780511803161",
+        "isbn": "9780521895606"
+      },
+      "primary_url": "https://www.cambridge.org/core/books/causality/B0046844FAE10CBF274D4ACBDAEB5F5B",
+      "additional_primary_urls": [
+        "https://assets.cambridge.org/97805218/95606/frontmatter/9780521895606_frontmatter.pdf"
+      ],
+      "checked_date": "2026-11-17",
+      "metadata_verified": [
+        "title and subtitle in publisher frontmatter",
+        "sole author",
+        "second edition",
+        "print year 2009",
+        "publisher",
+        "DOI",
+        "ISBN",
+        "publisher description covering structural, interventional and counterfactual approaches"
+      ],
+      "evidence_relevance": "Provides the causal-model distinction between association and intervention and the structural vocabulary for direct versus mediated effects. Use only as foundational framing; it does not prove anything specific about neural pair-score maps.",
+      "status": "validated_primary_publisher",
+      "notes": "Publisher lists print publication on 14 September 2009 and digital publication on 5 March 2013. Cite the second-edition print year, not the later digital date.",
+      "authors": [
+        "Judea Pearl"
+      ],
+      "validation_status": "validated_primary_publisher",
+      "validation_ledger": "interventions_validation.json"
+    },
+    {
+      "reference_number": 15,
+      "key": "geiger2021causalabstractions",
+      "title": "Causal Abstractions of Neural Networks",
+      "completeauthors": [
+        "Atticus Geiger",
+        "Hanson Lu",
+        "Thomas Icard",
+        "Christopher Potts"
+      ],
+      "year": 2021,
+      "venue": "Advances in Neural Information Processing Systems 34, 9574-9586",
+      "id": {
+        "neurips_hash": "4f5c422f4d49a5a807eda27434231040",
+        "arxiv": "2106.02997"
+      },
+      "primary_url": "https://proceedings.neurips.cc/paper_files/paper/2021/hash/4f5c422f4d49a5a807eda27434231040-Abstract.html",
+      "additional_primary_urls": [
+        "https://proceedings.neurips.cc/paper_files/paper/12356-/bibtex"
+      ],
+      "checked_date": "2026-11-17",
+      "metadata_verified": [
+        "exact title",
+        "all four authors and order",
+        "conference",
+        "year",
+        "volume and pages from publisher BibTeX",
+        "abstract"
+      ],
+      "evidence_relevance": "Tests alignment between interpretable causal variables and neural representations through interchange interventions. Supports explaining that an internal causal hypothesis requires testing intervention behavior, not merely naming highly ranked components.",
+      "status": "validated_primary_proceedings",
+      "authors": [
+        "Atticus Geiger",
+        "Hanson Lu",
+        "Thomas Icard",
+        "Christopher Potts"
+      ],
+      "validation_status": "validated_primary_proceedings",
+      "validation_ledger": "interventions_validation.json"
+    },
+    {
+      "reference_number": 16,
+      "key": "geiger2025causalabstraction",
+      "title": "Causal Abstraction: A Theoretical Foundation for Mechanistic Interpretability",
+      "completeauthors": [
+        "Atticus Geiger",
+        "Duligur Ibeling",
+        "Amir Zur",
+        "Maheep Chaudhary",
+        "Sonakshi Chauhan",
+        "Jing Huang",
+        "Aryaman Arora",
+        "Zhengxuan Wu",
+        "Noah Goodman",
+        "Christopher Potts",
+        "Thomas Icard"
+      ],
+      "year": 2025,
+      "venue": "Journal of Machine Learning Research 26(83), 1-64",
+      "id": {
+        "jmlr_article": "23-0058",
+        "arxiv": "2301.04709"
+      },
+      "primary_url": "https://www.jmlr.org/papers/v26/23-0058.html",
+      "additional_primary_urls": [
+        "https://www.jmlr.org/papers/volume26/23-0058/23-0058.pdf"
+      ],
+      "checked_date": "2026-11-17",
+      "metadata_verified": [
+        "current exact title",
+        "all eleven authors and order",
+        "journal",
+        "year",
+        "volume",
+        "article number",
+        "page range",
+        "abstract"
+      ],
+      "evidence_relevance": "Formalizes causal abstraction and graded faithfulness, and connects activation/path patching, circuit analysis and other methods within one framework. Grounds the distinction between an interventional effect and a faithful higher-level explanation.",
+      "status": "validated_primary_journal",
+      "notes": "Do not also count the earlier arXiv work under the title Causal Abstraction for Faithful Model Interpretation as an additional publication. This journal entry represents that evolving work.",
+      "authors": [
+        "Atticus Geiger",
+        "Duligur Ibeling",
+        "Amir Zur",
+        "Maheep Chaudhary",
+        "Sonakshi Chauhan",
+        "Jing Huang",
+        "Aryaman Arora",
+        "Zhengxuan Wu",
+        "Noah Goodman",
+        "Christopher Potts",
+        "Thomas Icard"
+      ],
+      "validation_status": "validated_primary_journal",
+      "validation_ledger": "interventions_validation.json"
+    },
+    {
+      "reference_number": 17,
+      "key": "geiger2024distributedalignment",
+      "title": "Finding Alignments Between Interpretable Causal Variables and Distributed Neural Representations",
+      "completeauthors": [
+        "Atticus Geiger",
+        "Zhengxuan Wu",
+        "Christopher Potts",
+        "Thomas Icard",
+        "Noah Goodman"
+      ],
+      "year": 2024,
+      "venue": "Proceedings of the Third Conference on Causal Learning and Reasoning, PMLR 236, 160-187",
+      "id": {
+        "pmlr": "v236/geiger24a",
+        "arxiv": "2303.02536"
+      },
+      "primary_url": "https://proceedings.mlr.press/v236/geiger24a.html",
+      "checked_date": "2026-11-17",
+      "metadata_verified": [
+        "exact title",
+        "all five authors and order",
+        "conference title",
+        "publication year 2024",
+        "series",
+        "volume",
+        "pages",
+        "publisher BibTeX",
+        "abstract"
+      ],
+      "evidence_relevance": "Introduces distributed alignment search: learned alignments need not correspond to disjoint sets of neurons. Relevant to the choice of computational units and why using native heads/MLPs is a limitation, not a universal decomposition.",
+      "status": "validated_primary_proceedings",
+      "notes": "The preprint appeared in 2023; cite 2024 for the verified conference version.",
+      "authors": [
+        "Atticus Geiger",
+        "Zhengxuan Wu",
+        "Christopher Potts",
+        "Thomas Icard",
+        "Noah Goodman"
+      ],
+      "validation_status": "validated_primary_proceedings",
+      "validation_ledger": "interventions_validation.json"
+    },
+    {
+      "reference_number": 18,
+      "key": "vig2020causalmediation",
+      "title": "Investigating Gender Bias in Language Models Using Causal Mediation Analysis",
+      "completeauthors": [
+        "Jesse Vig",
+        "Sebastian Gehrmann",
+        "Yonatan Belinkov",
+        "Sharon Qian",
+        "Daniel Nevo",
+        "Yaron Singer",
+        "Stuart Shieber"
+      ],
+      "year": 2020,
+      "venue": "Advances in Neural Information Processing Systems 33, 12388-12401",
+      "id": {
+        "neurips_hash": "92650b2e92217715fe312e6fa7b90d82",
+        "arxiv": "2004.12265"
+      },
+      "primary_url": "https://proceedings.neurips.cc/paper/2020/hash/92650b2e92217715fe312e6fa7b90d82-Abstract.html",
+      "additional_primary_urls": [
+        "https://proceedings.neurips.cc/paper_files/paper/10763-/bibtex"
+      ],
+      "checked_date": "2026-11-17",
+      "metadata_verified": [
+        "conference-version title",
+        "all seven authors and order",
+        "conference",
+        "year",
+        "volume and pages from publisher BibTeX",
+        "abstract and introductory PDF content"
+      ],
+      "evidence_relevance": "Uses causal mediation and controlled changes to neurons/attention heads to distinguish information encoded internally from information used in model behavior. Supports the historical and conceptual introduction to internal interventions.",
+      "status": "validated_primary_proceedings",
+      "notes": "The early arXiv title differs; the bibliography uses the conference title.",
+      "authors": [
+        "Jesse Vig",
+        "Sebastian Gehrmann",
+        "Yonatan Belinkov",
+        "Sharon Qian",
+        "Daniel Nevo",
+        "Yaron Singer",
+        "Stuart Shieber"
+      ],
+      "validation_status": "validated_primary_proceedings",
+      "validation_ledger": "interventions_validation.json"
+    },
+    {
+      "reference_number": 19,
+      "key": "zhang2024patchingpractices",
+      "title": "Towards Best Practices of Activation Patching in Language Models: Metrics and Methods",
+      "completeauthors": [
+        "Fred Zhang",
+        "Neel Nanda"
+      ],
+      "year": 2024,
+      "venue": "International Conference on Learning Representations",
+      "id": {
+        "arxiv": "2309.16042",
+        "iclr_pdf_hash": "06a52a54c8ee03cd86771136bc91eb1f"
+      },
+      "primary_url": "https://proceedings.iclr.cc/paper_files/paper/2024/file/06a52a54c8ee03cd86771136bc91eb1f-Paper-Conference.pdf",
+      "additional_primary_urls": [
+        "https://arxiv.org/abs/2309.16042"
+      ],
+      "checked_date": "2026-11-17",
+      "metadata_verified": [
+        "exact title",
+        "both authors",
+        "conference year printed on first page",
+        "ICLR 2024 also identified on arXiv",
+        "abstract",
+        "introductory methods description"
+      ],
+      "evidence_relevance": "Shows that corruption methods and evaluation metrics can yield different localization conclusions. Direct support for fixing and disclosing response metrics, replacement schemes and backgrounds rather than treating patch scores as invariant model properties.",
+      "status": "validated_primary_conference_pdf",
+      "notes": "The preprint first appeared in 2023; the cited conference paper is 2024.",
+      "authors": [
+        "Fred Zhang",
+        "Neel Nanda"
+      ],
+      "validation_status": "validated_primary_conference_pdf",
+      "validation_ledger": "interventions_validation.json"
+    },
+    {
+      "reference_number": 20,
+      "key": "heimersheim2024activationpatching",
+      "title": "How to use and interpret activation patching",
+      "completeauthors": [
+        "Stefan Heimersheim",
+        "Neel Nanda"
+      ],
+      "year": 2024,
+      "venue": "arXiv preprint",
+      "id": {
+        "arxiv": "2404.15255v1",
+        "doi": "10.48550/arXiv.2404.15255"
+      },
+      "primary_url": "https://arxiv.org/abs/2404.15255",
+      "checked_date": "2026-11-17",
+      "metadata_verified": [
+        "exact title",
+        "both authors",
+        "submission year",
+        "version",
+        "arXiv identifier",
+        "abstract"
+      ],
+      "evidence_relevance": "A methodological guide to patching variants, circuit evidence and metric pitfalls. Relevant to interpreting what the declared interventions establish and motivating separate joint-set behavior tests.",
+      "status": "validated_primary_preprint",
+      "notes": "No unverified journal or conference acceptance is claimed.",
+      "authors": [
+        "Stefan Heimersheim",
+        "Neel Nanda"
+      ],
+      "validation_status": "validated_primary_preprint",
+      "validation_ledger": "interventions_validation.json"
+    },
+    {
+      "reference_number": 21,
+      "key": "goldowskydill2023pathpatching",
+      "title": "Localizing Model Behavior with Path Patching",
+      "completeauthors": [
+        "Nicholas Goldowsky-Dill",
+        "Chris MacLeod",
+        "Lucas Sato",
+        "Aryaman Arora"
+      ],
+      "year": 2023,
+      "venue": "arXiv preprint",
+      "id": {
+        "arxiv": "2304.05969v2",
+        "doi": "10.48550/arXiv.2304.05969"
+      },
+      "primary_url": "https://arxiv.org/abs/2304.05969",
+      "checked_date": "2026-11-17",
+      "metadata_verified": [
+        "exact title",
+        "all four authors and order",
+        "year",
+        "latest displayed version",
+        "arXiv identifier",
+        "abstract"
+      ],
+      "evidence_relevance": "Introduces path-specific interventions for quantitatively testing whether behavior is localized to specified paths. Provides an explicit contrast to changing two components and allowing all downstream computation to recompute.",
+      "status": "validated_primary_preprint",
+      "notes": "No unverified journal or conference acceptance is claimed.",
+      "authors": [
+        "Nicholas Goldowsky-Dill",
+        "Chris MacLeod",
+        "Lucas Sato",
+        "Aryaman Arora"
+      ],
+      "validation_status": "validated_primary_preprint",
+      "validation_ledger": "interventions_validation.json"
+    },
+    {
+      "reference_number": 22,
+      "key": "dhamdhere2019neuron",
+      "title": "How Important Is a Neuron?",
+      "completeauthors": [
+        "Kedar Dhamdhere",
+        "Mukund Sundararajan",
+        "Qiqi Yan"
+      ],
+      "year": 2019,
+      "venue": "International Conference on Learning Representations",
+      "id": {
+        "openreview": "SylKoo0cKm",
+        "arxiv": "1805.12233"
+      },
+      "primary_url": "https://openreview.net/pdf?id=SylKoo0cKm",
+      "additional_primary_urls": [
+        "https://arxiv.org/abs/1805.12233"
+      ],
+      "checked_date": "2026-11-17",
+      "metadata_verified": [
+        "exact title",
+        "all three authors and order",
+        "ICLR 2019 printed in search-indexed primary PDF first page",
+        "arXiv identity and 2018 preprint date directly opened",
+        "abstract and conductance description"
+      ],
+      "evidence_relevance": "Defines conductance for importance of hidden units, rather than only input features. Useful for distinguishing single-part importance methods from pair interactions and from an explanation of direct wiring.",
+      "status": "validated_primary_pdf_index_and_direct_arxiv",
+      "notes": "The live OpenReview PDF/forum request encountered a browser-verification challenge. The web search returned the indexed primary PDF with its explicit ICLR 2019 publication line, complete authors and abstract; the arXiv page was separately opened successfully. This access limit is recorded rather than described as a successful live full-PDF retrieval.",
+      "authors": [
+        "Kedar Dhamdhere",
+        "Mukund Sundararajan",
+        "Qiqi Yan"
+      ],
+      "validation_status": "validated_primary_pdf_index_and_direct_arxiv",
+      "validation_ledger": "interventions_validation.json"
+    },
+    {
+      "reference_number": 23,
+      "key": "wu2024pyvene",
+      "title": "pyvene: A Library for Understanding and Improving PyTorch Models via Interventions",
+      "completeauthors": [
+        "Zhengxuan Wu",
+        "Atticus Geiger",
+        "Aryaman Arora",
+        "Jing Huang",
+        "Zheng Wang",
+        "Noah D. Goodman",
+        "Christopher D. Manning",
+        "Christopher Potts"
+      ],
+      "year": 2024,
+      "venue": "NAACL 2024 Human Language Technologies, Volume 3: System Demonstrations, 158-165",
+      "id": {
+        "doi": "10.18653/v1/2024.naacl-demo.16",
+        "acl": "2024.naacl-demo.16",
+        "arxiv": "2403.07809"
+      },
+      "primary_url": "https://aclanthology.org/2024.naacl-demo.16/",
+      "checked_date": "2026-11-17",
+      "metadata_verified": [
+        "exact title",
+        "all eight authors and order",
+        "conference proceedings title",
+        "year",
+        "page range",
+        "publisher",
+        "DOI",
+        "abstract and publisher BibTeX"
+      ],
+      "evidence_relevance": "Provides configurable interventions on model-internal states and causal-abstraction/knowledge-localization examples. Cite as an existing intervention-tooling precedent, not as software used by the present experiments.",
+      "status": "validated_primary_proceedings",
+      "authors": [
+        "Zhengxuan Wu",
+        "Atticus Geiger",
+        "Aryaman Arora",
+        "Jing Huang",
+        "Zheng Wang",
+        "Noah D. Goodman",
+        "Christopher D. Manning",
+        "Christopher Potts"
+      ],
+      "validation_status": "validated_primary_proceedings",
+      "validation_ledger": "interventions_validation.json"
+    },
+    {
+      "reference_number": 24,
+      "key": "mcgrath2023hydra",
+      "title": "The Hydra Effect: Emergent Self-repair in Language Model Computations",
+      "completeauthors": [
+        "Thomas McGrath",
+        "Matthew Rahtz",
+        "János Kramár",
+        "Vladimir Mikulik",
+        "Shane Legg"
+      ],
+      "year": 2023,
+      "venue": "arXiv preprint",
+      "id": {
+        "arxiv": "2307.15771v1",
+        "doi": "10.48550/arXiv.2307.15771"
+      },
+      "primary_url": "https://arxiv.org/abs/2307.15771",
+      "additional_primary_urls": [
+        "https://arxiv.org/pdf/2307.15771"
+      ],
+      "checked_date": "2026-11-17",
+      "metadata_verified": [
+        "exact title",
+        "all five authors and order",
+        "year",
+        "version",
+        "arXiv identifier",
+        "abstract",
+        "accented author spelling from primary PDF text"
+      ],
+      "evidence_relevance": "Demonstrates downstream compensation after attention-layer ablation and late-MLP counterbalancing. Supports discussing self-repair as a concrete reason that a component's measured effect depends on the state of the rest of the model.",
+      "status": "validated_primary_preprint",
+      "notes": "No unverified journal or conference acceptance is claimed.",
+      "authors": [
+        "Thomas McGrath",
+        "Matthew Rahtz",
+        "János Kramár",
+        "Vladimir Mikulik",
+        "Shane Legg"
+      ],
+      "validation_status": "validated_primary_preprint",
+      "validation_ledger": "interventions_validation.json"
+    },
+    {
+      "reference_number": 25,
+      "key": "sundararajan2017axiomatic",
+      "title": "Axiomatic Attribution for Deep Networks",
+      "complete_authors": [
+        "Mukund Sundararajan",
+        "Ankur Taly",
+        "Qiqi Yan"
+      ],
+      "year": 2017,
+      "venue": "Proceedings of the 34th International Conference on Machine Learning; Proceedings of Machine Learning Research 70",
+      "pages": "3319-3328",
+      "id": "pmlr-v70-sundararajan17a",
+      "primary_url": "https://proceedings.mlr.press/v70/sundararajan17a.html",
+      "date": "2026-11-17",
+      "metadata_verified": [
+        "exact title",
+        "all three authors in publisher order",
+        "year",
+        "ICML venue",
+        "volume",
+        "pages",
+        "publisher-supplied BibTeX"
+      ],
+      "evidence_relevance": "Integrated Gradients supplies an established example of axiomatic input-feature attribution. Use in a short background contrast: assigning effects to inputs is not the same target as recovering connections between internal parts.",
+      "claim_limit": "Our pair score is not Integrated Gradients, and the paper does not validate our internal-patching wiring interpretation.",
+      "status": "verified_online_primary",
+      "authors": [
+        "Mukund Sundararajan",
+        "Ankur Taly",
+        "Qiqi Yan"
+      ],
+      "checked_date": "2026-11-17",
+      "validation_status": "verified_online_primary",
+      "validation_ledger": "interactions_statistics_validation.json"
+    },
+    {
+      "reference_number": 26,
+      "key": "lundberg2017unified",
+      "title": "A Unified Approach to Interpreting Model Predictions",
+      "complete_authors": [
+        "Scott M. Lundberg",
+        "Su-In Lee"
+      ],
+      "year": 2017,
+      "venue": "Advances in Neural Information Processing Systems 30",
+      "id": "NeurIPS-2017-8a20a8621978632d76c43dfd28b67767",
+      "primary_url": "https://proceedings.neurips.cc/paper_files/paper/2017/hash/8a20a8621978632d76c43dfd28b67767-Abstract.html",
+      "additional_primary_urls": [
+        "https://proceedings.neurips.cc/paper_files/paper/2017/file/8a20a8621978632d76c43dfd28b67767-Bibtex.bib"
+      ],
+      "date": "2026-11-17",
+      "metadata_verified": [
+        "exact title",
+        "both authors",
+        "year",
+        "venue",
+        "volume",
+        "official BibTeX retrieved online"
+      ],
+      "metadata_note": "Official current BibTeX leaves pages empty, so no page range was invented or copied from secondary records.",
+      "evidence_relevance": "SHAP is an established framework for additive per-feature explanations of predictions. It helps define the distinction between an output explanation and an internal circuit description.",
+      "claim_limit": "Do not imply that SHAP promises to recover internal wiring or that this study directly benchmarks SHAP.",
+      "status": "verified_online_primary",
+      "authors": [
+        "Scott M. Lundberg",
+        "Su-In Lee"
+      ],
+      "checked_date": "2026-11-17",
+      "validation_status": "verified_online_primary",
+      "validation_ledger": "interactions_statistics_validation.json"
+    },
+    {
+      "reference_number": 27,
+      "key": "tsang2018detecting",
+      "title": "Detecting Statistical Interactions from Neural Network Weights",
+      "complete_authors": [
+        "Michael Tsang",
+        "Dehua Cheng",
+        "Yan Liu"
+      ],
+      "year": 2018,
+      "venue": "International Conference on Learning Representations",
+      "id": "OpenReview-ByOfBggRZ; arXiv:1705.04977",
+      "primary_url": "https://openreview.net/pdf?id=ByOfBggRZ",
+      "additional_primary_urls": [
+        "https://openreview.net/forum?id=ByOfBggRZ",
+        "https://arxiv.org/abs/1705.04977"
+      ],
+      "date": "2026-11-17",
+      "metadata_verified": [
+        "exact title",
+        "all three authors",
+        "published-as-ICLR-2018 statement in primary PDF",
+        "venue year",
+        "OpenReview identifier",
+        "preprint identifier"
+      ],
+      "access_note": "The live OpenReview UI/API presented a browser challenge or403, but the online search tool returned the indexed primary OpenReview PDF including its author/title/ICLR2018 first page. The author's public repository and arXiv record independently match the author set. No2017 conference publication is claimed.",
+      "evidence_relevance": "Neural Interaction Detection extracts input-feature statistical interactions by examining feedforward-network weights. It is a useful precedent for weight-based interaction discovery, not a test of transformer internal-link recovery.",
+      "claim_limit": "Input-feature interaction structure must not be described as the same object as direct attention-head/MLP wiring.",
+      "status": "verified_online_primary_indexed_pdf_with_live_access_caveat",
+      "authors": [
+        "Michael Tsang",
+        "Dehua Cheng",
+        "Yan Liu"
+      ],
+      "checked_date": "2026-11-17",
+      "validation_status": "verified_online_primary_indexed_pdf_with_live_access_caveat",
+      "validation_ledger": "interactions_statistics_validation.json"
+    },
+    {
+      "reference_number": 28,
+      "key": "janizek2021explaining",
+      "title": "Explaining Explanations: Axiomatic Feature Interactions for Deep Networks",
+      "complete_authors": [
+        "Joseph D. Janizek",
+        "Pascal Sturmfels",
+        "Su-In Lee"
+      ],
+      "year": 2021,
+      "venue": "Journal of Machine Learning Research 22(104)",
+      "pages": "1-54",
+      "id": "JMLR-22-104-20-1223",
+      "primary_url": "https://www.jmlr.org/papers/v22/20-1223.html",
+      "additional_primary_urls": [
+        "https://www.jmlr.org/papers/volume22/20-1223/20-1223.pdf"
+      ],
+      "date": "2026-11-17",
+      "metadata_verified": [
+        "exact title",
+        "all three authors",
+        "year",
+        "journal",
+        "volume",
+        "article number",
+        "pages",
+        "publisher abstract and first-page metadata"
+      ],
+      "evidence_relevance": "Integrated Hessians is a principled approach to pairwise input-feature interactions. It establishes that interaction explanations are existing research, while leaving our internal-part and selected-circuit checks distinct.",
+      "claim_limit": "Do not equate a path-integrated Hessian with finite donor-state replacement or infer structural edges from the cited axioms.",
+      "status": "verified_online_primary",
+      "authors": [
+        "Joseph D. Janizek",
+        "Pascal Sturmfels",
+        "Su-In Lee"
+      ],
+      "checked_date": "2026-11-17",
+      "validation_status": "verified_online_primary",
+      "validation_ledger": "interactions_statistics_validation.json"
+    },
+    {
+      "reference_number": 29,
+      "key": "tsang2020archipelago",
+      "title": "How does This Interaction Affect Me? Interpretable Attribution for Feature Interactions",
+      "complete_authors": [
+        "Michael Tsang",
+        "Sirisha Rambhatla",
+        "Yan Liu"
+      ],
+      "year": 2020,
+      "venue": "Advances in Neural Information Processing Systems 33",
+      "pages": "6147-6159",
+      "id": "NeurIPS-2020-443dec3062d0286986e21dc0631734c9",
+      "primary_url": "https://proceedings.neurips.cc/paper_files/paper/2020/hash/443dec3062d0286986e21dc0631734c9-Abstract.html",
+      "additional_primary_urls": [
+        "https://proceedings.neurips.cc/paper_files/paper/10240-/bibtex",
+        "https://proceedings.neurips.cc/paper/2020/file/443dec3062d0286986e21dc0631734c9-Paper.pdf"
+      ],
+      "date": "2026-11-17",
+      "metadata_verified": [
+        "exact full title",
+        "all three authors",
+        "year",
+        "venue",
+        "volume",
+        "pages from official BibTeX",
+        "paper introduction"
+      ],
+      "evidence_relevance": "Archipelago explicitly separates detecting nonadditive interactions from attributing a prediction to interacting groups. This reinforces that interaction strength and an explanatory claim need not be interchangeable.",
+      "claim_limit": "The cited work studies input features. It is not evidence that its own method fails direct-link or retained-circuit checks, which we did not run on it.",
+      "status": "verified_online_primary",
+      "authors": [
+        "Michael Tsang",
+        "Sirisha Rambhatla",
+        "Yan Liu"
+      ],
+      "checked_date": "2026-11-17",
+      "validation_status": "verified_online_primary",
+      "validation_ledger": "interactions_statistics_validation.json"
+    },
+    {
+      "reference_number": 30,
+      "key": "bushnaq2024lib",
+      "title": "The Local Interaction Basis: Identifying Computationally-Relevant and Sparsely Interacting Features in Neural Networks",
+      "authors": [
+        "Lucius Bushnaq",
+        "Stefan Heimersheim",
+        "Nicholas Goldowsky-Dill",
+        "Dan Braun",
+        "Jake Mendel",
+        "Kaarel Hänni",
+        "Avery Griffin",
+        "Jörn Stöhler",
+        "Magdalena Wache",
+        "Marius Hobbhahn"
+      ],
+      "year": 2024,
+      "venue": "arXiv preprint",
+      "id": "arXiv:2405.10928; doi:10.48550/arXiv.2405.10928",
+      "primary_url": "https://arxiv.org/abs/2405.10928",
+      "checked_date": "2026-11-17",
+      "metadata_verified": true,
+      "evidence_relevance": "Constructs a computationally motivated activation basis and sparse interaction graph. Relevant contrast: our experiments keep native heads/MLPs rather than learning a basis. The paper reports no substantial language-model interpretability/sparsity improvement, so do not claim LIB solved large-language-model decomposition.",
+      "validation_status": "validated_primary_sources",
+      "validation_ledger": "legacy_and_circuits_validation.json"
+    },
+    {
+      "reference_number": 31,
+      "key": "lindner2023tracr",
+      "title": "Tracr: Compiled Transformers as a Laboratory for Interpretability",
+      "authors": [
+        "David Lindner",
+        "János Kramár",
+        "Sebastian Farquhar",
+        "Matthew Rahtz",
+        "Thomas McGrath",
+        "Vladimir Mikulik"
+      ],
+      "year": 2023,
+      "venue": "Advances in Neural Information Processing Systems 36",
+      "id": "doi:10.52202/075280-1649; arXiv:2301.05062",
+      "pages": "37876-37899",
+      "primary_url": "https://proceedings.neurips.cc/paper_files/paper/2023/hash/771155abaae744e08576f1f3b4b7ac0d-Abstract-Conference.html",
+      "additional_primary_urls": [
+        "https://arxiv.org/abs/2301.05062",
+        "https://proceedings.neurips.cc/paper_files/paper/2023/file/771155abaae744e08576f1f3b4b7ac0d-Paper-Conference.pdf"
+      ],
+      "checked_date": "2026-11-17",
+      "metadata_verified": true,
+      "metadata_note": "Proceedings landing page abbreviates Thomas as Tom and omits Kramár accents; full conference PDF and arXiv bylines supply the retained forms.",
+      "evidence_relevance": "Compiles human-readable programs into transformers with known structure, providing ground truth for mechanistic evaluation. Supports the provenance and rationale for the small-model testbed.",
+      "validation_status": "validated_primary_sources",
+      "validation_ledger": "legacy_and_circuits_validation.json"
+    },
+    {
+      "reference_number": 32,
+      "key": "gupta2024interpbench",
+      "title": "InterpBench: Semi-Synthetic Transformers for Evaluating Mechanistic Interpretability Techniques",
+      "authors": [
+        "Rohan Gupta",
+        "Iván Arcuschin",
+        "Thomas Kwa",
+        "Adrià Garriga-Alonso"
+      ],
+      "year": 2024,
+      "venue": "Advances in Neural Information Processing Systems 37, Datasets and Benchmarks Track",
+      "id": "doi:10.52202/079017-2950; arXiv:2407.14494",
+      "pages": "92922-92951",
+      "primary_url": "https://proceedings.neurips.cc/paper_files/paper/2024/hash/a8f7d43ae092d9a5295775eb17f3f4f7-Abstract-Datasets_and_Benchmarks_Track.html",
+      "additional_primary_urls": [
+        "https://arxiv.org/abs/2407.14494"
+      ],
+      "checked_date": "2026-11-17",
+      "metadata_verified": true,
+      "evidence_relevance": "Supplies known-circuit semi-synthetic transformers trained with strict interchange intervention training; directly identifies the evaluation benchmark used here. Do not equate its reference task circuit with every physical transformer connection.",
+      "validation_status": "validated_primary_sources",
+      "validation_ledger": "legacy_and_circuits_validation.json"
+    },
+    {
+      "reference_number": 33,
+      "key": "mueller2025mib",
+      "title": "MIB: A Mechanistic Interpretability Benchmark",
+      "authors": [
+        "Aaron Mueller",
+        "Atticus Geiger",
+        "Sarah Wiegreffe",
+        "Dana Arad",
+        "Iván Arcuschin",
+        "Adam Belfki",
+        "Yik Siu Chan",
+        "Jaden Fried Fiotto-Kaufman",
+        "Tal Haklay",
+        "Michael Hanna",
+        "Jing Huang",
+        "Rohan Gupta",
+        "Yaniv Nikankin",
+        "Hadas Orgad",
+        "Nikhil Prakash",
+        "Anja Reusch",
+        "Aruna Sankaranarayanan",
+        "Shun Shao",
+        "Alessandro Stolfo",
+        "Martin Tutek",
+        "Amir Zur",
+        "David Bau",
+        "Yonatan Belinkov"
+      ],
+      "year": 2025,
+      "venue": "Proceedings of the 42nd International Conference on Machine Learning, PMLR 267",
+      "id": "PMLR:v267/mueller25a; arXiv:2504.13151",
+      "pages": "45069-45108",
+      "primary_url": "https://proceedings.mlr.press/v267/mueller25a.html",
+      "checked_date": "2026-11-17",
+      "metadata_verified": true,
+      "evidence_relevance": "Separately evaluates circuit localization and localization of task-relevant causal variables. Supports the argument that different interpretability outputs need distinct evaluation tracks.",
+      "validation_status": "validated_primary_sources",
+      "validation_ledger": "legacy_and_circuits_validation.json"
+    },
+    {
+      "reference_number": 34,
+      "key": "miller2024robustness",
+      "title": "Transformer Circuit Faithfulness Metrics are not Robust",
+      "authors": [
+        "Joseph Miller",
+        "Bilal Chughtai",
+        "William Saunders"
+      ],
+      "year": 2024,
+      "venue": "Conference on Language Modeling",
+      "id": "OpenReview:zSf8PJyQb2; arXiv:2407.08734",
+      "primary_url": "https://arxiv.org/abs/2407.08734",
+      "additional_primary_urls": [
+        "https://openreview.net/pdf?id=zSf8PJyQb2"
+      ],
+      "checked_date": "2026-11-17",
+      "metadata_verified": true,
+      "metadata_note": "arXiv and indexed official conference PDF confirm COLM 2024. Capitalization differs between versions, not the substantive title.",
+      "evidence_relevance": "Tests sensitivity of circuit faithfulness to ablation methodology. Direct precedent for our qualification that preservation is conditional on replacement choices and tested internal boundaries.",
+      "validation_status": "validated_primary_sources",
+      "validation_ledger": "legacy_and_circuits_validation.json"
+    },
+    {
+      "reference_number": 35,
+      "key": "geng2026recovery",
+      "title": "Are We Recovering Mechanisms? Objective-Level Recovery Gaps in Mechanistic Interpretability",
+      "authors": [
+        "Chuqin Geng",
+        "Li Zhang",
+        "Haolin Ye",
+        "Mark Zhang",
+        "Luke Zhang",
+        "Xujie Si"
+      ],
+      "year": 2026,
+      "venue": "arXiv preprint",
+      "id": "arXiv:2610.02098; doi:10.48550/arXiv.2610.02098",
+      "primary_url": "https://arxiv.org/abs/2610.02098",
+      "checked_date": "2026-11-17",
+      "metadata_verified": true,
+      "evidence_relevance": "Shows intervention-based faithfulness can prefer a behaviorally worse equally sized circuit due to altered computational context. Directly relevant limitation and prior work; our study is not the first general warning about misleading circuit scores.",
+      "validation_status": "validated_primary_sources",
+      "validation_ledger": "legacy_and_circuits_validation.json"
+    },
+    {
+      "reference_number": 36,
+      "key": "hooker2004additive",
+      "title": "Discovering additive structure in black box functions",
+      "complete_authors": [
+        "Giles Hooker"
+      ],
+      "year": 2004,
+      "venue": "Proceedings of the Tenth ACM SIGKDD International Conference on Knowledge Discovery and Data Mining",
+      "pages": "575-580",
+      "id": "doi:10.1145/1014052.1014122",
+      "primary_url": "https://doi.org/10.1145/1014052.1014122",
+      "date": "2026-11-17",
+      "metadata_verified": [
+        "exact title",
+        "sole author",
+        "year",
+        "conference",
+        "pages",
+        "DOI",
+        "publisher abstract and publication history"
+      ],
+      "access_note": "The publisher's complete indexed page supplied metadata and abstract; a later direct-open attempt returned403. This is not a secondary citation-only validation.",
+      "evidence_relevance": "Provides established nonadditivity/additive-projection diagnostics for black-box functions and connects them to functional ANOVA. Appropriate prior for the general goal of concise interaction descriptions.",
+      "claim_limit": "Its additive-projection score is not our average squared patch difference. A graph displaying interactions is not by itself an internal-wiring claim.",
+      "status": "verified_online_primary",
+      "authors": [
+        "Giles Hooker"
+      ],
+      "checked_date": "2026-11-17",
+      "validation_status": "verified_online_primary",
+      "validation_ledger": "interactions_statistics_validation.json"
+    },
+    {
+      "reference_number": 37,
+      "key": "sobol2001global",
+      "title": "Global sensitivity indices for nonlinear mathematical models and their Monte Carlo estimates",
+      "complete_authors": [
+        "I. M. Sobol'"
+      ],
+      "year": 2001,
+      "venue": "Mathematics and Computers in Simulation 55(1-3)",
+      "pages": "271-280",
+      "id": "doi:10.1016/S0378-4754(00)00270-6",
+      "primary_url": "https://www.sciencedirect.com/science/article/abs/pii/S0378475400002706",
+      "date": "2026-11-17",
+      "metadata_verified": [
+        "exact title",
+        "sole author as published",
+        "year",
+        "journal",
+        "volume",
+        "issue range",
+        "pages",
+        "DOI",
+        "publisher introduction and abstract"
+      ],
+      "access_note": "Publisher search result displayed the article's full metadata/introduction; a later direct request returned403. The original paper's ANOVA representation was also visible in an online full-paper copy.",
+      "evidence_relevance": "Classical variance-based sensitivity indices use an ANOVA decomposition under defined input/integration assumptions. It is a contrast explaining why summing our squared intervention scores is not an orthogonal output-variance decomposition.",
+      "claim_limit": "Do not rename our scores Sobol indices or treat score coverage as a fraction of task variance/performance. The difference from our estimand is a mathematical comparison, not a failure of Sobol's method.",
+      "status": "verified_online_primary",
+      "authors": [
+        "I. M. Sobol'"
+      ],
+      "checked_date": "2026-11-17",
+      "validation_status": "verified_online_primary",
+      "validation_ledger": "interactions_statistics_validation.json"
+    },
+    {
+      "reference_number": 38,
+      "key": "eckart1936approximation",
+      "title": "The approximation of one matrix by another of lower rank",
+      "complete_authors": [
+        "Carl Eckart",
+        "Gale Young"
+      ],
+      "year": 1936,
+      "venue": "Psychometrika 1(3)",
+      "pages": "211-218",
+      "id": "doi:10.1007/BF02288367",
+      "primary_url": "https://doi.org/10.1007/BF02288367",
+      "additional_primary_urls": [
+        "https://www.cambridge.org/core/journals/psychometrika/article/abs/approximation-of-one-matrix-by-another-of-lower-rank/B29672E1EDD0FA1B7611D4DFAFC321B3"
+      ],
+      "date": "2026-11-17",
+      "metadata_verified": [
+        "exact title ignoring typographic capitalization",
+        "both authors",
+        "original publication year",
+        "journal",
+        "volume",
+        "issue",
+        "pages",
+        "DOI",
+        "publisher abstract"
+      ],
+      "metadata_note": "Current publisher page gives online migration date2025 but explicitly identifies the original issue as September1936; bibliography correctly uses1936.",
+      "evidence_relevance": "Classical foundation for least-squares low-rank matrix approximation. Cite for the leading-SVD rank-one fit to fully observed rectangular head-pair score tables.",
+      "claim_limit": "It does not justify zero-filling missing pairs, guarantee the masked nonnegative factor optimizer, or turn a rank-one descriptive fit into a mechanistic explanation.",
+      "status": "verified_online_primary",
+      "authors": [
+        "Carl Eckart",
+        "Gale Young"
+      ],
+      "checked_date": "2026-11-17",
+      "validation_status": "verified_online_primary",
+      "validation_ledger": "interactions_statistics_validation.json"
+    },
+    {
+      "reference_number": 39,
+      "key": "davis2006precisionrecall",
+      "title": "The relationship between Precision-Recall and ROC curves",
+      "complete_authors": [
+        "Jesse Davis",
+        "Mark Goadrich"
+      ],
+      "year": 2006,
+      "venue": "Proceedings of the 23rd International Conference on Machine Learning",
+      "pages": "233-240",
+      "id": "doi:10.1145/1143844.1143874",
+      "primary_url": "https://doi.org/10.1145/1143844.1143874",
+      "additional_primary_urls": [
+        "https://api.crossref.org/works/10.1145/1143844.1143874",
+        "https://mlanthology.org/icml/2006/davis2006icml-relationship/"
+      ],
+      "date": "2026-11-17",
+      "metadata_verified": [
+        "exact publisher-registered title",
+        "both authors in publisher registration",
+        "year",
+        "ICML venue",
+        "pages",
+        "DOI",
+        "live Crossref DOI-registration JSON"
+      ],
+      "access_note": "ACM direct page returned403. Live DOI-registration metadata was retrieved with curl and parsed; the complete ICML citation and abstract also match the online conference-paper archive. BibTeX follows publisher registration's Mark Goadrich rather than adding an unverified middle initial.",
+      "evidence_relevance": "Supports careful distinction between precision-recall and ROC evaluation under imbalanced labels. Use beside the direct-link AP/ROC metrics and the warning against comparing raw AP after changing the positive-label definition.",
+      "claim_limit": "AP and trapezoidal PR area are not automatically identical. Dividing AP by prevalence is our descriptive lift, not a proof of prevalence-invariant performance or an endorsed universal correction.",
+      "status": "verified_online_primary_doi_metadata",
+      "authors": [
+        "Jesse Davis",
+        "Mark Goadrich"
+      ],
+      "checked_date": "2026-11-17",
+      "validation_status": "verified_online_primary_doi_metadata",
+      "validation_ledger": "interactions_statistics_validation.json"
+    },
+    {
+      "reference_number": 40,
+      "key": "saito2015precisionrecall",
+      "title": "The Precision-Recall Plot Is More Informative than the ROC Plot When Evaluating Binary Classifiers on Imbalanced Datasets",
+      "complete_authors": [
+        "Takaya Saito",
+        "Marc Rehmsmeier"
+      ],
+      "year": 2015,
+      "venue": "PLOS ONE 10(3)",
+      "pages": "e0118432",
+      "id": "doi:10.1371/journal.pone.0118432",
+      "primary_url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0118432",
+      "date": "2026-11-17",
+      "metadata_verified": [
+        "exact title",
+        "both authors",
+        "year and March4 publication",
+        "journal",
+        "volume",
+        "issue",
+        "article identifier",
+        "DOI",
+        "publisher abstract and evaluation discussion"
+      ],
+      "evidence_relevance": "Provides a clear primary analysis of PR and ROC behavior in imbalanced datasets. It motivates reporting label prevalence alongside AP when direct links are rare and the positive set is enlarged to include indirect paths.",
+      "claim_limit": "Do not infer that any rise in AP after changing labels demonstrates better mechanistic recovery; our own equalization/lift diagnostics remain descriptive and have their stated limits.",
+      "status": "verified_online_primary",
+      "authors": [
+        "Takaya Saito",
+        "Marc Rehmsmeier"
+      ],
+      "checked_date": "2026-11-17",
+      "validation_status": "verified_online_primary",
+      "validation_ledger": "interactions_statistics_validation.json"
+    },
+    {
+      "reference_number": 41,
+      "key": "efron1979bootstrap",
+      "title": "Bootstrap Methods: Another Look at the Jackknife",
+      "complete_authors": [
+        "B. Efron"
+      ],
+      "year": 1979,
+      "venue": "The Annals of Statistics 7(1)",
+      "pages": "1-26",
+      "id": "doi:10.1214/aos/1176344552",
+      "primary_url": "https://doi.org/10.1214/aos/1176344552",
+      "additional_primary_urls": [
+        "https://projecteuclid.org/journals/annals-of-statistics/volume-7/issue-1/Bootstrap-Methods-Another-Look-at-the-Jackknife/10.1214/aos/1176344552.full",
+        "https://api.crossref.org/works/10.1214/aos/1176344552"
+      ],
+      "date": "2026-11-17",
+      "metadata_verified": [
+        "exact title",
+        "sole author as published",
+        "year and January publication",
+        "journal",
+        "volume",
+        "issue",
+        "pages",
+        "publisher-registered DOI metadata retrieved online"
+      ],
+      "access_note": "Direct Project Euclid wrapper rendered an empty iframe. Its indexed primary article record and live Crossref DOI-registration JSON independently supply the complete citation metadata. The original article abstract describes sampling-distribution estimation from the empirical sample.",
+      "evidence_relevance": "Foundational citation for resampling input pairs to quantify variation of measured scores within each fixed model.",
+      "claim_limit": "Does not certify exact coverage for our finite-sample percentile intervals or justify treating input-pair resampling as uncertainty across models, tasks, selected cases, or adaptive study stages.",
+      "status": "verified_online_primary_doi_metadata",
+      "authors": [
+        "B. Efron"
+      ],
+      "checked_date": "2026-11-17",
+      "validation_status": "verified_online_primary_doi_metadata",
+      "validation_ledger": "interactions_statistics_validation.json"
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "key": "sundararajan2020shapleytaylor",
+      "title": "The Shapley Taylor Interaction Index",
+      "year": 2020,
+      "id": "pmlr-v119-sundararajan20a",
+      "primary_url": "https://proceedings.mlr.press/v119/sundararajan20a.html",
+      "conflicting_primary_url": "https://proceedings.mlr.press/v119/sundararajan20a/sundararajan20a.pdf",
+      "publisher_landing_page_and_citation_author_order": [
+        "Mukund Sundararajan",
+        "Kedar Dhamdhere",
+        "Ashish Agarwal"
+      ],
+      "proceedings_pdf_header_author_order": [
+        "Kedar Dhamdhere",
+        "Ashish Agarwal",
+        "Mukund Sundararajan"
+      ],
+      "date": "2026-11-17",
+      "reason": "Primary citation metadata and primary proceedings PDF have conflicting author order. Omitted from the final bibliography at the coordinator's request rather than selecting between them. Title, author set,2020 venue,119:9259-9268 and discrete derivative equations are real; this exclusion does not imply the paper is invalid.",
+      "status": "excluded_pending_author_order_resolution",
+      "included_in_bib": false
+    }
+  ]
+}

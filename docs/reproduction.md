@@ -47,7 +47,7 @@ To render the scientific figures from the tracked audited plotting values:
 python scripts/plot_figures.py
 ```
 
-This writes only to `output/figures/`. It does not rewrite the original evidence files or claim to validate raw responses; use full replay for that. The Scientific Reports-format manuscript and Supplementary Information are release assets in `v1.1.0`. The numerical data archive, checksums, and replay inputs remain pinned to `v1.0.0` without changes. The historical manuscript/figure builders are archived for provenance and may contain the original wider-workspace path assumptions; use the portable wrappers for this release.
+This writes only to `output/figures/`. It does not rewrite the original evidence files or claim to validate raw responses; use full replay for that. The current Scientific Reports-format manuscript is in `v1.2.0`, with an expanded, individually internet-validated bibliography. The numerical data archive, checksums, and replay inputs remain pinned to `v1.0.0` without changes. The historical manuscript/figure builders are archived for provenance and may contain the original wider-workspace path assumptions; use the portable wrappers for this release.
 
 To reproduce the Scientific Reports figure layout as native-vector PDFs:
 
@@ -56,6 +56,8 @@ python papers/sparse-interaction-maps/scientific-reports/plot_figures.py --pdf-o
 ```
 
 This writes to `output/scientific-reports-sparse-interactions/upload/`, checks the immutable plotting-data hashes and chart values, and never calls a model. It uses Arial when installed and otherwise DejaVu Sans; font/layout details can vary by platform, while plotted numerical values remain fixed.
+
+The current manuscript source is in `papers/sparse-interaction-maps/scientific-reports/`. Run `pdflatex manuscript.tex` three times from that directory, or extract the release's `Manuscript_LaTeX.zip` into a fresh folder and do the same there. References are embedded, so no BibTeX run is required. The ZIP contains only `manuscript.tex` and its three figures; the supplementary source is supplied separately to avoid ambiguous main-file detection. The 41-entry reference-validation ledger is in `docs/reference-validation.json`; it records bibliographic and relevance checks, not new experimental replications.
 
 ## 3. Collect new model responses (not automatic)
 

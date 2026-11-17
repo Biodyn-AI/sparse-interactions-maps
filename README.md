@@ -2,7 +2,7 @@
 
 Research code, numerical results, and data for **Repeatable interaction scores do not guarantee a correct circuit**.
 
-[Read the Scientific Reports-format draft](https://github.com/Biodyn-AI/sparse-interactions-maps/releases/download/v1.1.0/Manuscript.pdf) · [Download full data](https://github.com/Biodyn-AI/sparse-interactions-maps/releases/tag/v1.0.0) · [Reproduction guide](docs/reproduction.md) · [Claims and evidence](docs/claim_map.md)
+[Read the Scientific Reports-format draft](https://github.com/Biodyn-AI/sparse-interactions-maps/releases/download/v1.2.0/Manuscript.pdf) · [LaTeX submission ZIP](https://github.com/Biodyn-AI/sparse-interactions-maps/releases/download/v1.2.0/Manuscript_LaTeX.zip) · [Download full data](https://github.com/Biodyn-AI/sparse-interactions-maps/releases/tag/v1.0.0) · [Reproduction guide](docs/reproduction.md) · [Claims and evidence](docs/claim_map.md)
 
 ## What does this study ask?
 
@@ -61,11 +61,13 @@ The downloader verifies the fixed SHA-256 before extraction. Replay verifies eve
 | `provenance/` | Immutable-file manifest, source-archive manifests, original project configuration, and release checksum |
 | `ENVIRONMENT.json`, `UPSTREAM.json` | Acquisition/checking environments and pinned third-party identities |
 
-The manuscript link points to the Scientific Reports-format draft in `v1.1.0`. The earlier, superseded PLOS ONE-format draft remains archived in `v1.0.0`, together with the unchanged original scientific data and code. Original manuscript sources remain part of that archived record. No journal acceptance or external replication is implied. Some original provenance records contain historical machine paths. Public instructions use relative paths, and portable replay resolves the actual data location without rewriting those records.
+The manuscript link points to the Scientific Reports-format draft in `v1.2.0`, with 41 cited references explicitly validated online. Earlier drafts remain archived in their releases. The numerical results, original data and experimental code remain frozen in `v1.0.0`. Original manuscript sources remain part of that archived record. No journal acceptance or external replication is implied. Some original provenance records contain historical machine paths. Public instructions use relative paths, and portable replay resolves the actual data location without rewriting those records.
 
 ## Documentation and reuse
 
 [Methods](docs/methods.md) · [Data dictionary](docs/data_dictionary.md) · [Claim map](docs/claim_map.md) · [Contributing](docs/contributing.md)
+
+The [reference-by-reference validation ledger](docs/reference-validation.json) records primary online sources, metadata checks, relevance and access caveats; a [readable version](docs/reference-validation.txt) is also available. This is bibliographic/relevance validation, not replication of the cited studies. The [current manuscript source](papers/sparse-interaction-maps/scientific-reports/manuscript.tex) has inline references and the figure dependencies needed for standalone compilation. The submission ZIP deliberately has only one LaTeX entry point; supplementary text is separate.
 
 Original code is [MIT licensed](LICENSE). Original research data, manuscript, figures, and non-code documentation are [CC BY 4.0](LICENSE_DATA.md). Third-party software/model terms are unchanged; no upstream weights are redistributed. See [third-party rights](THIRD_PARTY_NOTICES.md). AI tools assisted planning, code, analysis checks, figures, and writing; the manuscript discloses their scope. Automated checks are not a substitute for scientific review.
 

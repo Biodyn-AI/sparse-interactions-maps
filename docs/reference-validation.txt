@@ -1,0 +1,251 @@
+REFERENCE-BY-REFERENCE ONLINE VALIDATION
+Checked 17 November 2026
+
+Each reference was explicitly checked online for bibliographic identity, available publication metadata, and relevance to its cited statement. Primary publisher/proceedings/preprint pages or publisher-registered DOI metadata were used. Access limitations are recorded per entry. This is not an independent replication of cited studies or an exhaustive literature review.
+
+[1] Towards Automated Circuit Discovery for Mechanistic Interpretability (2023)
+Key: conmy2023acdc
+Primary source: https://proceedings.neurips.cc/paper_files/paper/2023/hash/34e1dbe95d34d7ebaf99b9bcaeb5b2be-Abstract-Conference.html
+Checked: 2026-11-17; status: validated_primary_sources
+Cited relevance: Automates finding connections between components using activation-patching-based circuit discovery; suitable for the existing circuit-discovery comparison, not evidence that our pair scores recover direct edges.
+
+[2] Have Faith in Faithfulness: Going Beyond Circuit Overlap When Finding Model Mechanisms (2024)
+Key: hanna2024faithfulness
+Primary source: https://arxiv.org/abs/2403.17806
+Checked: 2026-11-17; status: validated_primary_sources
+Cited relevance: Introduces EAP-IG and shows why overlap with known components does not substitute for testing retained-circuit faithfulness. Directly supports separating localization from behavior preservation.
+
+[3] AtP*: An efficient and scalable method for localizing LLM behaviour to components (2024)
+Key: kramar2024atp
+Primary source: https://arxiv.org/abs/2403.00745
+Checked: 2026-11-17; status: validated_primary_sources
+Cited relevance: Studies scalable gradient approximations to activation patching, their false negatives and diagnostic corrections. Supports efficiency-versus-validation discussion, not a claim to infer direct wiring.
+
+[4] The Curse of Multiple Mediators: Hidden Interaction Effects in Activation Patching (2026)
+Key: vaidyanathan2026mediators
+Primary source: https://arxiv.org/abs/2606.27510
+Checked: 2026-11-17; status: validated_primary_sources
+Cited relevance: Derives interaction terms in activation-patching effects, examines GPT-2 IOI and higher-order interactions, and explains state-dependent component effects. Acknowledge as prior interaction theory; do not present our finite-difference interaction as a newly discovered causal principle.
+
+[5] Conditional Co-Ablation: Recovering Self-Repair Backups in Transformer Circuits (2026)
+Key: gong2026coax
+Primary source: https://arxiv.org/abs/2607.01940
+Checked: 2026-11-17; status: validated_primary_sources
+Cited relevance: Finds backup components that become important after primary components are removed, with GPT-2 IOI and broader experiments. Supports the concrete compensation example; it is not the same score or claim as direct-edge discovery.
+
+[6] Attention Is All You Need (2017)
+Key: vaswani2017attention
+Primary source: https://proceedings.neurips.cc/paper/2017/hash/3f5ee243547dee91fbd053c1c4a845aa-Abstract.html
+Checked: 2026-11-17; status: validated_primary_online
+Cited relevance: Original Transformer architecture; supports the architectural provenance of attention and feed-forward components, not any claim that our intervention score identifies direct wiring.
+
+[7] Language Models Are Unsupervised Multitask Learners (2019)
+Key: radford2019language
+Primary source: https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf
+Checked: 2026-11-17; status: validated_primary_online
+Cited relevance: Primary description of GPT-2 and its next-token language-model training; supports model provenance, not our measured interaction results.
+
+[8] Attribution Patching Outperforms Automated Circuit Discovery (2024)
+Key: syed2024attributionpatching
+Primary source: https://aclanthology.org/2024.blackboxnlp-1.25/
+Checked: 2026-11-17; status: validated_primary_proceedings
+Cited relevance: Uses a linear approximation to activation patching to score and prune edges, an explicit edge-localization/discovery baseline precedent. Do not equate its derivative-based edge scores with the present finite pair-interaction score.
+
+[9] Interpretability in the Wild: a Circuit for Indirect Object Identification in GPT-2 small (2023)
+Key: wang2023ioi
+Primary source: https://arxiv.org/abs/2211.00593
+Checked: 2026-11-17; status: validated_primary_sources
+Cited relevance: Provides the IOI task and a component-level circuit evaluated for faithfulness, completeness and minimality. Supports the existing task provenance and the need to check circuit behavior beyond a shortlist.
+
+[10] In-context Learning and Induction Heads (2022)
+Key: olsson2022induction
+Primary source: https://arxiv.org/abs/2209.11895
+Checked: 2026-11-17; status: validated_primary_sources
+Cited relevance: Concrete mechanistic case study of induction heads performing repeated-token continuation. Cite as an example of explaining a computation, with strong causal evidence for small attention-only models and correlational evidence for larger models with MLPs; not a universal proof about in-context learning.
+
+[11] Progress measures for grokking via mechanistic interpretability (2023)
+Key: nanda2023grokking
+Primary source: https://arxiv.org/abs/2301.05217
+Checked: 2026-11-17; status: validated_primary_sources
+Cited relevance: Reverse engineers modular-addition computation using Fourier structure and confirms it with activation/weight analysis and Fourier-space ablations. Good example of a stronger algorithm-level explanation than score repeatability alone.
+
+[12] How does GPT-2 compute greater-than?: Interpreting mathematical abilities in a pre-trained language model (2023)
+Key: hanna2023greaterthan
+Primary source: https://proceedings.neurips.cc/paper_files/paper/2023/hash/efbba7719cc5172d175240f24be11280-Abstract-Conference.html
+Checked: 2026-11-17; status: validated_primary_sources
+Cited relevance: Explains a GPT-2 circuit for choosing valid two-digit end years, including the role of late MLPs, and checks related tasks. Another concrete example that a circuit explanation describes what components compute, not just which pairs score highly.
+
+[13] Locating and Editing Factual Associations in GPT (2022)
+Key: meng2022rome
+Primary source: https://proceedings.neurips.cc/paper_files/paper/2022/hash/6f1d43d5a82a37e89b0665b33bf3a182-Abstract-Conference.html
+Checked: 2026-11-17; status: validated_primary_sources
+Cited relevance: Uses causal interventions to localize factual-recall computations and tests a proposed role by editing feed-forward weights. Supports the distinction between localizing an effect and testing a concrete mechanism; it does not validate our pair-score method.
+
+[14] Causality: Models, Reasoning, and Inference (2009)
+Key: pearl2009causality
+Primary source: https://www.cambridge.org/core/books/causality/B0046844FAE10CBF274D4ACBDAEB5F5B
+Checked: 2026-11-17; status: validated_primary_publisher
+Cited relevance: Provides the causal-model distinction between association and intervention and the structural vocabulary for direct versus mediated effects. Use only as foundational framing; it does not prove anything specific about neural pair-score maps.
+
+[15] Causal Abstractions of Neural Networks (2021)
+Key: geiger2021causalabstractions
+Primary source: https://proceedings.neurips.cc/paper_files/paper/2021/hash/4f5c422f4d49a5a807eda27434231040-Abstract.html
+Checked: 2026-11-17; status: validated_primary_proceedings
+Cited relevance: Tests alignment between interpretable causal variables and neural representations through interchange interventions. Supports explaining that an internal causal hypothesis requires testing intervention behavior, not merely naming highly ranked components.
+
+[16] Causal Abstraction: A Theoretical Foundation for Mechanistic Interpretability (2025)
+Key: geiger2025causalabstraction
+Primary source: https://www.jmlr.org/papers/v26/23-0058.html
+Checked: 2026-11-17; status: validated_primary_journal
+Cited relevance: Formalizes causal abstraction and graded faithfulness, and connects activation/path patching, circuit analysis and other methods within one framework. Grounds the distinction between an interventional effect and a faithful higher-level explanation.
+
+[17] Finding Alignments Between Interpretable Causal Variables and Distributed Neural Representations (2024)
+Key: geiger2024distributedalignment
+Primary source: https://proceedings.mlr.press/v236/geiger24a.html
+Checked: 2026-11-17; status: validated_primary_proceedings
+Cited relevance: Introduces distributed alignment search: learned alignments need not correspond to disjoint sets of neurons. Relevant to the choice of computational units and why using native heads/MLPs is a limitation, not a universal decomposition.
+
+[18] Investigating Gender Bias in Language Models Using Causal Mediation Analysis (2020)
+Key: vig2020causalmediation
+Primary source: https://proceedings.neurips.cc/paper/2020/hash/92650b2e92217715fe312e6fa7b90d82-Abstract.html
+Checked: 2026-11-17; status: validated_primary_proceedings
+Cited relevance: Uses causal mediation and controlled changes to neurons/attention heads to distinguish information encoded internally from information used in model behavior. Supports the historical and conceptual introduction to internal interventions.
+
+[19] Towards Best Practices of Activation Patching in Language Models: Metrics and Methods (2024)
+Key: zhang2024patchingpractices
+Primary source: https://proceedings.iclr.cc/paper_files/paper/2024/file/06a52a54c8ee03cd86771136bc91eb1f-Paper-Conference.pdf
+Checked: 2026-11-17; status: validated_primary_conference_pdf
+Cited relevance: Shows that corruption methods and evaluation metrics can yield different localization conclusions. Direct support for fixing and disclosing response metrics, replacement schemes and backgrounds rather than treating patch scores as invariant model properties.
+
+[20] How to use and interpret activation patching (2024)
+Key: heimersheim2024activationpatching
+Primary source: https://arxiv.org/abs/2404.15255
+Checked: 2026-11-17; status: validated_primary_preprint
+Cited relevance: A methodological guide to patching variants, circuit evidence and metric pitfalls. Relevant to interpreting what the declared interventions establish and motivating separate joint-set behavior tests.
+
+[21] Localizing Model Behavior with Path Patching (2023)
+Key: goldowskydill2023pathpatching
+Primary source: https://arxiv.org/abs/2304.05969
+Checked: 2026-11-17; status: validated_primary_preprint
+Cited relevance: Introduces path-specific interventions for quantitatively testing whether behavior is localized to specified paths. Provides an explicit contrast to changing two components and allowing all downstream computation to recompute.
+
+[22] How Important Is a Neuron? (2019)
+Key: dhamdhere2019neuron
+Primary source: https://openreview.net/pdf?id=SylKoo0cKm
+Checked: 2026-11-17; status: validated_primary_pdf_index_and_direct_arxiv
+Cited relevance: Defines conductance for importance of hidden units, rather than only input features. Useful for distinguishing single-part importance methods from pair interactions and from an explanation of direct wiring.
+
+[23] pyvene: A Library for Understanding and Improving PyTorch Models via Interventions (2024)
+Key: wu2024pyvene
+Primary source: https://aclanthology.org/2024.naacl-demo.16/
+Checked: 2026-11-17; status: validated_primary_proceedings
+Cited relevance: Provides configurable interventions on model-internal states and causal-abstraction/knowledge-localization examples. Cite as an existing intervention-tooling precedent, not as software used by the present experiments.
+
+[24] The Hydra Effect: Emergent Self-repair in Language Model Computations (2023)
+Key: mcgrath2023hydra
+Primary source: https://arxiv.org/abs/2307.15771
+Checked: 2026-11-17; status: validated_primary_preprint
+Cited relevance: Demonstrates downstream compensation after attention-layer ablation and late-MLP counterbalancing. Supports discussing self-repair as a concrete reason that a component's measured effect depends on the state of the rest of the model.
+
+[25] Axiomatic Attribution for Deep Networks (2017)
+Key: sundararajan2017axiomatic
+Primary source: https://proceedings.mlr.press/v70/sundararajan17a.html
+Checked: 2026-11-17; status: verified_online_primary
+Cited relevance: Integrated Gradients supplies an established example of axiomatic input-feature attribution. Use in a short background contrast: assigning effects to inputs is not the same target as recovering connections between internal parts.
+
+[26] A Unified Approach to Interpreting Model Predictions (2017)
+Key: lundberg2017unified
+Primary source: https://proceedings.neurips.cc/paper_files/paper/2017/hash/8a20a8621978632d76c43dfd28b67767-Abstract.html
+Checked: 2026-11-17; status: verified_online_primary
+Cited relevance: SHAP is an established framework for additive per-feature explanations of predictions. It helps define the distinction between an output explanation and an internal circuit description.
+
+[27] Detecting Statistical Interactions from Neural Network Weights (2018)
+Key: tsang2018detecting
+Primary source: https://openreview.net/pdf?id=ByOfBggRZ
+Checked: 2026-11-17; status: verified_online_primary_indexed_pdf_with_live_access_caveat
+Cited relevance: Neural Interaction Detection extracts input-feature statistical interactions by examining feedforward-network weights. It is a useful precedent for weight-based interaction discovery, not a test of transformer internal-link recovery.
+
+[28] Explaining Explanations: Axiomatic Feature Interactions for Deep Networks (2021)
+Key: janizek2021explaining
+Primary source: https://www.jmlr.org/papers/v22/20-1223.html
+Checked: 2026-11-17; status: verified_online_primary
+Cited relevance: Integrated Hessians is a principled approach to pairwise input-feature interactions. It establishes that interaction explanations are existing research, while leaving our internal-part and selected-circuit checks distinct.
+
+[29] How does This Interaction Affect Me? Interpretable Attribution for Feature Interactions (2020)
+Key: tsang2020archipelago
+Primary source: https://proceedings.neurips.cc/paper_files/paper/2020/hash/443dec3062d0286986e21dc0631734c9-Abstract.html
+Checked: 2026-11-17; status: verified_online_primary
+Cited relevance: Archipelago explicitly separates detecting nonadditive interactions from attributing a prediction to interacting groups. This reinforces that interaction strength and an explanatory claim need not be interchangeable.
+
+[30] The Local Interaction Basis: Identifying Computationally-Relevant and Sparsely Interacting Features in Neural Networks (2024)
+Key: bushnaq2024lib
+Primary source: https://arxiv.org/abs/2405.10928
+Checked: 2026-11-17; status: validated_primary_sources
+Cited relevance: Constructs a computationally motivated activation basis and sparse interaction graph. Relevant contrast: our experiments keep native heads/MLPs rather than learning a basis. The paper reports no substantial language-model interpretability/sparsity improvement, so do not claim LIB solved large-language-model decomposition.
+
+[31] Tracr: Compiled Transformers as a Laboratory for Interpretability (2023)
+Key: lindner2023tracr
+Primary source: https://proceedings.neurips.cc/paper_files/paper/2023/hash/771155abaae744e08576f1f3b4b7ac0d-Abstract-Conference.html
+Checked: 2026-11-17; status: validated_primary_sources
+Cited relevance: Compiles human-readable programs into transformers with known structure, providing ground truth for mechanistic evaluation. Supports the provenance and rationale for the small-model testbed.
+
+[32] InterpBench: Semi-Synthetic Transformers for Evaluating Mechanistic Interpretability Techniques (2024)
+Key: gupta2024interpbench
+Primary source: https://proceedings.neurips.cc/paper_files/paper/2024/hash/a8f7d43ae092d9a5295775eb17f3f4f7-Abstract-Datasets_and_Benchmarks_Track.html
+Checked: 2026-11-17; status: validated_primary_sources
+Cited relevance: Supplies known-circuit semi-synthetic transformers trained with strict interchange intervention training; directly identifies the evaluation benchmark used here. Do not equate its reference task circuit with every physical transformer connection.
+
+[33] MIB: A Mechanistic Interpretability Benchmark (2025)
+Key: mueller2025mib
+Primary source: https://proceedings.mlr.press/v267/mueller25a.html
+Checked: 2026-11-17; status: validated_primary_sources
+Cited relevance: Separately evaluates circuit localization and localization of task-relevant causal variables. Supports the argument that different interpretability outputs need distinct evaluation tracks.
+
+[34] Transformer Circuit Faithfulness Metrics are not Robust (2024)
+Key: miller2024robustness
+Primary source: https://arxiv.org/abs/2407.08734
+Checked: 2026-11-17; status: validated_primary_sources
+Cited relevance: Tests sensitivity of circuit faithfulness to ablation methodology. Direct precedent for our qualification that preservation is conditional on replacement choices and tested internal boundaries.
+
+[35] Are We Recovering Mechanisms? Objective-Level Recovery Gaps in Mechanistic Interpretability (2026)
+Key: geng2026recovery
+Primary source: https://arxiv.org/abs/2610.02098
+Checked: 2026-11-17; status: validated_primary_sources
+Cited relevance: Shows intervention-based faithfulness can prefer a behaviorally worse equally sized circuit due to altered computational context. Directly relevant limitation and prior work; our study is not the first general warning about misleading circuit scores.
+
+[36] Discovering additive structure in black box functions (2004)
+Key: hooker2004additive
+Primary source: https://doi.org/10.1145/1014052.1014122
+Checked: 2026-11-17; status: verified_online_primary
+Cited relevance: Provides established nonadditivity/additive-projection diagnostics for black-box functions and connects them to functional ANOVA. Appropriate prior for the general goal of concise interaction descriptions.
+
+[37] Global sensitivity indices for nonlinear mathematical models and their Monte Carlo estimates (2001)
+Key: sobol2001global
+Primary source: https://www.sciencedirect.com/science/article/abs/pii/S0378475400002706
+Checked: 2026-11-17; status: verified_online_primary
+Cited relevance: Classical variance-based sensitivity indices use an ANOVA decomposition under defined input/integration assumptions. It is a contrast explaining why summing our squared intervention scores is not an orthogonal output-variance decomposition.
+
+[38] The approximation of one matrix by another of lower rank (1936)
+Key: eckart1936approximation
+Primary source: https://doi.org/10.1007/BF02288367
+Checked: 2026-11-17; status: verified_online_primary
+Cited relevance: Classical foundation for least-squares low-rank matrix approximation. Cite for the leading-SVD rank-one fit to fully observed rectangular head-pair score tables.
+
+[39] The relationship between Precision-Recall and ROC curves (2006)
+Key: davis2006precisionrecall
+Primary source: https://doi.org/10.1145/1143844.1143874
+Checked: 2026-11-17; status: verified_online_primary_doi_metadata
+Cited relevance: Supports careful distinction between precision-recall and ROC evaluation under imbalanced labels. Use beside the direct-link AP/ROC metrics and the warning against comparing raw AP after changing the positive-label definition.
+
+[40] The Precision-Recall Plot Is More Informative than the ROC Plot When Evaluating Binary Classifiers on Imbalanced Datasets (2015)
+Key: saito2015precisionrecall
+Primary source: https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0118432
+Checked: 2026-11-17; status: verified_online_primary
+Cited relevance: Provides a clear primary analysis of PR and ROC behavior in imbalanced datasets. It motivates reporting label prevalence alongside AP when direct links are rare and the positive set is enlarged to include indirect paths.
+
+[41] Bootstrap Methods: Another Look at the Jackknife (1979)
+Key: efron1979bootstrap
+Primary source: https://doi.org/10.1214/aos/1176344552
+Checked: 2026-11-17; status: verified_online_primary_doi_metadata
+Cited relevance: Foundational citation for resampling input pairs to quantify variation of measured scores within each fixed model.
+

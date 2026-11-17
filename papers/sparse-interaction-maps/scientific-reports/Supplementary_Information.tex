@@ -1,0 +1,120 @@
+\documentclass[11pt,letterpaper]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb,amsthm,booktabs,array,graphicx,float}
+\usepackage[nopatch={eqnum,footnote}]{microtype}
+\usepackage{setspace}
+\usepackage[numbers,square,sort&compress]{natbib}
+\usepackage[hidelinks]{hyperref}
+\usepackage{lineno}
+\usepackage[font=small,labelfont=bf,labelsep=period,justification=raggedright,singlelinecheck=off]{caption}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0pt}
+\newcommand{\E}{\mathbb E}
+\newcommand{\R}{\mathbb R}
+\newcommand{\norm}[1]{\left\lVert#1\right\rVert}
+\newtheorem{proposition}{Example}
+\setlength{\emergencystretch}{2em}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.4em}
+\widowpenalty=10000
+\clubpenalty=10000
+\raggedright
+\doublespacing
+\hypersetup{pdftitle={Supplementary Information: Repeatable interaction scores do not guarantee a correct circuit},pdfauthor={Ihor Kendiukhov}}
+\begin{document}
+\linenumbers
+{\Large\textbf{Supplementary Information}}
+
+Repeatable interaction scores do not guarantee a correct circuit
+
+Ihor Kendiukhov
+
+\renewcommand{\thetable}{S\arabic{table}}
+\section*{Which claims passed their planned tests?}
+\begin{table}[H]
+\singlespacing\centering\small
+\caption{The main questions fixed before each test and what the results support.
+A positive part of a test does not turn a failed full test into a pass.}
+\begin{tabular}{>{\raggedright\arraybackslash}p{0.16\linewidth}>{\raggedright\arraybackslash}p{0.36\linewidth}>{\raggedright\arraybackslash}p{0.37\linewidth}}
+\toprule
+Study & Question fixed in advance & What passed or failed\\
+\midrule
+E31.1 & Do a few corrected block-pair scores repeat? & Main test failed;
+uncorrected scores suggested later tests.\\
+E31.2 & Do a few head pairs repeat and give a better choice of parts? & Full
+test failed; score coverage and reproduction of block interactions passed.\\
+E31.2 later check & Does a product of part scores explain the table? & Designed
+after the main result; no new model runs.\\
+E32.1 & Do pair scores find direct links better than simpler methods? & Main
+test failed; longer-path and product-fit checks were added afterward.\\
+E32.2 & Does choosing parts first help find direct links? & Both models failed
+the full requirements; all results retained.\\
+E32.3 & Do small part groups work, and is the selector better? & Groups passed
+3/3; the selection method beat comparisons in 1/3.\\
+E32.4 & Does a small connection set preserve the computation? & Full test
+passed in 1/3 models.\\
+E33 & Do scores repeat, concentrate in few pairs, and emphasize longer paths? &
+Repeatability passed 3/3; concentration and product fit passed 2/3;
+indirect pairs scored higher in both models with longer paths.\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section*{Tests aimed at individual connections}
+Cases 2 and 21 first chose a short list of parts, then targeted changes at
+individual connections between them. We compared this with pair scores,
+products of fitted part scores, and EAP methods tested across all connections.
+Neither model met the full success requirements. Table~\ref{tab:directed}
+reports both cases. We favor the comparison method by reporting whichever
+specified EAP version scored best after evaluation. This does not tell us
+which version to choose on a new task. The final column counts separate
+query/key/value connections; AP instead scores links grouped by their whole
+head or MLP. These columns therefore use different counting units.
+
+\begin{table}[H]
+\singlespacing\centering\footnotesize
+\caption{Ranking direct links on new inputs after first choosing parts.
+``Best EAP'' is the best-scoring specified EAP version for that model.
+Neither case passes the full planned test.}
+\label{tab:directed}
+\begin{tabular}{lrrrrr}
+\toprule
+Case & Pair AP & Product AP & Link-change AP & Best EAP AP & Links tested \\
+\midrule
+2 & 0.717 & 0.717 & 0.189 & 0.339 & 18.0\% \\
+21 & 0.700 & 0.417 & 0.591 & 0.417 & 16.0\% \\
+\bottomrule
+\end{tabular}
+% AP is on promoted whole-component labels. Candidate fraction uses fine Q/K/V edges.
+% Best EAP* variant is eap_absolute_max in case 2 and eap_ig_signed_max in case 21.
+% Both cases fail the registered useful and superiority conjunctions.
+
+\end{table}
+
+\section*{Saved data and checks}
+\subsection*{Files and score checks.}
+The accompanying evidence file lists the original source files, their hashes,
+the exact scores, and whether an analysis was planned or added after the
+results. The numbers are read from saved experimental outputs rather than
+rounded research notes. Original plans, model outputs, and score files are
+unchanged. Figures and the manuscript are built from separate derived files.
+The fresh-study registration is
+\path{notes/E33-SPARSE-INTERACTION-DIAGNOSTICS-REGISTRATION.json};
+its complete score record is
+\path{runs/e33_sparse_interaction_diagnostics_v1/summary.json}.
+An independent internal check recomputed all six new pair tables and scores
+exactly from saved outputs. It also checked input identities, reference links,
+source-code and model hashes, and run counts. This checks the saved executions;
+it is not an external replication or a second collection of model responses.
+
+\subsection*{Changes to the execution plans.}
+The first block-pair study stopped because two file mappings used a different
+key order. A separately recorded repair reused discovery data and was fixed
+before measuring confirmation changes. The small-part-group study also used a
+documented input-repair version. These histories are saved with the experiments.
+Reusing data already seen is not counted as a new independent confirmation.
+\end{document}
