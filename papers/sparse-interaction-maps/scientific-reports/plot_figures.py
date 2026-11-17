@@ -154,8 +154,7 @@ def example_figure():
     interaction /= interaction[allowed].max()
     titles = ("Copying chain:\nactual links", "Same chain:\ninteraction strength", "Shared output:\ninteraction strength")
     for axis, values, title, letter in zip(axes, (direct, np.ones((size, size)), interaction), titles, "abc", strict=True):
-        palette = plt.get_cmap("Blues").copy()
-        palette.set_bad("#e8e8e8")
+        palette = plt.get_cmap("Blues").with_extremes(bad="#e8e8e8")
         # Draw cells as vector polygons, rather than embedding a raster heatmap.
         axis.set_facecolor("#e8e8e8")
         axis.pcolormesh(np.arange(size + 1) - 0.5, np.arange(size + 1) - 0.5,
@@ -203,7 +202,7 @@ def historical_figure(source: dict):
     axes[2].set(title="Case 97:\nwhere scores go", ylabel="Share of total pair score", ylim=(0, 0.7))
     axes[2].set_xticks(positions, ["Direct\nlink", "Longer\npath", "No\nknown\npath"])
     axes[2].yaxis.set_major_formatter(PercentFormatter(1))
-    axes[2].text(0.5, -0.35, "Top ten: 5 direct links\n+ 5 longer paths\nPath check added after main test",
+    axes[2].text(0.5, -0.35, "Top ten: 5 direct links\n+ 5 longer paths\nPath check added\nafter the main test",
                  transform=axes[2].transAxes, ha="center", va="top", fontsize=8)
     for axis, letter in zip(axes, "abc", strict=True):
         panel_label(axis, letter)
