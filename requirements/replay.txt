@@ -1,0 +1,7 @@
+# Tested offline-analysis environment; no model-acquisition stack is installed.
+# Python 3.11.17 (other 3.11 patch versions may work but are not acquisition claims).
+torch==2.3.1
+numpy==1.26.4
+scipy==1.14.0
+matplotlib==3.8.2
+pytest==8.3.5

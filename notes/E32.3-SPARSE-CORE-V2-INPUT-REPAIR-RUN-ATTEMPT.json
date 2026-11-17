@@ -1,0 +1,6 @@
+{
+  "canonical_run_directory": "/Volumes/Crucial X6/MacBook/Code/fundamental-mechinterp/runs/e32_3_sparse_core_v2_input_repair",
+  "registration_sha256": "1c42b4761573286af06604094efc5a85b0f873d773a99afe97d9767e25ab86a4",
+  "schema_version": "e32_3_run_attempt_v1",
+  "status": "irreversible_attempt_reserved_before_run_directory_or_model"
+}

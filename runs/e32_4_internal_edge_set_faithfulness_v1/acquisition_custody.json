@@ -1,0 +1,169 @@
+{
+  "acquisition_artifact_sha256": {
+    "case129_confirmation.pt": "72d6d9d54ce18936db8e0080df310844fc2c7bce75d2c501e8991c18bae6941a",
+    "case129_discovery.pt": "f41ef061ae33fde6ea288044ff28b85f70a1b93ce0cf4f878407db1475ec751c",
+    "case25_confirmation.pt": "dc7f4eec768399d328fdb90ae7539b77cc7e3754681844dff2eac50b51fffdf5",
+    "case25_discovery.pt": "2f82405929ff1d56a460d61013f96b731365f3e77138136b7264e9c2e51a4d10",
+    "case58_confirmation.pt": "cce03cd75ed43c02d589522921860c786923d97f7cfbe89201d9fa6462541455",
+    "case58_discovery.pt": "49301aa2c83060c7c37c5d05ba234a8070b0c381051130f3d1dc42348bac30ef"
+  },
+  "actual_query_accounting": {
+    "exact_split_sum_verified": true,
+    "overall": {
+      "backward_passes_inferred_from_pinned_control_flow": 21,
+      "gradient_examples": 1344,
+      "gradient_forwards": 21,
+      "model_examples": 245952,
+      "physical_forwards": 1945
+    },
+    "query_ceiling_pass": true,
+    "registered_ceilings": {
+      "129": {
+        "confirmation": {
+          "maximum_model_examples": 69888,
+          "maximum_physical_forwards": 545
+        },
+        "discovery": {
+          "backward_passes_inferred_from_pinned_control_flow": 7,
+          "gradient_examples": 448,
+          "gradient_forwards": 7,
+          "model_examples": 14976,
+          "physical_forwards": 128
+        }
+      },
+      "25": {
+        "confirmation": {
+          "maximum_model_examples": 69888,
+          "maximum_physical_forwards": 545
+        },
+        "discovery": {
+          "backward_passes_inferred_from_pinned_control_flow": 7,
+          "gradient_examples": 448,
+          "gradient_forwards": 7,
+          "model_examples": 7232,
+          "physical_forwards": 64
+        }
+      },
+      "58": {
+        "confirmation": {
+          "maximum_model_examples": 69888,
+          "maximum_physical_forwards": 545
+        },
+        "discovery": {
+          "backward_passes_inferred_from_pinned_control_flow": 7,
+          "gradient_examples": 448,
+          "gradient_forwards": 7,
+          "model_examples": 14592,
+          "physical_forwards": 122
+        }
+      },
+      "confirmation_formula": {
+        "actual_counts_must_equal_the_deduplicated_authorized_mask_plan": true,
+        "eligibility_forwards": 2,
+        "mean_corrupt_forwards_including_cache_and_two_baselines": 8,
+        "mean_corrupt_masks": 5,
+        "resample_maximum_forwards_including_cache_and_two_baselines": 535,
+        "resample_maximum_nonempty_distinct_masks": 532
+      },
+      "overall": {
+        "backward_passes_inferred_from_pinned_control_flow": 21,
+        "gradient_examples": 1344,
+        "gradient_forwards": 21,
+        "maximum_model_examples": 246464,
+        "maximum_physical_forwards": 1949
+      }
+    },
+    "splits": {
+      "129": {
+        "confirmation": {
+          "backward_passes_inferred_from_pinned_control_flow": 0,
+          "gradient_examples": 0,
+          "gradient_forwards": 0,
+          "model_examples": 69632,
+          "physical_forwards": 543
+        },
+        "discovery": {
+          "backward_passes_inferred_from_pinned_control_flow": 7,
+          "gradient_examples": 448,
+          "gradient_forwards": 7,
+          "model_examples": 14976,
+          "physical_forwards": 128
+        }
+      },
+      "25": {
+        "confirmation": {
+          "backward_passes_inferred_from_pinned_control_flow": 0,
+          "gradient_examples": 0,
+          "gradient_forwards": 0,
+          "model_examples": 69632,
+          "physical_forwards": 543
+        },
+        "discovery": {
+          "backward_passes_inferred_from_pinned_control_flow": 7,
+          "gradient_examples": 448,
+          "gradient_forwards": 7,
+          "model_examples": 7232,
+          "physical_forwards": 64
+        }
+      },
+      "58": {
+        "confirmation": {
+          "backward_passes_inferred_from_pinned_control_flow": 0,
+          "gradient_examples": 0,
+          "gradient_forwards": 0,
+          "model_examples": 69888,
+          "physical_forwards": 545
+        },
+        "discovery": {
+          "backward_passes_inferred_from_pinned_control_flow": 7,
+          "gradient_examples": 448,
+          "gradient_forwards": 7,
+          "model_examples": 14592,
+          "physical_forwards": 122
+        }
+      }
+    }
+  },
+  "authorization_sha256": {
+    "129": "661d471655a52c0bf5b3376452b518c5b6dcae9b33bed34e28005ef2ab592150",
+    "25": "7dbf8d87a8b98ca2275031c572c522889f61e169106215ac435d201fa4d60784",
+    "58": "1d5e7df133fe9bd413ecd999daf9b2d4c33abbe3f97c9e71a8621432044cb68d"
+  },
+  "global_behavior_screen_audit": {
+    "129": {
+      "confirmation_selected_role_rows": 256,
+      "cross_split_overlap_count": 0,
+      "discovery_selected_role_rows": 128,
+      "verified": true
+    },
+    "25": {
+      "confirmation_selected_role_rows": 256,
+      "cross_split_overlap_count": 0,
+      "discovery_selected_role_rows": 128,
+      "verified": true
+    },
+    "58": {
+      "confirmation_selected_role_rows": 256,
+      "cross_split_overlap_count": 0,
+      "discovery_selected_role_rows": 128,
+      "verified": true
+    }
+  },
+  "registration_sha256": "a49d342ec14613e5153cf0809e75c7712bc2cac862bbb798933c22b32b0f564a",
+  "run_attempt_sha256": "f0b938367e3159e1f74722c6952c25808a816af1bb1aa6171a086f1434bdb24c",
+  "schema_version": "e32_4_internal_edge_set_faithfulness_v1_acquisition_custody",
+  "stage_custody_sha256": {
+    "case129_confirmation_authorization.json": "661d471655a52c0bf5b3376452b518c5b6dcae9b33bed34e28005ef2ab592150",
+    "case129_confirmation_custody.json": "9304bc30bade99c527d4743df54d919df8d47e8d21028c42a753b7d0052b3e2c",
+    "case129_discovery_custody.json": "c7abd0c44f76c34365456d06f986a702910bc29eb8a2eae854399d2e35296664",
+    "case25_confirmation_authorization.json": "7dbf8d87a8b98ca2275031c572c522889f61e169106215ac435d201fa4d60784",
+    "case25_confirmation_custody.json": "d8bdf18708e35daa24f9260b6f9b39a4b4b3d149fcf915b7f1f9cd7e85664f2c",
+    "case25_discovery_custody.json": "05003db4bb062615d4e9057aaaec204f7b76d80dbf7dfbb25de5f41a795e8f6d",
+    "case58_confirmation_authorization.json": "1d5e7df133fe9bd413ecd999daf9b2d4c33abbe3f97c9e71a8621432044cb68d",
+    "case58_confirmation_custody.json": "9e45a27c8cf712d371acaa35dfb21db0f265ae70d3f429b4e3bb7c11cde4453f",
+    "case58_discovery_custody.json": "4c181b2603b83b0a78014deb9a85b223513672c526eccbf100959cb0ed79efc8",
+    "global_behavior_screen.json": "cb5787834cd46b6fee929019664b92e3e9d1785e5b410bc742e2830cff882124",
+    "input_preflight.json": "bde735aed71643f91c0aee8452bb0bc2f0b4e154708e1dcb410a44eec6690e86"
+  },
+  "status": "complete_before_score_attempt"
+}

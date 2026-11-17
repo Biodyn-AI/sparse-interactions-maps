@@ -1,0 +1,27 @@
+{
+  "acquisition_artifact_sha256": {
+    "case129_confirmation.pt": "d7d9e8e9bd34a56b41ea02a00ff6d91a158350ecdc0a467bee2af0e2a2be6187",
+    "case129_discovery.pt": "b1fb211ed7ae7632e2e6defb79b006baa09d2211fbeb0d0c0e48daf2740a3715",
+    "case25_confirmation.pt": "add180bed12e2929eb71efafa562007f35371be534643cff094e777c3a6544f2",
+    "case25_discovery.pt": "affb023d95c57c138d084d16e74b2850e24839b0a2d8b946c81dfcd507c2b0d8",
+    "case58_confirmation.pt": "002ad36ae843927225270dec99d4b064a1cd17cdb67e98af55dce16b425da17d",
+    "case58_discovery.pt": "30b86f39749105371e5853ee84a7bf193ad987ccb9a2cf3e8e6c0bc00b7bf92c"
+  },
+  "custody_artifact_sha256": {
+    "acquisition_custody.json": "417c42f9fa89639b400f1de15796e6d0674f079379789ecc73b4a2b16ba27b47",
+    "case129_confirmation_authorization.json": "6f76bbc0f2414290c4406a57e575144a7cd1e14a2732101afa8700cac31a6d25",
+    "case129_confirmation_custody.json": "5bd210fcbb693035e8f4a2103946c8d9f3bb7be65db88c81dd9929644eadc669",
+    "case129_discovery_custody.json": "88547f2f64e083c39841e42c4e644c62dace40b0b6676d32e0632b974dc3e822",
+    "case25_confirmation_authorization.json": "61170db4123ee1f36ee93c02c96698edeeeb6a473c17e241039241039168abe1",
+    "case25_confirmation_custody.json": "c2af1c023feb88b642e3029f095e41cfb039544e2b8b9506ea698d5ad6fad40b",
+    "case25_discovery_custody.json": "ea94e5ba592ba47374be23ec11317d15fd7a3fc4cef963d589a99409757cc696",
+    "case58_confirmation_authorization.json": "ebd0b6e01998951968fd284463dbbbd2d8f5b2ebf3619801feb544166451fd21",
+    "case58_confirmation_custody.json": "721ebbec7d834b758208aa85530f95ef43c93ff36e7dfde6eac0ef369242fbcd",
+    "case58_discovery_custody.json": "1cc9f5a6cc29026b157d15f8b15cd3a96326c0438f2e120c10716261d8aede5f",
+    "global_behavior_screen.json": "940fe6826d08c058e92f1c0741005f4317f515cf807d6dc119ec07933ce63919"
+  },
+  "registration_sha256": "1c42b4761573286af06604094efc5a85b0f873d773a99afe97d9767e25ab86a4",
+  "run_attempt_sha256": "beac0e8d368c2a2f878819ef16a63d1f596ac2239f88d8b76fb36ec87a2255b2",
+  "schema_version": "e32_3_score_attempt_v1",
+  "status": "durable_before_score_stage_confirmation_outcome_reload_or_scoring"
+}

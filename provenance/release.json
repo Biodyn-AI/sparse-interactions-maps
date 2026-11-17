@@ -1,0 +1,8 @@
+{
+  "tag": "v1.0.0",
+  "url": "https://github.com/Biodyn-AI/sparse-interactions-maps/releases/download/v1.0.0/Repository_Data_and_Code.zip",
+  "filename": "Repository_Data_and_Code.zip",
+  "size_bytes": 1136351065,
+  "sha256": "2f4f1ffcd8e5b68ece55b86868c74e18bb868b1bedba9193c0bfa7a10c8f27ac",
+  "purpose": "Complete response arrays and immutable analysis/source archive; no model weights."
+}

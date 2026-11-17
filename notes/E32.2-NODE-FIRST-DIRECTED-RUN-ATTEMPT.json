@@ -1,0 +1,6 @@
+{
+  "canonical_run_directory": "/Volumes/Crucial X6/MacBook/Code/fundamental-mechinterp/runs/e32_2_node_first_directed_v1",
+  "registration_sha256": "739af7d479f46ee03c91c3c50c237ca9c90bb022b9e5fa70923df5db031060aa",
+  "schema_version": "e32_2_run_attempt_reservation_v1",
+  "status": "irreversible_attempt_reserved_before_run_directory_or_model"
+}

@@ -1,0 +1,10 @@
+{
+  "schema_version": "e31_1_order_repair_geometry_custody_v2",
+  "status": "geometry_and_controls_frozen_before_patched_confirmation",
+  "registration_sha256": "247c78888c7abf37761d89e78f279a1fcec971e00ea2a54c32950c8e796052ee",
+  "recovery_attempt_sha256": "03445a32da56d376ada761bc6647d2fc99daed94b29b04a839206a12a25a498d",
+  "v1_discovery_labels_sha256": "e293f1c2895bf3ed3687a0f1aa7021cec453007d413ab6e0d1dde5082bb93e61",
+  "discovery_geometry_sha256": "5658578c1b9b846f0d33e53715686160406f2d56bb76379df1f009a71a651972",
+  "matched_control_support_count": 10000,
+  "patched_confirmation_outcomes_used": false
+}

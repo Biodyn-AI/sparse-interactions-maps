@@ -1,0 +1,52 @@
+{
+  "schema_version": "e31_2_global_attempt_v1",
+  "status": "consumed_before_tokenizer_or_model_load",
+  "registration": "/Volumes/Crucial X6/MacBook/Code/fundamental-mechinterp/notes/E31.2-MIXED-RESOLUTION-REGISTRATION.json",
+  "registration_sha256": "bad36e15f37dd7147c43fcc4ecb5cf8db0f3bcf2525645692e19079d7ff26ede",
+  "protocol_sha256": "fe7b400f6ace57d1a265b73a66e413cf8e9f7a8dfd4a187d6864e8dce600c216",
+  "parent_score_sha256": "ddde7dcdef70525f8fdc3ccc75fe4c57852f87be805b4406a8c716624be57ba5",
+  "source_code_sha256_verified_before_attempt": {
+    "e31/__init__.py": "089a30a9aa6fcefbba3e619455a70aeb5f124457e662a6a1e7858f29126c0a20",
+    "e31/mixed_resolution_panel.py": "a208dfd11e3be6a938415ad299eae9a9614249d36019f1ead2a3247ef265cc80",
+    "e31/mixed_resolution_protocol.py": "3c9a2bd49a734a622122da04b8e3d01429eef9748e32e65503ab3527227d26d0",
+    "e31/mixed_resolution_scoring.py": "0d85b14ad50d7f9d3016c2f25d5b867706f111cc766df44329cfb2e5c9adadec",
+    "e31/e31_2_head_patch_runner.py": "1b821033d24959d5adc3e1c39c08992fb382c294e8c064679aaf632c951bc1a9",
+    "e31/e31_2_head_acquisition.py": "0ebc6f2922c1a3916efacd80d296957f5259c3fb4579cdc92004422de2781d81",
+    "e31/e31_2_custody.py": "d9bb4492c709e29a39a6b2528f80809a8b3c10fce8bdbee4f196d25deaca3b58",
+    "e31/e31_2_registration.py": "58609ee59b4ac0eb8c6259c2b40151b55be8aa2793f50f35c0ecd3cf73322e6f",
+    "e31/e31_2_orchestration.py": "cdfcc175d52a6ea780aaa4e6d09a29c91015d320d5075c04f2e470174956223c",
+    "e31/run_e31_2_mixed_resolution.py": "0c35632e6b1a4d33232a4f033c679dc4454b62e27f89db174b1fb3b7d09e6d0a",
+    "e31/prospective_acquisition.py": "6c9775be7a98e718af446d21d4b719a96d8119385964a1f5f4e145ebc4c7acd2",
+    "e31/prospective_custody.py": "0ef8fb4f768b5ed480ed5c54fa7bec07f0fdaf64406fb26b37bddb0cf3d32ef1",
+    "e31/prospective_protocol.py": "d6edde796e31434a505738c43fc0bfc997e75726c04affcf41488e9a5e01daac",
+    "e31/prospective_registration.py": "a2ca077faacd9889cfd3ab635acdfbd8c69e05ab9a6cd2063ade52c38d67bc54",
+    "e31/panel.py": "e33749d5395a6311c108dd1e7d71d80aa0b7cc10540658016d4aaff3ffa87e41",
+    "e29/__init__.py": "efa04ac62c0b88d7c18b1dc64214d91289cc9ab44a870453d4b3937090f372ee",
+    "e29/e29_15_ioi_acquisition.py": "0f28a9b61161a07fcf2e2e3918484f22d8af437850c106278fff61f155d6ae56",
+    "e29/e29_15_ioi_patch_runner.py": "f3899408860a3f7a26a31dd01ed44ea37dd3c843df7aebe8efc3bbb07f6720d8",
+    "e29/e29_10_float64_protocol.py": "c387c3ad19e0e8fb2f438ac61292b4124c973a1bfee725b9d06929d6347b4e3e",
+    "e29/e29_10_float64_runner.py": "c9e2a0840830c8e709c63bb41178a3dae19aa24e9fcacd54f6b5f9afa2b87214",
+    "e29/e29_9_seven_gate_protocol.py": "1686ca75b8f6bff63044c272366986cf1871465d10d4ddd540ba27a0dd269cd0",
+    "e29/generalized_sublayer_patch.py": "fab05aa67a033d12b4d1ae09484e505009a888333fb3d40021a91395c98a2903",
+    "e30/__init__.py": "ab76d029969f266e4b48ae4ab74150cea7ad67d5c1d449d59d0e01678e296c28",
+    "e30/custody.py": "deaf93b7b2db3c221738e3c9cffe3729272738c4c7a97381102fd36843cb4638"
+  },
+  "checkpoint_sha256_verified_before_attempt": {
+    "config.json": "0daed7749b4f02b8f76240d5444551d7b08712dab4d0adb8239c56ba823bb7b4",
+    "generation_config.json": "ed0b32ac72c0f5f44a719abb2d7786ea5146c871f83717b7f2018065954de02b",
+    "merges.txt": "1ce1664773c50f3e0cc8842619a93edc4624525b728b188a9e0be33b7726adc5",
+    "model.safetensors": "248dfc3911869ec493c76e65bf2fcf7f615828b0254c12b473182f0f81d3a707",
+    "tokenizer.json": "8414cab924d8b9b33013f0d221c5862f365ee9be39c5c2bfae8a5a9e970478a6",
+    "tokenizer_config.json": "5e04eb606e3a1583530a42e36c2a6b6615c86f34fe77e44d9ddeb43ff940931f",
+    "vocab.json": "196139668be63f3b5d6574427317ae82f612a97c5d1cdaf36ed2256dbf636783"
+  },
+  "environment_verified_before_attempt": {
+    "python": "3.12.9",
+    "torch": "2.13.0",
+    "transformers": "5.14.1",
+    "safetensors": "0.8.0",
+    "platform": "macOS-26.3-arm64-arm-64bit"
+  },
+  "maximum_registered_model_forwards": 101504,
+  "one_process_one_global_clean_screen": true
+}

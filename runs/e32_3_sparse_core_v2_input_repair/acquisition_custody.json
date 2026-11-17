@@ -1,0 +1,151 @@
+{
+  "acquisition_artifact_sha256": {
+    "case129_confirmation.pt": "d7d9e8e9bd34a56b41ea02a00ff6d91a158350ecdc0a467bee2af0e2a2be6187",
+    "case129_discovery.pt": "b1fb211ed7ae7632e2e6defb79b006baa09d2211fbeb0d0c0e48daf2740a3715",
+    "case25_confirmation.pt": "add180bed12e2929eb71efafa562007f35371be534643cff094e777c3a6544f2",
+    "case25_discovery.pt": "affb023d95c57c138d084d16e74b2850e24839b0a2d8b946c81dfcd507c2b0d8",
+    "case58_confirmation.pt": "002ad36ae843927225270dec99d4b064a1cd17cdb67e98af55dce16b425da17d",
+    "case58_discovery.pt": "30b86f39749105371e5853ee84a7bf193ad987ccb9a2cf3e8e6c0bc00b7bf92c"
+  },
+  "actual_query_accounting": {
+    "by_family": {
+      "atlas": {
+        "model_examples": 47424,
+        "physical_forwards": 20
+      },
+      "atlas_smoke": {
+        "model_examples": 3072,
+        "physical_forwards": 27
+      },
+      "eap_ig5": {
+        "backward_passes_inferred_from_pinned_control_flow": 36,
+        "grad_enabled_forwards": 36,
+        "gradient_examples": 3456,
+        "model_examples": 4032,
+        "no_grad_forwards": 6,
+        "physical_forwards": 42
+      },
+      "eligibility": {
+        "model_examples": 1728,
+        "physical_forwards": 12
+      },
+      "exact_fine": {
+        "backward_passes": 0,
+        "grad_enabled_forwards": 0,
+        "model_examples": 189312,
+        "no_grad_forwards": 1972,
+        "physical_forwards": 1972
+      },
+      "preparation": {
+        "model_examples": 2304,
+        "physical_forwards": 24
+      },
+      "set_interventions": {
+        "model_examples": 54912,
+        "physical_forwards": 15
+      }
+    },
+    "panel_count": 6,
+    "per_panel": {
+      "case129_confirmation": {
+        "backward_passes_inferred_from_pinned_control_flow": 6,
+        "gradient_examples": 768,
+        "model_examples": 86656,
+        "physical_forwards": 440
+      },
+      "case129_discovery": {
+        "backward_passes_inferred_from_pinned_control_flow": 6,
+        "gradient_examples": 384,
+        "model_examples": 35200,
+        "physical_forwards": 444
+      },
+      "case25_confirmation": {
+        "backward_passes_inferred_from_pinned_control_flow": 6,
+        "gradient_examples": 768,
+        "model_examples": 44800,
+        "physical_forwards": 170
+      },
+      "case25_discovery": {
+        "backward_passes_inferred_from_pinned_control_flow": 6,
+        "gradient_examples": 384,
+        "model_examples": 14272,
+        "physical_forwards": 174
+      },
+      "case58_confirmation": {
+        "backward_passes_inferred_from_pinned_control_flow": 6,
+        "gradient_examples": 768,
+        "model_examples": 86656,
+        "physical_forwards": 440
+      },
+      "case58_discovery": {
+        "backward_passes_inferred_from_pinned_control_flow": 6,
+        "gradient_examples": 384,
+        "model_examples": 35200,
+        "physical_forwards": 444
+      }
+    },
+    "schema_version": "e32_3_actual_query_accounting_v1",
+    "status": "observed_forward_counters_plus_pinned_eap_backward_control_flow",
+    "totals": {
+      "backward_passes": 0,
+      "backward_passes_inferred_from_pinned_control_flow": 36,
+      "grad_enabled_forwards": 36,
+      "gradient_examples": 3456,
+      "model_examples": 302784,
+      "no_grad_forwards": 1978,
+      "physical_forwards": 2112
+    }
+  },
+  "authorization_sha256": {
+    "129": "6f76bbc0f2414290c4406a57e575144a7cd1e14a2732101afa8700cac31a6d25",
+    "25": "61170db4123ee1f36ee93c02c96698edeeeb6a473c17e241039241039168abe1",
+    "58": "ebd0b6e01998951968fd284463dbbbd2d8f5b2ebf3619801feb544166451fd21"
+  },
+  "global_behavior_screen_audit": {
+    "all_cases_screened_before_intervention": true,
+    "case_order": [
+      58,
+      129,
+      25
+    ],
+    "cases": {
+      "129": {
+        "confirmation_role_rows": 256,
+        "cross_split_overlap_count": 0,
+        "discovery_role_rows": 128,
+        "smoke_unique_rows": 192
+      },
+      "25": {
+        "confirmation_role_rows": 256,
+        "cross_split_overlap_count": 0,
+        "discovery_role_rows": 128,
+        "smoke_unique_rows": 190
+      },
+      "58": {
+        "confirmation_role_rows": 256,
+        "cross_split_overlap_count": 0,
+        "discovery_role_rows": 128,
+        "smoke_unique_rows": 192
+      }
+    },
+    "cross_case_token_ids_compared": false,
+    "schema_version": "e32_3_global_behavior_screen_audit_v1",
+    "total_scientific_role_rows": 1152
+  },
+  "registration_sha256": "1c42b4761573286af06604094efc5a85b0f873d773a99afe97d9767e25ab86a4",
+  "run_attempt_sha256": "beac0e8d368c2a2f878819ef16a63d1f596ac2239f88d8b76fb36ec87a2255b2",
+  "schema_version": "e32_3_acquisition_custody_v1",
+  "stage_custody_sha256": {
+    "case129_confirmation_authorization.json": "6f76bbc0f2414290c4406a57e575144a7cd1e14a2732101afa8700cac31a6d25",
+    "case129_confirmation_custody.json": "5bd210fcbb693035e8f4a2103946c8d9f3bb7be65db88c81dd9929644eadc669",
+    "case129_discovery_custody.json": "88547f2f64e083c39841e42c4e644c62dace40b0b6676d32e0632b974dc3e822",
+    "case25_confirmation_authorization.json": "61170db4123ee1f36ee93c02c96698edeeeb6a473c17e241039241039168abe1",
+    "case25_confirmation_custody.json": "c2af1c023feb88b642e3029f095e41cfb039544e2b8b9506ea698d5ad6fad40b",
+    "case25_discovery_custody.json": "ea94e5ba592ba47374be23ec11317d15fd7a3fc4cef963d589a99409757cc696",
+    "case58_confirmation_authorization.json": "ebd0b6e01998951968fd284463dbbbd2d8f5b2ebf3619801feb544166451fd21",
+    "case58_confirmation_custody.json": "721ebbec7d834b758208aa85530f95ef43c93ff36e7dfde6eac0ef369242fbcd",
+    "case58_discovery_custody.json": "1cc9f5a6cc29026b157d15f8b15cd3a96326c0438f2e120c10716261d8aede5f",
+    "global_behavior_screen.json": "940fe6826d08c058e92f1c0741005f4317f515cf807d6dc119ec07933ce63919"
+  },
+  "status": "complete_before_score_attempt"
+}

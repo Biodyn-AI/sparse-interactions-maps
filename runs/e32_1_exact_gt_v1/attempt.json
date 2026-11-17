@@ -1,0 +1,7 @@
+{
+  "maximum_model_examples_if_all_cases_run": 112032,
+  "maximum_model_examples_if_primary_fails": 26592,
+  "registration_sha256": "7e3627e70bcfd7be63c742fc1b6d7c7a81d3d4202cbcb3cbae0bf8f4f2e883b2",
+  "schema_version": "e32_1_attempt_v1",
+  "status": "durable_before_first_model_or_gt_outcome_open"
+}

@@ -1,0 +1,93 @@
+{
+  "acquisition_artifact_sha256": {
+    "case21_confirmation.pt": "30741e602ab2cf13f8c188e4b36d0de2efa82cd1be2fae2a894039ea63840e56",
+    "case21_discovery.pt": "d0ddc237502a259d0028012f83743070208496d3d3a9c0fd3c2b1c0e5c4d0c5f",
+    "case2_confirmation.pt": "875287b243820660919fc2153e6e18608dda2eb4124a8459d282da3fe8d666bc",
+    "case2_discovery.pt": "d7a6fc47aee4377aa18d8f53021976a2fdf1503b5759eb240cd8fcc73028c607"
+  },
+  "actual_query_accounting": {
+    "backward_passes": 28,
+    "backward_passes_observed_directly": false,
+    "backward_passes_status": "inferred_from_verified_official_eap_control_flow",
+    "by_split": {
+      "case21_confirmation": {
+        "backward_passes": 7,
+        "grad_enabled_forwards": 7,
+        "model_examples": 134080,
+        "no_grad_forwards": 846,
+        "physical_forwards": 853
+      },
+      "case21_discovery": {
+        "backward_passes": 7,
+        "grad_enabled_forwards": 7,
+        "model_examples": 23392,
+        "no_grad_forwards": 164,
+        "physical_forwards": 171
+      },
+      "case2_confirmation": {
+        "backward_passes": 7,
+        "grad_enabled_forwards": 7,
+        "model_examples": 134080,
+        "no_grad_forwards": 846,
+        "physical_forwards": 853
+      },
+      "case2_discovery": {
+        "backward_passes": 7,
+        "grad_enabled_forwards": 7,
+        "model_examples": 24416,
+        "no_grad_forwards": 180,
+        "physical_forwards": 187
+      }
+    },
+    "grad_enabled_forwards": 28,
+    "model_examples": 315968,
+    "no_grad_forwards": 2036,
+    "operational_budget_included": false,
+    "physical_forwards": 2064,
+    "schema_version": "e32_2_actual_query_accounting_v1",
+    "source": "observed_forward_counters_plus_pinned_official_backward_control_flow"
+  },
+  "case_authorization_sha256": {
+    "2": "5c13713059c76cd5634cec5c96828dd02a304f45e5782d47b9f2fc702b22997a",
+    "21": "a5909ed26b60cf212e82e9a85e4e38a3d5699fb7ae34f5fbc5a60971a7550b0a"
+  },
+  "panel_custody": {
+    "all_cases_mandatory": true,
+    "case_order": [
+      2,
+      21
+    ],
+    "cases": {
+      "2": {
+        "confirmation_selected_role_rows": 256,
+        "cross_split_overlap_count": 0,
+        "discovery_selected_role_rows": 128,
+        "prior_candidate_row_count": 480,
+        "prior_overlap_count": 0
+      },
+      "21": {
+        "confirmation_selected_role_rows": 256,
+        "cross_split_overlap_count": 0,
+        "discovery_selected_role_rows": 128,
+        "prior_candidate_row_count": 474,
+        "prior_overlap_count": 0
+      }
+    },
+    "cross_case_policy": "token_ids_are_task_local_not_shared_row_identities",
+    "cross_case_token_ids_compared": false,
+    "schema_version": "e32_2_complete_panel_custody_v1",
+    "total_selected_role_rows": 768
+  },
+  "registration_sha256": "739af7d479f46ee03c91c3c50c237ca9c90bb022b9e5fa70923df5db031060aa",
+  "run_attempt_sha256": "8fb54d7c23e3c8c74e0bde7d0a58bc3643ccda2736437ff0c1582785fc2993ab",
+  "schema_version": "e32_2_acquisition_custody_v1",
+  "stage_custody_sha256": {
+    "case21_confirmation_authorization.json": "a5909ed26b60cf212e82e9a85e4e38a3d5699fb7ae34f5fbc5a60971a7550b0a",
+    "case21_confirmation_custody.json": "a338fe0d838b36788114e2e6255ec6ecdbb059050142b84e8085c45189e91be1",
+    "case21_discovery_custody.json": "7ef11a3df651019a09e26676e3ecb597a7e7cce57609cc917eae7226269624ba",
+    "case2_confirmation_authorization.json": "5c13713059c76cd5634cec5c96828dd02a304f45e5782d47b9f2fc702b22997a",
+    "case2_confirmation_custody.json": "b1007616abe581ef7ed901ff691138c5b4e3a6c5fd768290cc6c4e78a13972a7",
+    "case2_discovery_custody.json": "fbe5248e3c211ee02eea18f3ff5ce30a8faa5eddc804f33450d8ec60245a1cfd"
+  },
+  "status": "complete_before_score_attempt"
+}

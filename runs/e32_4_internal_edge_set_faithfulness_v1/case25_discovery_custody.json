@@ -1,0 +1,56 @@
+{
+  "artifact_filename": "case25_discovery.pt",
+  "artifact_sha256": "2f82405929ff1d56a460d61013f96b731365f3e77138136b7264e9c2e51a4d10",
+  "case_id": 25,
+  "confirmation_authorization_sha256": null,
+  "panel_identity_sha256": "1caab5419f87fe29a02455cf211b46fb68fa9dca242df9a9e6e733e889980f8b",
+  "query_accounting": {
+    "behavioral_eligibility": {
+      "backward_passes_inferred_from_pinned_control_flow": 0,
+      "gradient_examples": 0,
+      "gradient_forwards": 0,
+      "model_examples": 192,
+      "physical_forwards": 2
+    },
+    "core_singleton_replacement": {
+      "backward_passes_inferred_from_pinned_control_flow": 0,
+      "gradient_examples": 0,
+      "gradient_forwards": 0,
+      "model_examples": 2432,
+      "physical_forwards": 38
+    },
+    "eap_ig5": {
+      "backward_passes_inferred_from_pinned_control_flow": 6,
+      "gradient_examples": 384,
+      "gradient_forwards": 6,
+      "model_examples": 448,
+      "physical_forwards": 7
+    },
+    "regular_eap": {
+      "backward_passes_inferred_from_pinned_control_flow": 1,
+      "gradient_examples": 64,
+      "gradient_forwards": 1,
+      "model_examples": 128,
+      "physical_forwards": 2
+    },
+    "total": {
+      "backward_passes_inferred_from_pinned_control_flow": 7,
+      "gradient_examples": 448,
+      "gradient_forwards": 7,
+      "model_examples": 7232,
+      "physical_forwards": 64
+    },
+    "whole_component_atlas": {
+      "backward_passes_inferred_from_pinned_control_flow": 0,
+      "gradient_examples": 0,
+      "gradient_forwards": 0,
+      "model_examples": 4032,
+      "physical_forwards": 15
+    }
+  },
+  "registration_sha256": "a49d342ec14613e5153cf0809e75c7712bc2cac862bbb798933c22b32b0f564a",
+  "run_attempt_sha256": "f0b938367e3159e1f74722c6952c25808a816af1bb1aa6171a086f1434bdb24c",
+  "schema_version": "e32_4_internal_edge_set_faithfulness_v1_split_custody",
+  "selected_role_row_count": 128,
+  "split": "discovery"
+}

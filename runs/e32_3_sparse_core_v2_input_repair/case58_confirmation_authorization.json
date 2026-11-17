@@ -1,0 +1,2457 @@
+{
+  "case_id": 58,
+  "discovery_artifact_sha256": "30b86f39749105371e5853ee84a7bf193ad987ccb9a2cf3e8e6c0bc00b7bf92c",
+  "discovery_custody_sha256": "1cc9f5a6cc29026b157d15f8b15cd3a96326c0438f2e120c10716261d8aede5f",
+  "frozen_supports": {
+    "all_supports": [
+      {
+        "kind": "deterministic",
+        "method": "singleton_output_effect",
+        "quantile": 0.25,
+        "selected_nodes": [
+          "blocks.0.hook_mlp_out",
+          "blocks.1.hook_mlp_out",
+          "blocks.2.attn.hook_result[0]",
+          "blocks.2.hook_mlp_out"
+        ],
+        "support_id": "curve:singleton_output_effect:q25"
+      },
+      {
+        "kind": "deterministic",
+        "method": "singleton_output_effect",
+        "quantile": 0.5,
+        "selected_nodes": [
+          "blocks.0.attn.hook_result[0]",
+          "blocks.0.attn.hook_result[1]",
+          "blocks.0.attn.hook_result[3]",
+          "blocks.0.hook_mlp_out",
+          "blocks.1.attn.hook_result[1]",
+          "blocks.1.hook_mlp_out",
+          "blocks.2.attn.hook_result[0]",
+          "blocks.2.hook_mlp_out"
+        ],
+        "support_id": "deterministic:singleton_output_effect:q50"
+      },
+      {
+        "kind": "deterministic",
+        "method": "singleton_output_effect",
+        "quantile": 0.75,
+        "selected_nodes": [
+          "blocks.0.attn.hook_result[0]",
+          "blocks.0.attn.hook_result[1]",
+          "blocks.0.attn.hook_result[2]",
+          "blocks.0.attn.hook_result[3]",
+          "blocks.0.hook_mlp_out",
+          "blocks.1.attn.hook_result[1]",
+          "blocks.1.attn.hook_result[2]",
+          "blocks.1.attn.hook_result[3]",
+          "blocks.1.hook_mlp_out",
+          "blocks.2.attn.hook_result[0]",
+          "blocks.2.attn.hook_result[1]",
+          "blocks.2.hook_mlp_out"
+        ],
+        "support_id": "curve:singleton_output_effect:q75"
+      },
+      {
+        "kind": "deterministic",
+        "method": "activation_shift_rms",
+        "quantile": 0.5,
+        "selected_nodes": [
+          "blocks.0.hook_mlp_out",
+          "blocks.1.attn.hook_result[3]",
+          "blocks.1.hook_mlp_out",
+          "blocks.2.attn.hook_result[0]",
+          "blocks.2.attn.hook_result[1]",
+          "blocks.2.attn.hook_result[2]",
+          "blocks.2.attn.hook_result[3]",
+          "blocks.2.hook_mlp_out"
+        ],
+        "support_id": "deterministic:activation_shift_rms:q50"
+      },
+      {
+        "kind": "deterministic",
+        "method": "raw_pair_incident_mean",
+        "quantile": 0.5,
+        "selected_nodes": [
+          "blocks.0.attn.hook_result[0]",
+          "blocks.0.attn.hook_result[1]",
+          "blocks.0.attn.hook_result[3]",
+          "blocks.0.hook_mlp_out",
+          "blocks.1.attn.hook_result[1]",
+          "blocks.1.hook_mlp_out",
+          "blocks.2.attn.hook_result[0]",
+          "blocks.2.hook_mlp_out"
+        ],
+        "support_id": "deterministic:raw_pair_incident_mean:q50"
+      },
+      {
+        "kind": "deterministic",
+        "method": "rank_one_incident_mean",
+        "quantile": 0.5,
+        "selected_nodes": [
+          "blocks.0.attn.hook_result[0]",
+          "blocks.0.attn.hook_result[1]",
+          "blocks.0.attn.hook_result[3]",
+          "blocks.0.hook_mlp_out",
+          "blocks.1.attn.hook_result[1]",
+          "blocks.1.hook_mlp_out",
+          "blocks.2.attn.hook_result[0]",
+          "blocks.2.hook_mlp_out"
+        ],
+        "support_id": "deterministic:rank_one_incident_mean:q50"
+      },
+      {
+        "kind": "deterministic",
+        "method": "eap_ig5_incident_mean",
+        "quantile": 0.5,
+        "selected_nodes": [
+          "blocks.0.attn.hook_result[0]",
+          "blocks.0.attn.hook_result[1]",
+          "blocks.0.attn.hook_result[3]",
+          "blocks.0.hook_mlp_out",
+          "blocks.1.attn.hook_result[3]",
+          "blocks.1.hook_mlp_out",
+          "blocks.2.attn.hook_result[0]",
+          "blocks.2.hook_mlp_out"
+        ],
+        "support_id": "deterministic:eap_ig5_incident_mean:q50"
+      },
+      {
+        "kind": "random",
+        "method": "random_control",
+        "quantile": 0.5,
+        "replicate": 0,
+        "selected_nodes": [
+          "blocks.0.attn.hook_result[2]",
+          "blocks.0.attn.hook_result[3]",
+          "blocks.0.hook_mlp_out",
+          "blocks.1.attn.hook_result[0]",
+          "blocks.1.attn.hook_result[2]",
+          "blocks.1.attn.hook_result[3]",
+          "blocks.2.attn.hook_result[0]",
+          "blocks.2.hook_mlp_out"
+        ],
+        "support_id": "random:q50:r00"
+      },
+      {
+        "kind": "random",
+        "method": "random_control",
+        "quantile": 0.5,
+        "replicate": 1,
+        "selected_nodes": [
+          "blocks.0.attn.hook_result[0]",
+          "blocks.0.attn.hook_result[2]",
+          "blocks.0.attn.hook_result[3]",
+          "blocks.1.attn.hook_result[1]",
+          "blocks.1.attn.hook_result[2]",
+          "blocks.1.attn.hook_result[3]",
+          "blocks.2.attn.hook_result[2]",
+          "blocks.2.hook_mlp_out"
+        ],
+        "support_id": "random:q50:r01"
+      },
+      {
+        "kind": "random",
+        "method": "random_control",
+        "quantile": 0.5,
+        "replicate": 2,
+        "selected_nodes": [
+          "blocks.0.attn.hook_result[1]",
+          "blocks.0.attn.hook_result[2]",
+          "blocks.0.attn.hook_result[3]",
+          "blocks.0.hook_mlp_out",
+          "blocks.1.attn.hook_result[2]",
+          "blocks.1.attn.hook_result[3]",
+          "blocks.2.attn.hook_result[3]",
+          "blocks.2.hook_mlp_out"
+        ],
+        "support_id": "random:q50:r02"
+      },
+      {
+        "kind": "random",
+        "method": "random_control",
+        "quantile": 0.5,
+        "replicate": 3,
+        "selected_nodes": [
+          "blocks.0.attn.hook_result[0]",
+          "blocks.0.attn.hook_result[1]",
+          "blocks.0.attn.hook_result[2]",
+          "blocks.0.hook_mlp_out",
+          "blocks.1.attn.hook_result[2]",
+          "blocks.2.attn.hook_result[0]",
+          "blocks.2.attn.hook_result[3]",
+          "blocks.2.hook_mlp_out"
+        ],
+        "support_id": "random:q50:r03"
+      },
+      {
+        "kind": "random",
+        "method": "random_control",
+        "quantile": 0.5,
+        "replicate": 4,
+        "selected_nodes": [
+          "blocks.0.attn.hook_result[0]",
+          "blocks.0.hook_mlp_out",
+          "blocks.1.attn.hook_result[0]",
+          "blocks.1.hook_mlp_out",
+          "blocks.2.attn.hook_result[0]",
+          "blocks.2.attn.hook_result[1]",
+          "blocks.2.attn.hook_result[3]",
+          "blocks.2.hook_mlp_out"
+        ],
+        "support_id": "random:q50:r04"
+      },
+      {
+        "kind": "random",
+        "method": "random_control",
+        "quantile": 0.5,
+        "replicate": 5,
+        "selected_nodes": [
+          "blocks.0.attn.hook_result[0]",
+          "blocks.0.attn.hook_result[1]",
+          "blocks.0.attn.hook_result[2]",
+          "blocks.1.attn.hook_result[2]",
+          "blocks.1.attn.hook_result[3]",
+          "blocks.2.attn.hook_result[0]",
+          "blocks.2.attn.hook_result[1]",
+          "blocks.2.attn.hook_result[3]"
+        ],
+        "support_id": "random:q50:r05"
+      },
+      {
+        "kind": "random",
+        "method": "random_control",
+        "quantile": 0.5,
+        "replicate": 6,
+        "selected_nodes": [
+          "blocks.0.attn.hook_result[3]",
+          "blocks.0.hook_mlp_out",
+          "blocks.1.attn.hook_result[3]",
+          "blocks.1.hook_mlp_out",
+          "blocks.2.attn.hook_result[0]",
+          "blocks.2.attn.hook_result[1]",
+          "blocks.2.attn.hook_result[3]",
+          "blocks.2.hook_mlp_out"
+        ],
+        "support_id": "random:q50:r06"
+      },
+      {
+        "kind": "random",
+        "method": "random_control",
+        "quantile": 0.5,
+        "replicate": 7,
+        "selected_nodes": [
+          "blocks.0.attn.hook_result[1]",
+          "blocks.0.attn.hook_result[2]",
+          "blocks.0.hook_mlp_out",
+          "blocks.1.attn.hook_result[0]",
+          "blocks.1.attn.hook_result[1]",
+          "blocks.1.hook_mlp_out",
+          "blocks.2.attn.hook_result[3]",
+          "blocks.2.hook_mlp_out"
+        ],
+        "support_id": "random:q50:r07"
+      },
+      {
+        "kind": "random",
+        "method": "random_control",
+        "quantile": 0.5,
+        "replicate": 8,
+        "selected_nodes": [
+          "blocks.0.attn.hook_result[1]",
+          "blocks.0.attn.hook_result[2]",
+          "blocks.0.attn.hook_result[3]",
+          "blocks.0.hook_mlp_out",
+          "blocks.1.attn.hook_result[1]",
+          "blocks.1.attn.hook_result[2]",
+          "blocks.2.attn.hook_result[0]",
+          "blocks.2.attn.hook_result[3]"
+        ],
+        "support_id": "random:q50:r08"
+      },
+      {
+        "kind": "random",
+        "method": "random_control",
+        "quantile": 0.5,
+        "replicate": 9,
+        "selected_nodes": [
+          "blocks.0.attn.hook_result[1]",
+          "blocks.0.attn.hook_result[2]",
+          "blocks.0.attn.hook_result[3]",
+          "blocks.0.hook_mlp_out",
+          "blocks.1.attn.hook_result[0]",
+          "blocks.1.hook_mlp_out",
+          "blocks.2.attn.hook_result[0]",
+          "blocks.2.attn.hook_result[1]"
+        ],
+        "support_id": "random:q50:r09"
+      },
+      {
+        "kind": "random",
+        "method": "random_control",
+        "quantile": 0.5,
+        "replicate": 10,
+        "selected_nodes": [
+          "blocks.0.attn.hook_result[1]",
+          "blocks.0.attn.hook_result[3]",
+          "blocks.1.attn.hook_result[0]",
+          "blocks.1.attn.hook_result[3]",
+          "blocks.1.hook_mlp_out",
+          "blocks.2.attn.hook_result[0]",
+          "blocks.2.attn.hook_result[1]",
+          "blocks.2.hook_mlp_out"
+        ],
+        "support_id": "random:q50:r10"
+      },
+      {
+        "kind": "random",
+        "method": "random_control",
+        "quantile": 0.5,
+        "replicate": 11,
+        "selected_nodes": [
+          "blocks.0.attn.hook_result[0]",
+          "blocks.0.attn.hook_result[2]",
+          "blocks.0.hook_mlp_out",
+          "blocks.1.attn.hook_result[0]",
+          "blocks.1.attn.hook_result[1]",
+          "blocks.1.attn.hook_result[3]",
+          "blocks.1.hook_mlp_out",
+          "blocks.2.attn.hook_result[3]"
+        ],
+        "support_id": "random:q50:r11"
+      },
+      {
+        "kind": "random",
+        "method": "random_control",
+        "quantile": 0.5,
+        "replicate": 12,
+        "selected_nodes": [
+          "blocks.0.attn.hook_result[0]",
+          "blocks.0.attn.hook_result[1]",
+          "blocks.0.attn.hook_result[2]",
+          "blocks.1.attn.hook_result[0]",
+          "blocks.1.hook_mlp_out",
+          "blocks.2.attn.hook_result[2]",
+          "blocks.2.attn.hook_result[3]",
+          "blocks.2.hook_mlp_out"
+        ],
+        "support_id": "random:q50:r12"
+      },
+      {
+        "kind": "random",
+        "method": "random_control",
+        "quantile": 0.5,
+        "replicate": 13,
+        "selected_nodes": [
+          "blocks.0.attn.hook_result[0]",
+          "blocks.0.attn.hook_result[2]",
+          "blocks.1.attn.hook_result[1]",
+          "blocks.1.attn.hook_result[2]",
+          "blocks.1.hook_mlp_out",
+          "blocks.2.attn.hook_result[1]",
+          "blocks.2.attn.hook_result[3]",
+          "blocks.2.hook_mlp_out"
+        ],
+        "support_id": "random:q50:r13"
+      },
+      {
+        "kind": "random",
+        "method": "random_control",
+        "quantile": 0.5,
+        "replicate": 14,
+        "selected_nodes": [
+          "blocks.0.attn.hook_result[0]",
+          "blocks.0.attn.hook_result[1]",
+          "blocks.0.attn.hook_result[3]",
+          "blocks.0.hook_mlp_out",
+          "blocks.1.attn.hook_result[1]",
+          "blocks.1.attn.hook_result[3]",
+          "blocks.2.attn.hook_result[3]",
+          "blocks.2.hook_mlp_out"
+        ],
+        "support_id": "random:q50:r14"
+      },
+      {
+        "kind": "random",
+        "method": "random_control",
+        "quantile": 0.5,
+        "replicate": 15,
+        "selected_nodes": [
+          "blocks.0.attn.hook_result[3]",
+          "blocks.0.hook_mlp_out",
+          "blocks.1.attn.hook_result[0]",
+          "blocks.1.attn.hook_result[1]",
+          "blocks.1.attn.hook_result[3]",
+          "blocks.1.hook_mlp_out",
+          "blocks.2.attn.hook_result[0]",
+          "blocks.2.attn.hook_result[2]"
+        ],
+        "support_id": "random:q50:r15"
+      },
+      {
+        "kind": "random",
+        "method": "random_control",
+        "quantile": 0.5,
+        "replicate": 16,
+        "selected_nodes": [
+          "blocks.0.attn.hook_result[0]",
+          "blocks.0.attn.hook_result[3]",
+          "blocks.1.attn.hook_result[1]",
+          "blocks.1.attn.hook_result[2]",
+          "blocks.1.attn.hook_result[3]",
+          "blocks.1.hook_mlp_out",
+          "blocks.2.attn.hook_result[0]",
+          "blocks.2.hook_mlp_out"
+        ],
+        "support_id": "random:q50:r16"
+      },
+      {
+        "kind": "random",
+        "method": "random_control",
+        "quantile": 0.5,
+        "replicate": 17,
+        "selected_nodes": [
+          "blocks.0.attn.hook_result[1]",
+          "blocks.0.attn.hook_result[2]",
+          "blocks.0.attn.hook_result[3]",
+          "blocks.1.attn.hook_result[0]",
+          "blocks.1.attn.hook_result[1]",
+          "blocks.1.attn.hook_result[3]",
+          "blocks.2.attn.hook_result[2]",
+          "blocks.2.attn.hook_result[3]"
+        ],
+        "support_id": "random:q50:r17"
+      },
+      {
+        "kind": "random",
+        "method": "random_control",
+        "quantile": 0.5,
+        "replicate": 18,
+        "selected_nodes": [
+          "blocks.0.attn.hook_result[0]",
+          "blocks.0.attn.hook_result[1]",
+          "blocks.0.attn.hook_result[3]",
+          "blocks.1.attn.hook_result[1]",
+          "blocks.1.attn.hook_result[2]",
+          "blocks.1.attn.hook_result[3]",
+          "blocks.1.hook_mlp_out",
+          "blocks.2.attn.hook_result[1]"
+        ],
+        "support_id": "random:q50:r18"
+      },
+      {
+        "kind": "random",
+        "method": "random_control",
+        "quantile": 0.5,
+        "replicate": 19,
+        "selected_nodes": [
+          "blocks.0.attn.hook_result[0]",
+          "blocks.0.attn.hook_result[1]",
+          "blocks.0.hook_mlp_out",
+          "blocks.1.attn.hook_result[2]",
+          "blocks.1.attn.hook_result[3]",
+          "blocks.2.attn.hook_result[0]",
+          "blocks.2.attn.hook_result[1]",
+          "blocks.2.attn.hook_result[2]"
+        ],
+        "support_id": "random:q50:r19"
+      },
+      {
+        "kind": "random",
+        "method": "random_control",
+        "quantile": 0.5,
+        "replicate": 20,
+        "selected_nodes": [
+          "blocks.0.attn.hook_result[0]",
+          "blocks.0.attn.hook_result[1]",
+          "blocks.1.attn.hook_result[0]",
+          "blocks.1.attn.hook_result[1]",
+          "blocks.2.attn.hook_result[0]",
+          "blocks.2.attn.hook_result[1]",
+          "blocks.2.attn.hook_result[2]",
+          "blocks.2.attn.hook_result[3]"
+        ],
+        "support_id": "random:q50:r20"
+      },
+      {
+        "kind": "random",
+        "method": "random_control",
+        "quantile": 0.5,
+        "replicate": 21,
+        "selected_nodes": [
+          "blocks.0.attn.hook_result[1]",
+          "blocks.0.attn.hook_result[3]",
+          "blocks.0.hook_mlp_out",
+          "blocks.1.attn.hook_result[0]",
+          "blocks.1.attn.hook_result[1]",
+          "blocks.1.hook_mlp_out",
+          "blocks.2.attn.hook_result[1]",
+          "blocks.2.attn.hook_result[3]"
+        ],
+        "support_id": "random:q50:r21"
+      },
+      {
+        "kind": "random",
+        "method": "random_control",
+        "quantile": 0.5,
+        "replicate": 22,
+        "selected_nodes": [
+          "blocks.0.attn.hook_result[1]",
+          "blocks.0.attn.hook_result[2]",
+          "blocks.1.attn.hook_result[1]",
+          "blocks.1.attn.hook_result[2]",
+          "blocks.2.attn.hook_result[0]",
+          "blocks.2.attn.hook_result[1]",
+          "blocks.2.attn.hook_result[2]",
+          "blocks.2.hook_mlp_out"
+        ],
+        "support_id": "random:q50:r22"
+      },
+      {
+        "kind": "random",
+        "method": "random_control",
+        "quantile": 0.5,
+        "replicate": 23,
+        "selected_nodes": [
+          "blocks.0.attn.hook_result[0]",
+          "blocks.0.attn.hook_result[1]",
+          "blocks.0.attn.hook_result[2]",
+          "blocks.0.hook_mlp_out",
+          "blocks.1.attn.hook_result[1]",
+          "blocks.1.attn.hook_result[2]",
+          "blocks.2.attn.hook_result[0]",
+          "blocks.2.attn.hook_result[1]"
+        ],
+        "support_id": "random:q50:r23"
+      },
+      {
+        "kind": "random",
+        "method": "random_control",
+        "quantile": 0.5,
+        "replicate": 24,
+        "selected_nodes": [
+          "blocks.0.attn.hook_result[0]",
+          "blocks.0.attn.hook_result[1]",
+          "blocks.0.attn.hook_result[3]",
+          "blocks.1.attn.hook_result[0]",
+          "blocks.1.attn.hook_result[3]",
+          "blocks.2.attn.hook_result[1]",
+          "blocks.2.attn.hook_result[2]",
+          "blocks.2.attn.hook_result[3]"
+        ],
+        "support_id": "random:q50:r24"
+      },
+      {
+        "kind": "random",
+        "method": "random_control",
+        "quantile": 0.5,
+        "replicate": 25,
+        "selected_nodes": [
+          "blocks.0.attn.hook_result[2]",
+          "blocks.1.attn.hook_result[0]",
+          "blocks.1.attn.hook_result[1]",
+          "blocks.1.attn.hook_result[3]",
+          "blocks.1.hook_mlp_out",
+          "blocks.2.attn.hook_result[0]",
+          "blocks.2.attn.hook_result[3]",
+          "blocks.2.hook_mlp_out"
+        ],
+        "support_id": "random:q50:r25"
+      },
+      {
+        "kind": "random",
+        "method": "random_control",
+        "quantile": 0.5,
+        "replicate": 26,
+        "selected_nodes": [
+          "blocks.0.attn.hook_result[1]",
+          "blocks.0.attn.hook_result[2]",
+          "blocks.0.attn.hook_result[3]",
+          "blocks.0.hook_mlp_out",
+          "blocks.1.attn.hook_result[2]",
+          "blocks.1.hook_mlp_out",
+          "blocks.2.attn.hook_result[1]",
+          "blocks.2.attn.hook_result[3]"
+        ],
+        "support_id": "random:q50:r26"
+      },
+      {
+        "kind": "random",
+        "method": "random_control",
+        "quantile": 0.5,
+        "replicate": 27,
+        "selected_nodes": [
+          "blocks.0.attn.hook_result[0]",
+          "blocks.0.attn.hook_result[1]",
+          "blocks.0.attn.hook_result[2]",
+          "blocks.1.attn.hook_result[3]",
+          "blocks.1.hook_mlp_out",
+          "blocks.2.attn.hook_result[0]",
+          "blocks.2.attn.hook_result[2]",
+          "blocks.2.hook_mlp_out"
+        ],
+        "support_id": "random:q50:r27"
+      },
+      {
+        "kind": "random",
+        "method": "random_control",
+        "quantile": 0.5,
+        "replicate": 28,
+        "selected_nodes": [
+          "blocks.0.attn.hook_result[0]",
+          "blocks.0.attn.hook_result[1]",
+          "blocks.0.attn.hook_result[2]",
+          "blocks.0.attn.hook_result[3]",
+          "blocks.1.attn.hook_result[1]",
+          "blocks.2.attn.hook_result[1]",
+          "blocks.2.attn.hook_result[2]",
+          "blocks.2.attn.hook_result[3]"
+        ],
+        "support_id": "random:q50:r28"
+      },
+      {
+        "kind": "random",
+        "method": "random_control",
+        "quantile": 0.5,
+        "replicate": 29,
+        "selected_nodes": [
+          "blocks.0.hook_mlp_out",
+          "blocks.1.attn.hook_result[0]",
+          "blocks.1.attn.hook_result[1]",
+          "blocks.1.attn.hook_result[3]",
+          "blocks.2.attn.hook_result[0]",
+          "blocks.2.attn.hook_result[2]",
+          "blocks.2.attn.hook_result[3]",
+          "blocks.2.hook_mlp_out"
+        ],
+        "support_id": "random:q50:r29"
+      },
+      {
+        "kind": "random",
+        "method": "random_control",
+        "quantile": 0.5,
+        "replicate": 30,
+        "selected_nodes": [
+          "blocks.0.attn.hook_result[1]",
+          "blocks.0.attn.hook_result[2]",
+          "blocks.0.attn.hook_result[3]",
+          "blocks.0.hook_mlp_out",
+          "blocks.1.attn.hook_result[2]",
+          "blocks.1.hook_mlp_out",
+          "blocks.2.attn.hook_result[0]",
+          "blocks.2.hook_mlp_out"
+        ],
+        "support_id": "random:q50:r30"
+      },
+      {
+        "kind": "random",
+        "method": "random_control",
+        "quantile": 0.5,
+        "replicate": 31,
+        "selected_nodes": [
+          "blocks.0.attn.hook_result[0]",
+          "blocks.0.attn.hook_result[1]",
+          "blocks.0.hook_mlp_out",
+          "blocks.1.attn.hook_result[0]",
+          "blocks.1.hook_mlp_out",
+          "blocks.2.attn.hook_result[0]",
+          "blocks.2.attn.hook_result[2]",
+          "blocks.2.attn.hook_result[3]"
+        ],
+        "support_id": "random:q50:r31"
+      },
+      {
+        "kind": "random",
+        "method": "random_control",
+        "quantile": 0.5,
+        "replicate": 32,
+        "selected_nodes": [
+          "blocks.0.attn.hook_result[2]",
+          "blocks.0.attn.hook_result[3]",
+          "blocks.1.attn.hook_result[0]",
+          "blocks.1.hook_mlp_out",
+          "blocks.2.attn.hook_result[1]",
+          "blocks.2.attn.hook_result[2]",
+          "blocks.2.attn.hook_result[3]",
+          "blocks.2.hook_mlp_out"
+        ],
+        "support_id": "random:q50:r32"
+      },
+      {
+        "kind": "random",
+        "method": "random_control",
+        "quantile": 0.5,
+        "replicate": 33,
+        "selected_nodes": [
+          "blocks.0.attn.hook_result[1]",
+          "blocks.0.attn.hook_result[2]",
+          "blocks.0.hook_mlp_out",
+          "blocks.1.attn.hook_result[0]",
+          "blocks.1.attn.hook_result[1]",
+          "blocks.1.attn.hook_result[2]",
+          "blocks.1.hook_mlp_out",
+          "blocks.2.hook_mlp_out"
+        ],
+        "support_id": "random:q50:r33"
+      },
+      {
+        "kind": "random",
+        "method": "random_control",
+        "quantile": 0.5,
+        "replicate": 34,
+        "selected_nodes": [
+          "blocks.0.attn.hook_result[0]",
+          "blocks.0.attn.hook_result[3]",
+          "blocks.1.attn.hook_result[1]",
+          "blocks.1.attn.hook_result[2]",
+          "blocks.1.attn.hook_result[3]",
+          "blocks.2.attn.hook_result[1]",
+          "blocks.2.attn.hook_result[3]",
+          "blocks.2.hook_mlp_out"
+        ],
+        "support_id": "random:q50:r34"
+      },
+      {
+        "kind": "random",
+        "method": "random_control",
+        "quantile": 0.5,
+        "replicate": 35,
+        "selected_nodes": [
+          "blocks.0.attn.hook_result[3]",
+          "blocks.1.attn.hook_result[1]",
+          "blocks.1.attn.hook_result[2]",
+          "blocks.1.hook_mlp_out",
+          "blocks.2.attn.hook_result[0]",
+          "blocks.2.attn.hook_result[1]",
+          "blocks.2.attn.hook_result[3]",
+          "blocks.2.hook_mlp_out"
+        ],
+        "support_id": "random:q50:r35"
+      },
+      {
+        "kind": "random",
+        "method": "random_control",
+        "quantile": 0.5,
+        "replicate": 36,
+        "selected_nodes": [
+          "blocks.0.attn.hook_result[0]",
+          "blocks.0.attn.hook_result[2]",
+          "blocks.0.attn.hook_result[3]",
+          "blocks.0.hook_mlp_out",
+          "blocks.1.attn.hook_result[1]",
+          "blocks.1.attn.hook_result[2]",
+          "blocks.2.attn.hook_result[0]",
+          "blocks.2.attn.hook_result[3]"
+        ],
+        "support_id": "random:q50:r36"
+      },
+      {
+        "kind": "random",
+        "method": "random_control",
+        "quantile": 0.5,
+        "replicate": 37,
+        "selected_nodes": [
+          "blocks.0.attn.hook_result[0]",
+          "blocks.0.attn.hook_result[2]",
+          "blocks.1.attn.hook_result[1]",
+          "blocks.1.attn.hook_result[2]",
+          "blocks.1.attn.hook_result[3]",
+          "blocks.1.hook_mlp_out",
+          "blocks.2.attn.hook_result[0]",
+          "blocks.2.attn.hook_result[2]"
+        ],
+        "support_id": "random:q50:r37"
+      },
+      {
+        "kind": "random",
+        "method": "random_control",
+        "quantile": 0.5,
+        "replicate": 38,
+        "selected_nodes": [
+          "blocks.0.attn.hook_result[0]",
+          "blocks.0.attn.hook_result[1]",
+          "blocks.0.hook_mlp_out",
+          "blocks.1.attn.hook_result[0]",
+          "blocks.1.attn.hook_result[1]",
+          "blocks.1.hook_mlp_out",
+          "blocks.2.attn.hook_result[0]",
+          "blocks.2.hook_mlp_out"
+        ],
+        "support_id": "random:q50:r38"
+      },
+      {
+        "kind": "random",
+        "method": "random_control",
+        "quantile": 0.5,
+        "replicate": 39,
+        "selected_nodes": [
+          "blocks.0.attn.hook_result[0]",
+          "blocks.0.attn.hook_result[2]",
+          "blocks.1.attn.hook_result[0]",
+          "blocks.1.hook_mlp_out",
+          "blocks.2.attn.hook_result[0]",
+          "blocks.2.attn.hook_result[1]",
+          "blocks.2.attn.hook_result[3]",
+          "blocks.2.hook_mlp_out"
+        ],
+        "support_id": "random:q50:r39"
+      },
+      {
+        "kind": "random",
+        "method": "random_control",
+        "quantile": 0.5,
+        "replicate": 40,
+        "selected_nodes": [
+          "blocks.0.attn.hook_result[2]",
+          "blocks.0.attn.hook_result[3]",
+          "blocks.1.attn.hook_result[1]",
+          "blocks.1.attn.hook_result[2]",
+          "blocks.1.attn.hook_result[3]",
+          "blocks.2.attn.hook_result[0]",
+          "blocks.2.attn.hook_result[2]",
+          "blocks.2.attn.hook_result[3]"
+        ],
+        "support_id": "random:q50:r40"
+      },
+      {
+        "kind": "random",
+        "method": "random_control",
+        "quantile": 0.5,
+        "replicate": 41,
+        "selected_nodes": [
+          "blocks.0.attn.hook_result[0]",
+          "blocks.0.attn.hook_result[3]",
+          "blocks.1.attn.hook_result[0]",
+          "blocks.1.attn.hook_result[2]",
+          "blocks.1.attn.hook_result[3]",
+          "blocks.2.attn.hook_result[1]",
+          "blocks.2.attn.hook_result[2]",
+          "blocks.2.attn.hook_result[3]"
+        ],
+        "support_id": "random:q50:r41"
+      },
+      {
+        "kind": "random",
+        "method": "random_control",
+        "quantile": 0.5,
+        "replicate": 42,
+        "selected_nodes": [
+          "blocks.0.attn.hook_result[2]",
+          "blocks.0.hook_mlp_out",
+          "blocks.1.attn.hook_result[0]",
+          "blocks.1.attn.hook_result[2]",
+          "blocks.2.attn.hook_result[0]",
+          "blocks.2.attn.hook_result[2]",
+          "blocks.2.attn.hook_result[3]",
+          "blocks.2.hook_mlp_out"
+        ],
+        "support_id": "random:q50:r42"
+      },
+      {
+        "kind": "random",
+        "method": "random_control",
+        "quantile": 0.5,
+        "replicate": 43,
+        "selected_nodes": [
+          "blocks.0.attn.hook_result[1]",
+          "blocks.0.hook_mlp_out",
+          "blocks.1.attn.hook_result[0]",
+          "blocks.1.attn.hook_result[1]",
+          "blocks.1.attn.hook_result[2]",
+          "blocks.1.attn.hook_result[3]",
+          "blocks.2.attn.hook_result[0]",
+          "blocks.2.attn.hook_result[2]"
+        ],
+        "support_id": "random:q50:r43"
+      },
+      {
+        "kind": "random",
+        "method": "random_control",
+        "quantile": 0.5,
+        "replicate": 44,
+        "selected_nodes": [
+          "blocks.0.attn.hook_result[1]",
+          "blocks.0.attn.hook_result[3]",
+          "blocks.0.hook_mlp_out",
+          "blocks.1.attn.hook_result[0]",
+          "blocks.1.attn.hook_result[3]",
+          "blocks.1.hook_mlp_out",
+          "blocks.2.attn.hook_result[1]",
+          "blocks.2.attn.hook_result[3]"
+        ],
+        "support_id": "random:q50:r44"
+      },
+      {
+        "kind": "random",
+        "method": "random_control",
+        "quantile": 0.5,
+        "replicate": 45,
+        "selected_nodes": [
+          "blocks.0.attn.hook_result[1]",
+          "blocks.0.attn.hook_result[3]",
+          "blocks.0.hook_mlp_out",
+          "blocks.1.attn.hook_result[0]",
+          "blocks.1.attn.hook_result[2]",
+          "blocks.2.attn.hook_result[0]",
+          "blocks.2.attn.hook_result[3]",
+          "blocks.2.hook_mlp_out"
+        ],
+        "support_id": "random:q50:r45"
+      },
+      {
+        "kind": "random",
+        "method": "random_control",
+        "quantile": 0.5,
+        "replicate": 46,
+        "selected_nodes": [
+          "blocks.0.attn.hook_result[2]",
+          "blocks.0.attn.hook_result[3]",
+          "blocks.0.hook_mlp_out",
+          "blocks.1.attn.hook_result[2]",
+          "blocks.1.hook_mlp_out",
+          "blocks.2.attn.hook_result[2]",
+          "blocks.2.attn.hook_result[3]",
+          "blocks.2.hook_mlp_out"
+        ],
+        "support_id": "random:q50:r46"
+      },
+      {
+        "kind": "random",
+        "method": "random_control",
+        "quantile": 0.5,
+        "replicate": 47,
+        "selected_nodes": [
+          "blocks.0.attn.hook_result[1]",
+          "blocks.0.attn.hook_result[3]",
+          "blocks.0.hook_mlp_out",
+          "blocks.1.attn.hook_result[1]",
+          "blocks.1.attn.hook_result[2]",
+          "blocks.1.hook_mlp_out",
+          "blocks.2.attn.hook_result[0]",
+          "blocks.2.hook_mlp_out"
+        ],
+        "support_id": "random:q50:r47"
+      },
+      {
+        "kind": "random",
+        "method": "random_control",
+        "quantile": 0.5,
+        "replicate": 48,
+        "selected_nodes": [
+          "blocks.0.attn.hook_result[0]",
+          "blocks.0.attn.hook_result[1]",
+          "blocks.1.attn.hook_result[0]",
+          "blocks.1.attn.hook_result[1]",
+          "blocks.1.attn.hook_result[2]",
+          "blocks.1.attn.hook_result[3]",
+          "blocks.2.attn.hook_result[0]",
+          "blocks.2.attn.hook_result[1]"
+        ],
+        "support_id": "random:q50:r48"
+      },
+      {
+        "kind": "random",
+        "method": "random_control",
+        "quantile": 0.5,
+        "replicate": 49,
+        "selected_nodes": [
+          "blocks.0.attn.hook_result[3]",
+          "blocks.1.attn.hook_result[0]",
+          "blocks.1.attn.hook_result[2]",
+          "blocks.1.attn.hook_result[3]",
+          "blocks.2.attn.hook_result[0]",
+          "blocks.2.attn.hook_result[1]",
+          "blocks.2.attn.hook_result[2]",
+          "blocks.2.hook_mlp_out"
+        ],
+        "support_id": "random:q50:r49"
+      },
+      {
+        "kind": "random",
+        "method": "random_control",
+        "quantile": 0.5,
+        "replicate": 50,
+        "selected_nodes": [
+          "blocks.0.attn.hook_result[0]",
+          "blocks.0.attn.hook_result[1]",
+          "blocks.0.attn.hook_result[2]",
+          "blocks.0.hook_mlp_out",
+          "blocks.1.attn.hook_result[1]",
+          "blocks.1.attn.hook_result[3]",
+          "blocks.2.attn.hook_result[2]",
+          "blocks.2.attn.hook_result[3]"
+        ],
+        "support_id": "random:q50:r50"
+      },
+      {
+        "kind": "random",
+        "method": "random_control",
+        "quantile": 0.5,
+        "replicate": 51,
+        "selected_nodes": [
+          "blocks.0.attn.hook_result[2]",
+          "blocks.0.hook_mlp_out",
+          "blocks.1.attn.hook_result[0]",
+          "blocks.1.attn.hook_result[1]",
+          "blocks.1.hook_mlp_out",
+          "blocks.2.attn.hook_result[1]",
+          "blocks.2.attn.hook_result[2]",
+          "blocks.2.hook_mlp_out"
+        ],
+        "support_id": "random:q50:r51"
+      },
+      {
+        "kind": "random",
+        "method": "random_control",
+        "quantile": 0.5,
+        "replicate": 52,
+        "selected_nodes": [
+          "blocks.0.attn.hook_result[3]",
+          "blocks.1.attn.hook_result[0]",
+          "blocks.1.attn.hook_result[1]",
+          "blocks.1.attn.hook_result[2]",
+          "blocks.1.attn.hook_result[3]",
+          "blocks.2.attn.hook_result[2]",
+          "blocks.2.attn.hook_result[3]",
+          "blocks.2.hook_mlp_out"
+        ],
+        "support_id": "random:q50:r52"
+      },
+      {
+        "kind": "random",
+        "method": "random_control",
+        "quantile": 0.5,
+        "replicate": 53,
+        "selected_nodes": [
+          "blocks.0.attn.hook_result[1]",
+          "blocks.1.attn.hook_result[1]",
+          "blocks.1.attn.hook_result[2]",
+          "blocks.1.hook_mlp_out",
+          "blocks.2.attn.hook_result[0]",
+          "blocks.2.attn.hook_result[1]",
+          "blocks.2.attn.hook_result[2]",
+          "blocks.2.attn.hook_result[3]"
+        ],
+        "support_id": "random:q50:r53"
+      },
+      {
+        "kind": "random",
+        "method": "random_control",
+        "quantile": 0.5,
+        "replicate": 54,
+        "selected_nodes": [
+          "blocks.0.attn.hook_result[0]",
+          "blocks.0.attn.hook_result[1]",
+          "blocks.0.attn.hook_result[2]",
+          "blocks.1.attn.hook_result[0]",
+          "blocks.2.attn.hook_result[0]",
+          "blocks.2.attn.hook_result[1]",
+          "blocks.2.attn.hook_result[3]",
+          "blocks.2.hook_mlp_out"
+        ],
+        "support_id": "random:q50:r54"
+      },
+      {
+        "kind": "random",
+        "method": "random_control",
+        "quantile": 0.5,
+        "replicate": 55,
+        "selected_nodes": [
+          "blocks.0.attn.hook_result[0]",
+          "blocks.0.attn.hook_result[1]",
+          "blocks.0.attn.hook_result[2]",
+          "blocks.0.attn.hook_result[3]",
+          "blocks.0.hook_mlp_out",
+          "blocks.1.attn.hook_result[1]",
+          "blocks.1.attn.hook_result[3]",
+          "blocks.1.hook_mlp_out"
+        ],
+        "support_id": "random:q50:r55"
+      },
+      {
+        "kind": "random",
+        "method": "random_control",
+        "quantile": 0.5,
+        "replicate": 56,
+        "selected_nodes": [
+          "blocks.0.attn.hook_result[0]",
+          "blocks.0.attn.hook_result[1]",
+          "blocks.1.attn.hook_result[2]",
+          "blocks.1.attn.hook_result[3]",
+          "blocks.2.attn.hook_result[0]",
+          "blocks.2.attn.hook_result[1]",
+          "blocks.2.attn.hook_result[2]",
+          "blocks.2.attn.hook_result[3]"
+        ],
+        "support_id": "random:q50:r56"
+      },
+      {
+        "kind": "random",
+        "method": "random_control",
+        "quantile": 0.5,
+        "replicate": 57,
+        "selected_nodes": [
+          "blocks.0.attn.hook_result[0]",
+          "blocks.0.attn.hook_result[2]",
+          "blocks.1.attn.hook_result[0]",
+          "blocks.1.attn.hook_result[1]",
+          "blocks.1.attn.hook_result[3]",
+          "blocks.2.attn.hook_result[2]",
+          "blocks.2.attn.hook_result[3]",
+          "blocks.2.hook_mlp_out"
+        ],
+        "support_id": "random:q50:r57"
+      },
+      {
+        "kind": "random",
+        "method": "random_control",
+        "quantile": 0.5,
+        "replicate": 58,
+        "selected_nodes": [
+          "blocks.0.attn.hook_result[2]",
+          "blocks.0.attn.hook_result[3]",
+          "blocks.0.hook_mlp_out",
+          "blocks.1.attn.hook_result[1]",
+          "blocks.1.attn.hook_result[3]",
+          "blocks.1.hook_mlp_out",
+          "blocks.2.attn.hook_result[0]",
+          "blocks.2.attn.hook_result[3]"
+        ],
+        "support_id": "random:q50:r58"
+      },
+      {
+        "kind": "random",
+        "method": "random_control",
+        "quantile": 0.5,
+        "replicate": 59,
+        "selected_nodes": [
+          "blocks.0.attn.hook_result[3]",
+          "blocks.1.attn.hook_result[0]",
+          "blocks.1.attn.hook_result[1]",
+          "blocks.1.attn.hook_result[3]",
+          "blocks.1.hook_mlp_out",
+          "blocks.2.attn.hook_result[2]",
+          "blocks.2.attn.hook_result[3]",
+          "blocks.2.hook_mlp_out"
+        ],
+        "support_id": "random:q50:r59"
+      },
+      {
+        "kind": "random",
+        "method": "random_control",
+        "quantile": 0.5,
+        "replicate": 60,
+        "selected_nodes": [
+          "blocks.0.attn.hook_result[0]",
+          "blocks.1.attn.hook_result[0]",
+          "blocks.1.attn.hook_result[1]",
+          "blocks.1.attn.hook_result[2]",
+          "blocks.1.attn.hook_result[3]",
+          "blocks.2.attn.hook_result[0]",
+          "blocks.2.attn.hook_result[1]",
+          "blocks.2.hook_mlp_out"
+        ],
+        "support_id": "random:q50:r60"
+      },
+      {
+        "kind": "random",
+        "method": "random_control",
+        "quantile": 0.5,
+        "replicate": 61,
+        "selected_nodes": [
+          "blocks.0.attn.hook_result[0]",
+          "blocks.0.attn.hook_result[3]",
+          "blocks.0.hook_mlp_out",
+          "blocks.1.attn.hook_result[2]",
+          "blocks.1.hook_mlp_out",
+          "blocks.2.attn.hook_result[0]",
+          "blocks.2.attn.hook_result[1]",
+          "blocks.2.hook_mlp_out"
+        ],
+        "support_id": "random:q50:r61"
+      },
+      {
+        "kind": "random",
+        "method": "random_control",
+        "quantile": 0.5,
+        "replicate": 62,
+        "selected_nodes": [
+          "blocks.0.attn.hook_result[1]",
+          "blocks.0.attn.hook_result[2]",
+          "blocks.0.attn.hook_result[3]",
+          "blocks.0.hook_mlp_out",
+          "blocks.1.attn.hook_result[1]",
+          "blocks.1.attn.hook_result[3]",
+          "blocks.2.attn.hook_result[1]",
+          "blocks.2.hook_mlp_out"
+        ],
+        "support_id": "random:q50:r62"
+      },
+      {
+        "kind": "random",
+        "method": "random_control",
+        "quantile": 0.5,
+        "replicate": 63,
+        "selected_nodes": [
+          "blocks.0.attn.hook_result[2]",
+          "blocks.0.attn.hook_result[3]",
+          "blocks.1.attn.hook_result[0]",
+          "blocks.1.attn.hook_result[2]",
+          "blocks.1.attn.hook_result[3]",
+          "blocks.2.attn.hook_result[0]",
+          "blocks.2.attn.hook_result[1]",
+          "blocks.2.attn.hook_result[2]"
+        ],
+        "support_id": "random:q50:r63"
+      }
+    ],
+    "case_id": 58,
+    "component_ids": [
+      "blocks.0.attn.hook_result[0]",
+      "blocks.0.attn.hook_result[1]",
+      "blocks.0.attn.hook_result[2]",
+      "blocks.0.attn.hook_result[3]",
+      "blocks.0.hook_mlp_out",
+      "blocks.1.attn.hook_result[0]",
+      "blocks.1.attn.hook_result[1]",
+      "blocks.1.attn.hook_result[2]",
+      "blocks.1.attn.hook_result[3]",
+      "blocks.1.hook_mlp_out",
+      "blocks.2.attn.hook_result[0]",
+      "blocks.2.attn.hook_result[1]",
+      "blocks.2.attn.hook_result[2]",
+      "blocks.2.attn.hook_result[3]",
+      "blocks.2.hook_mlp_out"
+    ],
+    "confirmatory_support_size": 8,
+    "deterministic_supports": {
+      "activation_shift_rms": {
+        "kind": "deterministic",
+        "method": "activation_shift_rms",
+        "quantile": 0.5,
+        "selected_nodes": [
+          "blocks.0.hook_mlp_out",
+          "blocks.1.attn.hook_result[3]",
+          "blocks.1.hook_mlp_out",
+          "blocks.2.attn.hook_result[0]",
+          "blocks.2.attn.hook_result[1]",
+          "blocks.2.attn.hook_result[2]",
+          "blocks.2.attn.hook_result[3]",
+          "blocks.2.hook_mlp_out"
+        ],
+        "support_id": "deterministic:activation_shift_rms:q50"
+      },
+      "eap_ig5_incident_mean": {
+        "kind": "deterministic",
+        "method": "eap_ig5_incident_mean",
+        "quantile": 0.5,
+        "selected_nodes": [
+          "blocks.0.attn.hook_result[0]",
+          "blocks.0.attn.hook_result[1]",
+          "blocks.0.attn.hook_result[3]",
+          "blocks.0.hook_mlp_out",
+          "blocks.1.attn.hook_result[3]",
+          "blocks.1.hook_mlp_out",
+          "blocks.2.attn.hook_result[0]",
+          "blocks.2.hook_mlp_out"
+        ],
+        "support_id": "deterministic:eap_ig5_incident_mean:q50"
+      },
+      "rank_one_incident_mean": {
+        "kind": "deterministic",
+        "method": "rank_one_incident_mean",
+        "quantile": 0.5,
+        "selected_nodes": [
+          "blocks.0.attn.hook_result[0]",
+          "blocks.0.attn.hook_result[1]",
+          "blocks.0.attn.hook_result[3]",
+          "blocks.0.hook_mlp_out",
+          "blocks.1.attn.hook_result[1]",
+          "blocks.1.hook_mlp_out",
+          "blocks.2.attn.hook_result[0]",
+          "blocks.2.hook_mlp_out"
+        ],
+        "support_id": "deterministic:rank_one_incident_mean:q50"
+      },
+      "raw_pair_incident_mean": {
+        "kind": "deterministic",
+        "method": "raw_pair_incident_mean",
+        "quantile": 0.5,
+        "selected_nodes": [
+          "blocks.0.attn.hook_result[0]",
+          "blocks.0.attn.hook_result[1]",
+          "blocks.0.attn.hook_result[3]",
+          "blocks.0.hook_mlp_out",
+          "blocks.1.attn.hook_result[1]",
+          "blocks.1.hook_mlp_out",
+          "blocks.2.attn.hook_result[0]",
+          "blocks.2.hook_mlp_out"
+        ],
+        "support_id": "deterministic:raw_pair_incident_mean:q50"
+      },
+      "singleton_output_effect": {
+        "kind": "deterministic",
+        "method": "singleton_output_effect",
+        "quantile": 0.5,
+        "selected_nodes": [
+          "blocks.0.attn.hook_result[0]",
+          "blocks.0.attn.hook_result[1]",
+          "blocks.0.attn.hook_result[3]",
+          "blocks.0.hook_mlp_out",
+          "blocks.1.attn.hook_result[1]",
+          "blocks.1.hook_mlp_out",
+          "blocks.2.attn.hook_result[0]",
+          "blocks.2.hook_mlp_out"
+        ],
+        "support_id": "deterministic:singleton_output_effect:q50"
+      }
+    },
+    "ground_truth_used_for_cohort_selection": true,
+    "ground_truth_used_for_within_case_selection_or_primary_scoring": false,
+    "random_supports": [
+      {
+        "kind": "random",
+        "method": "random_control",
+        "quantile": 0.5,
+        "replicate": 0,
+        "selected_nodes": [
+          "blocks.0.attn.hook_result[2]",
+          "blocks.0.attn.hook_result[3]",
+          "blocks.0.hook_mlp_out",
+          "blocks.1.attn.hook_result[0]",
+          "blocks.1.attn.hook_result[2]",
+          "blocks.1.attn.hook_result[3]",
+          "blocks.2.attn.hook_result[0]",
+          "blocks.2.hook_mlp_out"
+        ],
+        "support_id": "random:q50:r00"
+      },
+      {
+        "kind": "random",
+        "method": "random_control",
+        "quantile": 0.5,
+        "replicate": 1,
+        "selected_nodes": [
+          "blocks.0.attn.hook_result[0]",
+          "blocks.0.attn.hook_result[2]",
+          "blocks.0.attn.hook_result[3]",
+          "blocks.1.attn.hook_result[1]",
+          "blocks.1.attn.hook_result[2]",
+          "blocks.1.attn.hook_result[3]",
+          "blocks.2.attn.hook_result[2]",
+          "blocks.2.hook_mlp_out"
+        ],
+        "support_id": "random:q50:r01"
+      },
+      {
+        "kind": "random",
+        "method": "random_control",
+        "quantile": 0.5,
+        "replicate": 2,
+        "selected_nodes": [
+          "blocks.0.attn.hook_result[1]",
+          "blocks.0.attn.hook_result[2]",
+          "blocks.0.attn.hook_result[3]",
+          "blocks.0.hook_mlp_out",
+          "blocks.1.attn.hook_result[2]",
+          "blocks.1.attn.hook_result[3]",
+          "blocks.2.attn.hook_result[3]",
+          "blocks.2.hook_mlp_out"
+        ],
+        "support_id": "random:q50:r02"
+      },
+      {
+        "kind": "random",
+        "method": "random_control",
+        "quantile": 0.5,
+        "replicate": 3,
+        "selected_nodes": [
+          "blocks.0.attn.hook_result[0]",
+          "blocks.0.attn.hook_result[1]",
+          "blocks.0.attn.hook_result[2]",
+          "blocks.0.hook_mlp_out",
+          "blocks.1.attn.hook_result[2]",
+          "blocks.2.attn.hook_result[0]",
+          "blocks.2.attn.hook_result[3]",
+          "blocks.2.hook_mlp_out"
+        ],
+        "support_id": "random:q50:r03"
+      },
+      {
+        "kind": "random",
+        "method": "random_control",
+        "quantile": 0.5,
+        "replicate": 4,
+        "selected_nodes": [
+          "blocks.0.attn.hook_result[0]",
+          "blocks.0.hook_mlp_out",
+          "blocks.1.attn.hook_result[0]",
+          "blocks.1.hook_mlp_out",
+          "blocks.2.attn.hook_result[0]",
+          "blocks.2.attn.hook_result[1]",
+          "blocks.2.attn.hook_result[3]",
+          "blocks.2.hook_mlp_out"
+        ],
+        "support_id": "random:q50:r04"
+      },
+      {
+        "kind": "random",
+        "method": "random_control",
+        "quantile": 0.5,
+        "replicate": 5,
+        "selected_nodes": [
+          "blocks.0.attn.hook_result[0]",
+          "blocks.0.attn.hook_result[1]",
+          "blocks.0.attn.hook_result[2]",
+          "blocks.1.attn.hook_result[2]",
+          "blocks.1.attn.hook_result[3]",
+          "blocks.2.attn.hook_result[0]",
+          "blocks.2.attn.hook_result[1]",
+          "blocks.2.attn.hook_result[3]"
+        ],
+        "support_id": "random:q50:r05"
+      },
+      {
+        "kind": "random",
+        "method": "random_control",
+        "quantile": 0.5,
+        "replicate": 6,
+        "selected_nodes": [
+          "blocks.0.attn.hook_result[3]",
+          "blocks.0.hook_mlp_out",
+          "blocks.1.attn.hook_result[3]",
+          "blocks.1.hook_mlp_out",
+          "blocks.2.attn.hook_result[0]",
+          "blocks.2.attn.hook_result[1]",
+          "blocks.2.attn.hook_result[3]",
+          "blocks.2.hook_mlp_out"
+        ],
+        "support_id": "random:q50:r06"
+      },
+      {
+        "kind": "random",
+        "method": "random_control",
+        "quantile": 0.5,
+        "replicate": 7,
+        "selected_nodes": [
+          "blocks.0.attn.hook_result[1]",
+          "blocks.0.attn.hook_result[2]",
+          "blocks.0.hook_mlp_out",
+          "blocks.1.attn.hook_result[0]",
+          "blocks.1.attn.hook_result[1]",
+          "blocks.1.hook_mlp_out",
+          "blocks.2.attn.hook_result[3]",
+          "blocks.2.hook_mlp_out"
+        ],
+        "support_id": "random:q50:r07"
+      },
+      {
+        "kind": "random",
+        "method": "random_control",
+        "quantile": 0.5,
+        "replicate": 8,
+        "selected_nodes": [
+          "blocks.0.attn.hook_result[1]",
+          "blocks.0.attn.hook_result[2]",
+          "blocks.0.attn.hook_result[3]",
+          "blocks.0.hook_mlp_out",
+          "blocks.1.attn.hook_result[1]",
+          "blocks.1.attn.hook_result[2]",
+          "blocks.2.attn.hook_result[0]",
+          "blocks.2.attn.hook_result[3]"
+        ],
+        "support_id": "random:q50:r08"
+      },
+      {
+        "kind": "random",
+        "method": "random_control",
+        "quantile": 0.5,
+        "replicate": 9,
+        "selected_nodes": [
+          "blocks.0.attn.hook_result[1]",
+          "blocks.0.attn.hook_result[2]",
+          "blocks.0.attn.hook_result[3]",
+          "blocks.0.hook_mlp_out",
+          "blocks.1.attn.hook_result[0]",
+          "blocks.1.hook_mlp_out",
+          "blocks.2.attn.hook_result[0]",
+          "blocks.2.attn.hook_result[1]"
+        ],
+        "support_id": "random:q50:r09"
+      },
+      {
+        "kind": "random",
+        "method": "random_control",
+        "quantile": 0.5,
+        "replicate": 10,
+        "selected_nodes": [
+          "blocks.0.attn.hook_result[1]",
+          "blocks.0.attn.hook_result[3]",
+          "blocks.1.attn.hook_result[0]",
+          "blocks.1.attn.hook_result[3]",
+          "blocks.1.hook_mlp_out",
+          "blocks.2.attn.hook_result[0]",
+          "blocks.2.attn.hook_result[1]",
+          "blocks.2.hook_mlp_out"
+        ],
+        "support_id": "random:q50:r10"
+      },
+      {
+        "kind": "random",
+        "method": "random_control",
+        "quantile": 0.5,
+        "replicate": 11,
+        "selected_nodes": [
+          "blocks.0.attn.hook_result[0]",
+          "blocks.0.attn.hook_result[2]",
+          "blocks.0.hook_mlp_out",
+          "blocks.1.attn.hook_result[0]",
+          "blocks.1.attn.hook_result[1]",
+          "blocks.1.attn.hook_result[3]",
+          "blocks.1.hook_mlp_out",
+          "blocks.2.attn.hook_result[3]"
+        ],
+        "support_id": "random:q50:r11"
+      },
+      {
+        "kind": "random",
+        "method": "random_control",
+        "quantile": 0.5,
+        "replicate": 12,
+        "selected_nodes": [
+          "blocks.0.attn.hook_result[0]",
+          "blocks.0.attn.hook_result[1]",
+          "blocks.0.attn.hook_result[2]",
+          "blocks.1.attn.hook_result[0]",
+          "blocks.1.hook_mlp_out",
+          "blocks.2.attn.hook_result[2]",
+          "blocks.2.attn.hook_result[3]",
+          "blocks.2.hook_mlp_out"
+        ],
+        "support_id": "random:q50:r12"
+      },
+      {
+        "kind": "random",
+        "method": "random_control",
+        "quantile": 0.5,
+        "replicate": 13,
+        "selected_nodes": [
+          "blocks.0.attn.hook_result[0]",
+          "blocks.0.attn.hook_result[2]",
+          "blocks.1.attn.hook_result[1]",
+          "blocks.1.attn.hook_result[2]",
+          "blocks.1.hook_mlp_out",
+          "blocks.2.attn.hook_result[1]",
+          "blocks.2.attn.hook_result[3]",
+          "blocks.2.hook_mlp_out"
+        ],
+        "support_id": "random:q50:r13"
+      },
+      {
+        "kind": "random",
+        "method": "random_control",
+        "quantile": 0.5,
+        "replicate": 14,
+        "selected_nodes": [
+          "blocks.0.attn.hook_result[0]",
+          "blocks.0.attn.hook_result[1]",
+          "blocks.0.attn.hook_result[3]",
+          "blocks.0.hook_mlp_out",
+          "blocks.1.attn.hook_result[1]",
+          "blocks.1.attn.hook_result[3]",
+          "blocks.2.attn.hook_result[3]",
+          "blocks.2.hook_mlp_out"
+        ],
+        "support_id": "random:q50:r14"
+      },
+      {
+        "kind": "random",
+        "method": "random_control",
+        "quantile": 0.5,
+        "replicate": 15,
+        "selected_nodes": [
+          "blocks.0.attn.hook_result[3]",
+          "blocks.0.hook_mlp_out",
+          "blocks.1.attn.hook_result[0]",
+          "blocks.1.attn.hook_result[1]",
+          "blocks.1.attn.hook_result[3]",
+          "blocks.1.hook_mlp_out",
+          "blocks.2.attn.hook_result[0]",
+          "blocks.2.attn.hook_result[2]"
+        ],
+        "support_id": "random:q50:r15"
+      },
+      {
+        "kind": "random",
+        "method": "random_control",
+        "quantile": 0.5,
+        "replicate": 16,
+        "selected_nodes": [
+          "blocks.0.attn.hook_result[0]",
+          "blocks.0.attn.hook_result[3]",
+          "blocks.1.attn.hook_result[1]",
+          "blocks.1.attn.hook_result[2]",
+          "blocks.1.attn.hook_result[3]",
+          "blocks.1.hook_mlp_out",
+          "blocks.2.attn.hook_result[0]",
+          "blocks.2.hook_mlp_out"
+        ],
+        "support_id": "random:q50:r16"
+      },
+      {
+        "kind": "random",
+        "method": "random_control",
+        "quantile": 0.5,
+        "replicate": 17,
+        "selected_nodes": [
+          "blocks.0.attn.hook_result[1]",
+          "blocks.0.attn.hook_result[2]",
+          "blocks.0.attn.hook_result[3]",
+          "blocks.1.attn.hook_result[0]",
+          "blocks.1.attn.hook_result[1]",
+          "blocks.1.attn.hook_result[3]",
+          "blocks.2.attn.hook_result[2]",
+          "blocks.2.attn.hook_result[3]"
+        ],
+        "support_id": "random:q50:r17"
+      },
+      {
+        "kind": "random",
+        "method": "random_control",
+        "quantile": 0.5,
+        "replicate": 18,
+        "selected_nodes": [
+          "blocks.0.attn.hook_result[0]",
+          "blocks.0.attn.hook_result[1]",
+          "blocks.0.attn.hook_result[3]",
+          "blocks.1.attn.hook_result[1]",
+          "blocks.1.attn.hook_result[2]",
+          "blocks.1.attn.hook_result[3]",
+          "blocks.1.hook_mlp_out",
+          "blocks.2.attn.hook_result[1]"
+        ],
+        "support_id": "random:q50:r18"
+      },
+      {
+        "kind": "random",
+        "method": "random_control",
+        "quantile": 0.5,
+        "replicate": 19,
+        "selected_nodes": [
+          "blocks.0.attn.hook_result[0]",
+          "blocks.0.attn.hook_result[1]",
+          "blocks.0.hook_mlp_out",
+          "blocks.1.attn.hook_result[2]",
+          "blocks.1.attn.hook_result[3]",
+          "blocks.2.attn.hook_result[0]",
+          "blocks.2.attn.hook_result[1]",
+          "blocks.2.attn.hook_result[2]"
+        ],
+        "support_id": "random:q50:r19"
+      },
+      {
+        "kind": "random",
+        "method": "random_control",
+        "quantile": 0.5,
+        "replicate": 20,
+        "selected_nodes": [
+          "blocks.0.attn.hook_result[0]",
+          "blocks.0.attn.hook_result[1]",
+          "blocks.1.attn.hook_result[0]",
+          "blocks.1.attn.hook_result[1]",
+          "blocks.2.attn.hook_result[0]",
+          "blocks.2.attn.hook_result[1]",
+          "blocks.2.attn.hook_result[2]",
+          "blocks.2.attn.hook_result[3]"
+        ],
+        "support_id": "random:q50:r20"
+      },
+      {
+        "kind": "random",
+        "method": "random_control",
+        "quantile": 0.5,
+        "replicate": 21,
+        "selected_nodes": [
+          "blocks.0.attn.hook_result[1]",
+          "blocks.0.attn.hook_result[3]",
+          "blocks.0.hook_mlp_out",
+          "blocks.1.attn.hook_result[0]",
+          "blocks.1.attn.hook_result[1]",
+          "blocks.1.hook_mlp_out",
+          "blocks.2.attn.hook_result[1]",
+          "blocks.2.attn.hook_result[3]"
+        ],
+        "support_id": "random:q50:r21"
+      },
+      {
+        "kind": "random",
+        "method": "random_control",
+        "quantile": 0.5,
+        "replicate": 22,
+        "selected_nodes": [
+          "blocks.0.attn.hook_result[1]",
+          "blocks.0.attn.hook_result[2]",
+          "blocks.1.attn.hook_result[1]",
+          "blocks.1.attn.hook_result[2]",
+          "blocks.2.attn.hook_result[0]",
+          "blocks.2.attn.hook_result[1]",
+          "blocks.2.attn.hook_result[2]",
+          "blocks.2.hook_mlp_out"
+        ],
+        "support_id": "random:q50:r22"
+      },
+      {
+        "kind": "random",
+        "method": "random_control",
+        "quantile": 0.5,
+        "replicate": 23,
+        "selected_nodes": [
+          "blocks.0.attn.hook_result[0]",
+          "blocks.0.attn.hook_result[1]",
+          "blocks.0.attn.hook_result[2]",
+          "blocks.0.hook_mlp_out",
+          "blocks.1.attn.hook_result[1]",
+          "blocks.1.attn.hook_result[2]",
+          "blocks.2.attn.hook_result[0]",
+          "blocks.2.attn.hook_result[1]"
+        ],
+        "support_id": "random:q50:r23"
+      },
+      {
+        "kind": "random",
+        "method": "random_control",
+        "quantile": 0.5,
+        "replicate": 24,
+        "selected_nodes": [
+          "blocks.0.attn.hook_result[0]",
+          "blocks.0.attn.hook_result[1]",
+          "blocks.0.attn.hook_result[3]",
+          "blocks.1.attn.hook_result[0]",
+          "blocks.1.attn.hook_result[3]",
+          "blocks.2.attn.hook_result[1]",
+          "blocks.2.attn.hook_result[2]",
+          "blocks.2.attn.hook_result[3]"
+        ],
+        "support_id": "random:q50:r24"
+      },
+      {
+        "kind": "random",
+        "method": "random_control",
+        "quantile": 0.5,
+        "replicate": 25,
+        "selected_nodes": [
+          "blocks.0.attn.hook_result[2]",
+          "blocks.1.attn.hook_result[0]",
+          "blocks.1.attn.hook_result[1]",
+          "blocks.1.attn.hook_result[3]",
+          "blocks.1.hook_mlp_out",
+          "blocks.2.attn.hook_result[0]",
+          "blocks.2.attn.hook_result[3]",
+          "blocks.2.hook_mlp_out"
+        ],
+        "support_id": "random:q50:r25"
+      },
+      {
+        "kind": "random",
+        "method": "random_control",
+        "quantile": 0.5,
+        "replicate": 26,
+        "selected_nodes": [
+          "blocks.0.attn.hook_result[1]",
+          "blocks.0.attn.hook_result[2]",
+          "blocks.0.attn.hook_result[3]",
+          "blocks.0.hook_mlp_out",
+          "blocks.1.attn.hook_result[2]",
+          "blocks.1.hook_mlp_out",
+          "blocks.2.attn.hook_result[1]",
+          "blocks.2.attn.hook_result[3]"
+        ],
+        "support_id": "random:q50:r26"
+      },
+      {
+        "kind": "random",
+        "method": "random_control",
+        "quantile": 0.5,
+        "replicate": 27,
+        "selected_nodes": [
+          "blocks.0.attn.hook_result[0]",
+          "blocks.0.attn.hook_result[1]",
+          "blocks.0.attn.hook_result[2]",
+          "blocks.1.attn.hook_result[3]",
+          "blocks.1.hook_mlp_out",
+          "blocks.2.attn.hook_result[0]",
+          "blocks.2.attn.hook_result[2]",
+          "blocks.2.hook_mlp_out"
+        ],
+        "support_id": "random:q50:r27"
+      },
+      {
+        "kind": "random",
+        "method": "random_control",
+        "quantile": 0.5,
+        "replicate": 28,
+        "selected_nodes": [
+          "blocks.0.attn.hook_result[0]",
+          "blocks.0.attn.hook_result[1]",
+          "blocks.0.attn.hook_result[2]",
+          "blocks.0.attn.hook_result[3]",
+          "blocks.1.attn.hook_result[1]",
+          "blocks.2.attn.hook_result[1]",
+          "blocks.2.attn.hook_result[2]",
+          "blocks.2.attn.hook_result[3]"
+        ],
+        "support_id": "random:q50:r28"
+      },
+      {
+        "kind": "random",
+        "method": "random_control",
+        "quantile": 0.5,
+        "replicate": 29,
+        "selected_nodes": [
+          "blocks.0.hook_mlp_out",
+          "blocks.1.attn.hook_result[0]",
+          "blocks.1.attn.hook_result[1]",
+          "blocks.1.attn.hook_result[3]",
+          "blocks.2.attn.hook_result[0]",
+          "blocks.2.attn.hook_result[2]",
+          "blocks.2.attn.hook_result[3]",
+          "blocks.2.hook_mlp_out"
+        ],
+        "support_id": "random:q50:r29"
+      },
+      {
+        "kind": "random",
+        "method": "random_control",
+        "quantile": 0.5,
+        "replicate": 30,
+        "selected_nodes": [
+          "blocks.0.attn.hook_result[1]",
+          "blocks.0.attn.hook_result[2]",
+          "blocks.0.attn.hook_result[3]",
+          "blocks.0.hook_mlp_out",
+          "blocks.1.attn.hook_result[2]",
+          "blocks.1.hook_mlp_out",
+          "blocks.2.attn.hook_result[0]",
+          "blocks.2.hook_mlp_out"
+        ],
+        "support_id": "random:q50:r30"
+      },
+      {
+        "kind": "random",
+        "method": "random_control",
+        "quantile": 0.5,
+        "replicate": 31,
+        "selected_nodes": [
+          "blocks.0.attn.hook_result[0]",
+          "blocks.0.attn.hook_result[1]",
+          "blocks.0.hook_mlp_out",
+          "blocks.1.attn.hook_result[0]",
+          "blocks.1.hook_mlp_out",
+          "blocks.2.attn.hook_result[0]",
+          "blocks.2.attn.hook_result[2]",
+          "blocks.2.attn.hook_result[3]"
+        ],
+        "support_id": "random:q50:r31"
+      },
+      {
+        "kind": "random",
+        "method": "random_control",
+        "quantile": 0.5,
+        "replicate": 32,
+        "selected_nodes": [
+          "blocks.0.attn.hook_result[2]",
+          "blocks.0.attn.hook_result[3]",
+          "blocks.1.attn.hook_result[0]",
+          "blocks.1.hook_mlp_out",
+          "blocks.2.attn.hook_result[1]",
+          "blocks.2.attn.hook_result[2]",
+          "blocks.2.attn.hook_result[3]",
+          "blocks.2.hook_mlp_out"
+        ],
+        "support_id": "random:q50:r32"
+      },
+      {
+        "kind": "random",
+        "method": "random_control",
+        "quantile": 0.5,
+        "replicate": 33,
+        "selected_nodes": [
+          "blocks.0.attn.hook_result[1]",
+          "blocks.0.attn.hook_result[2]",
+          "blocks.0.hook_mlp_out",
+          "blocks.1.attn.hook_result[0]",
+          "blocks.1.attn.hook_result[1]",
+          "blocks.1.attn.hook_result[2]",
+          "blocks.1.hook_mlp_out",
+          "blocks.2.hook_mlp_out"
+        ],
+        "support_id": "random:q50:r33"
+      },
+      {
+        "kind": "random",
+        "method": "random_control",
+        "quantile": 0.5,
+        "replicate": 34,
+        "selected_nodes": [
+          "blocks.0.attn.hook_result[0]",
+          "blocks.0.attn.hook_result[3]",
+          "blocks.1.attn.hook_result[1]",
+          "blocks.1.attn.hook_result[2]",
+          "blocks.1.attn.hook_result[3]",
+          "blocks.2.attn.hook_result[1]",
+          "blocks.2.attn.hook_result[3]",
+          "blocks.2.hook_mlp_out"
+        ],
+        "support_id": "random:q50:r34"
+      },
+      {
+        "kind": "random",
+        "method": "random_control",
+        "quantile": 0.5,
+        "replicate": 35,
+        "selected_nodes": [
+          "blocks.0.attn.hook_result[3]",
+          "blocks.1.attn.hook_result[1]",
+          "blocks.1.attn.hook_result[2]",
+          "blocks.1.hook_mlp_out",
+          "blocks.2.attn.hook_result[0]",
+          "blocks.2.attn.hook_result[1]",
+          "blocks.2.attn.hook_result[3]",
+          "blocks.2.hook_mlp_out"
+        ],
+        "support_id": "random:q50:r35"
+      },
+      {
+        "kind": "random",
+        "method": "random_control",
+        "quantile": 0.5,
+        "replicate": 36,
+        "selected_nodes": [
+          "blocks.0.attn.hook_result[0]",
+          "blocks.0.attn.hook_result[2]",
+          "blocks.0.attn.hook_result[3]",
+          "blocks.0.hook_mlp_out",
+          "blocks.1.attn.hook_result[1]",
+          "blocks.1.attn.hook_result[2]",
+          "blocks.2.attn.hook_result[0]",
+          "blocks.2.attn.hook_result[3]"
+        ],
+        "support_id": "random:q50:r36"
+      },
+      {
+        "kind": "random",
+        "method": "random_control",
+        "quantile": 0.5,
+        "replicate": 37,
+        "selected_nodes": [
+          "blocks.0.attn.hook_result[0]",
+          "blocks.0.attn.hook_result[2]",
+          "blocks.1.attn.hook_result[1]",
+          "blocks.1.attn.hook_result[2]",
+          "blocks.1.attn.hook_result[3]",
+          "blocks.1.hook_mlp_out",
+          "blocks.2.attn.hook_result[0]",
+          "blocks.2.attn.hook_result[2]"
+        ],
+        "support_id": "random:q50:r37"
+      },
+      {
+        "kind": "random",
+        "method": "random_control",
+        "quantile": 0.5,
+        "replicate": 38,
+        "selected_nodes": [
+          "blocks.0.attn.hook_result[0]",
+          "blocks.0.attn.hook_result[1]",
+          "blocks.0.hook_mlp_out",
+          "blocks.1.attn.hook_result[0]",
+          "blocks.1.attn.hook_result[1]",
+          "blocks.1.hook_mlp_out",
+          "blocks.2.attn.hook_result[0]",
+          "blocks.2.hook_mlp_out"
+        ],
+        "support_id": "random:q50:r38"
+      },
+      {
+        "kind": "random",
+        "method": "random_control",
+        "quantile": 0.5,
+        "replicate": 39,
+        "selected_nodes": [
+          "blocks.0.attn.hook_result[0]",
+          "blocks.0.attn.hook_result[2]",
+          "blocks.1.attn.hook_result[0]",
+          "blocks.1.hook_mlp_out",
+          "blocks.2.attn.hook_result[0]",
+          "blocks.2.attn.hook_result[1]",
+          "blocks.2.attn.hook_result[3]",
+          "blocks.2.hook_mlp_out"
+        ],
+        "support_id": "random:q50:r39"
+      },
+      {
+        "kind": "random",
+        "method": "random_control",
+        "quantile": 0.5,
+        "replicate": 40,
+        "selected_nodes": [
+          "blocks.0.attn.hook_result[2]",
+          "blocks.0.attn.hook_result[3]",
+          "blocks.1.attn.hook_result[1]",
+          "blocks.1.attn.hook_result[2]",
+          "blocks.1.attn.hook_result[3]",
+          "blocks.2.attn.hook_result[0]",
+          "blocks.2.attn.hook_result[2]",
+          "blocks.2.attn.hook_result[3]"
+        ],
+        "support_id": "random:q50:r40"
+      },
+      {
+        "kind": "random",
+        "method": "random_control",
+        "quantile": 0.5,
+        "replicate": 41,
+        "selected_nodes": [
+          "blocks.0.attn.hook_result[0]",
+          "blocks.0.attn.hook_result[3]",
+          "blocks.1.attn.hook_result[0]",
+          "blocks.1.attn.hook_result[2]",
+          "blocks.1.attn.hook_result[3]",
+          "blocks.2.attn.hook_result[1]",
+          "blocks.2.attn.hook_result[2]",
+          "blocks.2.attn.hook_result[3]"
+        ],
+        "support_id": "random:q50:r41"
+      },
+      {
+        "kind": "random",
+        "method": "random_control",
+        "quantile": 0.5,
+        "replicate": 42,
+        "selected_nodes": [
+          "blocks.0.attn.hook_result[2]",
+          "blocks.0.hook_mlp_out",
+          "blocks.1.attn.hook_result[0]",
+          "blocks.1.attn.hook_result[2]",
+          "blocks.2.attn.hook_result[0]",
+          "blocks.2.attn.hook_result[2]",
+          "blocks.2.attn.hook_result[3]",
+          "blocks.2.hook_mlp_out"
+        ],
+        "support_id": "random:q50:r42"
+      },
+      {
+        "kind": "random",
+        "method": "random_control",
+        "quantile": 0.5,
+        "replicate": 43,
+        "selected_nodes": [
+          "blocks.0.attn.hook_result[1]",
+          "blocks.0.hook_mlp_out",
+          "blocks.1.attn.hook_result[0]",
+          "blocks.1.attn.hook_result[1]",
+          "blocks.1.attn.hook_result[2]",
+          "blocks.1.attn.hook_result[3]",
+          "blocks.2.attn.hook_result[0]",
+          "blocks.2.attn.hook_result[2]"
+        ],
+        "support_id": "random:q50:r43"
+      },
+      {
+        "kind": "random",
+        "method": "random_control",
+        "quantile": 0.5,
+        "replicate": 44,
+        "selected_nodes": [
+          "blocks.0.attn.hook_result[1]",
+          "blocks.0.attn.hook_result[3]",
+          "blocks.0.hook_mlp_out",
+          "blocks.1.attn.hook_result[0]",
+          "blocks.1.attn.hook_result[3]",
+          "blocks.1.hook_mlp_out",
+          "blocks.2.attn.hook_result[1]",
+          "blocks.2.attn.hook_result[3]"
+        ],
+        "support_id": "random:q50:r44"
+      },
+      {
+        "kind": "random",
+        "method": "random_control",
+        "quantile": 0.5,
+        "replicate": 45,
+        "selected_nodes": [
+          "blocks.0.attn.hook_result[1]",
+          "blocks.0.attn.hook_result[3]",
+          "blocks.0.hook_mlp_out",
+          "blocks.1.attn.hook_result[0]",
+          "blocks.1.attn.hook_result[2]",
+          "blocks.2.attn.hook_result[0]",
+          "blocks.2.attn.hook_result[3]",
+          "blocks.2.hook_mlp_out"
+        ],
+        "support_id": "random:q50:r45"
+      },
+      {
+        "kind": "random",
+        "method": "random_control",
+        "quantile": 0.5,
+        "replicate": 46,
+        "selected_nodes": [
+          "blocks.0.attn.hook_result[2]",
+          "blocks.0.attn.hook_result[3]",
+          "blocks.0.hook_mlp_out",
+          "blocks.1.attn.hook_result[2]",
+          "blocks.1.hook_mlp_out",
+          "blocks.2.attn.hook_result[2]",
+          "blocks.2.attn.hook_result[3]",
+          "blocks.2.hook_mlp_out"
+        ],
+        "support_id": "random:q50:r46"
+      },
+      {
+        "kind": "random",
+        "method": "random_control",
+        "quantile": 0.5,
+        "replicate": 47,
+        "selected_nodes": [
+          "blocks.0.attn.hook_result[1]",
+          "blocks.0.attn.hook_result[3]",
+          "blocks.0.hook_mlp_out",
+          "blocks.1.attn.hook_result[1]",
+          "blocks.1.attn.hook_result[2]",
+          "blocks.1.hook_mlp_out",
+          "blocks.2.attn.hook_result[0]",
+          "blocks.2.hook_mlp_out"
+        ],
+        "support_id": "random:q50:r47"
+      },
+      {
+        "kind": "random",
+        "method": "random_control",
+        "quantile": 0.5,
+        "replicate": 48,
+        "selected_nodes": [
+          "blocks.0.attn.hook_result[0]",
+          "blocks.0.attn.hook_result[1]",
+          "blocks.1.attn.hook_result[0]",
+          "blocks.1.attn.hook_result[1]",
+          "blocks.1.attn.hook_result[2]",
+          "blocks.1.attn.hook_result[3]",
+          "blocks.2.attn.hook_result[0]",
+          "blocks.2.attn.hook_result[1]"
+        ],
+        "support_id": "random:q50:r48"
+      },
+      {
+        "kind": "random",
+        "method": "random_control",
+        "quantile": 0.5,
+        "replicate": 49,
+        "selected_nodes": [
+          "blocks.0.attn.hook_result[3]",
+          "blocks.1.attn.hook_result[0]",
+          "blocks.1.attn.hook_result[2]",
+          "blocks.1.attn.hook_result[3]",
+          "blocks.2.attn.hook_result[0]",
+          "blocks.2.attn.hook_result[1]",
+          "blocks.2.attn.hook_result[2]",
+          "blocks.2.hook_mlp_out"
+        ],
+        "support_id": "random:q50:r49"
+      },
+      {
+        "kind": "random",
+        "method": "random_control",
+        "quantile": 0.5,
+        "replicate": 50,
+        "selected_nodes": [
+          "blocks.0.attn.hook_result[0]",
+          "blocks.0.attn.hook_result[1]",
+          "blocks.0.attn.hook_result[2]",
+          "blocks.0.hook_mlp_out",
+          "blocks.1.attn.hook_result[1]",
+          "blocks.1.attn.hook_result[3]",
+          "blocks.2.attn.hook_result[2]",
+          "blocks.2.attn.hook_result[3]"
+        ],
+        "support_id": "random:q50:r50"
+      },
+      {
+        "kind": "random",
+        "method": "random_control",
+        "quantile": 0.5,
+        "replicate": 51,
+        "selected_nodes": [
+          "blocks.0.attn.hook_result[2]",
+          "blocks.0.hook_mlp_out",
+          "blocks.1.attn.hook_result[0]",
+          "blocks.1.attn.hook_result[1]",
+          "blocks.1.hook_mlp_out",
+          "blocks.2.attn.hook_result[1]",
+          "blocks.2.attn.hook_result[2]",
+          "blocks.2.hook_mlp_out"
+        ],
+        "support_id": "random:q50:r51"
+      },
+      {
+        "kind": "random",
+        "method": "random_control",
+        "quantile": 0.5,
+        "replicate": 52,
+        "selected_nodes": [
+          "blocks.0.attn.hook_result[3]",
+          "blocks.1.attn.hook_result[0]",
+          "blocks.1.attn.hook_result[1]",
+          "blocks.1.attn.hook_result[2]",
+          "blocks.1.attn.hook_result[3]",
+          "blocks.2.attn.hook_result[2]",
+          "blocks.2.attn.hook_result[3]",
+          "blocks.2.hook_mlp_out"
+        ],
+        "support_id": "random:q50:r52"
+      },
+      {
+        "kind": "random",
+        "method": "random_control",
+        "quantile": 0.5,
+        "replicate": 53,
+        "selected_nodes": [
+          "blocks.0.attn.hook_result[1]",
+          "blocks.1.attn.hook_result[1]",
+          "blocks.1.attn.hook_result[2]",
+          "blocks.1.hook_mlp_out",
+          "blocks.2.attn.hook_result[0]",
+          "blocks.2.attn.hook_result[1]",
+          "blocks.2.attn.hook_result[2]",
+          "blocks.2.attn.hook_result[3]"
+        ],
+        "support_id": "random:q50:r53"
+      },
+      {
+        "kind": "random",
+        "method": "random_control",
+        "quantile": 0.5,
+        "replicate": 54,
+        "selected_nodes": [
+          "blocks.0.attn.hook_result[0]",
+          "blocks.0.attn.hook_result[1]",
+          "blocks.0.attn.hook_result[2]",
+          "blocks.1.attn.hook_result[0]",
+          "blocks.2.attn.hook_result[0]",
+          "blocks.2.attn.hook_result[1]",
+          "blocks.2.attn.hook_result[3]",
+          "blocks.2.hook_mlp_out"
+        ],
+        "support_id": "random:q50:r54"
+      },
+      {
+        "kind": "random",
+        "method": "random_control",
+        "quantile": 0.5,
+        "replicate": 55,
+        "selected_nodes": [
+          "blocks.0.attn.hook_result[0]",
+          "blocks.0.attn.hook_result[1]",
+          "blocks.0.attn.hook_result[2]",
+          "blocks.0.attn.hook_result[3]",
+          "blocks.0.hook_mlp_out",
+          "blocks.1.attn.hook_result[1]",
+          "blocks.1.attn.hook_result[3]",
+          "blocks.1.hook_mlp_out"
+        ],
+        "support_id": "random:q50:r55"
+      },
+      {
+        "kind": "random",
+        "method": "random_control",
+        "quantile": 0.5,
+        "replicate": 56,
+        "selected_nodes": [
+          "blocks.0.attn.hook_result[0]",
+          "blocks.0.attn.hook_result[1]",
+          "blocks.1.attn.hook_result[2]",
+          "blocks.1.attn.hook_result[3]",
+          "blocks.2.attn.hook_result[0]",
+          "blocks.2.attn.hook_result[1]",
+          "blocks.2.attn.hook_result[2]",
+          "blocks.2.attn.hook_result[3]"
+        ],
+        "support_id": "random:q50:r56"
+      },
+      {
+        "kind": "random",
+        "method": "random_control",
+        "quantile": 0.5,
+        "replicate": 57,
+        "selected_nodes": [
+          "blocks.0.attn.hook_result[0]",
+          "blocks.0.attn.hook_result[2]",
+          "blocks.1.attn.hook_result[0]",
+          "blocks.1.attn.hook_result[1]",
+          "blocks.1.attn.hook_result[3]",
+          "blocks.2.attn.hook_result[2]",
+          "blocks.2.attn.hook_result[3]",
+          "blocks.2.hook_mlp_out"
+        ],
+        "support_id": "random:q50:r57"
+      },
+      {
+        "kind": "random",
+        "method": "random_control",
+        "quantile": 0.5,
+        "replicate": 58,
+        "selected_nodes": [
+          "blocks.0.attn.hook_result[2]",
+          "blocks.0.attn.hook_result[3]",
+          "blocks.0.hook_mlp_out",
+          "blocks.1.attn.hook_result[1]",
+          "blocks.1.attn.hook_result[3]",
+          "blocks.1.hook_mlp_out",
+          "blocks.2.attn.hook_result[0]",
+          "blocks.2.attn.hook_result[3]"
+        ],
+        "support_id": "random:q50:r58"
+      },
+      {
+        "kind": "random",
+        "method": "random_control",
+        "quantile": 0.5,
+        "replicate": 59,
+        "selected_nodes": [
+          "blocks.0.attn.hook_result[3]",
+          "blocks.1.attn.hook_result[0]",
+          "blocks.1.attn.hook_result[1]",
+          "blocks.1.attn.hook_result[3]",
+          "blocks.1.hook_mlp_out",
+          "blocks.2.attn.hook_result[2]",
+          "blocks.2.attn.hook_result[3]",
+          "blocks.2.hook_mlp_out"
+        ],
+        "support_id": "random:q50:r59"
+      },
+      {
+        "kind": "random",
+        "method": "random_control",
+        "quantile": 0.5,
+        "replicate": 60,
+        "selected_nodes": [
+          "blocks.0.attn.hook_result[0]",
+          "blocks.1.attn.hook_result[0]",
+          "blocks.1.attn.hook_result[1]",
+          "blocks.1.attn.hook_result[2]",
+          "blocks.1.attn.hook_result[3]",
+          "blocks.2.attn.hook_result[0]",
+          "blocks.2.attn.hook_result[1]",
+          "blocks.2.hook_mlp_out"
+        ],
+        "support_id": "random:q50:r60"
+      },
+      {
+        "kind": "random",
+        "method": "random_control",
+        "quantile": 0.5,
+        "replicate": 61,
+        "selected_nodes": [
+          "blocks.0.attn.hook_result[0]",
+          "blocks.0.attn.hook_result[3]",
+          "blocks.0.hook_mlp_out",
+          "blocks.1.attn.hook_result[2]",
+          "blocks.1.hook_mlp_out",
+          "blocks.2.attn.hook_result[0]",
+          "blocks.2.attn.hook_result[1]",
+          "blocks.2.hook_mlp_out"
+        ],
+        "support_id": "random:q50:r61"
+      },
+      {
+        "kind": "random",
+        "method": "random_control",
+        "quantile": 0.5,
+        "replicate": 62,
+        "selected_nodes": [
+          "blocks.0.attn.hook_result[1]",
+          "blocks.0.attn.hook_result[2]",
+          "blocks.0.attn.hook_result[3]",
+          "blocks.0.hook_mlp_out",
+          "blocks.1.attn.hook_result[1]",
+          "blocks.1.attn.hook_result[3]",
+          "blocks.2.attn.hook_result[1]",
+          "blocks.2.hook_mlp_out"
+        ],
+        "support_id": "random:q50:r62"
+      },
+      {
+        "kind": "random",
+        "method": "random_control",
+        "quantile": 0.5,
+        "replicate": 63,
+        "selected_nodes": [
+          "blocks.0.attn.hook_result[2]",
+          "blocks.0.attn.hook_result[3]",
+          "blocks.1.attn.hook_result[0]",
+          "blocks.1.attn.hook_result[2]",
+          "blocks.1.attn.hook_result[3]",
+          "blocks.2.attn.hook_result[0]",
+          "blocks.2.attn.hook_result[1]",
+          "blocks.2.attn.hook_result[2]"
+        ],
+        "support_id": "random:q50:r63"
+      }
+    ],
+    "schema_version": "e32_3_frozen_discovery_supports_v1",
+    "singleton_curve_supports": {
+      "4": {
+        "kind": "deterministic",
+        "method": "singleton_output_effect",
+        "quantile": 0.25,
+        "selected_nodes": [
+          "blocks.0.hook_mlp_out",
+          "blocks.1.hook_mlp_out",
+          "blocks.2.attn.hook_result[0]",
+          "blocks.2.hook_mlp_out"
+        ],
+        "support_id": "curve:singleton_output_effect:q25"
+      },
+      "8": {
+        "kind": "deterministic",
+        "method": "singleton_output_effect",
+        "quantile": 0.5,
+        "selected_nodes": [
+          "blocks.0.attn.hook_result[0]",
+          "blocks.0.attn.hook_result[1]",
+          "blocks.0.attn.hook_result[3]",
+          "blocks.0.hook_mlp_out",
+          "blocks.1.attn.hook_result[1]",
+          "blocks.1.hook_mlp_out",
+          "blocks.2.attn.hook_result[0]",
+          "blocks.2.hook_mlp_out"
+        ],
+        "support_id": "deterministic:singleton_output_effect:q50"
+      },
+      "12": {
+        "kind": "deterministic",
+        "method": "singleton_output_effect",
+        "quantile": 0.75,
+        "selected_nodes": [
+          "blocks.0.attn.hook_result[0]",
+          "blocks.0.attn.hook_result[1]",
+          "blocks.0.attn.hook_result[2]",
+          "blocks.0.attn.hook_result[3]",
+          "blocks.0.hook_mlp_out",
+          "blocks.1.attn.hook_result[1]",
+          "blocks.1.attn.hook_result[2]",
+          "blocks.1.attn.hook_result[3]",
+          "blocks.1.hook_mlp_out",
+          "blocks.2.attn.hook_result[0]",
+          "blocks.2.attn.hook_result[1]",
+          "blocks.2.hook_mlp_out"
+        ],
+        "support_id": "curve:singleton_output_effect:q75"
+      }
+    }
+  },
+  "registration_sha256": "1c42b4761573286af06604094efc5a85b0f873d773a99afe97d9767e25ab86a4",
+  "run_attempt_sha256": "beac0e8d368c2a2f878819ef16a63d1f596ac2239f88d8b76fb36ec87a2255b2",
+  "schema_version": "e32_3_confirmation_authorization_v1",
+  "status": "durable_before_confirmation_intervention"
+}

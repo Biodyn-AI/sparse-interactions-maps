@@ -1,0 +1,13 @@
+{
+  "schema_version": "e31_2_confirmation_authorization_v1",
+  "status": "confirmation_authorized_after_geometry_and_manifest_seal",
+  "registration_sha256": "bad36e15f37dd7147c43fcc4ecb5cf8db0f3bcf2525645692e19079d7ff26ede",
+  "protocol_sha256": "fe7b400f6ace57d1a265b73a66e413cf8e9f7a8dfd4a187d6864e8dce600c216",
+  "discovery_labels_sha256": "b842d90a57e60f9f4bce15c1921726a7820cecee52d080981ec0264c800732a7",
+  "discovery_geometry_sha256": "e2d91522e5d79683bf57f4188bb6048ca2200fe71df19317fd9c58852da9cead",
+  "discovery_geometry_custody_sha256": "748fe7988d66f8e24165d74a66e4aaccb89aed62ff286759276fd0e3c9f98ddc",
+  "reconstruction_selection_sha256": "56d53332c5751cb5ac650d0b10bb05810498bfdbbd68e7512d0da7b06a432d0e",
+  "reconstruction_manifest_sha256": "258995d38708f56666206d43b9fe5996ea2b22a4c3a3ae24b50188b61b8b90aa",
+  "maximum_new_condition_count": 72,
+  "confirmation_adaptation_allowed": false
+}

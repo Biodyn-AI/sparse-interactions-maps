@@ -1,0 +1,354 @@
+{
+  "checkpoint_sha256": {
+    "103": {
+      "edges.pkl": "4df9e5eb129553e810673c7ea9f138df364f9461861df969e00972518748db4b",
+      "ll_model.pth": "d2deec61e135c0e16e0f0c1884c91141e8486825d8c697045e32c422cc2862bb",
+      "ll_model_cfg.pkl": "a7628439ed419829404ac8619bc94b8424d1eb5f6e00ce2384a591ef1771ab98",
+      "meta.json": "8c0487bac963462baac77e32612c40cad008d138b5cf22c49eed0734ecfae44f"
+    },
+    "63": {
+      "edges.pkl": "3156b2e517b8c45e76ea28f8c2ccbcda226f636cd44a809c908e167871d2cdab",
+      "ll_model.pth": "73cd4fe1e237568f33000e0b014f3e265e540c029db551bcb9a6356b73eda684",
+      "ll_model_cfg.pkl": "04187613894b7f89b32d1355605a0a21fde32558454a58fbaa3ac1a3386cae65",
+      "meta.json": "5eb2f25b9a37894c89a79371452e5213e6d335045cf20aad560ca931a7cdad87"
+    },
+    "82": {
+      "edges.pkl": "a79289804c5b5c05a361921e0a87b6c2e043b858ff57a78334865d1aba23ccaa",
+      "ll_model.pth": "5aa2c86e46ca4718f4043c735231bc6b3b3bd86ba56aed5861c523886e0ea874",
+      "ll_model_cfg.pkl": "78a927568daff80c1fa61e40868a6c36b5d297604342ffecc99b57af12d6e00d",
+      "meta.json": "47068a1d73770d5b1851105cf2f9198f90d7cc02288d1b342a5f0ad4078fcac2"
+    }
+  },
+  "created_utc": "2026-11-16T18:42:44.505088+00:00",
+  "models_loaded_or_called": false,
+  "panels": {
+    "103/confirmation": {
+      "candidate_count": 192,
+      "clean_seed": 6403100,
+      "identity_sha256": "f4c696575d8e2c5eb45624b69ba75453abfa63c8bc1a11e0c7b384958891ac60",
+      "source_seed": 6403101
+    },
+    "103/discovery": {
+      "candidate_count": 96,
+      "clean_seed": 6403000,
+      "identity_sha256": "3400ffd445a14712e487a4d3229f01c3d9db8bf5844338c1d9fd5d98a22f471b",
+      "source_seed": 6403001
+    },
+    "63/confirmation": {
+      "candidate_count": 192,
+      "clean_seed": 6363100,
+      "identity_sha256": "d676524a751efe2103d32376c3df34befcf258c799039f8418da2c9a42464df5",
+      "source_seed": 6363101
+    },
+    "63/discovery": {
+      "candidate_count": 96,
+      "clean_seed": 6363000,
+      "identity_sha256": "0f68023fe40f9c9953411c44f8f3e14d9c6148a630cda1592e6a4d9e2662ef79",
+      "source_seed": 6363001
+    },
+    "82/confirmation": {
+      "candidate_count": 192,
+      "clean_seed": 6382100,
+      "identity_sha256": "76ce1509b0cbabaefd0f6cdf4bff533bb469126e21327a4d49055d26f8c11a69",
+      "source_seed": 6382101
+    },
+    "82/discovery": {
+      "candidate_count": 96,
+      "clean_seed": 6382000,
+      "identity_sha256": "dcc5e1a17b02b33767bfb082436cf4f825d023c30b0658d83755715cef3b4b98",
+      "source_seed": 6382001
+    }
+  },
+  "protocol": {
+    "all_cases_run_regardless_of_outcomes": true,
+    "atlas_condition_batch_size": 32,
+    "bootstrap_replicates": 1000,
+    "bootstrap_seed": 330033,
+    "case_order": [
+      63,
+      103,
+      82
+    ],
+    "claims": {
+      "all_negative_and_heterogeneous_results_retained": true,
+      "benchmark_blind": false,
+      "case_ids_and_public_ground_truth_known_during_design": true,
+      "closure_auprc_not_directly_compared_without_prevalence": true,
+      "direct_wiring_recovery_claim": false,
+      "intervention_model_responses_previously_unseen_for_these_cases": true,
+      "no_outcome_adaptive_thresholds_or_case_replacement": true,
+      "parameter_training": false,
+      "whole_circuit_faithfulness_test": false
+    },
+    "hypotheses": {
+      "chain_reachability": "in cases103/82 transitive-only mean score > unrelated mean; report class-size-adjusted enrichment and CIs",
+      "endpoint_factor": "one nonnegative source/target factor explains >=0.90 squared score norm",
+      "negative_control": "case63 has no non-direct transitive path; no reachability gap is claimed there",
+      "score_stability": "discovery-confirmation score Spearman >=0.8 per case",
+      "sparse_portability": "discovery top ceil(0.1*E) captures >=0.75 confirmation score mass"
+    },
+    "maximum_model_examples": 85440,
+    "maximum_model_examples_note": "conservative ceiling also charging the cached empty atlas row",
+    "maximum_physical_forwards": 156,
+    "schema_version": "e33_sparse_interaction_protocol_v1",
+    "score": "mean class-centered squared logit second difference, positions1:",
+    "seed_rule": "6300000+1000*case_id+100*split_index; corrupt=clean+1",
+    "smoke_batch_size": 8,
+    "smoke_conditions": 16,
+    "smoke_max_absolute_error": 0.0001,
+    "splits": {
+      "confirmation": {
+        "candidate_count": 192,
+        "required_count": 128
+      },
+      "discovery": {
+        "candidate_count": 96,
+        "required_count": 64
+      }
+    },
+    "top_support_fraction": 0.1
+  },
+  "public_case_manifests": {
+    "103": {
+      "attention_dir": "bidirectional",
+      "case_id": 103,
+      "claim_role": "prospective_model_generalization",
+      "d_head": 6,
+      "d_mlp": 96,
+      "d_model": 24,
+      "d_vocab": 13,
+      "d_vocab_out": 11,
+      "exact_internal_fine_ground_truth_edges": 3,
+      "internal_ground_truth_edges": [
+        [
+          "blocks.0.attn.hook_result[0]",
+          "blocks.0.hook_mlp_out"
+        ],
+        [
+          "blocks.0.hook_mlp_out",
+          "blocks.1.hook_mlp_out"
+        ],
+        [
+          "blocks.1.hook_mlp_out",
+          "blocks.2.attn.hook_result[0]"
+        ]
+      ],
+      "internal_ground_truth_nodes": [
+        "blocks.2.attn.hook_result[0]",
+        "blocks.0.attn.hook_result[0]",
+        "blocks.1.hook_mlp_out",
+        "blocks.0.hook_mlp_out"
+      ],
+      "model_parameter_count": 22211,
+      "n_ctx": 10,
+      "n_heads": 4,
+      "n_layers": 3,
+      "output_kind": "categorical",
+      "raw_ground_truth_edges": 27,
+      "sha256": {
+        "edges.pkl": "4df9e5eb129553e810673c7ea9f138df364f9461861df969e00972518748db4b",
+        "ll_model.pth": "d2deec61e135c0e16e0f0c1884c91141e8486825d8c697045e32c422cc2862bb",
+        "ll_model_cfg.pkl": "a7628439ed419829404ac8619bc94b8424d1eb5f6e00ce2384a591ef1771ab98",
+        "meta.json": "8c0487bac963462baac77e32612c40cad008d138b5cf22c49eed0734ecfae44f"
+      },
+      "task": "swap consecutive sequence positions"
+    },
+    "63": {
+      "attention_dir": "bidirectional",
+      "case_id": 63,
+      "claim_role": "prospective_model_generalization",
+      "d_head": 6,
+      "d_mlp": 96,
+      "d_model": 24,
+      "d_vocab": 13,
+      "d_vocab_out": 10,
+      "exact_internal_fine_ground_truth_edges": 1,
+      "internal_ground_truth_edges": [
+        [
+          "blocks.0.attn.hook_result[0]",
+          "blocks.0.hook_mlp_out"
+        ]
+      ],
+      "internal_ground_truth_nodes": [
+        "blocks.0.attn.hook_result[0]",
+        "blocks.0.hook_mlp_out"
+      ],
+      "model_parameter_count": 15058,
+      "n_ctx": 10,
+      "n_heads": 4,
+      "n_layers": 2,
+      "output_kind": "categorical",
+      "raw_ground_truth_edges": 11,
+      "sha256": {
+        "edges.pkl": "3156b2e517b8c45e76ea28f8c2ccbcda226f636cd44a809c908e167871d2cdab",
+        "ll_model.pth": "73cd4fe1e237568f33000e0b014f3e265e540c029db551bcb9a6356b73eda684",
+        "ll_model_cfg.pkl": "04187613894b7f89b32d1355605a0a21fde32558454a58fbaa3ac1a3386cae65",
+        "meta.json": "5eb2f25b9a37894c89a79371452e5213e6d335045cf20aad560ca931a7cdad87"
+      },
+      "task": "replace each element by the number of smaller sequence elements"
+    },
+    "82": {
+      "attention_dir": "bidirectional",
+      "case_id": 82,
+      "claim_role": "prospective_model_generalization",
+      "d_head": 6,
+      "d_mlp": 96,
+      "d_model": 24,
+      "d_vocab": 13,
+      "d_vocab_out": 16,
+      "exact_internal_fine_ground_truth_edges": 4,
+      "internal_ground_truth_edges": [
+        [
+          "blocks.0.attn.hook_result[0]",
+          "blocks.0.hook_mlp_out"
+        ],
+        [
+          "blocks.0.hook_mlp_out",
+          "blocks.1.hook_mlp_out"
+        ],
+        [
+          "blocks.1.hook_mlp_out",
+          "blocks.2.hook_mlp_out"
+        ],
+        [
+          "blocks.2.hook_mlp_out",
+          "blocks.3.hook_mlp_out"
+        ]
+      ],
+      "internal_ground_truth_nodes": [
+        "blocks.0.attn.hook_result[0]",
+        "blocks.3.hook_mlp_out",
+        "blocks.2.hook_mlp_out",
+        "blocks.0.hook_mlp_out",
+        "blocks.1.hook_mlp_out"
+      ],
+      "model_parameter_count": 29464,
+      "n_ctx": 10,
+      "n_heads": 4,
+      "n_layers": 4,
+      "output_kind": "categorical",
+      "raw_ground_truth_edges": 21,
+      "sha256": {
+        "edges.pkl": "a79289804c5b5c05a361921e0a87b6c2e043b858ff57a78334865d1aba23ccaa",
+        "ll_model.pth": "5aa2c86e46ca4718f4043c735231bc6b3b3bd86ba56aed5861c523886e0ea874",
+        "ll_model_cfg.pkl": "78a927568daff80c1fa61e40868a6c36b5d297604342ffecc99b57af12d6e00d",
+        "meta.json": "47068a1d73770d5b1851105cf2f9198f90d7cc02288d1b342a5f0ad4078fcac2"
+      },
+      "task": "halve elements in the second half of the sequence"
+    }
+  },
+  "runtime": {
+    "analysis_dtype": "float64",
+    "device": "cpu",
+    "model_native_dtype": "float32",
+    "packages": {
+      "einops": "0.7.0",
+      "numpy": "1.26.4",
+      "scipy": "1.14.0",
+      "transformer-lens": "1.19.0"
+    },
+    "python": "3.11.17",
+    "python_executable": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/bin/python",
+    "torch": "2.3.1",
+    "torch_threads": 2
+  },
+  "schema_version": "e33_sparse_interaction_registration_v1",
+  "sealed_input_panels_sha256": "1576f68a296f332b751193df491df9e923a195c7834bf0e1bb6b459a49b0c909",
+  "sources": {
+    "/Volumes/Crucial X6/MacBook/Code/fundamental-mechinterp/experiments/e32_interpbench/.___init__.py": "46266a466c6f8253292f04d96b00221228d02bc6f17adffa9bf0eb00403b218d",
+    "/Volumes/Crucial X6/MacBook/Code/fundamental-mechinterp/experiments/e32_interpbench/._acquisition.py": "46266a466c6f8253292f04d96b00221228d02bc6f17adffa9bf0eb00403b218d",
+    "/Volumes/Crucial X6/MacBook/Code/fundamental-mechinterp/experiments/e32_interpbench/._adapter.py": "46266a466c6f8253292f04d96b00221228d02bc6f17adffa9bf0eb00403b218d",
+    "/Volumes/Crucial X6/MacBook/Code/fundamental-mechinterp/experiments/e32_interpbench/._analysis.py": "46266a466c6f8253292f04d96b00221228d02bc6f17adffa9bf0eb00403b218d",
+    "/Volumes/Crucial X6/MacBook/Code/fundamental-mechinterp/experiments/e32_interpbench/._component_patching.py": "46266a466c6f8253292f04d96b00221228d02bc6f17adffa9bf0eb00403b218d",
+    "/Volumes/Crucial X6/MacBook/Code/fundamental-mechinterp/experiments/e32_interpbench/._e32_1_dry_run.py": "46266a466c6f8253292f04d96b00221228d02bc6f17adffa9bf0eb00403b218d",
+    "/Volumes/Crucial X6/MacBook/Code/fundamental-mechinterp/experiments/e32_interpbench/._e32_1_orchestration.py": "46266a466c6f8253292f04d96b00221228d02bc6f17adffa9bf0eb00403b218d",
+    "/Volumes/Crucial X6/MacBook/Code/fundamental-mechinterp/experiments/e32_interpbench/._e32_1_protocol.py": "46266a466c6f8253292f04d96b00221228d02bc6f17adffa9bf0eb00403b218d",
+    "/Volumes/Crucial X6/MacBook/Code/fundamental-mechinterp/experiments/e32_interpbench/._e32_1_run.py": "46266a466c6f8253292f04d96b00221228d02bc6f17adffa9bf0eb00403b218d",
+    "/Volumes/Crucial X6/MacBook/Code/fundamental-mechinterp/experiments/e32_interpbench/._e32_2_acquisition.py": "46266a466c6f8253292f04d96b00221228d02bc6f17adffa9bf0eb00403b218d",
+    "/Volumes/Crucial X6/MacBook/Code/fundamental-mechinterp/experiments/e32_interpbench/._e32_2_directed_replacement.py": "46266a466c6f8253292f04d96b00221228d02bc6f17adffa9bf0eb00403b218d",
+    "/Volumes/Crucial X6/MacBook/Code/fundamental-mechinterp/experiments/e32_interpbench/._e32_2_orchestration.py": "46266a466c6f8253292f04d96b00221228d02bc6f17adffa9bf0eb00403b218d",
+    "/Volumes/Crucial X6/MacBook/Code/fundamental-mechinterp/experiments/e32_interpbench/._e32_2_protocol.py": "46266a466c6f8253292f04d96b00221228d02bc6f17adffa9bf0eb00403b218d",
+    "/Volumes/Crucial X6/MacBook/Code/fundamental-mechinterp/experiments/e32_interpbench/._e32_2_run.py": "46266a466c6f8253292f04d96b00221228d02bc6f17adffa9bf0eb00403b218d",
+    "/Volumes/Crucial X6/MacBook/Code/fundamental-mechinterp/experiments/e32_interpbench/._e32_2_scoring.py": "46266a466c6f8253292f04d96b00221228d02bc6f17adffa9bf0eb00403b218d",
+    "/Volumes/Crucial X6/MacBook/Code/fundamental-mechinterp/experiments/e32_interpbench/._e32_3_acquisition.py": "46266a466c6f8253292f04d96b00221228d02bc6f17adffa9bf0eb00403b218d",
+    "/Volumes/Crucial X6/MacBook/Code/fundamental-mechinterp/experiments/e32_interpbench/._e32_3_baselines.py": "46266a466c6f8253292f04d96b00221228d02bc6f17adffa9bf0eb00403b218d",
+    "/Volumes/Crucial X6/MacBook/Code/fundamental-mechinterp/experiments/e32_interpbench/._e32_3_cohort.py": "46266a466c6f8253292f04d96b00221228d02bc6f17adffa9bf0eb00403b218d",
+    "/Volumes/Crucial X6/MacBook/Code/fundamental-mechinterp/experiments/e32_interpbench/._e32_3_orchestration.py": "46266a466c6f8253292f04d96b00221228d02bc6f17adffa9bf0eb00403b218d",
+    "/Volumes/Crucial X6/MacBook/Code/fundamental-mechinterp/experiments/e32_interpbench/._e32_3_protocol.py": "46266a466c6f8253292f04d96b00221228d02bc6f17adffa9bf0eb00403b218d",
+    "/Volumes/Crucial X6/MacBook/Code/fundamental-mechinterp/experiments/e32_interpbench/._e32_3_run.py": "46266a466c6f8253292f04d96b00221228d02bc6f17adffa9bf0eb00403b218d",
+    "/Volumes/Crucial X6/MacBook/Code/fundamental-mechinterp/experiments/e32_interpbench/._e32_3_scoring.py": "46266a466c6f8253292f04d96b00221228d02bc6f17adffa9bf0eb00403b218d",
+    "/Volumes/Crucial X6/MacBook/Code/fundamental-mechinterp/experiments/e32_interpbench/._e32_3_v2_input_repair.py": "46266a466c6f8253292f04d96b00221228d02bc6f17adffa9bf0eb00403b218d",
+    "/Volumes/Crucial X6/MacBook/Code/fundamental-mechinterp/experiments/e32_interpbench/._e32_4_eap.py": "46266a466c6f8253292f04d96b00221228d02bc6f17adffa9bf0eb00403b218d",
+    "/Volumes/Crucial X6/MacBook/Code/fundamental-mechinterp/experiments/e32_interpbench/._e32_4_edge_sets.py": "46266a466c6f8253292f04d96b00221228d02bc6f17adffa9bf0eb00403b218d",
+    "/Volumes/Crucial X6/MacBook/Code/fundamental-mechinterp/experiments/e32_interpbench/._e32_4_protocol.py": "46266a466c6f8253292f04d96b00221228d02bc6f17adffa9bf0eb00403b218d",
+    "/Volumes/Crucial X6/MacBook/Code/fundamental-mechinterp/experiments/e32_interpbench/._e32_4_run.py": "46266a466c6f8253292f04d96b00221228d02bc6f17adffa9bf0eb00403b218d",
+    "/Volumes/Crucial X6/MacBook/Code/fundamental-mechinterp/experiments/e32_interpbench/._e32_4_scoring.py": "46266a466c6f8253292f04d96b00221228d02bc6f17adffa9bf0eb00403b218d",
+    "/Volumes/Crucial X6/MacBook/Code/fundamental-mechinterp/experiments/e32_interpbench/._e32_5_acquisition.py": "46266a466c6f8253292f04d96b00221228d02bc6f17adffa9bf0eb00403b218d",
+    "/Volumes/Crucial X6/MacBook/Code/fundamental-mechinterp/experiments/e32_interpbench/._e32_5_cohort.py": "46266a466c6f8253292f04d96b00221228d02bc6f17adffa9bf0eb00403b218d",
+    "/Volumes/Crucial X6/MacBook/Code/fundamental-mechinterp/experiments/e32_interpbench/._e32_5_confirmation.py": "46266a466c6f8253292f04d96b00221228d02bc6f17adffa9bf0eb00403b218d",
+    "/Volumes/Crucial X6/MacBook/Code/fundamental-mechinterp/experiments/e32_interpbench/._e32_5_pipeline.py": "46266a466c6f8253292f04d96b00221228d02bc6f17adffa9bf0eb00403b218d",
+    "/Volumes/Crucial X6/MacBook/Code/fundamental-mechinterp/experiments/e32_interpbench/._e32_5_protocol.py": "46266a466c6f8253292f04d96b00221228d02bc6f17adffa9bf0eb00403b218d",
+    "/Volumes/Crucial X6/MacBook/Code/fundamental-mechinterp/experiments/e32_interpbench/._e32_5_run.py": "46266a466c6f8253292f04d96b00221228d02bc6f17adffa9bf0eb00403b218d",
+    "/Volumes/Crucial X6/MacBook/Code/fundamental-mechinterp/experiments/e32_interpbench/._e32_5_scoring.py": "46266a466c6f8253292f04d96b00221228d02bc6f17adffa9bf0eb00403b218d",
+    "/Volumes/Crucial X6/MacBook/Code/fundamental-mechinterp/experiments/e32_interpbench/._e32_5_selector.py": "46266a466c6f8253292f04d96b00221228d02bc6f17adffa9bf0eb00403b218d",
+    "/Volumes/Crucial X6/MacBook/Code/fundamental-mechinterp/experiments/e32_interpbench/._eap_baseline.py": "46266a466c6f8253292f04d96b00221228d02bc6f17adffa9bf0eb00403b218d",
+    "/Volumes/Crucial X6/MacBook/Code/fundamental-mechinterp/experiments/e32_interpbench/._eap_smoke.py": "46266a466c6f8253292f04d96b00221228d02bc6f17adffa9bf0eb00403b218d",
+    "/Volumes/Crucial X6/MacBook/Code/fundamental-mechinterp/experiments/e32_interpbench/._methods.py": "46266a466c6f8253292f04d96b00221228d02bc6f17adffa9bf0eb00403b218d",
+    "/Volumes/Crucial X6/MacBook/Code/fundamental-mechinterp/experiments/e32_interpbench/._protocol.py": "46266a466c6f8253292f04d96b00221228d02bc6f17adffa9bf0eb00403b218d",
+    "/Volumes/Crucial X6/MacBook/Code/fundamental-mechinterp/experiments/e32_interpbench/._scoring.py": "46266a466c6f8253292f04d96b00221228d02bc6f17adffa9bf0eb00403b218d",
+    "/Volumes/Crucial X6/MacBook/Code/fundamental-mechinterp/experiments/e32_interpbench/._smoke.py": "46266a466c6f8253292f04d96b00221228d02bc6f17adffa9bf0eb00403b218d",
+    "/Volumes/Crucial X6/MacBook/Code/fundamental-mechinterp/experiments/e32_interpbench/._test_component_patching.py": "46266a466c6f8253292f04d96b00221228d02bc6f17adffa9bf0eb00403b218d",
+    "/Volumes/Crucial X6/MacBook/Code/fundamental-mechinterp/experiments/e32_interpbench/__init__.py": "cb82bf8127ceb8a3f66dd944bbc09ce1a3ed7f31d6c691251e5a15a3dfb03420",
+    "/Volumes/Crucial X6/MacBook/Code/fundamental-mechinterp/experiments/e32_interpbench/acquisition.py": "7acd7ad9917d20e5c7f3c459f7a581b0ae97412c513d52584de0225de1a41c0e",
+    "/Volumes/Crucial X6/MacBook/Code/fundamental-mechinterp/experiments/e32_interpbench/adapter.py": "4cae0b793a27f188b86265135c821239ee66477d22da9f391d46096a6d4b97c8",
+    "/Volumes/Crucial X6/MacBook/Code/fundamental-mechinterp/experiments/e32_interpbench/analysis.py": "f83f98da5dff42677ef0b90fd2c01c72403ab4fb673a1ba0a8c60dcd14eb2483",
+    "/Volumes/Crucial X6/MacBook/Code/fundamental-mechinterp/experiments/e32_interpbench/component_patching.py": "b56c06097c61859ab927d00edf8a0e718bc0151aea471913e26d41f3575efa89",
+    "/Volumes/Crucial X6/MacBook/Code/fundamental-mechinterp/experiments/e32_interpbench/e32_1_dry_run.py": "586e22a0993617ef574a822063f3af8d425e4a6f0c8460208d230c12c1ce690a",
+    "/Volumes/Crucial X6/MacBook/Code/fundamental-mechinterp/experiments/e32_interpbench/e32_1_orchestration.py": "37a765d95afae175e2cf81192027f00422975f6eda2f6099701d1815c1c33b78",
+    "/Volumes/Crucial X6/MacBook/Code/fundamental-mechinterp/experiments/e32_interpbench/e32_1_protocol.py": "2464a7afc99cc760f309ae5fbcc36d5bb85089b0f51659308ac6c2b190140a38",
+    "/Volumes/Crucial X6/MacBook/Code/fundamental-mechinterp/experiments/e32_interpbench/e32_1_run.py": "95f80691123f126a8c0b30d4247aa3b54f3a703bd2d309772642951b2fc8e4fc",
+    "/Volumes/Crucial X6/MacBook/Code/fundamental-mechinterp/experiments/e32_interpbench/e32_2_acquisition.py": "386a86b3542a3cd82b626ee62f90b10d3a4dab1cd9635fc0b0f879bdeed4bb13",
+    "/Volumes/Crucial X6/MacBook/Code/fundamental-mechinterp/experiments/e32_interpbench/e32_2_directed_replacement.py": "c5d3a5d0fc29c1b8fb54f04b2ca1180fbc15f53a4b06a8dba74b2c23879426e7",
+    "/Volumes/Crucial X6/MacBook/Code/fundamental-mechinterp/experiments/e32_interpbench/e32_2_orchestration.py": "5c4de039cf5229a8a20636f4b22da6a5e3c27d7a0ee02f989731c939a64dc37e",
+    "/Volumes/Crucial X6/MacBook/Code/fundamental-mechinterp/experiments/e32_interpbench/e32_2_protocol.py": "6c81e4d11128bae69be64008537d8fe897c3e0fbdade9826652a994717953e0b",
+    "/Volumes/Crucial X6/MacBook/Code/fundamental-mechinterp/experiments/e32_interpbench/e32_2_run.py": "74054f842b4b98da64a31748b69f65bf9f349d4b1a100943197976a7b3755915",
+    "/Volumes/Crucial X6/MacBook/Code/fundamental-mechinterp/experiments/e32_interpbench/e32_2_scoring.py": "2f05ca06f2711c2b57d51ef6e91fe253229df60771cf550aa3c15ad4e4779bbb",
+    "/Volumes/Crucial X6/MacBook/Code/fundamental-mechinterp/experiments/e32_interpbench/e32_3_acquisition.py": "278734e638a388d269afe4da46e57f51e856de28eaaef76fd231a423b6aff081",
+    "/Volumes/Crucial X6/MacBook/Code/fundamental-mechinterp/experiments/e32_interpbench/e32_3_baselines.py": "90f8611ca6954f6e24fc5c734d01796eedc3981a5d1d3881512ef1393c6740d8",
+    "/Volumes/Crucial X6/MacBook/Code/fundamental-mechinterp/experiments/e32_interpbench/e32_3_cohort.py": "7c88c5ff9ed5b740047d48ac99c974b1cbe705aa2a6f4086eed501578b685639",
+    "/Volumes/Crucial X6/MacBook/Code/fundamental-mechinterp/experiments/e32_interpbench/e32_3_orchestration.py": "03fe3d62e7e108661b99a8ef47d07108687cd497f9ad0240f64a683277c4c75c",
+    "/Volumes/Crucial X6/MacBook/Code/fundamental-mechinterp/experiments/e32_interpbench/e32_3_protocol.py": "60c55843ef2bf25ff2bfdf55d0db6d24ab544977f39d9cd703467e53f60c1025",
+    "/Volumes/Crucial X6/MacBook/Code/fundamental-mechinterp/experiments/e32_interpbench/e32_3_run.py": "ab930718ec72691082ab290a18fa7ff6df0105d581896767c21ed8fe3b408662",
+    "/Volumes/Crucial X6/MacBook/Code/fundamental-mechinterp/experiments/e32_interpbench/e32_3_scoring.py": "af660bfd45d4ee6e69fa163aa887e7cc3d7a4ab88b72f617a705c1e013d33081",
+    "/Volumes/Crucial X6/MacBook/Code/fundamental-mechinterp/experiments/e32_interpbench/e32_3_v2_input_repair.py": "5c1efe43ab15400f24d4c6c977ad4d246e2486fb5714b8e69df00cc465b5078c",
+    "/Volumes/Crucial X6/MacBook/Code/fundamental-mechinterp/experiments/e32_interpbench/e32_4_eap.py": "2b621065f4b28aef2128d64eb1e60beaa3ca0cc62b77e7561fb933f9f86e8ca1",
+    "/Volumes/Crucial X6/MacBook/Code/fundamental-mechinterp/experiments/e32_interpbench/e32_4_edge_sets.py": "ced05ddd42bc41b68cf3fb97dce95973b4a2336b1cb4e380509e723cb3398d57",
+    "/Volumes/Crucial X6/MacBook/Code/fundamental-mechinterp/experiments/e32_interpbench/e32_4_protocol.py": "cfc682cc2c4339f70ef7de97f336a1e3fa7221bf99b34d7285431b816e33cc84",
+    "/Volumes/Crucial X6/MacBook/Code/fundamental-mechinterp/experiments/e32_interpbench/e32_4_run.py": "84d2fc028ed40a10aadf82cd9c2c04b1e621c85b3b6f10f6310cfc6888f08ffe",
+    "/Volumes/Crucial X6/MacBook/Code/fundamental-mechinterp/experiments/e32_interpbench/e32_4_scoring.py": "559e344181f97b09c039961692e6b4271717398551c35add37ab20c719136eec",
+    "/Volumes/Crucial X6/MacBook/Code/fundamental-mechinterp/experiments/e32_interpbench/e32_5_acquisition.py": "eda4b4f2afd9c714e0419e0ae9706c482e8f853a6ede083d6dd5d9cabd679c54",
+    "/Volumes/Crucial X6/MacBook/Code/fundamental-mechinterp/experiments/e32_interpbench/e32_5_cohort.py": "7be5b4f93986796e992f33df9a15aa8b8b68545e3d8a9e947f76c2eaf8c0b7b0",
+    "/Volumes/Crucial X6/MacBook/Code/fundamental-mechinterp/experiments/e32_interpbench/e32_5_confirmation.py": "195791606505c8b27d2802cfacdf03233fa405423a7fc7ef5b77e7220a17a1ee",
+    "/Volumes/Crucial X6/MacBook/Code/fundamental-mechinterp/experiments/e32_interpbench/e32_5_pipeline.py": "3b7344a23e3fd4a420a4846d5f01ec3544223c07079fde20df0db7ddbb563108",
+    "/Volumes/Crucial X6/MacBook/Code/fundamental-mechinterp/experiments/e32_interpbench/e32_5_protocol.py": "fa251fb566947854d11a7640b36c7144c1cd02da6acda98a407d4acdb8505d8a",
+    "/Volumes/Crucial X6/MacBook/Code/fundamental-mechinterp/experiments/e32_interpbench/e32_5_run.py": "b5d84da6900fd1e6569288bc86d1df41750d7d21cf65b494b88efc48cb597f58",
+    "/Volumes/Crucial X6/MacBook/Code/fundamental-mechinterp/experiments/e32_interpbench/e32_5_scoring.py": "f97c8e7b5cb2a00342ee1dfd02527bd5494397098462e273e6995d68a2b08ca4",
+    "/Volumes/Crucial X6/MacBook/Code/fundamental-mechinterp/experiments/e32_interpbench/e32_5_selector.py": "3b614c21bc870f843993be7c06eee45c9277662592c03b78112c0401dc685aa6",
+    "/Volumes/Crucial X6/MacBook/Code/fundamental-mechinterp/experiments/e32_interpbench/eap_baseline.py": "c83dcbc2bbff78d26ec328b7f9bc560f587c92e3060bf24ef1b454d6ce8369d4",
+    "/Volumes/Crucial X6/MacBook/Code/fundamental-mechinterp/experiments/e32_interpbench/eap_smoke.py": "020f50692b15ab6e3b614d6d79da60baa105ed40650c0a15fbdb7aa38820334c",
+    "/Volumes/Crucial X6/MacBook/Code/fundamental-mechinterp/experiments/e32_interpbench/methods.py": "4fb45d1dd1bf0ef3a1e0fff6e600311ec07e49d2fe5641a8b7c6493b45f2104f",
+    "/Volumes/Crucial X6/MacBook/Code/fundamental-mechinterp/experiments/e32_interpbench/protocol.py": "26716088c6296496c03d8a08068268915960dc5ddcdd67766b86d0d425a8696f",
+    "/Volumes/Crucial X6/MacBook/Code/fundamental-mechinterp/experiments/e32_interpbench/scoring.py": "9420d42c770e33757532b5b22a781443f9d2ec7c53dc4bd5a07c041597ddcff3",
+    "/Volumes/Crucial X6/MacBook/Code/fundamental-mechinterp/experiments/e32_interpbench/smoke.py": "fe3a6678fed5ee4e77256d2544200209d1f93d5050c1d689a9b27d96f93806a7",
+    "/Volumes/Crucial X6/MacBook/Code/fundamental-mechinterp/experiments/e32_interpbench/test_component_patching.py": "df3bbd0ac8b9b62dcb7bc0e39c7137256e4e64615e1b8b4641d8180cf4c79b37",
+    "/Volumes/Crucial X6/MacBook/Code/fundamental-mechinterp/experiments/e33_sparse_interaction_diagnostics/.___init__.py": "46266a466c6f8253292f04d96b00221228d02bc6f17adffa9bf0eb00403b218d",
+    "/Volumes/Crucial X6/MacBook/Code/fundamental-mechinterp/experiments/e33_sparse_interaction_diagnostics/._study.py": "46266a466c6f8253292f04d96b00221228d02bc6f17adffa9bf0eb00403b218d",
+    "/Volumes/Crucial X6/MacBook/Code/fundamental-mechinterp/experiments/e33_sparse_interaction_diagnostics/__init__.py": "d16eb3d6fde6fc3b93d67754a56f966fcf2aea4324fc321ac7e3449b31a5f665",
+    "/Volumes/Crucial X6/MacBook/Code/fundamental-mechinterp/experiments/e33_sparse_interaction_diagnostics/study.py": "388fdd1a8d7e1c8721cc9a8d1ec2b5f235f2e24f9c1a4f26c6d2ae04b0573e4e"
+  },
+  "upstream_revisions": {
+    "iit": "ed44cbfa255b543bb2d4da3d193ae97c9715c4f7",
+    "interpbench": "220791e4a9cd29957ed5edfa445e7c09152d7298",
+    "tracr": "98f4910e3966805c83d80eb087c7a4e3328171c6"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "phase_order": [
+    "all_raw_pool_input_preflight",
+    "global_behavior_screen",
+    "all_discoveries",
+    "all_support_authorizations",
+    "global_authorization_reverification",
+    "all_confirmations",
+    "query_accounting_and_acquisition_custody",
+    "score_attempt",
+    "torch_artifact_reload_and_exact_score_replay"
+  ],
+  "registration_sha256": "a49d342ec14613e5153cf0809e75c7712bc2cac862bbb798933c22b32b0f564a",
+  "run_attempt_sha256": "f0b938367e3159e1f74722c6952c25808a816af1bb1aa6171a086f1434bdb24c",
+  "schema_version": "e32_4_internal_edge_set_faithfulness_v1_acquisition_attempt",
+  "status": "durable_before_first_raw_input_generation_or_model_call"
+}

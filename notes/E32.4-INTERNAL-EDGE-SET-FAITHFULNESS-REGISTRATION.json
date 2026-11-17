@@ -1,0 +1,2836 @@
+{
+  "canonical_registration_path": "/Volumes/Crucial X6/MacBook/Code/fundamental-mechinterp/notes/E32.4-INTERNAL-EDGE-SET-FAITHFULNESS-REGISTRATION.json",
+  "canonical_run_attempt_path": "/Volumes/Crucial X6/MacBook/Code/fundamental-mechinterp/notes/E32.4-INTERNAL-EDGE-SET-FAITHFULNESS-RUN-ATTEMPT.json",
+  "canonical_run_directory": "/Volumes/Crucial X6/MacBook/Code/fundamental-mechinterp/runs/e32_4_internal_edge_set_faithfulness_v1",
+  "dependencies": {
+    "case_artifact_sha256": {
+      "129": {
+        "edges.pkl": "b01d4b9b1e5740fd2934079065cb57785bb111918826a8e8ad7b5b4af00c7bcc",
+        "ll_model.pth": "f497c70d4f781598a2d86469fc884a7aee35013d2ca2851e03a40077224fc6ab",
+        "ll_model_cfg.pkl": "a4c611ecd0f8c57d44f555697540a82578e20f4dbe88bb1bd25132bd06244fa2",
+        "meta.json": "d9329a1cbcd6819eaab7573093a4eb96ed417c9efd2206270517d6897eb93c5b"
+      },
+      "25": {
+        "edges.pkl": "bd358562dc56469dbf03912dac0c5d3d5489b0f2dadcb85a7cd7c24f9582a74a",
+        "ll_model.pth": "0e72ecd925276352d1240da0b40019b38ef254cbfdad61b234d96672fc4ae2e2",
+        "ll_model_cfg.pkl": "c5df91fe7e78fbfc9fe45fe234027fb7c15ecd4c9a0b7a4776da0bf067e09db5",
+        "meta.json": "9760198867e197a1aeba2e60440ad37e236f57c14f21c6e7d73a187b67b34c0c"
+      },
+      "58": {
+        "edges.pkl": "4edacbb2f328f7d3526a6658a58484634a73124ea79cace68231ae0bb1ab20ea",
+        "ll_model.pth": "95278b3bf4897a27606f35ae5ed251fb022d9e4158f7575d32ab42d6fa142e20",
+        "ll_model_cfg.pkl": "8cc71fd34570fd0bef7a3f511b8675d7cbaec6db017ce3cfbee7a74f8a23e501",
+        "meta.json": "1cfffe661e1435f142d96ab22909dc78623087ec98adbc0a8bda025fda348881"
+      }
+    },
+    "direct_auto_circuit_ablation_source": {
+      "checkout_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/auto-circuit-0b74956bbe472cf961deb8ae0ef574f725daca96/auto_circuit/utils/ablation_activations.py",
+      "installed_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/auto_circuit/utils/ablation_activations.py",
+      "relative_path": "auto_circuit/utils/ablation_activations.py",
+      "sha256": "2fd77a905140c0e3c63e8dc2494b316639e0216dac6f5e4410328bc27193c588"
+    },
+    "e32_3_sealed_ancestry": {
+      "authorization_sha256": {
+        "129": "6f76bbc0f2414290c4406a57e575144a7cd1e14a2732101afa8700cac31a6d25",
+        "25": "61170db4123ee1f36ee93c02c96698edeeeb6a473c17e241039241039168abe1",
+        "58": "ebd0b6e01998951968fd284463dbbbd2d8f5b2ebf3619801feb544166451fd21"
+      },
+      "registration_sha256": "1c42b4761573286af06604094efc5a85b0f873d773a99afe97d9767e25ab86a4",
+      "schema_version": "e32_4_e32_3_ancestry_verification_v1",
+      "sealed_source_closure_unchanged": true,
+      "sealed_source_sha256": {
+        "experiments/e32_interpbench/__init__.py": "cb82bf8127ceb8a3f66dd944bbc09ce1a3ed7f31d6c691251e5a15a3dfb03420",
+        "experiments/e32_interpbench/acquisition.py": "7acd7ad9917d20e5c7f3c459f7a581b0ae97412c513d52584de0225de1a41c0e",
+        "experiments/e32_interpbench/adapter.py": "4cae0b793a27f188b86265135c821239ee66477d22da9f391d46096a6d4b97c8",
+        "experiments/e32_interpbench/analysis.py": "f83f98da5dff42677ef0b90fd2c01c72403ab4fb673a1ba0a8c60dcd14eb2483",
+        "experiments/e32_interpbench/component_patching.py": "b56c06097c61859ab927d00edf8a0e718bc0151aea471913e26d41f3575efa89",
+        "experiments/e32_interpbench/e32_2_acquisition.py": "386a86b3542a3cd82b626ee62f90b10d3a4dab1cd9635fc0b0f879bdeed4bb13",
+        "experiments/e32_interpbench/e32_2_directed_replacement.py": "c5d3a5d0fc29c1b8fb54f04b2ca1180fbc15f53a4b06a8dba74b2c23879426e7",
+        "experiments/e32_interpbench/e32_2_orchestration.py": "5c4de039cf5229a8a20636f4b22da6a5e3c27d7a0ee02f989731c939a64dc37e",
+        "experiments/e32_interpbench/e32_2_protocol.py": "6c81e4d11128bae69be64008537d8fe897c3e0fbdade9826652a994717953e0b",
+        "experiments/e32_interpbench/e32_2_run.py": "74054f842b4b98da64a31748b69f65bf9f349d4b1a100943197976a7b3755915",
+        "experiments/e32_interpbench/e32_2_scoring.py": "2f05ca06f2711c2b57d51ef6e91fe253229df60771cf550aa3c15ad4e4779bbb",
+        "experiments/e32_interpbench/e32_3_acquisition.py": "278734e638a388d269afe4da46e57f51e856de28eaaef76fd231a423b6aff081",
+        "experiments/e32_interpbench/e32_3_baselines.py": "90f8611ca6954f6e24fc5c734d01796eedc3981a5d1d3881512ef1393c6740d8",
+        "experiments/e32_interpbench/e32_3_cohort.py": "7c88c5ff9ed5b740047d48ac99c974b1cbe705aa2a6f4086eed501578b685639",
+        "experiments/e32_interpbench/e32_3_orchestration.py": "03fe3d62e7e108661b99a8ef47d07108687cd497f9ad0240f64a683277c4c75c",
+        "experiments/e32_interpbench/e32_3_protocol.py": "60c55843ef2bf25ff2bfdf55d0db6d24ab544977f39d9cd703467e53f60c1025",
+        "experiments/e32_interpbench/e32_3_run.py": "ab930718ec72691082ab290a18fa7ff6df0105d581896767c21ed8fe3b408662",
+        "experiments/e32_interpbench/e32_3_scoring.py": "af660bfd45d4ee6e69fa163aa887e7cc3d7a4ab88b72f617a705c1e013d33081",
+        "experiments/e32_interpbench/eap_baseline.py": "c83dcbc2bbff78d26ec328b7f9bc560f587c92e3060bf24ef1b454d6ce8369d4",
+        "experiments/e32_interpbench/methods.py": "4fb45d1dd1bf0ef3a1e0fff6e600311ec07e49d2fe5641a8b7c6493b45f2104f",
+        "experiments/e32_interpbench/protocol.py": "26716088c6296496c03d8a08068268915960dc5ddcdd67766b86d0d425a8696f",
+        "experiments/e32_interpbench/scoring.py": "9420d42c770e33757532b5b22a781443f9d2ec7c53dc4bd5a07c041597ddcff3"
+      },
+      "summary_sha256": "2a04b0659fb4b3615d642bfb36e0ad787cb2a98540ab5dacc43f910a199f1647",
+      "v2_source_sha256": "5c1efe43ab15400f24d4c6c977ad4d246e2486fb5714b8e69df00cc465b5078c",
+      "verified": true
+    },
+    "environment_replay": {
+      "all_installed_distributions": {
+        "absl-py": [
+          {
+            "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/absl_py-2.1.0.dist-info",
+            "version": "2.1.0"
+          }
+        ],
+        "accelerate": [
+          {
+            "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/accelerate-0.31.0.dist-info",
+            "version": "0.31.0"
+          }
+        ],
+        "aiohappyeyeballs": [
+          {
+            "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/aiohappyeyeballs-2.7.1.dist-info",
+            "version": "2.7.1"
+          }
+        ],
+        "aiohttp": [
+          {
+            "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/aiohttp-3.14.3.dist-info",
+            "version": "3.14.3"
+          }
+        ],
+        "aiosignal": [
+          {
+            "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/aiosignal-1.4.0.dist-info",
+            "version": "1.4.0"
+          }
+        ],
+        "appdirs": [
+          {
+            "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/appdirs-1.4.4.dist-info",
+            "version": "1.4.4"
+          }
+        ],
+        "attrs": [
+          {
+            "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/attrs-26.1.0.dist-info",
+            "version": "26.1.0"
+          }
+        ],
+        "auto-circuit": [
+          {
+            "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/auto_circuit-0.1.0.dist-info",
+            "version": "0.1.0"
+          }
+        ],
+        "beartype": [
+          {
+            "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/beartype-0.14.1.dist-info",
+            "version": "0.14.1"
+          }
+        ],
+        "better-abc": [
+          {
+            "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/better_abc-0.0.3.dist-info",
+            "version": "0.0.3"
+          }
+        ],
+        "blobfile": [
+          {
+            "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/blobfile-2.0.2.dist-info",
+            "version": "2.0.2"
+          }
+        ],
+        "certifi": [
+          {
+            "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/certifi-2026.7.22.dist-info",
+            "version": "2026.7.22"
+          }
+        ],
+        "charset-normalizer": [
+          {
+            "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/charset_normalizer-3.5.1.dist-info",
+            "version": "3.5.1"
+          }
+        ],
+        "chex": [
+          {
+            "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/chex-0.1.86.dist-info",
+            "version": "0.1.86"
+          }
+        ],
+        "click": [
+          {
+            "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/click-8.4.2.dist-info",
+            "version": "8.4.2"
+          }
+        ],
+        "cloudpickle": [
+          {
+            "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/cloudpickle-3.0.0.dist-info",
+            "version": "3.0.0"
+          }
+        ],
+        "cmapy": [
+          {
+            "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/cmapy-0.6.6.dist-info",
+            "version": "0.6.6"
+          }
+        ],
+        "contourpy": [
+          {
+            "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/contourpy-1.3.3.dist-info",
+            "version": "1.3.3"
+          }
+        ],
+        "cycler": [
+          {
+            "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/cycler-0.12.1.dist-info",
+            "version": "0.12.1"
+          }
+        ],
+        "datasets": [
+          {
+            "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/datasets-2.18.0.dist-info",
+            "version": "2.18.0"
+          }
+        ],
+        "dill": [
+          {
+            "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/dill-0.3.8.dist-info",
+            "version": "0.3.8"
+          }
+        ],
+        "dm-haiku": [
+          {
+            "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/dm_haiku-0.0.11.dist-info",
+            "version": "0.0.11"
+          }
+        ],
+        "docker-pycreds": [
+          {
+            "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/docker_pycreds-0.4.0.dist-info",
+            "version": "0.4.0"
+          }
+        ],
+        "einops": [
+          {
+            "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/einops-0.7.0.dist-info",
+            "version": "0.7.0"
+          }
+        ],
+        "etils": [
+          {
+            "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/etils-1.7.0.dist-info",
+            "version": "1.7.0"
+          }
+        ],
+        "fancy-einsum": [
+          {
+            "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/fancy_einsum-0.0.3.dist-info",
+            "version": "0.0.3"
+          }
+        ],
+        "filelock": [
+          {
+            "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/filelock-3.32.3.dist-info",
+            "version": "3.32.3"
+          }
+        ],
+        "flax": [
+          {
+            "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/flax-0.8.5.dist-info",
+            "version": "0.8.5"
+          }
+        ],
+        "fonttools": [
+          {
+            "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/fonttools-4.63.0.dist-info",
+            "version": "4.63.0"
+          }
+        ],
+        "frozenlist": [
+          {
+            "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/frozenlist-1.8.0.dist-info",
+            "version": "1.8.0"
+          }
+        ],
+        "fsspec": [
+          {
+            "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/fsspec-2024.2.0.dist-info",
+            "version": "2024.2.0"
+          }
+        ],
+        "gitdb": [
+          {
+            "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/gitdb-4.0.12.dist-info",
+            "version": "4.0.12"
+          }
+        ],
+        "gitpython": [
+          {
+            "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/gitpython-3.1.59.dist-info",
+            "version": "3.1.59"
+          }
+        ],
+        "huggingface-hub": [
+          {
+            "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/huggingface_hub-0.24.5.dist-info",
+            "version": "0.24.5"
+          }
+        ],
+        "humanize": [
+          {
+            "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/humanize-4.16.0.dist-info",
+            "version": "4.16.0"
+          }
+        ],
+        "idna": [
+          {
+            "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/idna-3.19.dist-info",
+            "version": "3.19"
+          }
+        ],
+        "iit": [
+          {
+            "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/iit-0.1.0.dist-info",
+            "version": "0.1.0"
+          }
+        ],
+        "importlib-resources": [
+          {
+            "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/importlib_resources-7.1.0.dist-info",
+            "version": "7.1.0"
+          }
+        ],
+        "jax": [
+          {
+            "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/jax-0.4.30.dist-info",
+            "version": "0.4.30"
+          }
+        ],
+        "jaxlib": [
+          {
+            "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/jaxlib-0.4.30.dist-info",
+            "version": "0.4.30"
+          }
+        ],
+        "jaxtyping": [
+          {
+            "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/jaxtyping-0.2.31.dist-info",
+            "version": "0.2.31"
+          }
+        ],
+        "jinja2": [
+          {
+            "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/jinja2-3.1.6.dist-info",
+            "version": "3.1.6"
+          }
+        ],
+        "jmp": [
+          {
+            "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/jmp-0.0.4.dist-info",
+            "version": "0.0.4"
+          }
+        ],
+        "kaleido": [
+          {
+            "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/kaleido-0.2.1.dist-info",
+            "version": "0.2.1"
+          }
+        ],
+        "kiwisolver": [
+          {
+            "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/kiwisolver-1.5.0.dist-info",
+            "version": "1.5.0"
+          }
+        ],
+        "lxml": [
+          {
+            "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/lxml-4.9.4.dist-info",
+            "version": "4.9.4"
+          }
+        ],
+        "markdown-it-py": [
+          {
+            "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/markdown_it_py-4.2.0.dist-info",
+            "version": "4.2.0"
+          }
+        ],
+        "markupsafe": [
+          {
+            "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/markupsafe-3.0.3.dist-info",
+            "version": "3.0.3"
+          }
+        ],
+        "matplotlib": [
+          {
+            "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/matplotlib-3.8.2.dist-info",
+            "version": "3.8.2"
+          }
+        ],
+        "mdurl": [
+          {
+            "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/mdurl-0.1.2.dist-info",
+            "version": "0.1.2"
+          }
+        ],
+        "ml-dtypes": [
+          {
+            "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/ml_dtypes-0.4.0.dist-info",
+            "version": "0.4.0"
+          }
+        ],
+        "mpmath": [
+          {
+            "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/mpmath-1.3.0.dist-info",
+            "version": "1.3.0"
+          }
+        ],
+        "msgpack": [
+          {
+            "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/msgpack-1.2.1.dist-info",
+            "version": "1.2.1"
+          }
+        ],
+        "multidict": [
+          {
+            "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/multidict-6.7.1.dist-info",
+            "version": "6.7.1"
+          }
+        ],
+        "multiprocess": [
+          {
+            "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/multiprocess-0.70.16.dist-info",
+            "version": "0.70.16"
+          }
+        ],
+        "nest-asyncio": [
+          {
+            "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/nest_asyncio-1.6.0.dist-info",
+            "version": "1.6.0"
+          }
+        ],
+        "networkx": [
+          {
+            "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/networkx-3.6.1.dist-info",
+            "version": "3.6.1"
+          }
+        ],
+        "numpy": [
+          {
+            "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/numpy-1.26.4.dist-info",
+            "version": "1.26.4"
+          }
+        ],
+        "opencv-python": [
+          {
+            "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/opencv_python-4.11.0.86.dist-info",
+            "version": "4.11.0.86"
+          }
+        ],
+        "opt-einsum": [
+          {
+            "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/opt_einsum-3.4.0.dist-info",
+            "version": "3.4.0"
+          }
+        ],
+        "optax": [
+          {
+            "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/optax-0.2.2.dist-info",
+            "version": "0.2.2"
+          }
+        ],
+        "orbax-checkpoint": [
+          {
+            "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/orbax_checkpoint-0.5.20.dist-info",
+            "version": "0.5.20"
+          }
+        ],
+        "ordered-set": [
+          {
+            "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/ordered_set-4.1.0.dist-info",
+            "version": "4.1.0"
+          }
+        ],
+        "packaging": [
+          {
+            "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/packaging-26.3.dist-info",
+            "version": "26.3"
+          }
+        ],
+        "pandas": [
+          {
+            "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/pandas-2.1.4.dist-info",
+            "version": "2.1.4"
+          }
+        ],
+        "pillow": [
+          {
+            "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/pillow-10.4.0.dist-info",
+            "version": "10.4.0"
+          }
+        ],
+        "pip": [
+          {
+            "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/pip-25.2.dist-info",
+            "version": "25.2"
+          }
+        ],
+        "plotly": [
+          {
+            "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/plotly-5.22.0.dist-info",
+            "version": "5.22.0"
+          }
+        ],
+        "propcache": [
+          {
+            "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/propcache-0.5.2.dist-info",
+            "version": "0.5.2"
+          }
+        ],
+        "protobuf": [
+          {
+            "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/protobuf-4.25.9.dist-info",
+            "version": "4.25.9"
+          }
+        ],
+        "psutil": [
+          {
+            "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/psutil-7.2.2.dist-info",
+            "version": "7.2.2"
+          }
+        ],
+        "pyarrow": [
+          {
+            "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/pyarrow-25.0.1.dist-info",
+            "version": "25.0.1"
+          }
+        ],
+        "pyarrow-hotfix": [
+          {
+            "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/pyarrow_hotfix-0.7.dist-info",
+            "version": "0.7"
+          }
+        ],
+        "pycryptodomex": [
+          {
+            "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/pycryptodomex-3.23.0.dist-info",
+            "version": "3.23.0"
+          }
+        ],
+        "pygments": [
+          {
+            "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/pygments-2.21.0.dist-info",
+            "version": "2.21.0"
+          }
+        ],
+        "pyparsing": [
+          {
+            "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/pyparsing-3.3.2.dist-info",
+            "version": "3.3.2"
+          }
+        ],
+        "python-dateutil": [
+          {
+            "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/python_dateutil-2.9.0.post0.dist-info",
+            "version": "2.9.0.post0"
+          }
+        ],
+        "pytz": [
+          {
+            "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/pytz-2026.3.post1.dist-info",
+            "version": "2026.3.post1"
+          }
+        ],
+        "pyyaml": [
+          {
+            "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/pyyaml-6.0.3.dist-info",
+            "version": "6.0.3"
+          }
+        ],
+        "regex": [
+          {
+            "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/regex-2026.7.19.dist-info",
+            "version": "2026.7.19"
+          }
+        ],
+        "requests": [
+          {
+            "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/requests-2.34.2.dist-info",
+            "version": "2.34.2"
+          }
+        ],
+        "rich": [
+          {
+            "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/rich-13.7.1.dist-info",
+            "version": "13.7.1"
+          }
+        ],
+        "safetensors": [
+          {
+            "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/safetensors-0.8.0.dist-info",
+            "version": "0.8.0"
+          }
+        ],
+        "scipy": [
+          {
+            "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/scipy-1.14.0.dist-info",
+            "version": "1.14.0"
+          }
+        ],
+        "sentencepiece": [
+          {
+            "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/sentencepiece-0.2.0.dist-info",
+            "version": "0.2.0"
+          }
+        ],
+        "sentry-sdk": [
+          {
+            "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/sentry_sdk-2.68.0.dist-info",
+            "version": "2.68.0"
+          }
+        ],
+        "setproctitle": [
+          {
+            "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/setproctitle-1.3.7.dist-info",
+            "version": "1.3.7"
+          }
+        ],
+        "setuptools": [
+          {
+            "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/setuptools-65.5.0.dist-info",
+            "version": "65.5.0"
+          }
+        ],
+        "six": [
+          {
+            "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/six-1.17.0.dist-info",
+            "version": "1.17.0"
+          }
+        ],
+        "smmap": [
+          {
+            "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/smmap-5.0.3.dist-info",
+            "version": "5.0.3"
+          }
+        ],
+        "sympy": [
+          {
+            "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/sympy-1.14.0.dist-info",
+            "version": "1.14.0"
+          }
+        ],
+        "tabulate": [
+          {
+            "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/tabulate-0.10.0.dist-info",
+            "version": "0.10.0"
+          }
+        ],
+        "tenacity": [
+          {
+            "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/tenacity-9.1.4.dist-info",
+            "version": "9.1.4"
+          }
+        ],
+        "tensorstore": [
+          {
+            "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/tensorstore-0.1.63.dist-info",
+            "version": "0.1.63"
+          }
+        ],
+        "tokenizers": [
+          {
+            "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/tokenizers-0.15.2.dist-info",
+            "version": "0.15.2"
+          }
+        ],
+        "toolz": [
+          {
+            "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/toolz-1.1.0.dist-info",
+            "version": "1.1.0"
+          }
+        ],
+        "torch": [
+          {
+            "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/torch-2.3.1.dist-info",
+            "version": "2.3.1"
+          }
+        ],
+        "tqdm": [
+          {
+            "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/tqdm-4.66.4.dist-info",
+            "version": "4.66.4"
+          }
+        ],
+        "tracr": [
+          {
+            "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/tracr-1.0.0.dist-info",
+            "version": "1.0.0"
+          }
+        ],
+        "transformer-lens": [
+          {
+            "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/transformer_lens-1.19.0.dist-info",
+            "version": "1.19.0"
+          }
+        ],
+        "transformers": [
+          {
+            "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/transformers-4.39.3.dist-info",
+            "version": "4.39.3"
+          }
+        ],
+        "treescope": [
+          {
+            "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/treescope-0.1.10.dist-info",
+            "version": "0.1.10"
+          }
+        ],
+        "typeguard": [
+          {
+            "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/typeguard-2.13.3.dist-info",
+            "version": "2.13.3"
+          }
+        ],
+        "typing-extensions": [
+          {
+            "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/typing_extensions-4.16.0.dist-info",
+            "version": "4.16.0"
+          }
+        ],
+        "tzdata": [
+          {
+            "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/tzdata-2026.3.dist-info",
+            "version": "2026.3"
+          }
+        ],
+        "urllib3": [
+          {
+            "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/urllib3-2.7.0.dist-info",
+            "version": "2.7.0"
+          }
+        ],
+        "vscode-tqdm": [
+          {
+            "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/vscode_tqdm-4.66.2.dist-info",
+            "version": "4.66.2"
+          }
+        ],
+        "wandb": [
+          {
+            "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/wandb-0.16.6.dist-info",
+            "version": "0.16.6"
+          }
+        ],
+        "wget": [
+          {
+            "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/wget-3.2.dist-info",
+            "version": "3.2"
+          }
+        ],
+        "word2word": [
+          {
+            "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/word2word-1.0.0.dist-info",
+            "version": "1.0.0"
+          }
+        ],
+        "xxhash": [
+          {
+            "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/xxhash-4.0.1.dist-info",
+            "version": "4.0.1"
+          }
+        ],
+        "yarl": [
+          {
+            "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/yarl-1.24.5.dist-info",
+            "version": "1.24.5"
+          }
+        ],
+        "zipp": [
+          {
+            "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/zipp-4.1.0.dist-info",
+            "version": "4.1.0"
+          }
+        ]
+      },
+      "executable": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/bin/python",
+      "packages": {
+        "auto-circuit": "0.1.0",
+        "blobfile": "2.0.2",
+        "einops": "0.7.0",
+        "huggingface-hub": "0.24.5",
+        "jax": "0.4.30",
+        "jaxlib": "0.4.30",
+        "kaleido": "0.2.1",
+        "numpy": "1.26.4",
+        "ordered-set": "4.1.0",
+        "plotly": "5.22.0",
+        "torch": "2.3.1",
+        "transformer-lens": "1.19.0",
+        "vscode-tqdm": "4.66.2",
+        "word2word": "1.0.0"
+      },
+      "platform": "macOS-26.3-arm64-arm-64bit",
+      "pygraphviz_branch": {
+        "availability_semantics": "environment_path_spec_ignoring_runtime_sys_modules_stubs",
+        "distribution_version": "not_installed",
+        "environment_path_spec_present": false
+      },
+      "python": "3.11.9",
+      "runtime_package_sources": {
+        "auto_circuit": {
+          "file_count": 53,
+          "file_sha256": {
+            "data.py": "3925de46979f1baabe55c9cc33972d52ae7d162e625651080cfbbfbd981ead30",
+            "experiment_utils.py": "26534bbda01a4692dff6eef1bd40a6b315a5417a14b1a6ec80779085ff3f70cb",
+            "metrics/area_under_curve.py": "13aec755b36feb3725a47a42274d5977e56d26dc84f7114cba3a2dd2ac7cbac0",
+            "metrics/avoid_edges.py": "222687547a1c653f7ee0abe1713225d229453478b15080ace753a7f02b4f73cc",
+            "metrics/completeness_metrics/same_under_knockouts.py": "150b38e1344a5622791796970db6a29c656fbd8717725ce9dfb5a6180d34b5bb",
+            "metrics/completeness_metrics/train_same_under_knockouts.py": "d498b317f671c3e92831cafdcea5a234eb57c113158cfd66f4035fa79c3ce89e",
+            "metrics/official_circuits/circuits/docstring_official.py": "87dc0ce5b33698984efa66e1d87a64b9549d115cc33a672df746ab50920e2837",
+            "metrics/official_circuits/circuits/greaterthan_official.py": "156e2caac7a2ff36a5bc17dfa84437872cafe465ac1de869c24bd844135f612a",
+            "metrics/official_circuits/circuits/ioi_official.py": "bd310221d4f969b3a29c3a941a3721f0db8551ae4b9d85f9c0a8e0669c15222b",
+            "metrics/official_circuits/circuits/sports_players_official.py": "5447804938ce073177b0c519c4f72c9d88181b440b4686fd4991f8eecc4169f6",
+            "metrics/official_circuits/circuits/tracr/reverse_official.py": "edc79a58f3d52aa962060c3a1d54eaf61a581add266f66644783909f1ca10895",
+            "metrics/official_circuits/circuits/tracr/xproportion_official.py": "ff69694a3725513b8bde33f957156207309f8a0c35690d801dcd3f6664b8f9cc",
+            "metrics/official_circuits/measure_roc.py": "c1e36f01673162423989ee5480c26a6ddca57c1b069352ef9d95d1d0c72a4af5",
+            "metrics/official_circuits/roc_plot.py": "f30f0cf589b554e3b05e912fdb2f3de3ea686564cd595da96c95b3880fc46230",
+            "metrics/prune_metrics/answer_diff.py": "004ef224de1bb2da960b1d3bf70863e02723e7f4bea6537b6b7a52ea1bd4f879",
+            "metrics/prune_metrics/answer_diff_percent.py": "3fa4209b27746cdfbbd925f915a0221e2c1a5aa3c15ecb0a30ac7a5e9e5785f6",
+            "metrics/prune_metrics/answer_value.py": "b364d1e14d78e471a55d4abf14c27256dfbda86a19715c7b2e5bb149bc4f5893",
+            "metrics/prune_metrics/correct_answer_percent.py": "f8c84e5b4efa45c9a003582a9ff53d73c80bfb3804dd5a13386301f4c5e7e724",
+            "metrics/prune_metrics/kl_div.py": "8976b730ba70a06bacaf19c4ec1e598cc11b7846f6306e720d19a9328371fc6c",
+            "metrics/prune_metrics/measure_prune_metrics.py": "b60af4f6e412892eef17b683a01ffd51d22ff468603f2ffebac47ca76943c25d",
+            "metrics/prune_metrics/prune_metrics.py": "6e64169c2aa3338f197409c4fce7aa9b8a9f69b9129d14699da7e96941c27a24",
+            "metrics/prune_metrics/prune_metrics_plot.py": "eb2a6defa6bbc522bd8718053d2b486d704fc774e062a8e0e338b819fa05dd36",
+            "metrics/prune_scores_similarity.py": "95f18a487622023c5d2355abfb10caeee7b103779b421c2a6b55ae5598208498",
+            "model_utils/micro_model_utils.py": "c0f5851656c2d6d44217a84e06b87e6abb8f2d9cc9657ef8cc34db30e577c408",
+            "model_utils/sparse_autoencoders/autoencoder_training.py": "a91b367fb4b72760d47cf183c0a36be3404c88bac88c997c54b169b442d06675",
+            "model_utils/sparse_autoencoders/autoencoder_transformer.py": "84fd2a0e90e343d15f6afd3c6a0de4936e5d4e6620143e84cea2f0b919b5699a",
+            "model_utils/sparse_autoencoders/sparse_autoencoder.py": "a55c9b9fc65f56b3cc92d5dad020438701861b11a451e007a18e7d955b709b81",
+            "model_utils/task_projectors/projector_transformer.py": "fa1d37176bccdc6b19c4273871f27efa025f3016ad9ebf80b5ae195141c28e89",
+            "model_utils/task_projectors/task_projector.py": "e3bf40f1376ae8851377fafd8bc26e2f0dfd93614a9283487c0660899e706e82",
+            "model_utils/task_projectors/task_projector_training.py": "a2ef344e031b04c98c948549d2537f5391e39455440834160d9871c436a2ec9d",
+            "model_utils/tracr_model_utils.py": "92372745cf93938a4d16a27def81407718d65ee39f3356209b8dda06e8b98886",
+            "model_utils/transformer_lens_utils.py": "8be6a35345a7fcaaf3bb95b17cdf1811b2b50a394949e1adc91bbcb8d03b8efe",
+            "prune.py": "52d57f0adffd385b119ac05ae988341e9ff7745527bcb11d65bfe6cc72432f43",
+            "prune_algos/ACDC.py": "655058dfecc9b14f98b98d82d90b723d0d999e46057044d18ca34d40c58732d9",
+            "prune_algos/activation_magnitude.py": "23d9004bf0780f3c00b5a24c12fb2bf8426852c4c9655d77bed1a26058d8dbcb",
+            "prune_algos/circuit_probing.py": "63219e195d9f654fff9f2c8ee752a21950446f285a0958d8f2b98704c70d11dc",
+            "prune_algos/edge_attribution_patching.py": "d0d95430c512a878233e3dfad9e1a4a50655cd93c9792e4610aead7c4d1627df",
+            "prune_algos/ground_truth.py": "15e43bb295d3f9ec5ec20e493f7b8435d272d16df6c7a0791193aa9f9ae3d9a9",
+            "prune_algos/mask_gradient.py": "36ca10753c6efb77c9c472d29d3e81da9194dee7ef3279a1a5b095a5c0baec5b",
+            "prune_algos/parameter_integrated_gradients.py": "9de32cd049446ff8057eb05dea5844a1d699c5e519581301c0f0dbd044fc736b",
+            "prune_algos/prune_algos.py": "aa7b8c4af86d7c0ecdaecea915a47e2e1ba2c267626efe2c04610b5360f45a08",
+            "prune_algos/random_edges.py": "d136675aa0e4b15a456c9125b7f33c8f83b2f821a33c4ecf8a9839aacaacdaa4",
+            "prune_algos/subnetwork_probing.py": "8d0b0093cde4f4c36eaebbbb8a9a3935ef333a2b4a4358f8285b96260122b556",
+            "tasks.py": "c45aae02c2d0c2737e3ab298443becfd6b758fca004899bea395ba5c9bbc0fc5",
+            "types.py": "85bfaf6e67a76e3aaaa8686f3bc4295641ec6119c1e669d7b44215291c55ccdc",
+            "utils/ablation_activations.py": "2fd77a905140c0e3c63e8dc2494b316639e0216dac6f5e4410328bc27193c588",
+            "utils/custom_tqdm.py": "90a59f39280ea825b042222566b438727e619f5192e577ab2ab1b3ea7042a858",
+            "utils/graph_utils.py": "348e2465ef6688ac21a92addbfac8df10221488b724c9bcaf5bfa93a8822d578",
+            "utils/misc.py": "11eeaed733ba4fda95197c3c65863a5654f3fcbb0d408a9df6d0ea6d44450b68",
+            "utils/patch_wrapper.py": "cbce2e2a525fdee7531e8437a7955c1531ffb7c96a2a090bd9a781758655fc12",
+            "utils/patchable_model.py": "7c638d017d200635b8e3a283faae2035d8b6f83f3b591f40d6dabcbdfb7c00b8",
+            "utils/tensor_ops.py": "8b382a3e1e6e63ee38eb246419aeaee647801f6d8a5d1779b6facdce08cd78f6",
+            "visualize.py": "547eb793581792975453d8481bfd14c1a15a548af732ba152bd70496385d90f4"
+          },
+          "root": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/auto_circuit",
+          "status": "present",
+          "tree_sha256": "9341912da7f8695fa2fc43f8de67e49d68e763fdeb612aff5521636eea8b6d0f"
+        },
+        "iit": {
+          "file_count": 45,
+          "file_sha256": {
+            "__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "model_pairs/__init__.py": "7d18a355344a2763f50dc374bf0f7e73ce1120fcdeb38c796adac765603d3118",
+            "model_pairs/base_model_pair.py": "987687e84446809626c772aa94bca0be35117ffc8619877d34be3553bf301297",
+            "model_pairs/freeze_model_pair.py": "43f0e59b0d5b0668d2042673e476b46562aa7f028b383f0ec9183cffb2fe2319",
+            "model_pairs/iit_behavior_model_pair.py": "31e182af16e1812cf1925e99568cad64cc80cbb87b55aecafe1968bc9bee236f",
+            "model_pairs/iit_model_pair.py": "5b42f9e2b7137dfa0adbc548760d1ce93b8b58abea1db24362313c9304cd5ba8",
+            "model_pairs/ioi_model_pair.py": "45ce3a5e118511f35a140117fd3476b2bd7c02aa8e3a46223f541b5a840d70ff",
+            "model_pairs/ll_model.py": "9161c857062b96c222d17c893a01d21c95fee1326217701bc956bea5ebe2177c",
+            "model_pairs/probed_sequential_pair.py": "2d4fad7ed2f023aa1cea5ae6f46201d7e4f820247502bd2ca44a932c42e4f4e1",
+            "model_pairs/stop_grad_pair.py": "26250b69e7c9a7c339346dfe310704fa2e1e0dbe870efd7e2a3eb5380825551e",
+            "model_pairs/strict_iit_model_pair.py": "00d389eb847b919cc4a366721fe7c0f7ef7d78d1564e3430fc36e2e8a7172be3",
+            "tasks/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "tasks/hl_model.py": "592988eeed59fedb09cf3393f9d4250e2174f442fb45a21fca18ea38b540a84a",
+            "tasks/ioi/__init__.py": "d01ce4f359842a5c1141222446fe4108d5d976252e57f9118bb2566b9cbb8ce6",
+            "tasks/ioi/ioi_config.py": "0bd58974cf9c2fe07ecdb3c3b12634aa0b2e3a3dfe03d3e669dbf96dc6c6b18f",
+            "tasks/ioi/ioi_dataset_tl.py": "6f54b6e121af3f73b5dfa6424ba804412b83e38f3d7761884ff31d18e9672e8f",
+            "tasks/ioi/ioi_hl.py": "ceb107add2cf04fe3491b7d1ed4191c40dfc34ff3bd8093f356035603a8291b2",
+            "tasks/ioi/utils.py": "ae037c7965a457dbcc67fd78eb99ac9478797064572ee6a5818c11e278ae21c3",
+            "tasks/mnist_pvr/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "tasks/mnist_pvr/dataset.py": "95bbe10fcaf662033ce70c15a9822390b6e68cce68fa7e12d4ff9b3b2a93a7d8",
+            "tasks/mnist_pvr/get_alignment.py": "e730946f25b1c84463c108a2b53350580479daf05f9bc02bfb2671bee24c0ede",
+            "tasks/mnist_pvr/pvr_check_leaky_hl.py": "fe0ae599f730601f84ae92ff5afab45a6775035e32452032eaebc4dbc9a3bc70",
+            "tasks/mnist_pvr/pvr_hl.py": "d4dad16f201be1ea535b8cad1848f2447292493eb27cfbcc6f6701965fd72627",
+            "tasks/mnist_pvr/utils.py": "203670747d7d626f3d5aca5172b1b737774188cfc404601390a33d0a5b6cea14",
+            "tasks/task_loader.py": "ca2b95e7641588f365e2dcca38a7e12a2d872ad4bcbf6962044427e40489a352",
+            "utils/__init__.py": "39295b18ad5d9f2c73ebba4c75a3a062a3398492508448549f7138d151d25a85",
+            "utils/argparsing.py": "21a107f2a018a4dc707a7b801a9f6fba45681da874ab2d8e7797e68d76669911",
+            "utils/config.py": "5a13e11c22b26e191cba919cfc236a46280627ab1e0f8163db5e3f2a0ed75d24",
+            "utils/correspondence.py": "59e2c7710203e710a8ad9c146d3308f2c2a3314798125a330001fbbf2243a14d",
+            "utils/eval_ablations.py": "fa7931b333ba5e2192be7e3a6882cddf5c3ef0fc655f44ffadc412b93935b3cc",
+            "utils/eval_datasets.py": "940d3e97b8b6181cc28afb3addc4fc5a8c7ce81d01c2c04de87a9b10b0682503",
+            "utils/eval_metrics.py": "221deb0bcca5deb43e8b2496aef07e78fca6610a338439e710d0a4076a7b87f0",
+            "utils/eval_scripts.py": "ed76ca4888c19259a789b0126ef3170267388883ebc2ff6d1db85bca3b4db8e6",
+            "utils/iit_dataset.py": "30d04e0821c753ba985c2e42772ba4266345d551f929815297949a322054a0b9",
+            "utils/index.py": "8f7e0505f9863c780388bd1b5c07e32812bfb70f59f7c0a940e7c334be60306b",
+            "utils/io_scripts.py": "4463f85a11cdf5c2ab2ce043a26c8d810422fb9763f6e10bbb4730cd8ad1c4a1",
+            "utils/logger.py": "2bda542a52e9f3f65d7b6b6e6dc46cd3b56ba450e3d3248b68a11d1a7e023fc2",
+            "utils/metric.py": "be590346c2a20d96b9b57fd78e98614433a3d465230950ee41065b47863e6d8d",
+            "utils/node_picker.py": "6c523862ed98b245e8308362857150d380ccfb9b27a7e7cbc92914617e3badf3",
+            "utils/nodes.py": "f0cd8035312430f037b5a7d1716822d997ef3df761a3b5cc85796b91d35566b5",
+            "utils/plotter.py": "bc93e235a6be620efd736570474471fafc5de3049dcb3eab0005bf577557d0ef",
+            "utils/probes.py": "c2f9b4fae980420248b273103eb0a010fb4c91c9f952a21300693a841ae6d794",
+            "utils/tqdm.py": "ec5484da60399c94f30e9e441dde297b94a5f43b366c5be19c669cbc3f69c83e",
+            "utils/train_scripts.py": "70843a8e28bc50bf9861e7b1d6471d6be569bf8da8d91d41248b0bc1e7ea0af1",
+            "utils/wrapper.py": "09ebda5e8d23b4baed6c966e2e2c174e1b34b7cb9fe2dfed3c0f9ccf4cf2d895"
+          },
+          "root": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/iit",
+          "status": "present",
+          "tree_sha256": "ec3992cfe9e3e2d1fbf397a30a3a508db8a9de8fb69334f392837bd5893fd262"
+        },
+        "tracr": {
+          "file_count": 57,
+          "file_sha256": {
+            "__init__.py": "dbd485f56b72c356361676088de05d358837f7b2f5d78f96879ad849e820eaad",
+            "compiler/__init__.py": "276052cc5c938d5cafce6a42868c886682fdc47b187cedae2721f99de81ad0c9",
+            "compiler/assemble.py": "82e273127675ac1eb5766c29492035e875c37caf8cd0746515729e7f93420ca0",
+            "compiler/assemble_test.py": "5126f455202da50c2fc6d40d03e523834218913baefbd3483d580b3482a74d84",
+            "compiler/basis_inference.py": "a42831cadf50ff5b4d2daca10f98ee32d83946c89f8f9814b214da02cbc86852",
+            "compiler/basis_inference_test.py": "50dcf42c80e740fc94de554352e980ced9b2bd11cddb3ce7952e5f055ab31c8a",
+            "compiler/compiling.py": "4a0acbb1ed44cd8a3ce4c0eb0d938c9809f0bdfcf18f10aaeabaa0f54bc1fe71",
+            "compiler/craft_graph_to_model.py": "1d8037b7370987b617967b282fbcdc022e9f031d9b84556bf5485baf3a2a0038",
+            "compiler/craft_graph_to_model_test.py": "ea047f9ee853eb856cc90681cba35fe0330ba51bfb3f6d0278a52f2a9f84bcc4",
+            "compiler/craft_model_to_transformer.py": "4f96f97865b40d706c19e9490f87467330aae7fdd1e6f04d7fac9f2a9d7df84c",
+            "compiler/expr_to_craft_graph.py": "ebdd7e8facd4919c94538104604824b82c85a606544a6aee5a488472f6896609",
+            "compiler/expr_to_craft_graph_test.py": "ab8091aef4e5ee0a1984e682ad27068f174ef6fc03b69007c9f0ffdbdafdf514",
+            "compiler/lib.py": "2ddfaf47cc8cf3e425497dd77434caa5d0bda2729c9a10764df9c2cddd167abc",
+            "compiler/lib_test.py": "5662a336127480d88c3304cb8f82695c02a614035081acdd1199dbc5c13d7950",
+            "compiler/nodes.py": "17ca881a63aee06010c31d0570960d7b955bce1f29d863b8714763c48e67cc66",
+            "compiler/rasp_to_craft_integration_test.py": "85bc3dae6d6ab6345f69fe77714b8816d3fe30cc673098ed749b9ece98793317",
+            "compiler/rasp_to_graph.py": "4f12f599ef273ce820af292495b43588f7cfab53d86a423b967d9a86b2a3ec51",
+            "compiler/rasp_to_graph_test.py": "6a9090280cbfa434a6654c75ccc4810bd3616bd6b709c60721c0772b498e45f5",
+            "compiler/rasp_to_transformer_integration_test.py": "2297702d90e0ee6c63bb0edd1f5cc2a04728b397d30825fed3b97361eb71c4eb",
+            "compiler/test_cases.py": "e9823ddfc5a5814b9e0a7ef1d89e666421598c43ba310116509703b0b309adde",
+            "compiler/validating.py": "66f797d5d91c8bc74d10e76fa55f5a5ffc7e23f39ff30474df4ac5cd7815dfd8",
+            "compiler/validating_test.py": "af4302125221195b6653b6f93d2d896ce768e83902dd70f9cd26a28cc83672bf",
+            "craft/__init__.py": "dbd485f56b72c356361676088de05d358837f7b2f5d78f96879ad849e820eaad",
+            "craft/bases.py": "ad05a25f6307d9a6e2de602646a314ff0d825eda249aba72ad244d7a0a3a996b",
+            "craft/bases_test.py": "70b87ce981307e2a8e7498a5cff642c098b6443b49d614efe36499e318fcacdc",
+            "craft/chamber/__init__.py": "dbd485f56b72c356361676088de05d358837f7b2f5d78f96879ad849e820eaad",
+            "craft/chamber/categorical_attn.py": "157b4615983d1226dd2a0c87b18b96235d87b641337208902e5ab839440ae030",
+            "craft/chamber/categorical_attn_test.py": "62e1e6ea7c0a4bccda085ab6e26b85689ed57a783f94082cd7f4c34e33799597",
+            "craft/chamber/categorical_mlp.py": "8e4b5a439ee095b2fbfb437b7839efe4c60ec11813616e00065c18bf11e8f973",
+            "craft/chamber/categorical_mlp_test.py": "56c079a15762b3e7e5e6de23db70ca00a9072c9813d561fcc736feff8d19a817",
+            "craft/chamber/numerical_mlp.py": "d5551a368f0638446dcfeba240210d46faa21a4d5452bfa55ce8b970806cab51",
+            "craft/chamber/numerical_mlp_test.py": "22db5ecb6c91b9e0fa4b9792c6d6256a89b443fdae94c2df64e0154610abcf43",
+            "craft/chamber/selector_width.py": "73e0592c0641a4328f4694bb2fec2e343b65344a74784b012cedebe188e1ecea",
+            "craft/chamber/selector_width_test.py": "b1cfe75f1a2487df46210ae9625a8148949673e04e8edd4c495aeb551460c3f0",
+            "craft/tests_common.py": "aca559d80e25c0cbe3d7d992ef1b3d7fa0639cf4a74a63e986493bea142d29ed",
+            "craft/transformers.py": "8a0e04201703107b1626bd8c625582ed13f2cbd34ae84cb875f2ead62c652a9c",
+            "craft/transformers_test.py": "07bcc527e0fd157c42418e2e0f69141a5a76955d913225395bdc320d63275937",
+            "craft/vectorspace_fns.py": "8e5f57813db79789309d9478a24ab80b80e344909688b083d999295793073c76",
+            "craft/vectorspace_fns_test.py": "4b86fa15a2c916e4aaab9b9254f0755a3efec5875b53be9b6fa538ef2071a560",
+            "examples/__init__.py": "dbd485f56b72c356361676088de05d358837f7b2f5d78f96879ad849e820eaad",
+            "rasp/__init__.py": "dbd485f56b72c356361676088de05d358837f7b2f5d78f96879ad849e820eaad",
+            "rasp/causal_eval.py": "9bd1e86fb531c04308a9313da16f2123a53602d8fcf858a365852f0a71e7b1b1",
+            "rasp/causal_eval_test.py": "7003ec1dafb5f4eb0cae7abe9856b17ef5824b0fea061da23309d7d340c2eef7",
+            "rasp/rasp.py": "811e3316f7b2d409ea065c438904e58e776e097abfbf325ab5e0b162c49df151",
+            "rasp/rasp_test.py": "5e3f861f660c89b29f52918171cb9f53c189108f0b8f017237b0ef227dc3818f",
+            "transformer/__init__.py": "dbd485f56b72c356361676088de05d358837f7b2f5d78f96879ad849e820eaad",
+            "transformer/attention.py": "cd365e874477a2b36d2c0812d22cd0c16356cfba4137a8fd5e40ff3a629de5c6",
+            "transformer/compressed_model.py": "b4f82d7faf9c35aa8b235dbc240132ae7077a88d8436a79681992b6db688d5bf",
+            "transformer/compressed_model_test.py": "3e48f0f730fe77845743cfaff11a0647fcec03ae6542f1ad880cc3f1eca9cfc6",
+            "transformer/encoder.py": "3ca6440220a91ca8242f37e337631f6ee0f9d7bc05d3170c53147100eb5d5eea",
+            "transformer/encoder_test.py": "e834c98ed1cf14cc94f6f56cb3712e7e5f92396d276afba4e1bacb612ddffe8d",
+            "transformer/model.py": "583941cd376bfc3c42ba0347ad17b2f0b3cfccfc4aa98f870e156f0a3223c2e9",
+            "transformer/model_test.py": "ec703d6f9ceeb0d45e463bc33b687065e3276c663f1468de8b199dcddcea41e5",
+            "utils/__init__.py": "dbd485f56b72c356361676088de05d358837f7b2f5d78f96879ad849e820eaad",
+            "utils/debugging.py": "0c75c12dcd28a1f4eda6829b5af55cf20e32eb98e1d4688604550f09a49f1ae5",
+            "utils/errors.py": "92c01d9bc5dd9976a1038acb6b05a4a4bbb100406305d98dbb3b86d7c3932a97",
+            "utils/errors_test.py": "ab694e07530dfc8edaf5d3b8663a109c730a3c0ea8c4b7e85806bb9b0d2e8809"
+          },
+          "root": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/tracr",
+          "status": "present",
+          "tree_sha256": "37f97634e3787fefe0e4ed3ec8389a06536c421e6bf48fcf3de9361cc660a5ed"
+        },
+        "transformer_lens": {
+          "file_count": 21,
+          "file_sha256": {
+            "ActivationCache.py": "f8a482d10b1a92ab5cc15906e6cf8c59667de52a4d3949b585b2739649a58c28",
+            "FactoredMatrix.py": "44e08ed7c05b24024fa43ebeffd22c67a2c8e45ea030275b89a5c3afa7aef649",
+            "HookedEncoder.py": "dc29cab2431ca22ac441bbf55655319223adfce615578654f933ad3ccfc5920d",
+            "HookedSAE.py": "0a577ed4a3266ff57a8c30878aa7e19cb8c6e8ed668d6fc3b66bef6327736b4a",
+            "HookedSAEConfig.py": "d4ae7bac5dab85f7b3aaa1e3dc294a1d11573a952494d1adf1b76fc444e0e35b",
+            "HookedSAETransformer.py": "5bf2f143ff1ed1efb3c074295dca94095ffc5c92eb444efd0ada53d3ad2dc7f9",
+            "HookedTransformer.py": "535efcb02af4a44657a2a088ff740694a3366a438212a991bddd13c3dfdbfc50",
+            "HookedTransformerConfig.py": "a4e0dd4d718ddc58e70e2fe6357b3c50cddd31269d090f19064c54ed74e3d4d4",
+            "SVDInterpreter.py": "5e036de3bf679f33edef9398640f97b062103ed1f7c10fc10867855a75495e33",
+            "__init__.py": "592ae45625883e5b6daea4d916e8761023bd324576409e32b76b1049a2813da2",
+            "components.py": "6fa7d1df86c07b0888a7f06f76dea4b582f6ee3b6f764a18575f9c186bcb0573",
+            "evals.py": "f32cbb675a7eec34aaa1da7471f7e17ea00fcb60d09a6e615a132fc6fb558ccc",
+            "head_detector.py": "dac62d5a44da5624f03e0bd7505ad833e187ec883337a2ae0a45368ade51a1c2",
+            "hook_points.py": "aa4391d5eae342d961a79f72d75ef4ca5752fa60a5e80e0e0c713cf8c30d7d5c",
+            "loading_from_pretrained.py": "a655abf0bc2f54f89de913b3d6eaf656cb3f40c55f353eb17503080884a690fd",
+            "past_key_value_caching.py": "1a994d26ac8a9acbc9da89c89659be5382c482e403732a933e5dc78045052642",
+            "patching.py": "caecded302467fd1c845db0dd141d9890d6279b9cebc945ec2fd9aba2754c6a1",
+            "train.py": "6609b9d99cb0abaa06aaab63abf49eb241516c4d15ff272c41dd2792c968f210",
+            "utilities/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "utilities/devices.py": "ceb319e310c7d1b3f3eb3efba1dee0ddc427959e29acddf834609035c1bd174f",
+            "utils.py": "6766df9f426e3c73eaae7d3278b17b743b94874685a208d2e5ab919b02bfea08"
+          },
+          "root": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/transformer_lens",
+          "status": "present",
+          "tree_sha256": "e35bb9d7c29f8d3bc510a826d9def1961efa2fdd05f5c716c355ac1cce8e859d"
+        }
+      },
+      "sys_prefix": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19"
+    },
+    "learned_model_loaded": false,
+    "pinned_checkouts_and_runtime_trees": {
+      "auto_circuit_checkout_package": {
+        "file_count": 53,
+        "file_sha256": {
+          "data.py": "3925de46979f1baabe55c9cc33972d52ae7d162e625651080cfbbfbd981ead30",
+          "experiment_utils.py": "26534bbda01a4692dff6eef1bd40a6b315a5417a14b1a6ec80779085ff3f70cb",
+          "metrics/area_under_curve.py": "13aec755b36feb3725a47a42274d5977e56d26dc84f7114cba3a2dd2ac7cbac0",
+          "metrics/avoid_edges.py": "222687547a1c653f7ee0abe1713225d229453478b15080ace753a7f02b4f73cc",
+          "metrics/completeness_metrics/same_under_knockouts.py": "150b38e1344a5622791796970db6a29c656fbd8717725ce9dfb5a6180d34b5bb",
+          "metrics/completeness_metrics/train_same_under_knockouts.py": "d498b317f671c3e92831cafdcea5a234eb57c113158cfd66f4035fa79c3ce89e",
+          "metrics/official_circuits/circuits/docstring_official.py": "87dc0ce5b33698984efa66e1d87a64b9549d115cc33a672df746ab50920e2837",
+          "metrics/official_circuits/circuits/greaterthan_official.py": "156e2caac7a2ff36a5bc17dfa84437872cafe465ac1de869c24bd844135f612a",
+          "metrics/official_circuits/circuits/ioi_official.py": "bd310221d4f969b3a29c3a941a3721f0db8551ae4b9d85f9c0a8e0669c15222b",
+          "metrics/official_circuits/circuits/sports_players_official.py": "5447804938ce073177b0c519c4f72c9d88181b440b4686fd4991f8eecc4169f6",
+          "metrics/official_circuits/circuits/tracr/reverse_official.py": "edc79a58f3d52aa962060c3a1d54eaf61a581add266f66644783909f1ca10895",
+          "metrics/official_circuits/circuits/tracr/xproportion_official.py": "ff69694a3725513b8bde33f957156207309f8a0c35690d801dcd3f6664b8f9cc",
+          "metrics/official_circuits/measure_roc.py": "c1e36f01673162423989ee5480c26a6ddca57c1b069352ef9d95d1d0c72a4af5",
+          "metrics/official_circuits/roc_plot.py": "f30f0cf589b554e3b05e912fdb2f3de3ea686564cd595da96c95b3880fc46230",
+          "metrics/prune_metrics/answer_diff.py": "004ef224de1bb2da960b1d3bf70863e02723e7f4bea6537b6b7a52ea1bd4f879",
+          "metrics/prune_metrics/answer_diff_percent.py": "3fa4209b27746cdfbbd925f915a0221e2c1a5aa3c15ecb0a30ac7a5e9e5785f6",
+          "metrics/prune_metrics/answer_value.py": "b364d1e14d78e471a55d4abf14c27256dfbda86a19715c7b2e5bb149bc4f5893",
+          "metrics/prune_metrics/correct_answer_percent.py": "f8c84e5b4efa45c9a003582a9ff53d73c80bfb3804dd5a13386301f4c5e7e724",
+          "metrics/prune_metrics/kl_div.py": "8976b730ba70a06bacaf19c4ec1e598cc11b7846f6306e720d19a9328371fc6c",
+          "metrics/prune_metrics/measure_prune_metrics.py": "b60af4f6e412892eef17b683a01ffd51d22ff468603f2ffebac47ca76943c25d",
+          "metrics/prune_metrics/prune_metrics.py": "6e64169c2aa3338f197409c4fce7aa9b8a9f69b9129d14699da7e96941c27a24",
+          "metrics/prune_metrics/prune_metrics_plot.py": "eb2a6defa6bbc522bd8718053d2b486d704fc774e062a8e0e338b819fa05dd36",
+          "metrics/prune_scores_similarity.py": "95f18a487622023c5d2355abfb10caeee7b103779b421c2a6b55ae5598208498",
+          "model_utils/micro_model_utils.py": "c0f5851656c2d6d44217a84e06b87e6abb8f2d9cc9657ef8cc34db30e577c408",
+          "model_utils/sparse_autoencoders/autoencoder_training.py": "a91b367fb4b72760d47cf183c0a36be3404c88bac88c997c54b169b442d06675",
+          "model_utils/sparse_autoencoders/autoencoder_transformer.py": "84fd2a0e90e343d15f6afd3c6a0de4936e5d4e6620143e84cea2f0b919b5699a",
+          "model_utils/sparse_autoencoders/sparse_autoencoder.py": "a55c9b9fc65f56b3cc92d5dad020438701861b11a451e007a18e7d955b709b81",
+          "model_utils/task_projectors/projector_transformer.py": "fa1d37176bccdc6b19c4273871f27efa025f3016ad9ebf80b5ae195141c28e89",
+          "model_utils/task_projectors/task_projector.py": "e3bf40f1376ae8851377fafd8bc26e2f0dfd93614a9283487c0660899e706e82",
+          "model_utils/task_projectors/task_projector_training.py": "a2ef344e031b04c98c948549d2537f5391e39455440834160d9871c436a2ec9d",
+          "model_utils/tracr_model_utils.py": "92372745cf93938a4d16a27def81407718d65ee39f3356209b8dda06e8b98886",
+          "model_utils/transformer_lens_utils.py": "8be6a35345a7fcaaf3bb95b17cdf1811b2b50a394949e1adc91bbcb8d03b8efe",
+          "prune.py": "52d57f0adffd385b119ac05ae988341e9ff7745527bcb11d65bfe6cc72432f43",
+          "prune_algos/ACDC.py": "655058dfecc9b14f98b98d82d90b723d0d999e46057044d18ca34d40c58732d9",
+          "prune_algos/activation_magnitude.py": "23d9004bf0780f3c00b5a24c12fb2bf8426852c4c9655d77bed1a26058d8dbcb",
+          "prune_algos/circuit_probing.py": "63219e195d9f654fff9f2c8ee752a21950446f285a0958d8f2b98704c70d11dc",
+          "prune_algos/edge_attribution_patching.py": "d0d95430c512a878233e3dfad9e1a4a50655cd93c9792e4610aead7c4d1627df",
+          "prune_algos/ground_truth.py": "15e43bb295d3f9ec5ec20e493f7b8435d272d16df6c7a0791193aa9f9ae3d9a9",
+          "prune_algos/mask_gradient.py": "36ca10753c6efb77c9c472d29d3e81da9194dee7ef3279a1a5b095a5c0baec5b",
+          "prune_algos/parameter_integrated_gradients.py": "9de32cd049446ff8057eb05dea5844a1d699c5e519581301c0f0dbd044fc736b",
+          "prune_algos/prune_algos.py": "aa7b8c4af86d7c0ecdaecea915a47e2e1ba2c267626efe2c04610b5360f45a08",
+          "prune_algos/random_edges.py": "d136675aa0e4b15a456c9125b7f33c8f83b2f821a33c4ecf8a9839aacaacdaa4",
+          "prune_algos/subnetwork_probing.py": "8d0b0093cde4f4c36eaebbbb8a9a3935ef333a2b4a4358f8285b96260122b556",
+          "tasks.py": "c45aae02c2d0c2737e3ab298443becfd6b758fca004899bea395ba5c9bbc0fc5",
+          "types.py": "85bfaf6e67a76e3aaaa8686f3bc4295641ec6119c1e669d7b44215291c55ccdc",
+          "utils/ablation_activations.py": "2fd77a905140c0e3c63e8dc2494b316639e0216dac6f5e4410328bc27193c588",
+          "utils/custom_tqdm.py": "90a59f39280ea825b042222566b438727e619f5192e577ab2ab1b3ea7042a858",
+          "utils/graph_utils.py": "348e2465ef6688ac21a92addbfac8df10221488b724c9bcaf5bfa93a8822d578",
+          "utils/misc.py": "11eeaed733ba4fda95197c3c65863a5654f3fcbb0d408a9df6d0ea6d44450b68",
+          "utils/patch_wrapper.py": "cbce2e2a525fdee7531e8437a7955c1531ffb7c96a2a090bd9a781758655fc12",
+          "utils/patchable_model.py": "7c638d017d200635b8e3a283faae2035d8b6f83f3b591f40d6dabcbdfb7c00b8",
+          "utils/tensor_ops.py": "8b382a3e1e6e63ee38eb246419aeaee647801f6d8a5d1779b6facdce08cd78f6",
+          "visualize.py": "547eb793581792975453d8481bfd14c1a15a548af732ba152bd70496385d90f4"
+        },
+        "root": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/auto-circuit-0b74956bbe472cf961deb8ae0ef574f725daca96/auto_circuit",
+        "tree_sha256": "9341912da7f8695fa2fc43f8de67e49d68e763fdeb612aff5521636eea8b6d0f"
+      },
+      "case_artifact_sha256": {
+        "2": {
+          "edges.pkl": "dd8ee919e31a1590d5e02e7d6aa4625e2d9e3002e3bbb74402f5a49e7d0be36b",
+          "ll_model.pth": "2b2ef568269ef820d7d6975fed90fabf517f044f26f9b10a8a3724a7da3c4f83",
+          "ll_model_cfg.pkl": "274196ba87c5a5cc25f5e3ed93a4c7dace5a7924905804c2ee6d2112c460f534",
+          "meta.json": "c129be1d12e8293f56c5254d575399865ef1c89dfe67e717e1909d9e948d525c"
+        },
+        "21": {
+          "edges.pkl": "a284ff6ddccac91bf12f0f28a6786e739428c948c111ef6ad524e481f5d1461d",
+          "ll_model.pth": "42e739d16ee075d148c5b8a65b71422da53b90a32d706821708240c75124e4af",
+          "ll_model_cfg.pkl": "0199972dece30ed03433dd2e1cb712e7e718d94ff3cd4e2ca9c662253dc9f495",
+          "meta.json": "0562bcfe88845e70dc8a41c98953f60577ab635ffcb07104ddde8ff3dc23316f"
+        }
+      },
+      "interpbench_checkout_package": {
+        "file_count": 234,
+        "file_sha256": {
+          "__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "benchmark/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "benchmark/benchmark_case.py": "f4e63f45123b94334b36acdb7a232f797ddd17232c0ad9b7b821d81874de5684",
+          "benchmark/case_dataset.py": "a9737b29a7e88b5881970ce5d30cbd51cda45511c70f9230461f609dfc35c653",
+          "benchmark/cases/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "benchmark/cases/case_1.py": "e2731ab2ef8d438093fcf200561054e00e8dbf008fcbe058ec30c49b71854cee",
+          "benchmark/cases/case_10.py": "e7c6ba327b34cf09d1995e987aab2b89872c72f3506704ae63a615fb464e3b32",
+          "benchmark/cases/case_100.py": "5e3de384a07a68fec7bed7aa0939b103cc74569faeee2f67e4ac6690f2ed939c",
+          "benchmark/cases/case_101.py": "47f86c9e416b9315ed10fa9d964a47979c6b87704d8a5fc4603ae1c81fddee10",
+          "benchmark/cases/case_102.py": "3e772b11dec6b06b8d883e9acc6950dc4c17c9e098c70fa402ca420719f24b9a",
+          "benchmark/cases/case_103.py": "9fa27c8969f9e021d5a9b70faac7e5b1d0141c6f9e4242a27c5a6de390c5eec2",
+          "benchmark/cases/case_104.py": "4a4b1ed1d768a17f71b1c9e4f9a18da291547ab3809e8bb8bea7f2ff11009de4",
+          "benchmark/cases/case_105.py": "9bc0c721e0ffbda0957e2afacd040219ee0efd01842bf395d8fffcb7548d76d2",
+          "benchmark/cases/case_106.py": "0ff1b969c321dcfc9a5a3712b93e247189d8091a2797fdeb5596736743e2e4bc",
+          "benchmark/cases/case_107.py": "d7aebac55e2852d790208dd770ff391f3a04cafa25f1ed90db122672d4de6317",
+          "benchmark/cases/case_108.py": "46be388f92d0563fb19567144cc77fc5b6038325885045077fc8c4dadf7550a6",
+          "benchmark/cases/case_109.py": "5e690a8e602023b24e1ba36a21b46fe053a5d43fbf1c25588fcf5855041af334",
+          "benchmark/cases/case_11.py": "0a7bbc775fbf591a023b9d33716e19515b0126112cbb1756fa150f7633e74e76",
+          "benchmark/cases/case_110.py": "7cac9547c5fb98db9fb3a09c3d07947bfb8ce3a55bc7cd917bdf0217b5fbdaa4",
+          "benchmark/cases/case_111.py": "acbd511a33b6ef0babb3392fe1820b51639f07b70f89ce3bca4e18d4b9740608",
+          "benchmark/cases/case_112.py": "e60a47133967002e39c9579b2773e825e72f36f54e575343a0aebcbe7971eea6",
+          "benchmark/cases/case_113.py": "d543a014637a2192c0e728850f8382faa6b2dfb64fbdc06f277b54b3c193b782",
+          "benchmark/cases/case_114.py": "e4be365ebf0f8c26d6d98f90013913493e5b468ba1300bb3166cd0edc1c9630e",
+          "benchmark/cases/case_115.py": "86fc66df1b5e03a35c5679cd68b0fa6b7aaf2e8df24dc9b07d5fd88351f4bb22",
+          "benchmark/cases/case_116.py": "87c8aa9f5bb57b17856315a2a546b4c8a74e31ac1778cd21156aa27650447bdf",
+          "benchmark/cases/case_117.py": "4cba06f884775d8101529a9a14c86f1973de7b471c4ce9c739d88f3f4551d09e",
+          "benchmark/cases/case_118.py": "63494dd36b2d6a2e449c301018d4ce173772e6e9fc648d871007e9b39dc9be81",
+          "benchmark/cases/case_119.py": "8c0bb899bb46c8d62645baa125d97ba9dc457ba9853374f28966ad7938ec1f95",
+          "benchmark/cases/case_12.py": "601e9dcee6e3e77180073e9f68d70f18b1ecdcced700ee8bac634f425f0ea38a",
+          "benchmark/cases/case_120.py": "2cebdefe8b582326ad4b0840557bba6161f5915163c63adbafab000d66a458b9",
+          "benchmark/cases/case_121.py": "3645be90ac687fce7da02669bf0cdefafedd42f3828ae6e1eb20c2bcddf8b6af",
+          "benchmark/cases/case_122.py": "c4edc49ccb2945b785e211068effcccc61cdc7a852f462f94d2a869387314481",
+          "benchmark/cases/case_123.py": "7d22508ab8c775a832716dd4f2077963b397a4beec2ce0782619f13829b8d1f6",
+          "benchmark/cases/case_124.py": "9c5ae6475051361f560267805e30007d2ef1466c631d7138450d112ee0fb7d7e",
+          "benchmark/cases/case_125.py": "33a9848a69124a11a6f08dc0e4fb15dccfa603ef175ed15dbc432f2537a31f94",
+          "benchmark/cases/case_126.py": "114452626316e9e18ec92e13d59a73130ac0e5f3d9ce3555873400be8e983129",
+          "benchmark/cases/case_127.py": "d701e1b67715d4404c67909f8f772f530219477279457442b0f5ab12e4eefa9b",
+          "benchmark/cases/case_128.py": "e6d16e651faa59c6854f612b5039a72c8868720bf091b6ded3d6b6ac1ad84fff",
+          "benchmark/cases/case_129.py": "1e321e8e3a472e239ef04de1201d177c288af154140e4ced2f1d0fd2854c8477",
+          "benchmark/cases/case_13.py": "a2e56677ca38b66fba6cc7ee4c1664af5814532e19d3b1834583b5e9be41c824",
+          "benchmark/cases/case_130.py": "5a3568163033d22ded3206c8efc8432a5bab782d7ff32dcce4b5562a8225b99c",
+          "benchmark/cases/case_131.py": "a4d9b9c3087f5a83d98fd873c45a919d2b8a411f313b3a8f64e6eb41d8f1282e",
+          "benchmark/cases/case_14.py": "cfe2b1a2b5b7e2b5496dd87d786e22e55d48c8b0c475fd98b43cbe7c21f5cf6f",
+          "benchmark/cases/case_15.py": "85418e366706b4cbe5ec3a7b0926289d21b673b2ad152d1dfacdfed0d04c08a1",
+          "benchmark/cases/case_17.py": "458d54353585aa5ad17ad0f8c1ab97e03055f8c773bd6c769d3fd1954a7ce9ca",
+          "benchmark/cases/case_18.py": "6f9d73243b79243d9bfc713e08aaff1bb39e0d0af6b5e5647d5a795079c761ca",
+          "benchmark/cases/case_19.py": "7b5484f5ba7a425829d325b6351636a61a2101e769695e1f7945c658fabc1748",
+          "benchmark/cases/case_2.py": "befd4641cdbd586365d08ed4a6e17a440acd827b8ae3361d7893a917feaf4073",
+          "benchmark/cases/case_20.py": "841f3a78c2a811961f450e7ba0ed75aff8460223c17eff675e5c32afdcfc04ac",
+          "benchmark/cases/case_21.py": "569cc3748521470aefa0d25e50875ab0ed89d6e39b0729830bc9a5117716ccf8",
+          "benchmark/cases/case_22.py": "be06b81af9f91c13674c489618bde40f24c129296a999db9f819bb2f3a6c1eb6",
+          "benchmark/cases/case_23.py": "1ccace89c19f793ded50f64f118976bc99bed1188e0044f37dceaa9cf9ecfff8",
+          "benchmark/cases/case_24.py": "2fc604dcb511a82f205ce9b9c49001e61d6c9e6c030583fbe5f6b11307d12eaf",
+          "benchmark/cases/case_25.py": "f3d2f58b2d6a060340756e171612b6ca0b0d5bfc33821a6ba69643325e587cd1",
+          "benchmark/cases/case_26.py": "5ca57d16a4051ffbd1fe744b5899cc51694c501aebe354aa964297f2f7191029",
+          "benchmark/cases/case_28.py": "916586b4196a3a550a7d69671ec761ff93164d2cb9bec4845db7281165c7d93a",
+          "benchmark/cases/case_29.py": "3ab27ed335900f2fc109cf08574976d8c339c1a3c42db00b291a037645db1a9b",
+          "benchmark/cases/case_3.py": "6f313e5189fbc08636be589853483fd9027f4700606c4d2ceca4c499a85d47af",
+          "benchmark/cases/case_30.py": "4d33d0f419cca664bcb4102b52d8d77027a5e8305127e1e143ab7ad9678f2de3",
+          "benchmark/cases/case_31.py": "94c176c69893445312864d42ba7b01bdc119c6cce2f5832240c81c7e8aae72f8",
+          "benchmark/cases/case_32.py": "898e9957f6bee69f0f664c717f2250d0a42ca9e8a37336d6a3b0025211205452",
+          "benchmark/cases/case_33.py": "35305735cb8eb3498897b361091490c3d093da4ae155c311512ec3f16e1a8216",
+          "benchmark/cases/case_34.py": "be008f1cabbe9207e003f0c496bb5a6f0561012b8fba90c1d645f49bebb5ab63",
+          "benchmark/cases/case_35.py": "8407c9905fdc7dc3e1acd5557b433ebe10cfc013f18c281203e7279067cc007d",
+          "benchmark/cases/case_36.py": "09effa28865e509c1210a3f5f98a06bdd78703e187eda0e9ca5725974c2ed118",
+          "benchmark/cases/case_37.py": "3c9cbe5a4f857b227b8d824061f02c64b3de34dcf169b72c4b412259285b9201",
+          "benchmark/cases/case_38.py": "27cf6a15d606ba7782aacc63a61cdb88867aa052f739a5906256e2f3b9accdc5",
+          "benchmark/cases/case_39.py": "f633314660a2887de9c72b8f2d5e29a43a871d34ad4c71df5d9cea1e685577f2",
+          "benchmark/cases/case_4.py": "debde3902da29e1601e42bb0c53b70f1cf3c993ff7f68ffa4abd5b42125e4f56",
+          "benchmark/cases/case_40.py": "80e9d623f1aa6470a8b5a054487c2424d09987784adbd67606edfc023ad57862",
+          "benchmark/cases/case_41.py": "cb133968342d63e7b1e243821e8ef1787daa0fb013f883d744201d14068d60d4",
+          "benchmark/cases/case_42.py": "1131fa83da8e40de77b2aef5d6f1d4824bc43c4a03505dbe4f862ca1a91dce9d",
+          "benchmark/cases/case_43.py": "ee9811994a29a9e10a189bb89828b41b0374896cd398950eb0c0133fbecbc97d",
+          "benchmark/cases/case_44.py": "b455226cae8438d4a167c976f045cd3757a660706b4e882e124620427359aed2",
+          "benchmark/cases/case_45.py": "c7b5634c3438ff9a3ddd4d4d1b2db86b62041d7b2ba0bf571c7af12ac326cd66",
+          "benchmark/cases/case_46.py": "d303a25bb91ea0a2c93f99b06a1bfc8a12832664716ac1c348e177d8b05bd70c",
+          "benchmark/cases/case_47.py": "1223dac1d62cf15e12f595e7609a5c0a498911a4136c3d8746b155ab327c4084",
+          "benchmark/cases/case_48.py": "493f9d5ac206ed8390a56dcf8dc384ae632bdbcde333850fad071c8255fcbaac",
+          "benchmark/cases/case_49.py": "ac5f8188ab15444e50c2e3b60aadf54ed4ebea8b563e53c1e1fafc76ffe75563",
+          "benchmark/cases/case_5.py": "cbf2c89c9cf604c16abef2ad3c857b4e0e45f292eb3b0798aac9561a6a5bbb99",
+          "benchmark/cases/case_50.py": "f4036e3fba331a183b990308b5681a4abb59a022160273d3516e157fc72aa589",
+          "benchmark/cases/case_51.py": "248fc046fd3916b956f7d771e99aa744d86a10f609f994380008388dfb30e9a4",
+          "benchmark/cases/case_52.py": "75a77a4e5a7009034d24b7965f5d4c5a39987a272bb99a6144b0bc825a29b07c",
+          "benchmark/cases/case_53.py": "7b4bc5d0c0a3fba6ddc02be9308ef1a98208c8d4181a58d938f1e6c32691337a",
+          "benchmark/cases/case_54.py": "258cf55595f434154057a4a9be28c8a6d367dbc28118bf858f90463662fd9042",
+          "benchmark/cases/case_55.py": "06b4fe56ab3e912f8eaa9700bd1bf1531bd666d6df4e74868e027862e894657c",
+          "benchmark/cases/case_56.py": "17de74fbbbd006f198666b8c57b8612230b497f21b74e0600662cf4461280967",
+          "benchmark/cases/case_57.py": "0e105a506e26ef4c4a71398a10a2cc473e08498ffa70bcb05bd47c3bbac013e8",
+          "benchmark/cases/case_58.py": "54f4780a17be0f0c9234dfabd7a4c747e6960fe7db297d5ea7d40ce3189d8bc1",
+          "benchmark/cases/case_59.py": "7c33dd68f29a13445db7e87506bd0710ab9a5673fe4ff3ddc9063aa23708f401",
+          "benchmark/cases/case_6.py": "9637b27b27e0a8fd7da339f29e95535ca68263ca6f74bfa02573fce7eac9aca7",
+          "benchmark/cases/case_60.py": "a2496717168fb2947d5fdd6c79540dc1770a4a8193dbf92c5c0b16341ff516bf",
+          "benchmark/cases/case_61.py": "3faa62f6b536e79a875ffa67c409394f060d71bae220ddf93005f29b20bb8a34",
+          "benchmark/cases/case_62.py": "e743a832ecca1fb00135ec9f3d98d2278617ab32f8fe21bde9204e0f86d127b0",
+          "benchmark/cases/case_63.py": "5aba86efdaa8ba44f3579f0cbd1ccec7e517221a27e60d5278196a519759b285",
+          "benchmark/cases/case_64.py": "aecf79efed4e4dd2133858a8176b1aba2f4ac29fdef33cf7bccb1a6b4b917055",
+          "benchmark/cases/case_65.py": "6e26966915b7694601aa158fe1a3cd415bade7c2ab65348c55f0f889b695b47d",
+          "benchmark/cases/case_66.py": "c7d731379378367921a739b23e990d90c6d7d41e11a2b0c4c52458187e817bb9",
+          "benchmark/cases/case_67.py": "920e8cd82691dda93f3d7d11ba897baba523de788c290d9abbb65a61984144fb",
+          "benchmark/cases/case_68.py": "b00d5eec51a72f4e2bafdd43aad031c214290c6bef367710ea3b2e88e1a5275a",
+          "benchmark/cases/case_69.py": "80142d0a352d53fd821f980a7af7137882b8d2195a9661cbfb387a46a1d60068",
+          "benchmark/cases/case_7.py": "4b783978b27226e3527b8227018b145ef7ae2f7e4bd20b7750fb444335f0540b",
+          "benchmark/cases/case_70.py": "bb8ee1be454d441865f2420d1511b892c5db6c3ac2934dc13d249ed0b8cf8cf5",
+          "benchmark/cases/case_71.py": "08139c87cf44d5a0a7072a72cb203fe7a751f5b7bb4852d202be9bc66b02299e",
+          "benchmark/cases/case_72.py": "c6ec617975cd10128f67a8ef024fb9756b95d4dc0ded62b68b41914d5b2e8888",
+          "benchmark/cases/case_73.py": "ce6f4a59f5d54825dc06f2dfebda63b41af755cde67c439b097d8e0fcc17f193",
+          "benchmark/cases/case_74.py": "cab1f8af0058bf5e62b7030a554e94f3df3b9352124bdee70d69854c0f7a9dcf",
+          "benchmark/cases/case_75.py": "b9c2fd10d3e44d466dfad5e63bbcb803eab4bbb630499f8b43b72e26ccbd4299",
+          "benchmark/cases/case_76.py": "9fb716fd7b35408dba11715a30c5fbf863c151dbe9583a487c4a1dd71bdac775",
+          "benchmark/cases/case_77.py": "96f8315dfd16d6ff1288469c447704928c6900e30325fa6b8958804dbb08f0b5",
+          "benchmark/cases/case_78.py": "bbf511eebdead1e31ba74d900557913e5f591de069e91ecf7c9278846f07d45d",
+          "benchmark/cases/case_79.py": "f5cd5c296e0216c1892dacb9a4732e805756d08b77106a26006f6d140c5cef6d",
+          "benchmark/cases/case_8.py": "3d7b7015adb1306be97bf2cf6f87f9a48c61a4bc9179840b6674c183be5f0000",
+          "benchmark/cases/case_80.py": "75ab6f36bcce52ad41a230ed0aa23ee153172b4f7dd0009c0c9a658476e90e37",
+          "benchmark/cases/case_81.py": "e81c077234a249d91e0593c908e70763c0cbcc69799a136b86ff909ea6f30f15",
+          "benchmark/cases/case_82.py": "b7cf9c2663eb35bf5286b67e56f862ac16c6514721db118a34d8399a7bfb335f",
+          "benchmark/cases/case_83.py": "8bfd4aee8bbd3bc62a7dbf792fd885f81a891ee534490c004b0d7a3c09d26770",
+          "benchmark/cases/case_84.py": "7f6cd9862b6cc580d6e9d85269131b0c63119e620cec1aefaa295215388501ca",
+          "benchmark/cases/case_85.py": "2ad80d79f95c3dccfabc8f607f87a15b113c71e1f12c047dcfc6411e66ba4c75",
+          "benchmark/cases/case_86.py": "cc31ef4af5eefd10fc383ded930c7fec2b3b27748c51e055189cdf63dc474d1b",
+          "benchmark/cases/case_87.py": "9cdd6236ccef10282ad1b48ecfc707b2e2be19e951fbedde60ca9b7f4348a010",
+          "benchmark/cases/case_88.py": "5c9fba7a448b722768fc08519b5940d45e3c172260ca384cdfc87fcd87af14cd",
+          "benchmark/cases/case_89.py": "ad8e7528d13e893bfcdb113e77638e83137cde347d9c6662d0df5d56cf12dc12",
+          "benchmark/cases/case_9.py": "30cb651c4e7da2c4706c66dbc020c4f304679009f405d5472d04a615a03d552c",
+          "benchmark/cases/case_90.py": "0a4f3b3d365aa6268932799387dbdc380e4a87dd1418c3874379517eea23a6c7",
+          "benchmark/cases/case_91.py": "ee60e4993f61ae282901d80699de3f954ba189ee8a0d1ea7d138484f55cf0e8f",
+          "benchmark/cases/case_92.py": "92c29bebbfed46b76c45f2fba85f6787ffec2566125ae532df081ac7b46e0ad6",
+          "benchmark/cases/case_93.py": "3f346d6f7c6c97515d4f8b319d1c1cd6d245fd755e7983c3b8c2e9a964e6d4a4",
+          "benchmark/cases/case_94.py": "be5370d465c40557b398839520af2402e8aff29b0a7007a29d4ca934a4e90a67",
+          "benchmark/cases/case_95.py": "fbc5c90752049b73f56ae27eda4d6e69268fa2bf48260effad6304a18d7a2f47",
+          "benchmark/cases/case_96.py": "f95f0b8d84dd156897143e1e429db8ac0c80cda16f88d97ceb49b1cc25d1edb4",
+          "benchmark/cases/case_97.py": "284da20e5053e2ee7839f0d2f4224de3139b5a41307d9c956e3fe6a9751da468",
+          "benchmark/cases/case_98.py": "0d8310605db85d99c36b1fefb7f22f1091d13d4327e87a622187e56696f2bced",
+          "benchmark/cases/case_99.py": "325f1506026fdffbf46a8f5285f1c682645bc959d6b65b76d7fe740093bfb43d",
+          "benchmark/cases/case_ioi.py": "90ed426d2842082bec3c2982f603cf42a128001892e5f191c76caedd29d60851",
+          "benchmark/cases/case_ioi_next_token.py": "36ba8786a60099ce18b1408f08c4af3e91c59b51117a2ec149ab927ab6c492f9",
+          "benchmark/common_programs.py": "0fad7ad454fe8c6ca32ec0639464ac3785d05554c0404e8c9ff038a181460d01",
+          "benchmark/program_evaluation_type.py": "8af22fd495db0ad12fe4912764d39fd2857643dad244278484578c3ce5d121a1",
+          "benchmark/tracr_benchmark_case.py": "f298533fc9b69fccba93cc17c7574bcff4723722b99a0d1a58b57f3f40fd9537",
+          "benchmark/tracr_dataset.py": "766111bd99ce0641fc3c2fbc01b5c0ff2d60d97170054babc7f0a29288ef59dc",
+          "benchmark/tracr_encoded_dataset.py": "fe9c40ebbd76791b13be021a4f24625aa3d678ab6f8a6ea2cda0367f0692d77b",
+          "benchmark/vocabs.py": "eca78fb0e6cabfc166f28286bdb13e34042eef05dfe4ced7927c4c4062d701ef",
+          "commands/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "commands/algorithms/__init__.py": "1551c170866a8bff3c9ecdec3c73e3ac63a2d91e94b1ace943b92acebd03da30",
+          "commands/algorithms/acdc.py": "7a2470feb947d110603bcdc4856d05b8d02f9a49b1e86d60c2efee18efc6898f",
+          "commands/algorithms/eap.py": "90514780b2d0d1578fe72692571dc2da81addde142087137dc65d1f30c813f25",
+          "commands/algorithms/legacy_acdc.py": "a138e4f2224994a691a6db244ed9042352100c1c4770fbd994a3b38ceb67203c",
+          "commands/algorithms/run_algorithm.py": "a3ed866a9915f002cf985caf746ba39cfacba0556e16052e60d0544d0d7fca79",
+          "commands/algorithms/sp.py": "ac2302c9bf7662c49326838968e97893ef66beb2873e1e525947caa83b9f5127",
+          "commands/build_main_parser.py": "d8720834d85654f1b61bc98672c4fcadac95ce154200d55de0ed786d895acec0",
+          "commands/common_args.py": "b723a8cedff4da883bcb94a3512b37ccba592ab8b6f466522f567887701e7652",
+          "commands/evaluation/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "commands/evaluation/evaluation.py": "536a9442aeb9cec2ebe000371b18eb583045cb279fa1950ac9c4f9374958bbaf",
+          "commands/evaluation/iit/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "commands/evaluation/iit/iit_eval.py": "7fd962ddbdf9e861bc6fd87fae799c09c5020b1d73a178402f523e0ee1fd5bf9",
+          "commands/evaluation/realism/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "commands/evaluation/realism/gt_circuit_node_wise_ablation.py": "56d282cd19ac8fcfe0445c3cea58c7e6481883932f5a997b1ea35ca1b952b3e6",
+          "commands/evaluation/realism/node_wise_ablation.py": "3df043cd7ab808456a82e94ec870dc02a66830ed4fcc81d4e6193f49bd18eded",
+          "commands/train/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "commands/train/compression/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "commands/train/compression/compression_training_utils.py": "ecf2859e87582bd69abc7bdf62db7a53e0f41df6982c373aedf9ee8632b7bd1c",
+          "commands/train/compression/linear_compression.py": "7e5295d914a251af9b29277ce4cddbae511d4110effe270fda8e9649594f6012",
+          "commands/train/compression/non_linear_compression.py": "f7f86df9f9dfdba64be2119016e9fd82e4031a362fbe08ace1f1607c26c36a03",
+          "commands/train/iit/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "commands/train/iit/iit_train.py": "e06e12e70f275171f59adf3c2c7dfa39b2abccac61d62f96f13b674dbf3ce13c",
+          "commands/train/train.py": "a3631f5e1c951346eec02a5687881fb71428c28dc4e044316be561f50790e9c7",
+          "metrics/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "metrics/iia.py": "7bba0091ba1fd64aea3d193a70ddc52f5a7aafaf23a1befe5362b293d0e482bd",
+          "metrics/resampling_ablation_loss/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "metrics/resampling_ablation_loss/intervention.py": "d757d9f574c2ec5b5f6df9df8d65f49f7a3b051755ab29e81f34621535169e61",
+          "metrics/resampling_ablation_loss/intervention_type.py": "e0d3a29bd1b4096056d8f0de5c35fba4ebf29658a0c2bed093b88b56a521fce1",
+          "metrics/resampling_ablation_loss/resample_ablation_interventions.py": "5b95ab78616c1c537b91bba47a2330755a0eef4367cff9d09484b1caa01da89e",
+          "metrics/resampling_ablation_loss/resample_ablation_loss.py": "5fbb2f672f30977b7462e4c1024395afea2afe950e7b5161b3180f9d5836ac05",
+          "metrics/sparsity.py": "45718713e9862283ccf563a141b1e97d9897c9e9ff8ac2d010331b2862cbe916",
+          "metrics/validation_metrics.py": "9d21c31a41bd64f4a3c3cb4b5748e5b05eee19b9d8e89cf2f8f81fe1fab24b6d",
+          "training/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "training/compression/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "training/compression/activation_mapper/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "training/compression/activation_mapper/activation_mapper.py": "90af2072e9bdaa605cd87b288da56223d76447e76a8f84523a3861b1356b6751",
+          "training/compression/activation_mapper/autoencoder_mapper.py": "0b51b1a611bce3c47c326aebfd70605b7179e0657bb8d459ce5b3ca959646748",
+          "training/compression/activation_mapper/linear_mapper.py": "c761643ccdf9528947b386f3b6288bb18827746a4b67bdf033f98cfc73a36640",
+          "training/compression/activation_mapper/multi_hook_activation_mapper.py": "fe2be5f508e359291c9a069efd9b9891a2440592557953f6ce7309722fec8862",
+          "training/compression/autencoder.py": "ac6f23ca103c935bf4999d57bc9535eec0c71955ae62a6ad570c220da01c27d6",
+          "training/compression/autoencoder_trainer.py": "9f0e70a2e68589a29eeb561cc95911e67924848199f7300a022fb996df95e2de",
+          "training/compression/causally_compressed_tracr_transformer_trainer.py": "99435c450862feaf4cbb863a5064657b7e3791eedd145520cee0bca96fe1f442",
+          "training/compression/compressed_tracr_transformer_trainer.py": "774f267c2f3424fb7fbc04877e6f119208ea6ce744eac4142ee8cd2641483c57",
+          "training/compression/linear_compressed_tracr_transformer.py": "a8307ac996057704dfc0f84daf96aefd995808ecaa1f797ac3925014957859e0",
+          "training/compression/linear_compressed_tracr_transformer_trainer.py": "030d856a9ba9e83417a34fb2b62ebdc8d61a5b694902347413fc01ab51f5aac0",
+          "training/compression/non_linear_compressed_tracr_transformer_trainer.py": "5ee64b7e264a416305bec4a41ccdc4373c35faa8132c8cf0fe102622d83d88f0",
+          "training/generic_trainer.py": "df14c2a8fc3f6bd8a3ef405ac785e0da60e54780f6a6bbf96787265e23bc741a",
+          "training/training_args.py": "1b7cd2fcf8e3e5cf3fed9fed3d250025fea8c26039df2352df593ab69860a919",
+          "transformers/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "transformers/hooked_tracr_transformer.py": "0d1a07d7cd370d5e7fc37a4f2705dafd1828f18bb33fe541202ae10cec5c4afd",
+          "transformers/tracr_circuits_builder.py": "e36015bcf0a500d5c5ad4f2323f959b9051274546047205f321737c8069a02bf",
+          "utils/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "utils/attr_dict.py": "db54784780da0f4334131824045e95c4f1fadb05cbc043fc5fc85965541715c2",
+          "utils/auto_circuit_utils.py": "f8d6e75cd7d63a1056769780809501c84a27dbdbf361badd4a307f68dd0577c5",
+          "utils/circleci.py": "b08ca0503bda7176fda8b7f07e203e02a65a132ec4a85f44ed5f2935e35266df",
+          "utils/circuit/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "utils/circuit/alignment.py": "cb773264e022659bd16eafb7f983f3722affc9e846311acb7ebe98c8169162e6",
+          "utils/circuit/circuit.py": "64ca24f66844a4e1693c7433e57ab52cb02f66c2621df544dceb5a75d8b1eedd",
+          "utils/circuit/circuit_eval.py": "d4831a81999016588592bd7447213125508dfd5f03c12d35d1cd1c0f44a9f55a",
+          "utils/circuit/circuit_granularity.py": "b07cf8849a377b86472944360d80ee278b4b7284fca7c1afa3a61076a0c04fe2",
+          "utils/circuit/circuit_node.py": "c41c68926c43f0372117294df39d7f077a0386c40036798edf3b03127c0a0038",
+          "utils/circuit/circuit_node_view.py": "f66ba8a1e39fc4975bd8e6b31a7036984122205605e0ee963e1d4cb0bfe8ce61",
+          "utils/circuit/edges_list.py": "580a800c2aacc813dc4f5ee5cf3b76d7f0feb979ba40413edb39429f74784203",
+          "utils/circuit/prepare_circuit.py": "e61d30708b401a2e52c721a18acdc56e8e40887d63c7995ad8e3d77150058a82",
+          "utils/cloudpickle.py": "84fb9b11c8567b6b6ceaff6a19a1b3f54a01a2e6bdd21c3b51e8877ffb46f251",
+          "utils/edge_sp.py": "cfc584b1aece01d79f3526eb5538568f9a143bccd3725c262db0b6135e001b19",
+          "utils/find_all_subclasses.py": "dab559f7d7b52e66a9067a478a102fb8f2584b6cf051ab36f7ac074074a3c1fb",
+          "utils/get_cases.py": "243ec1d8b3d81e7d0fe51010fffd8385aa4980ad62e0f3b60f2be040e51badca",
+          "utils/hf/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "utils/hf/hf_uploader.py": "c98e3e579be210429d9cfe0938aef4c26485299d8062ab9dc7386374e35c9581",
+          "utils/iit/__init__.py": "762bd0140d635ef604072395eb3c42a22cf0a7e0975e104a0cb3312a5015ef73",
+          "utils/iit/_acdc_utils.py": "a4766812ba3ed23fe03bc3dd2e51535e149b1518cf19c8c8273b0f7e57d1c35c",
+          "utils/iit/correspondence.py": "d2221d06ccf6bb66152f91253457c07dc7bee2f3172e5d7fe7291006eafe23ab",
+          "utils/iit/iit_dataset_batch.py": "bc7e66c066739650d744c82fdc22419d11ff37012b69803333a480625c56760a",
+          "utils/iit/iit_hl_model.py": "28872e653319bc366a522f95649dbacec1ca3009c5ad5d81425ddacbb4962a11",
+          "utils/iit/ll_cfg.py": "9bf62df977548c5ec8c5c2c945a0171cd395f003e8dd808862b627b5e65c4e81",
+          "utils/iit/tracr_hl_node.py": "5391bbd53ae7845cb4b78b5540f7be9128a1c24a756fc6aaf0e44d6391af47f5",
+          "utils/iit/tracr_model_pair.py": "0ba2992441b6c2faeb82d36b1d27fdad4965da67d5fab49ddd09ec28b0c78192",
+          "utils/iit/wandb_loader.py": "50ba8c1a72268a7b0cd7d016642d938f4ef4f65139eaec8e6492d7d8d02e7519",
+          "utils/init_functions.py": "b223b6912207d5eb002cdd7980490f9fefad8148cac409554e960dce5472eaa4",
+          "utils/ll_model_loader/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "utils/ll_model_loader/best_weights.py": "fd9afcd7da4c23f423ee2a287758982c1605f8da1c993fdf88fe231408d9efe9",
+          "utils/ll_model_loader/ground_truth_model_loader.py": "0a3859d87bbe865e8418fbed97cb9c66431029cab19e0ee61c74ad9c1b92d77f",
+          "utils/ll_model_loader/interp_bench_model_loader.py": "4ae309f46dc7bcb50241ef2c52f21b94bea6ebf1e03ea8ffce89093cf5d55262",
+          "utils/ll_model_loader/ll_model_loader.py": "2d35dcffc001016f4fbef143a618c91575a8fd9ae7a491dc5f95c485f955af4d",
+          "utils/ll_model_loader/ll_model_loader_factory.py": "7d78df319584373575cf8f2094e2b0583b514a9edb08dc826d31219d4d4359a0",
+          "utils/ll_model_loader/natural_model_loader.py": "98bddc66d3a4e67391fc048460f99f20a4b45c0fe2e3d6ab4980cd866a9e6612",
+          "utils/ll_model_loader/siit_model_loader.py": "a8ede3a0a3f6f8368ef6f9c8e52547fcd4c14ec998f98fe71c072f282c268442",
+          "utils/node_sp.py": "e91118ec7f630f871eecccad0c244225e644f00d409d6f84e12ded7bc7de21d0",
+          "utils/project_paths.py": "c83fa57cb85988e471b64e2d4b6d020555b814a6e38fb75d8874c285ae3cb4f9",
+          "utils/wandb_artifact_download.py": "c80474d11c9499b9ca51fef8f3acf3e9a30d27d6f61ba8edb0ea2eb93c6db3c7"
+        },
+        "root": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/code-220791e4a9cd29957ed5edfa445e7c09152d7298/circuits_benchmark",
+        "tree_sha256": "b62eee4d53f3ffc8baccd46d3e20089a1cf424aada18d73b8ef88614ac539a62"
+      },
+      "source_directories": {
+        "auto_circuit": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/auto-circuit-0b74956bbe472cf961deb8ae0ef574f725daca96",
+        "iit": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/iit-ed44cbfa255b543bb2d4da3d193ae97c9715c4f7",
+        "interpbench": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/code-220791e4a9cd29957ed5edfa445e7c09152d7298",
+        "model_root": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/models-a1242a84f8a4d07d1be9a8f5ec710415198016b2",
+        "tracr": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/tracr-98f4910e3966805c83d80eb087c7a4e3328171c6"
+      },
+      "source_revisions": {
+        "auto_circuit": "0b74956bbe472cf961deb8ae0ef574f725daca96",
+        "iit": "ed44cbfa255b543bb2d4da3d193ae97c9715c4f7",
+        "interpbench": "220791e4a9cd29957ed5edfa445e7c09152d7298",
+        "tracr": "98f4910e3966805c83d80eb087c7a4e3328171c6"
+      },
+      "tracked_worktrees_clean": {
+        "auto_circuit": true,
+        "iit": true,
+        "interpbench": true,
+        "tracr": true
+      }
+    },
+    "pinned_environment": {
+      "environment": {
+        "all_installed_distributions": {
+          "absl-py": [
+            {
+              "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/absl_py-2.1.0.dist-info",
+              "version": "2.1.0"
+            }
+          ],
+          "accelerate": [
+            {
+              "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/accelerate-0.31.0.dist-info",
+              "version": "0.31.0"
+            }
+          ],
+          "aiohappyeyeballs": [
+            {
+              "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/aiohappyeyeballs-2.7.1.dist-info",
+              "version": "2.7.1"
+            }
+          ],
+          "aiohttp": [
+            {
+              "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/aiohttp-3.14.3.dist-info",
+              "version": "3.14.3"
+            }
+          ],
+          "aiosignal": [
+            {
+              "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/aiosignal-1.4.0.dist-info",
+              "version": "1.4.0"
+            }
+          ],
+          "appdirs": [
+            {
+              "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/appdirs-1.4.4.dist-info",
+              "version": "1.4.4"
+            }
+          ],
+          "attrs": [
+            {
+              "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/attrs-26.1.0.dist-info",
+              "version": "26.1.0"
+            }
+          ],
+          "auto-circuit": [
+            {
+              "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/auto_circuit-0.1.0.dist-info",
+              "version": "0.1.0"
+            }
+          ],
+          "beartype": [
+            {
+              "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/beartype-0.14.1.dist-info",
+              "version": "0.14.1"
+            }
+          ],
+          "better-abc": [
+            {
+              "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/better_abc-0.0.3.dist-info",
+              "version": "0.0.3"
+            }
+          ],
+          "blobfile": [
+            {
+              "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/blobfile-2.0.2.dist-info",
+              "version": "2.0.2"
+            }
+          ],
+          "certifi": [
+            {
+              "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/certifi-2026.7.22.dist-info",
+              "version": "2026.7.22"
+            }
+          ],
+          "charset-normalizer": [
+            {
+              "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/charset_normalizer-3.5.1.dist-info",
+              "version": "3.5.1"
+            }
+          ],
+          "chex": [
+            {
+              "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/chex-0.1.86.dist-info",
+              "version": "0.1.86"
+            }
+          ],
+          "click": [
+            {
+              "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/click-8.4.2.dist-info",
+              "version": "8.4.2"
+            }
+          ],
+          "cloudpickle": [
+            {
+              "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/cloudpickle-3.0.0.dist-info",
+              "version": "3.0.0"
+            }
+          ],
+          "cmapy": [
+            {
+              "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/cmapy-0.6.6.dist-info",
+              "version": "0.6.6"
+            }
+          ],
+          "contourpy": [
+            {
+              "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/contourpy-1.3.3.dist-info",
+              "version": "1.3.3"
+            }
+          ],
+          "cycler": [
+            {
+              "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/cycler-0.12.1.dist-info",
+              "version": "0.12.1"
+            }
+          ],
+          "datasets": [
+            {
+              "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/datasets-2.18.0.dist-info",
+              "version": "2.18.0"
+            }
+          ],
+          "dill": [
+            {
+              "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/dill-0.3.8.dist-info",
+              "version": "0.3.8"
+            }
+          ],
+          "dm-haiku": [
+            {
+              "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/dm_haiku-0.0.11.dist-info",
+              "version": "0.0.11"
+            }
+          ],
+          "docker-pycreds": [
+            {
+              "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/docker_pycreds-0.4.0.dist-info",
+              "version": "0.4.0"
+            }
+          ],
+          "einops": [
+            {
+              "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/einops-0.7.0.dist-info",
+              "version": "0.7.0"
+            }
+          ],
+          "etils": [
+            {
+              "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/etils-1.7.0.dist-info",
+              "version": "1.7.0"
+            }
+          ],
+          "fancy-einsum": [
+            {
+              "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/fancy_einsum-0.0.3.dist-info",
+              "version": "0.0.3"
+            }
+          ],
+          "filelock": [
+            {
+              "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/filelock-3.32.3.dist-info",
+              "version": "3.32.3"
+            }
+          ],
+          "flax": [
+            {
+              "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/flax-0.8.5.dist-info",
+              "version": "0.8.5"
+            }
+          ],
+          "fonttools": [
+            {
+              "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/fonttools-4.63.0.dist-info",
+              "version": "4.63.0"
+            }
+          ],
+          "frozenlist": [
+            {
+              "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/frozenlist-1.8.0.dist-info",
+              "version": "1.8.0"
+            }
+          ],
+          "fsspec": [
+            {
+              "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/fsspec-2024.2.0.dist-info",
+              "version": "2024.2.0"
+            }
+          ],
+          "gitdb": [
+            {
+              "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/gitdb-4.0.12.dist-info",
+              "version": "4.0.12"
+            }
+          ],
+          "gitpython": [
+            {
+              "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/gitpython-3.1.59.dist-info",
+              "version": "3.1.59"
+            }
+          ],
+          "huggingface-hub": [
+            {
+              "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/huggingface_hub-0.24.5.dist-info",
+              "version": "0.24.5"
+            }
+          ],
+          "humanize": [
+            {
+              "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/humanize-4.16.0.dist-info",
+              "version": "4.16.0"
+            }
+          ],
+          "idna": [
+            {
+              "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/idna-3.19.dist-info",
+              "version": "3.19"
+            }
+          ],
+          "iit": [
+            {
+              "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/iit-0.1.0.dist-info",
+              "version": "0.1.0"
+            }
+          ],
+          "importlib-resources": [
+            {
+              "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/importlib_resources-7.1.0.dist-info",
+              "version": "7.1.0"
+            }
+          ],
+          "jax": [
+            {
+              "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/jax-0.4.30.dist-info",
+              "version": "0.4.30"
+            }
+          ],
+          "jaxlib": [
+            {
+              "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/jaxlib-0.4.30.dist-info",
+              "version": "0.4.30"
+            }
+          ],
+          "jaxtyping": [
+            {
+              "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/jaxtyping-0.2.31.dist-info",
+              "version": "0.2.31"
+            }
+          ],
+          "jinja2": [
+            {
+              "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/jinja2-3.1.6.dist-info",
+              "version": "3.1.6"
+            }
+          ],
+          "jmp": [
+            {
+              "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/jmp-0.0.4.dist-info",
+              "version": "0.0.4"
+            }
+          ],
+          "kaleido": [
+            {
+              "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/kaleido-0.2.1.dist-info",
+              "version": "0.2.1"
+            }
+          ],
+          "kiwisolver": [
+            {
+              "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/kiwisolver-1.5.0.dist-info",
+              "version": "1.5.0"
+            }
+          ],
+          "lxml": [
+            {
+              "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/lxml-4.9.4.dist-info",
+              "version": "4.9.4"
+            }
+          ],
+          "markdown-it-py": [
+            {
+              "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/markdown_it_py-4.2.0.dist-info",
+              "version": "4.2.0"
+            }
+          ],
+          "markupsafe": [
+            {
+              "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/markupsafe-3.0.3.dist-info",
+              "version": "3.0.3"
+            }
+          ],
+          "matplotlib": [
+            {
+              "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/matplotlib-3.8.2.dist-info",
+              "version": "3.8.2"
+            }
+          ],
+          "mdurl": [
+            {
+              "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/mdurl-0.1.2.dist-info",
+              "version": "0.1.2"
+            }
+          ],
+          "ml-dtypes": [
+            {
+              "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/ml_dtypes-0.4.0.dist-info",
+              "version": "0.4.0"
+            }
+          ],
+          "mpmath": [
+            {
+              "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/mpmath-1.3.0.dist-info",
+              "version": "1.3.0"
+            }
+          ],
+          "msgpack": [
+            {
+              "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/msgpack-1.2.1.dist-info",
+              "version": "1.2.1"
+            }
+          ],
+          "multidict": [
+            {
+              "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/multidict-6.7.1.dist-info",
+              "version": "6.7.1"
+            }
+          ],
+          "multiprocess": [
+            {
+              "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/multiprocess-0.70.16.dist-info",
+              "version": "0.70.16"
+            }
+          ],
+          "nest-asyncio": [
+            {
+              "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/nest_asyncio-1.6.0.dist-info",
+              "version": "1.6.0"
+            }
+          ],
+          "networkx": [
+            {
+              "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/networkx-3.6.1.dist-info",
+              "version": "3.6.1"
+            }
+          ],
+          "numpy": [
+            {
+              "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/numpy-1.26.4.dist-info",
+              "version": "1.26.4"
+            }
+          ],
+          "opencv-python": [
+            {
+              "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/opencv_python-4.11.0.86.dist-info",
+              "version": "4.11.0.86"
+            }
+          ],
+          "opt-einsum": [
+            {
+              "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/opt_einsum-3.4.0.dist-info",
+              "version": "3.4.0"
+            }
+          ],
+          "optax": [
+            {
+              "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/optax-0.2.2.dist-info",
+              "version": "0.2.2"
+            }
+          ],
+          "orbax-checkpoint": [
+            {
+              "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/orbax_checkpoint-0.5.20.dist-info",
+              "version": "0.5.20"
+            }
+          ],
+          "ordered-set": [
+            {
+              "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/ordered_set-4.1.0.dist-info",
+              "version": "4.1.0"
+            }
+          ],
+          "packaging": [
+            {
+              "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/packaging-26.3.dist-info",
+              "version": "26.3"
+            }
+          ],
+          "pandas": [
+            {
+              "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/pandas-2.1.4.dist-info",
+              "version": "2.1.4"
+            }
+          ],
+          "pillow": [
+            {
+              "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/pillow-10.4.0.dist-info",
+              "version": "10.4.0"
+            }
+          ],
+          "pip": [
+            {
+              "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/pip-25.2.dist-info",
+              "version": "25.2"
+            }
+          ],
+          "plotly": [
+            {
+              "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/plotly-5.22.0.dist-info",
+              "version": "5.22.0"
+            }
+          ],
+          "propcache": [
+            {
+              "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/propcache-0.5.2.dist-info",
+              "version": "0.5.2"
+            }
+          ],
+          "protobuf": [
+            {
+              "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/protobuf-4.25.9.dist-info",
+              "version": "4.25.9"
+            }
+          ],
+          "psutil": [
+            {
+              "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/psutil-7.2.2.dist-info",
+              "version": "7.2.2"
+            }
+          ],
+          "pyarrow": [
+            {
+              "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/pyarrow-25.0.1.dist-info",
+              "version": "25.0.1"
+            }
+          ],
+          "pyarrow-hotfix": [
+            {
+              "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/pyarrow_hotfix-0.7.dist-info",
+              "version": "0.7"
+            }
+          ],
+          "pycryptodomex": [
+            {
+              "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/pycryptodomex-3.23.0.dist-info",
+              "version": "3.23.0"
+            }
+          ],
+          "pygments": [
+            {
+              "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/pygments-2.21.0.dist-info",
+              "version": "2.21.0"
+            }
+          ],
+          "pyparsing": [
+            {
+              "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/pyparsing-3.3.2.dist-info",
+              "version": "3.3.2"
+            }
+          ],
+          "python-dateutil": [
+            {
+              "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/python_dateutil-2.9.0.post0.dist-info",
+              "version": "2.9.0.post0"
+            }
+          ],
+          "pytz": [
+            {
+              "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/pytz-2026.3.post1.dist-info",
+              "version": "2026.3.post1"
+            }
+          ],
+          "pyyaml": [
+            {
+              "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/pyyaml-6.0.3.dist-info",
+              "version": "6.0.3"
+            }
+          ],
+          "regex": [
+            {
+              "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/regex-2026.7.19.dist-info",
+              "version": "2026.7.19"
+            }
+          ],
+          "requests": [
+            {
+              "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/requests-2.34.2.dist-info",
+              "version": "2.34.2"
+            }
+          ],
+          "rich": [
+            {
+              "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/rich-13.7.1.dist-info",
+              "version": "13.7.1"
+            }
+          ],
+          "safetensors": [
+            {
+              "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/safetensors-0.8.0.dist-info",
+              "version": "0.8.0"
+            }
+          ],
+          "scipy": [
+            {
+              "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/scipy-1.14.0.dist-info",
+              "version": "1.14.0"
+            }
+          ],
+          "sentencepiece": [
+            {
+              "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/sentencepiece-0.2.0.dist-info",
+              "version": "0.2.0"
+            }
+          ],
+          "sentry-sdk": [
+            {
+              "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/sentry_sdk-2.68.0.dist-info",
+              "version": "2.68.0"
+            }
+          ],
+          "setproctitle": [
+            {
+              "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/setproctitle-1.3.7.dist-info",
+              "version": "1.3.7"
+            }
+          ],
+          "setuptools": [
+            {
+              "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/setuptools-65.5.0.dist-info",
+              "version": "65.5.0"
+            }
+          ],
+          "six": [
+            {
+              "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/six-1.17.0.dist-info",
+              "version": "1.17.0"
+            }
+          ],
+          "smmap": [
+            {
+              "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/smmap-5.0.3.dist-info",
+              "version": "5.0.3"
+            }
+          ],
+          "sympy": [
+            {
+              "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/sympy-1.14.0.dist-info",
+              "version": "1.14.0"
+            }
+          ],
+          "tabulate": [
+            {
+              "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/tabulate-0.10.0.dist-info",
+              "version": "0.10.0"
+            }
+          ],
+          "tenacity": [
+            {
+              "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/tenacity-9.1.4.dist-info",
+              "version": "9.1.4"
+            }
+          ],
+          "tensorstore": [
+            {
+              "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/tensorstore-0.1.63.dist-info",
+              "version": "0.1.63"
+            }
+          ],
+          "tokenizers": [
+            {
+              "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/tokenizers-0.15.2.dist-info",
+              "version": "0.15.2"
+            }
+          ],
+          "toolz": [
+            {
+              "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/toolz-1.1.0.dist-info",
+              "version": "1.1.0"
+            }
+          ],
+          "torch": [
+            {
+              "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/torch-2.3.1.dist-info",
+              "version": "2.3.1"
+            }
+          ],
+          "tqdm": [
+            {
+              "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/tqdm-4.66.4.dist-info",
+              "version": "4.66.4"
+            }
+          ],
+          "tracr": [
+            {
+              "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/tracr-1.0.0.dist-info",
+              "version": "1.0.0"
+            }
+          ],
+          "transformer-lens": [
+            {
+              "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/transformer_lens-1.19.0.dist-info",
+              "version": "1.19.0"
+            }
+          ],
+          "transformers": [
+            {
+              "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/transformers-4.39.3.dist-info",
+              "version": "4.39.3"
+            }
+          ],
+          "treescope": [
+            {
+              "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/treescope-0.1.10.dist-info",
+              "version": "0.1.10"
+            }
+          ],
+          "typeguard": [
+            {
+              "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/typeguard-2.13.3.dist-info",
+              "version": "2.13.3"
+            }
+          ],
+          "typing-extensions": [
+            {
+              "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/typing_extensions-4.16.0.dist-info",
+              "version": "4.16.0"
+            }
+          ],
+          "tzdata": [
+            {
+              "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/tzdata-2026.3.dist-info",
+              "version": "2026.3"
+            }
+          ],
+          "urllib3": [
+            {
+              "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/urllib3-2.7.0.dist-info",
+              "version": "2.7.0"
+            }
+          ],
+          "vscode-tqdm": [
+            {
+              "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/vscode_tqdm-4.66.2.dist-info",
+              "version": "4.66.2"
+            }
+          ],
+          "wandb": [
+            {
+              "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/wandb-0.16.6.dist-info",
+              "version": "0.16.6"
+            }
+          ],
+          "wget": [
+            {
+              "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/wget-3.2.dist-info",
+              "version": "3.2"
+            }
+          ],
+          "word2word": [
+            {
+              "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/word2word-1.0.0.dist-info",
+              "version": "1.0.0"
+            }
+          ],
+          "xxhash": [
+            {
+              "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/xxhash-4.0.1.dist-info",
+              "version": "4.0.1"
+            }
+          ],
+          "yarl": [
+            {
+              "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/yarl-1.24.5.dist-info",
+              "version": "1.24.5"
+            }
+          ],
+          "zipp": [
+            {
+              "metadata_path": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/zipp-4.1.0.dist-info",
+              "version": "4.1.0"
+            }
+          ]
+        },
+        "executable": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/bin/python",
+        "packages": {
+          "auto-circuit": "0.1.0",
+          "blobfile": "2.0.2",
+          "einops": "0.7.0",
+          "huggingface-hub": "0.24.5",
+          "jax": "0.4.30",
+          "jaxlib": "0.4.30",
+          "kaleido": "0.2.1",
+          "numpy": "1.26.4",
+          "ordered-set": "4.1.0",
+          "plotly": "5.22.0",
+          "torch": "2.3.1",
+          "transformer-lens": "1.19.0",
+          "vscode-tqdm": "4.66.2",
+          "word2word": "1.0.0"
+        },
+        "platform": "macOS-26.3-arm64-arm-64bit",
+        "pygraphviz_branch": {
+          "availability_semantics": "environment_path_spec_ignoring_runtime_sys_modules_stubs",
+          "distribution_version": "not_installed",
+          "environment_path_spec_present": false
+        },
+        "python": "3.11.9",
+        "runtime_package_sources": {
+          "auto_circuit": {
+            "file_count": 53,
+            "file_sha256": {
+              "data.py": "3925de46979f1baabe55c9cc33972d52ae7d162e625651080cfbbfbd981ead30",
+              "experiment_utils.py": "26534bbda01a4692dff6eef1bd40a6b315a5417a14b1a6ec80779085ff3f70cb",
+              "metrics/area_under_curve.py": "13aec755b36feb3725a47a42274d5977e56d26dc84f7114cba3a2dd2ac7cbac0",
+              "metrics/avoid_edges.py": "222687547a1c653f7ee0abe1713225d229453478b15080ace753a7f02b4f73cc",
+              "metrics/completeness_metrics/same_under_knockouts.py": "150b38e1344a5622791796970db6a29c656fbd8717725ce9dfb5a6180d34b5bb",
+              "metrics/completeness_metrics/train_same_under_knockouts.py": "d498b317f671c3e92831cafdcea5a234eb57c113158cfd66f4035fa79c3ce89e",
+              "metrics/official_circuits/circuits/docstring_official.py": "87dc0ce5b33698984efa66e1d87a64b9549d115cc33a672df746ab50920e2837",
+              "metrics/official_circuits/circuits/greaterthan_official.py": "156e2caac7a2ff36a5bc17dfa84437872cafe465ac1de869c24bd844135f612a",
+              "metrics/official_circuits/circuits/ioi_official.py": "bd310221d4f969b3a29c3a941a3721f0db8551ae4b9d85f9c0a8e0669c15222b",
+              "metrics/official_circuits/circuits/sports_players_official.py": "5447804938ce073177b0c519c4f72c9d88181b440b4686fd4991f8eecc4169f6",
+              "metrics/official_circuits/circuits/tracr/reverse_official.py": "edc79a58f3d52aa962060c3a1d54eaf61a581add266f66644783909f1ca10895",
+              "metrics/official_circuits/circuits/tracr/xproportion_official.py": "ff69694a3725513b8bde33f957156207309f8a0c35690d801dcd3f6664b8f9cc",
+              "metrics/official_circuits/measure_roc.py": "c1e36f01673162423989ee5480c26a6ddca57c1b069352ef9d95d1d0c72a4af5",
+              "metrics/official_circuits/roc_plot.py": "f30f0cf589b554e3b05e912fdb2f3de3ea686564cd595da96c95b3880fc46230",
+              "metrics/prune_metrics/answer_diff.py": "004ef224de1bb2da960b1d3bf70863e02723e7f4bea6537b6b7a52ea1bd4f879",
+              "metrics/prune_metrics/answer_diff_percent.py": "3fa4209b27746cdfbbd925f915a0221e2c1a5aa3c15ecb0a30ac7a5e9e5785f6",
+              "metrics/prune_metrics/answer_value.py": "b364d1e14d78e471a55d4abf14c27256dfbda86a19715c7b2e5bb149bc4f5893",
+              "metrics/prune_metrics/correct_answer_percent.py": "f8c84e5b4efa45c9a003582a9ff53d73c80bfb3804dd5a13386301f4c5e7e724",
+              "metrics/prune_metrics/kl_div.py": "8976b730ba70a06bacaf19c4ec1e598cc11b7846f6306e720d19a9328371fc6c",
+              "metrics/prune_metrics/measure_prune_metrics.py": "b60af4f6e412892eef17b683a01ffd51d22ff468603f2ffebac47ca76943c25d",
+              "metrics/prune_metrics/prune_metrics.py": "6e64169c2aa3338f197409c4fce7aa9b8a9f69b9129d14699da7e96941c27a24",
+              "metrics/prune_metrics/prune_metrics_plot.py": "eb2a6defa6bbc522bd8718053d2b486d704fc774e062a8e0e338b819fa05dd36",
+              "metrics/prune_scores_similarity.py": "95f18a487622023c5d2355abfb10caeee7b103779b421c2a6b55ae5598208498",
+              "model_utils/micro_model_utils.py": "c0f5851656c2d6d44217a84e06b87e6abb8f2d9cc9657ef8cc34db30e577c408",
+              "model_utils/sparse_autoencoders/autoencoder_training.py": "a91b367fb4b72760d47cf183c0a36be3404c88bac88c997c54b169b442d06675",
+              "model_utils/sparse_autoencoders/autoencoder_transformer.py": "84fd2a0e90e343d15f6afd3c6a0de4936e5d4e6620143e84cea2f0b919b5699a",
+              "model_utils/sparse_autoencoders/sparse_autoencoder.py": "a55c9b9fc65f56b3cc92d5dad020438701861b11a451e007a18e7d955b709b81",
+              "model_utils/task_projectors/projector_transformer.py": "fa1d37176bccdc6b19c4273871f27efa025f3016ad9ebf80b5ae195141c28e89",
+              "model_utils/task_projectors/task_projector.py": "e3bf40f1376ae8851377fafd8bc26e2f0dfd93614a9283487c0660899e706e82",
+              "model_utils/task_projectors/task_projector_training.py": "a2ef344e031b04c98c948549d2537f5391e39455440834160d9871c436a2ec9d",
+              "model_utils/tracr_model_utils.py": "92372745cf93938a4d16a27def81407718d65ee39f3356209b8dda06e8b98886",
+              "model_utils/transformer_lens_utils.py": "8be6a35345a7fcaaf3bb95b17cdf1811b2b50a394949e1adc91bbcb8d03b8efe",
+              "prune.py": "52d57f0adffd385b119ac05ae988341e9ff7745527bcb11d65bfe6cc72432f43",
+              "prune_algos/ACDC.py": "655058dfecc9b14f98b98d82d90b723d0d999e46057044d18ca34d40c58732d9",
+              "prune_algos/activation_magnitude.py": "23d9004bf0780f3c00b5a24c12fb2bf8426852c4c9655d77bed1a26058d8dbcb",
+              "prune_algos/circuit_probing.py": "63219e195d9f654fff9f2c8ee752a21950446f285a0958d8f2b98704c70d11dc",
+              "prune_algos/edge_attribution_patching.py": "d0d95430c512a878233e3dfad9e1a4a50655cd93c9792e4610aead7c4d1627df",
+              "prune_algos/ground_truth.py": "15e43bb295d3f9ec5ec20e493f7b8435d272d16df6c7a0791193aa9f9ae3d9a9",
+              "prune_algos/mask_gradient.py": "36ca10753c6efb77c9c472d29d3e81da9194dee7ef3279a1a5b095a5c0baec5b",
+              "prune_algos/parameter_integrated_gradients.py": "9de32cd049446ff8057eb05dea5844a1d699c5e519581301c0f0dbd044fc736b",
+              "prune_algos/prune_algos.py": "aa7b8c4af86d7c0ecdaecea915a47e2e1ba2c267626efe2c04610b5360f45a08",
+              "prune_algos/random_edges.py": "d136675aa0e4b15a456c9125b7f33c8f83b2f821a33c4ecf8a9839aacaacdaa4",
+              "prune_algos/subnetwork_probing.py": "8d0b0093cde4f4c36eaebbbb8a9a3935ef333a2b4a4358f8285b96260122b556",
+              "tasks.py": "c45aae02c2d0c2737e3ab298443becfd6b758fca004899bea395ba5c9bbc0fc5",
+              "types.py": "85bfaf6e67a76e3aaaa8686f3bc4295641ec6119c1e669d7b44215291c55ccdc",
+              "utils/ablation_activations.py": "2fd77a905140c0e3c63e8dc2494b316639e0216dac6f5e4410328bc27193c588",
+              "utils/custom_tqdm.py": "90a59f39280ea825b042222566b438727e619f5192e577ab2ab1b3ea7042a858",
+              "utils/graph_utils.py": "348e2465ef6688ac21a92addbfac8df10221488b724c9bcaf5bfa93a8822d578",
+              "utils/misc.py": "11eeaed733ba4fda95197c3c65863a5654f3fcbb0d408a9df6d0ea6d44450b68",
+              "utils/patch_wrapper.py": "cbce2e2a525fdee7531e8437a7955c1531ffb7c96a2a090bd9a781758655fc12",
+              "utils/patchable_model.py": "7c638d017d200635b8e3a283faae2035d8b6f83f3b591f40d6dabcbdfb7c00b8",
+              "utils/tensor_ops.py": "8b382a3e1e6e63ee38eb246419aeaee647801f6d8a5d1779b6facdce08cd78f6",
+              "visualize.py": "547eb793581792975453d8481bfd14c1a15a548af732ba152bd70496385d90f4"
+            },
+            "root": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/auto_circuit",
+            "status": "present",
+            "tree_sha256": "9341912da7f8695fa2fc43f8de67e49d68e763fdeb612aff5521636eea8b6d0f"
+          },
+          "iit": {
+            "file_count": 45,
+            "file_sha256": {
+              "__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+              "model_pairs/__init__.py": "7d18a355344a2763f50dc374bf0f7e73ce1120fcdeb38c796adac765603d3118",
+              "model_pairs/base_model_pair.py": "987687e84446809626c772aa94bca0be35117ffc8619877d34be3553bf301297",
+              "model_pairs/freeze_model_pair.py": "43f0e59b0d5b0668d2042673e476b46562aa7f028b383f0ec9183cffb2fe2319",
+              "model_pairs/iit_behavior_model_pair.py": "31e182af16e1812cf1925e99568cad64cc80cbb87b55aecafe1968bc9bee236f",
+              "model_pairs/iit_model_pair.py": "5b42f9e2b7137dfa0adbc548760d1ce93b8b58abea1db24362313c9304cd5ba8",
+              "model_pairs/ioi_model_pair.py": "45ce3a5e118511f35a140117fd3476b2bd7c02aa8e3a46223f541b5a840d70ff",
+              "model_pairs/ll_model.py": "9161c857062b96c222d17c893a01d21c95fee1326217701bc956bea5ebe2177c",
+              "model_pairs/probed_sequential_pair.py": "2d4fad7ed2f023aa1cea5ae6f46201d7e4f820247502bd2ca44a932c42e4f4e1",
+              "model_pairs/stop_grad_pair.py": "26250b69e7c9a7c339346dfe310704fa2e1e0dbe870efd7e2a3eb5380825551e",
+              "model_pairs/strict_iit_model_pair.py": "00d389eb847b919cc4a366721fe7c0f7ef7d78d1564e3430fc36e2e8a7172be3",
+              "tasks/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+              "tasks/hl_model.py": "592988eeed59fedb09cf3393f9d4250e2174f442fb45a21fca18ea38b540a84a",
+              "tasks/ioi/__init__.py": "d01ce4f359842a5c1141222446fe4108d5d976252e57f9118bb2566b9cbb8ce6",
+              "tasks/ioi/ioi_config.py": "0bd58974cf9c2fe07ecdb3c3b12634aa0b2e3a3dfe03d3e669dbf96dc6c6b18f",
+              "tasks/ioi/ioi_dataset_tl.py": "6f54b6e121af3f73b5dfa6424ba804412b83e38f3d7761884ff31d18e9672e8f",
+              "tasks/ioi/ioi_hl.py": "ceb107add2cf04fe3491b7d1ed4191c40dfc34ff3bd8093f356035603a8291b2",
+              "tasks/ioi/utils.py": "ae037c7965a457dbcc67fd78eb99ac9478797064572ee6a5818c11e278ae21c3",
+              "tasks/mnist_pvr/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+              "tasks/mnist_pvr/dataset.py": "95bbe10fcaf662033ce70c15a9822390b6e68cce68fa7e12d4ff9b3b2a93a7d8",
+              "tasks/mnist_pvr/get_alignment.py": "e730946f25b1c84463c108a2b53350580479daf05f9bc02bfb2671bee24c0ede",
+              "tasks/mnist_pvr/pvr_check_leaky_hl.py": "fe0ae599f730601f84ae92ff5afab45a6775035e32452032eaebc4dbc9a3bc70",
+              "tasks/mnist_pvr/pvr_hl.py": "d4dad16f201be1ea535b8cad1848f2447292493eb27cfbcc6f6701965fd72627",
+              "tasks/mnist_pvr/utils.py": "203670747d7d626f3d5aca5172b1b737774188cfc404601390a33d0a5b6cea14",
+              "tasks/task_loader.py": "ca2b95e7641588f365e2dcca38a7e12a2d872ad4bcbf6962044427e40489a352",
+              "utils/__init__.py": "39295b18ad5d9f2c73ebba4c75a3a062a3398492508448549f7138d151d25a85",
+              "utils/argparsing.py": "21a107f2a018a4dc707a7b801a9f6fba45681da874ab2d8e7797e68d76669911",
+              "utils/config.py": "5a13e11c22b26e191cba919cfc236a46280627ab1e0f8163db5e3f2a0ed75d24",
+              "utils/correspondence.py": "59e2c7710203e710a8ad9c146d3308f2c2a3314798125a330001fbbf2243a14d",
+              "utils/eval_ablations.py": "fa7931b333ba5e2192be7e3a6882cddf5c3ef0fc655f44ffadc412b93935b3cc",
+              "utils/eval_datasets.py": "940d3e97b8b6181cc28afb3addc4fc5a8c7ce81d01c2c04de87a9b10b0682503",
+              "utils/eval_metrics.py": "221deb0bcca5deb43e8b2496aef07e78fca6610a338439e710d0a4076a7b87f0",
+              "utils/eval_scripts.py": "ed76ca4888c19259a789b0126ef3170267388883ebc2ff6d1db85bca3b4db8e6",
+              "utils/iit_dataset.py": "30d04e0821c753ba985c2e42772ba4266345d551f929815297949a322054a0b9",
+              "utils/index.py": "8f7e0505f9863c780388bd1b5c07e32812bfb70f59f7c0a940e7c334be60306b",
+              "utils/io_scripts.py": "4463f85a11cdf5c2ab2ce043a26c8d810422fb9763f6e10bbb4730cd8ad1c4a1",
+              "utils/logger.py": "2bda542a52e9f3f65d7b6b6e6dc46cd3b56ba450e3d3248b68a11d1a7e023fc2",
+              "utils/metric.py": "be590346c2a20d96b9b57fd78e98614433a3d465230950ee41065b47863e6d8d",
+              "utils/node_picker.py": "6c523862ed98b245e8308362857150d380ccfb9b27a7e7cbc92914617e3badf3",
+              "utils/nodes.py": "f0cd8035312430f037b5a7d1716822d997ef3df761a3b5cc85796b91d35566b5",
+              "utils/plotter.py": "bc93e235a6be620efd736570474471fafc5de3049dcb3eab0005bf577557d0ef",
+              "utils/probes.py": "c2f9b4fae980420248b273103eb0a010fb4c91c9f952a21300693a841ae6d794",
+              "utils/tqdm.py": "ec5484da60399c94f30e9e441dde297b94a5f43b366c5be19c669cbc3f69c83e",
+              "utils/train_scripts.py": "70843a8e28bc50bf9861e7b1d6471d6be569bf8da8d91d41248b0bc1e7ea0af1",
+              "utils/wrapper.py": "09ebda5e8d23b4baed6c966e2e2c174e1b34b7cb9fe2dfed3c0f9ccf4cf2d895"
+            },
+            "root": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/iit",
+            "status": "present",
+            "tree_sha256": "ec3992cfe9e3e2d1fbf397a30a3a508db8a9de8fb69334f392837bd5893fd262"
+          },
+          "tracr": {
+            "file_count": 57,
+            "file_sha256": {
+              "__init__.py": "dbd485f56b72c356361676088de05d358837f7b2f5d78f96879ad849e820eaad",
+              "compiler/__init__.py": "276052cc5c938d5cafce6a42868c886682fdc47b187cedae2721f99de81ad0c9",
+              "compiler/assemble.py": "82e273127675ac1eb5766c29492035e875c37caf8cd0746515729e7f93420ca0",
+              "compiler/assemble_test.py": "5126f455202da50c2fc6d40d03e523834218913baefbd3483d580b3482a74d84",
+              "compiler/basis_inference.py": "a42831cadf50ff5b4d2daca10f98ee32d83946c89f8f9814b214da02cbc86852",
+              "compiler/basis_inference_test.py": "50dcf42c80e740fc94de554352e980ced9b2bd11cddb3ce7952e5f055ab31c8a",
+              "compiler/compiling.py": "4a0acbb1ed44cd8a3ce4c0eb0d938c9809f0bdfcf18f10aaeabaa0f54bc1fe71",
+              "compiler/craft_graph_to_model.py": "1d8037b7370987b617967b282fbcdc022e9f031d9b84556bf5485baf3a2a0038",
+              "compiler/craft_graph_to_model_test.py": "ea047f9ee853eb856cc90681cba35fe0330ba51bfb3f6d0278a52f2a9f84bcc4",
+              "compiler/craft_model_to_transformer.py": "4f96f97865b40d706c19e9490f87467330aae7fdd1e6f04d7fac9f2a9d7df84c",
+              "compiler/expr_to_craft_graph.py": "ebdd7e8facd4919c94538104604824b82c85a606544a6aee5a488472f6896609",
+              "compiler/expr_to_craft_graph_test.py": "ab8091aef4e5ee0a1984e682ad27068f174ef6fc03b69007c9f0ffdbdafdf514",
+              "compiler/lib.py": "2ddfaf47cc8cf3e425497dd77434caa5d0bda2729c9a10764df9c2cddd167abc",
+              "compiler/lib_test.py": "5662a336127480d88c3304cb8f82695c02a614035081acdd1199dbc5c13d7950",
+              "compiler/nodes.py": "17ca881a63aee06010c31d0570960d7b955bce1f29d863b8714763c48e67cc66",
+              "compiler/rasp_to_craft_integration_test.py": "85bc3dae6d6ab6345f69fe77714b8816d3fe30cc673098ed749b9ece98793317",
+              "compiler/rasp_to_graph.py": "4f12f599ef273ce820af292495b43588f7cfab53d86a423b967d9a86b2a3ec51",
+              "compiler/rasp_to_graph_test.py": "6a9090280cbfa434a6654c75ccc4810bd3616bd6b709c60721c0772b498e45f5",
+              "compiler/rasp_to_transformer_integration_test.py": "2297702d90e0ee6c63bb0edd1f5cc2a04728b397d30825fed3b97361eb71c4eb",
+              "compiler/test_cases.py": "e9823ddfc5a5814b9e0a7ef1d89e666421598c43ba310116509703b0b309adde",
+              "compiler/validating.py": "66f797d5d91c8bc74d10e76fa55f5a5ffc7e23f39ff30474df4ac5cd7815dfd8",
+              "compiler/validating_test.py": "af4302125221195b6653b6f93d2d896ce768e83902dd70f9cd26a28cc83672bf",
+              "craft/__init__.py": "dbd485f56b72c356361676088de05d358837f7b2f5d78f96879ad849e820eaad",
+              "craft/bases.py": "ad05a25f6307d9a6e2de602646a314ff0d825eda249aba72ad244d7a0a3a996b",
+              "craft/bases_test.py": "70b87ce981307e2a8e7498a5cff642c098b6443b49d614efe36499e318fcacdc",
+              "craft/chamber/__init__.py": "dbd485f56b72c356361676088de05d358837f7b2f5d78f96879ad849e820eaad",
+              "craft/chamber/categorical_attn.py": "157b4615983d1226dd2a0c87b18b96235d87b641337208902e5ab839440ae030",
+              "craft/chamber/categorical_attn_test.py": "62e1e6ea7c0a4bccda085ab6e26b85689ed57a783f94082cd7f4c34e33799597",
+              "craft/chamber/categorical_mlp.py": "8e4b5a439ee095b2fbfb437b7839efe4c60ec11813616e00065c18bf11e8f973",
+              "craft/chamber/categorical_mlp_test.py": "56c079a15762b3e7e5e6de23db70ca00a9072c9813d561fcc736feff8d19a817",
+              "craft/chamber/numerical_mlp.py": "d5551a368f0638446dcfeba240210d46faa21a4d5452bfa55ce8b970806cab51",
+              "craft/chamber/numerical_mlp_test.py": "22db5ecb6c91b9e0fa4b9792c6d6256a89b443fdae94c2df64e0154610abcf43",
+              "craft/chamber/selector_width.py": "73e0592c0641a4328f4694bb2fec2e343b65344a74784b012cedebe188e1ecea",
+              "craft/chamber/selector_width_test.py": "b1cfe75f1a2487df46210ae9625a8148949673e04e8edd4c495aeb551460c3f0",
+              "craft/tests_common.py": "aca559d80e25c0cbe3d7d992ef1b3d7fa0639cf4a74a63e986493bea142d29ed",
+              "craft/transformers.py": "8a0e04201703107b1626bd8c625582ed13f2cbd34ae84cb875f2ead62c652a9c",
+              "craft/transformers_test.py": "07bcc527e0fd157c42418e2e0f69141a5a76955d913225395bdc320d63275937",
+              "craft/vectorspace_fns.py": "8e5f57813db79789309d9478a24ab80b80e344909688b083d999295793073c76",
+              "craft/vectorspace_fns_test.py": "4b86fa15a2c916e4aaab9b9254f0755a3efec5875b53be9b6fa538ef2071a560",
+              "examples/__init__.py": "dbd485f56b72c356361676088de05d358837f7b2f5d78f96879ad849e820eaad",
+              "rasp/__init__.py": "dbd485f56b72c356361676088de05d358837f7b2f5d78f96879ad849e820eaad",
+              "rasp/causal_eval.py": "9bd1e86fb531c04308a9313da16f2123a53602d8fcf858a365852f0a71e7b1b1",
+              "rasp/causal_eval_test.py": "7003ec1dafb5f4eb0cae7abe9856b17ef5824b0fea061da23309d7d340c2eef7",
+              "rasp/rasp.py": "811e3316f7b2d409ea065c438904e58e776e097abfbf325ab5e0b162c49df151",
+              "rasp/rasp_test.py": "5e3f861f660c89b29f52918171cb9f53c189108f0b8f017237b0ef227dc3818f",
+              "transformer/__init__.py": "dbd485f56b72c356361676088de05d358837f7b2f5d78f96879ad849e820eaad",
+              "transformer/attention.py": "cd365e874477a2b36d2c0812d22cd0c16356cfba4137a8fd5e40ff3a629de5c6",
+              "transformer/compressed_model.py": "b4f82d7faf9c35aa8b235dbc240132ae7077a88d8436a79681992b6db688d5bf",
+              "transformer/compressed_model_test.py": "3e48f0f730fe77845743cfaff11a0647fcec03ae6542f1ad880cc3f1eca9cfc6",
+              "transformer/encoder.py": "3ca6440220a91ca8242f37e337631f6ee0f9d7bc05d3170c53147100eb5d5eea",
+              "transformer/encoder_test.py": "e834c98ed1cf14cc94f6f56cb3712e7e5f92396d276afba4e1bacb612ddffe8d",
+              "transformer/model.py": "583941cd376bfc3c42ba0347ad17b2f0b3cfccfc4aa98f870e156f0a3223c2e9",
+              "transformer/model_test.py": "ec703d6f9ceeb0d45e463bc33b687065e3276c663f1468de8b199dcddcea41e5",
+              "utils/__init__.py": "dbd485f56b72c356361676088de05d358837f7b2f5d78f96879ad849e820eaad",
+              "utils/debugging.py": "0c75c12dcd28a1f4eda6829b5af55cf20e32eb98e1d4688604550f09a49f1ae5",
+              "utils/errors.py": "92c01d9bc5dd9976a1038acb6b05a4a4bbb100406305d98dbb3b86d7c3932a97",
+              "utils/errors_test.py": "ab694e07530dfc8edaf5d3b8663a109c730a3c0ea8c4b7e85806bb9b0d2e8809"
+            },
+            "root": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/tracr",
+            "status": "present",
+            "tree_sha256": "37f97634e3787fefe0e4ed3ec8389a06536c421e6bf48fcf3de9361cc660a5ed"
+          },
+          "transformer_lens": {
+            "file_count": 21,
+            "file_sha256": {
+              "ActivationCache.py": "f8a482d10b1a92ab5cc15906e6cf8c59667de52a4d3949b585b2739649a58c28",
+              "FactoredMatrix.py": "44e08ed7c05b24024fa43ebeffd22c67a2c8e45ea030275b89a5c3afa7aef649",
+              "HookedEncoder.py": "dc29cab2431ca22ac441bbf55655319223adfce615578654f933ad3ccfc5920d",
+              "HookedSAE.py": "0a577ed4a3266ff57a8c30878aa7e19cb8c6e8ed668d6fc3b66bef6327736b4a",
+              "HookedSAEConfig.py": "d4ae7bac5dab85f7b3aaa1e3dc294a1d11573a952494d1adf1b76fc444e0e35b",
+              "HookedSAETransformer.py": "5bf2f143ff1ed1efb3c074295dca94095ffc5c92eb444efd0ada53d3ad2dc7f9",
+              "HookedTransformer.py": "535efcb02af4a44657a2a088ff740694a3366a438212a991bddd13c3dfdbfc50",
+              "HookedTransformerConfig.py": "a4e0dd4d718ddc58e70e2fe6357b3c50cddd31269d090f19064c54ed74e3d4d4",
+              "SVDInterpreter.py": "5e036de3bf679f33edef9398640f97b062103ed1f7c10fc10867855a75495e33",
+              "__init__.py": "592ae45625883e5b6daea4d916e8761023bd324576409e32b76b1049a2813da2",
+              "components.py": "6fa7d1df86c07b0888a7f06f76dea4b582f6ee3b6f764a18575f9c186bcb0573",
+              "evals.py": "f32cbb675a7eec34aaa1da7471f7e17ea00fcb60d09a6e615a132fc6fb558ccc",
+              "head_detector.py": "dac62d5a44da5624f03e0bd7505ad833e187ec883337a2ae0a45368ade51a1c2",
+              "hook_points.py": "aa4391d5eae342d961a79f72d75ef4ca5752fa60a5e80e0e0c713cf8c30d7d5c",
+              "loading_from_pretrained.py": "a655abf0bc2f54f89de913b3d6eaf656cb3f40c55f353eb17503080884a690fd",
+              "past_key_value_caching.py": "1a994d26ac8a9acbc9da89c89659be5382c482e403732a933e5dc78045052642",
+              "patching.py": "caecded302467fd1c845db0dd141d9890d6279b9cebc945ec2fd9aba2754c6a1",
+              "train.py": "6609b9d99cb0abaa06aaab63abf49eb241516c4d15ff272c41dd2792c968f210",
+              "utilities/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+              "utilities/devices.py": "ceb319e310c7d1b3f3eb3efba1dee0ddc427959e29acddf834609035c1bd174f",
+              "utils.py": "6766df9f426e3c73eaae7d3278b17b743b94874685a208d2e5ab919b02bfea08"
+            },
+            "root": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/transformer_lens",
+            "status": "present",
+            "tree_sha256": "e35bb9d7c29f8d3bc510a826d9def1961efa2fdd05f5c716c355ac1cce8e859d"
+          }
+        },
+        "sys_prefix": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19"
+      },
+      "pinned_eap_runtime": {
+        "auto_circuit_core_sha256": {
+          "auto_circuit/data.py": "3925de46979f1baabe55c9cc33972d52ae7d162e625651080cfbbfbd981ead30",
+          "auto_circuit/model_utils/transformer_lens_utils.py": "8be6a35345a7fcaaf3bb95b17cdf1811b2b50a394949e1adc91bbcb8d03b8efe",
+          "auto_circuit/prune_algos/mask_gradient.py": "36ca10753c6efb77c9c472d29d3e81da9194dee7ef3279a1a5b095a5c0baec5b",
+          "auto_circuit/types.py": "85bfaf6e67a76e3aaaa8686f3bc4295641ec6119c1e669d7b44215291c55ccdc",
+          "auto_circuit/utils/graph_utils.py": "348e2465ef6688ac21a92addbfac8df10221488b724c9bcaf5bfa93a8822d578",
+          "auto_circuit/utils/patchable_model.py": "7c638d017d200635b8e3a283faae2035d8b6f83f3b591f40d6dabcbdfb7c00b8"
+        },
+        "environment_dir": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19",
+        "packages": {
+          "auto-circuit": "0.1.0",
+          "blobfile": "2.0.2",
+          "einops": "0.7.0",
+          "huggingface-hub": "0.24.5",
+          "kaleido": "0.2.1",
+          "numpy": "1.26.4",
+          "ordered-set": "4.1.0",
+          "plotly": "5.22.0",
+          "torch": "2.3.1",
+          "transformer-lens": "1.19.0",
+          "vscode-tqdm": "4.66.2",
+          "word2word": "1.0.0"
+        },
+        "python_executable": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/bin/python",
+        "python_version": "3.11.9",
+        "sources": {
+          "auto_circuit_checkout": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/auto-circuit-0b74956bbe472cf961deb8ae0ef574f725daca96",
+          "auto_circuit_repository": "https://github.com/FlyingPumba/auto-circuit.git",
+          "auto_circuit_revision": "0b74956bbe472cf961deb8ae0ef574f725daca96",
+          "iit_revision": "ed44cbfa255b543bb2d4da3d193ae97c9715c4f7",
+          "interpbench_model_revision": "a1242a84f8a4d07d1be9a8f5ec710415198016b2",
+          "interpbench_revision": "220791e4a9cd29957ed5edfa445e7c09152d7298",
+          "tracr_revision": "98f4910e3966805c83d80eb087c7a4e3328171c6"
+        }
+      }
+    }
+  },
+  "execution": {
+    "all_authorizations_durable_and_globally_reverified_before_any_confirmation": true,
+    "all_cases_mandatory": true,
+    "all_discoveries_durable_before_any_support_authorization": true,
+    "all_fresh_panels_screened_before_any_intervention": true,
+    "all_raw_pool_input_identities_preflight_before_any_model_load": true,
+    "authorization_binds_discovery_artifact_and_custody": true,
+    "claim_boundary": "boundary-conditioned internal inter-component fine-edge support",
+    "device": "cpu",
+    "discovery_supports_recomputed_twice": true,
+    "exact_pure_score_replay_required": true,
+    "ground_truth_opened_only_after_score_attempt": true,
+    "production_executor_injectable": false,
+    "score_attempt_precedes_every_e32_4_acquisition_artifact_reload": true
+  },
+  "experiment_id": "e32_4_internal_edge_set_faithfulness_v1",
+  "protocol": {
+    "baseline_feasibility": {
+      "acdc": "not_included_no_pinned_fine_qkv_implementation_in_repository_and_adaptive_iterative_search_would_require_separate_registration",
+      "edge_pruning": "not_included_no_pinned_implementation_in_repository_and_learned_mask_optimization_would_require_separate_training_and_accounting",
+      "included": [
+        "bidirectional_exact_mass",
+        "bidirectional_directional_projection",
+        "eap_absolute",
+        "eap_ig5_absolute",
+        "raw_whole_mass_equal_fine_split",
+        "masked_rank_one_equal_fine_split"
+      ]
+    },
+    "case_geometry": {
+      "129": {
+        "core_nodes": 8,
+        "fine_edges": 207,
+        "induced_fine_edges": 48,
+        "induced_whole_edges": 22,
+        "nodes": 15,
+        "whole_edges": 87
+      },
+      "25": {
+        "core_nodes": 5,
+        "fine_edges": 73,
+        "induced_fine_edges": 17,
+        "induced_whole_edges": 9,
+        "nodes": 10,
+        "whole_edges": 33
+      },
+      "58": {
+        "core_nodes": 8,
+        "fine_edges": 207,
+        "induced_fine_edges": 45,
+        "induced_whole_edges": 25,
+        "nodes": 15,
+        "whole_edges": 87
+      }
+    },
+    "case_order": [
+      58,
+      129,
+      25
+    ],
+    "claim_boundary": "boundary_conditioned_internal_inter_component_fine_edge_support;not_direct_wiring;not_minimal;not_sota;not_model_generalization;not_natural_llm_or_other_ablation_generalization",
+    "core_ancestry": {
+      "cases": {
+        "129": {
+          "authorization_sha256": "6f76bbc0f2414290c4406a57e575144a7cd1e14a2732101afa8700cac31a6d25",
+          "selected_node_support_sha256": "44335790325331546874763c77527518f9d437405a025dd42b929b7cca333413",
+          "selected_node_support_sha256_encoding": "compact_utf8_json_list"
+        },
+        "25": {
+          "authorization_sha256": "61170db4123ee1f36ee93c02c96698edeeeb6a473c17e241039241039168abe1",
+          "selected_node_support_sha256": "6c0f645b3a6426c887d56fafbf78a70314a4cb0842af49ff75aee412ad32494c",
+          "selected_node_support_sha256_encoding": "compact_utf8_json_list"
+        },
+        "58": {
+          "authorization_sha256": "ebd0b6e01998951968fd284463dbbbd2d8f5b2ebf3619801feb544166451fd21",
+          "selected_node_support_sha256": "8864b22af413302ff38bff2198408f2c670213eb9817062b3c70a75093e47123",
+          "selected_node_support_sha256_encoding": "compact_utf8_json_list"
+        }
+      },
+      "registration_sha256": "1c42b4761573286af06604094efc5a85b0f873d773a99afe97d9767e25ab86a4",
+      "source": "sealed_e32_3_v2_summary_selected_nodes",
+      "summary_sha256": "2a04b0659fb4b3615d642bfb36e0ad787cb2a98540ab5dacc43f910a199f1647"
+    },
+    "core_node_supports": {
+      "129": [
+        "blocks.0.hook_mlp_out",
+        "blocks.1.attn.hook_result[0]",
+        "blocks.1.hook_mlp_out",
+        "blocks.2.attn.hook_result[0]",
+        "blocks.2.attn.hook_result[1]",
+        "blocks.2.attn.hook_result[2]",
+        "blocks.2.attn.hook_result[3]",
+        "blocks.2.hook_mlp_out"
+      ],
+      "25": [
+        "blocks.0.attn.hook_result[0]",
+        "blocks.0.hook_mlp_out",
+        "blocks.1.attn.hook_result[1]",
+        "blocks.1.attn.hook_result[3]",
+        "blocks.1.hook_mlp_out"
+      ],
+      "58": [
+        "blocks.0.attn.hook_result[0]",
+        "blocks.0.attn.hook_result[1]",
+        "blocks.0.attn.hook_result[3]",
+        "blocks.0.hook_mlp_out",
+        "blocks.1.attn.hook_result[1]",
+        "blocks.1.hook_mlp_out",
+        "blocks.2.attn.hook_result[0]",
+        "blocks.2.hook_mlp_out"
+      ]
+    },
+    "deterministic_method_order": [
+      "bidirectional_exact_mass",
+      "bidirectional_directional_projection",
+      "eap_absolute",
+      "eap_ig5_absolute",
+      "raw_whole_mass_equal_fine_split",
+      "masked_rank_one_equal_fine_split"
+    ],
+    "development_exposure": {
+      "e32_3_discovery_and_confirmation_fine_vectors_opened": true,
+      "e32_3_top5_top10_mass_diagnostics_opened": true,
+      "fresh_simultaneous_set_outcomes_opened": false,
+      "primary_support_sizes_20_20_7_and_point90_gates_chosen_after_e32_3_individual_edge_mass_diagnostics": true
+    },
+    "expected_discovery_query_accounting": {
+      "129": {
+        "behavioral_eligibility": {
+          "backward_passes_inferred_from_pinned_control_flow": 0,
+          "gradient_examples": 0,
+          "gradient_forwards": 0,
+          "model_examples": 192,
+          "physical_forwards": 2
+        },
+        "core_singleton_replacement": {
+          "backward_passes_inferred_from_pinned_control_flow": 0,
+          "gradient_examples": 0,
+          "gradient_forwards": 0,
+          "model_examples": 6400,
+          "physical_forwards": 100
+        },
+        "eap_ig5": {
+          "backward_passes_inferred_from_pinned_control_flow": 6,
+          "gradient_examples": 384,
+          "gradient_forwards": 6,
+          "model_examples": 448,
+          "physical_forwards": 7
+        },
+        "regular_eap": {
+          "backward_passes_inferred_from_pinned_control_flow": 1,
+          "gradient_examples": 64,
+          "gradient_forwards": 1,
+          "model_examples": 128,
+          "physical_forwards": 2
+        },
+        "whole_component_atlas": {
+          "backward_passes_inferred_from_pinned_control_flow": 0,
+          "gradient_examples": 0,
+          "gradient_forwards": 0,
+          "model_examples": 7808,
+          "physical_forwards": 17
+        }
+      },
+      "25": {
+        "behavioral_eligibility": {
+          "backward_passes_inferred_from_pinned_control_flow": 0,
+          "gradient_examples": 0,
+          "gradient_forwards": 0,
+          "model_examples": 192,
+          "physical_forwards": 2
+        },
+        "core_singleton_replacement": {
+          "backward_passes_inferred_from_pinned_control_flow": 0,
+          "gradient_examples": 0,
+          "gradient_forwards": 0,
+          "model_examples": 2432,
+          "physical_forwards": 38
+        },
+        "eap_ig5": {
+          "backward_passes_inferred_from_pinned_control_flow": 6,
+          "gradient_examples": 384,
+          "gradient_forwards": 6,
+          "model_examples": 448,
+          "physical_forwards": 7
+        },
+        "regular_eap": {
+          "backward_passes_inferred_from_pinned_control_flow": 1,
+          "gradient_examples": 64,
+          "gradient_forwards": 1,
+          "model_examples": 128,
+          "physical_forwards": 2
+        },
+        "whole_component_atlas": {
+          "backward_passes_inferred_from_pinned_control_flow": 0,
+          "gradient_examples": 0,
+          "gradient_forwards": 0,
+          "model_examples": 4032,
+          "physical_forwards": 15
+        }
+      },
+      "58": {
+        "behavioral_eligibility": {
+          "backward_passes_inferred_from_pinned_control_flow": 0,
+          "gradient_examples": 0,
+          "gradient_forwards": 0,
+          "model_examples": 192,
+          "physical_forwards": 2
+        },
+        "core_singleton_replacement": {
+          "backward_passes_inferred_from_pinned_control_flow": 0,
+          "gradient_examples": 0,
+          "gradient_forwards": 0,
+          "model_examples": 6016,
+          "physical_forwards": 94
+        },
+        "eap_ig5": {
+          "backward_passes_inferred_from_pinned_control_flow": 6,
+          "gradient_examples": 384,
+          "gradient_forwards": 6,
+          "model_examples": 448,
+          "physical_forwards": 7
+        },
+        "regular_eap": {
+          "backward_passes_inferred_from_pinned_control_flow": 1,
+          "gradient_examples": 64,
+          "gradient_forwards": 1,
+          "model_examples": 128,
+          "physical_forwards": 2
+        },
+        "whole_component_atlas": {
+          "backward_passes_inferred_from_pinned_control_flow": 0,
+          "gradient_examples": 0,
+          "gradient_forwards": 0,
+          "model_examples": 7808,
+          "physical_forwards": 17
+        }
+      }
+    },
+    "expected_query_ceilings": {
+      "129": {
+        "confirmation": {
+          "maximum_model_examples": 69888,
+          "maximum_physical_forwards": 545
+        },
+        "discovery": {
+          "backward_passes_inferred_from_pinned_control_flow": 7,
+          "gradient_examples": 448,
+          "gradient_forwards": 7,
+          "model_examples": 14976,
+          "physical_forwards": 128
+        }
+      },
+      "25": {
+        "confirmation": {
+          "maximum_model_examples": 69888,
+          "maximum_physical_forwards": 545
+        },
+        "discovery": {
+          "backward_passes_inferred_from_pinned_control_flow": 7,
+          "gradient_examples": 448,
+          "gradient_forwards": 7,
+          "model_examples": 7232,
+          "physical_forwards": 64
+        }
+      },
+      "58": {
+        "confirmation": {
+          "maximum_model_examples": 69888,
+          "maximum_physical_forwards": 545
+        },
+        "discovery": {
+          "backward_passes_inferred_from_pinned_control_flow": 7,
+          "gradient_examples": 448,
+          "gradient_forwards": 7,
+          "model_examples": 14592,
+          "physical_forwards": 122
+        }
+      },
+      "confirmation_formula": {
+        "actual_counts_must_equal_the_deduplicated_authorized_mask_plan": true,
+        "eligibility_forwards": 2,
+        "mean_corrupt_forwards_including_cache_and_two_baselines": 8,
+        "mean_corrupt_masks": 5,
+        "resample_maximum_forwards_including_cache_and_two_baselines": 535,
+        "resample_maximum_nonempty_distinct_masks": 532
+      },
+      "overall": {
+        "backward_passes_inferred_from_pinned_control_flow": 21,
+        "gradient_examples": 1344,
+        "gradient_forwards": 21,
+        "maximum_model_examples": 246464,
+        "maximum_physical_forwards": 1949
+      }
+    },
+    "gates": {
+      "absolute_primary": {
+        "maximum_necessity_residual_error": 0.1,
+        "maximum_sufficiency_residual_error": 0.1,
+        "minimum_necessity_loss_recovery": 0.9,
+        "minimum_necessity_projection": 0.9,
+        "minimum_sufficiency_loss_recovery": 0.9,
+        "minimum_sufficiency_projection": 0.9
+      },
+      "bridge": {
+        "maximum_necessity_residual_error": 0.25,
+        "maximum_sufficiency_residual_error": 0.25,
+        "minimum_necessity_loss_recovery": 0.75,
+        "minimum_necessity_projection": 0.75,
+        "minimum_sufficiency_loss_recovery": 0.75,
+        "minimum_sufficiency_projection": 0.75
+      },
+      "end_to_end_alignment": {
+        "maximum_residual_error": 0.25,
+        "minimum_loss_capture": 0.75,
+        "minimum_projection_capture": 0.75
+      },
+      "mean_corrupt_robustness": {
+        "maximum_necessity_residual_error": 0.25,
+        "maximum_sufficiency_residual_error": 0.25,
+        "minimum_necessity_loss_recovery": 0.75,
+        "minimum_necessity_projection": 0.75,
+        "minimum_sufficiency_loss_recovery": 0.75,
+        "minimum_sufficiency_projection": 0.75
+      },
+      "selector": {
+        "maximum_deficit_to_best_deterministic_baseline": 0.05,
+        "minimum_margin_over_random_95th_percentile": 0.05
+      }
+    },
+    "granularity": {
+      "atomic_edge": "auto_circuit_internal_all_position_fine_coordinate",
+      "candidate_support": "I_induced_by_frozen_e32_3_node_core",
+      "excluded_boundary_edges_always_conditioned": true,
+      "separate_qkv": true,
+      "sparsity_denominator": "U_all_internal_fine_edges"
+    },
+    "ground_truth_diagnostic": {
+      "case25_induced_core_fine_truth_coverage": {
+        "denominator": 3,
+        "numerator": 2
+      },
+      "expected_fine_label_counts": {
+        "129": {
+          "full_internal_U": 4,
+          "induced_core_I": 4
+        },
+        "25": {
+          "full_internal_U": 3,
+          "induced_core_I": 2
+        },
+        "58": {
+          "full_internal_U": 3,
+          "induced_core_I": 3
+        }
+      },
+      "fine_label_rule": "positive_iff_regular_eap_raw_source_target_is_in_official_raw_edges_restricted_to_full_internal_U",
+      "fine_label_whole_child_expansion": false,
+      "outside_I_convention": "fixed_below_all_nonnegative_queried_scores",
+      "outside_I_score": -1.0,
+      "queried_scores": "I_induced_by_frozen_e32_3_node_core",
+      "ranking_universe": "U_all_internal_fine_edges",
+      "stage": "score_only_after_durable_score_attempt",
+      "used_for_selection_or_gates": false,
+      "whole_promotion_used_only_for_separate_whole_diagnostic": true
+    },
+    "ground_truth_metrics": "descriptive_score_stage_only",
+    "ground_truth_used_for_selection_or_gates": false,
+    "input_preflight": {
+      "case25_confirmation_capacity_after_any_discovery": 172,
+      "case25_discovery_capacity_after_old_exclusions": 86,
+      "model_calls": 0,
+      "old_new_role_overlap_count": {
+        "25": 21,
+        "58": 0,
+        "129": 0
+      },
+      "old_raw_role_exclusion_unique_rows": {
+        "25": 751,
+        "58": 768,
+        "129": 768
+      }
+    },
+    "interventions": {
+      "anchor": "U",
+      "bridge_complement": "U_minus_I",
+      "bridge_support": "I",
+      "primary_complement": "U_minus_S",
+      "primary_donor": "paired_corrupt_source_activations_resample",
+      "primary_support": "S_subset_I",
+      "recipient": "clean_input_computation",
+      "robustness_donor": "batch_tokenwise_mean_corrupt_source_activations",
+      "simultaneous_all_position_masks": true,
+      "within_core_fallback_complement": "I_minus_S_primary"
+    },
+    "mandatory_all_cases": true,
+    "primary_method": "bidirectional_exact_mass",
+    "random_control": {
+      "duplicate_support_rejection": true,
+      "empirical_95th_sorted_index": 243,
+      "family": "uniform_unique_k_subsets_of_same_induced_fine_core",
+      "namespace": "e32.4-induced-fine-core-random-support-v1",
+      "replicates": 256,
+      "seed": 32400256,
+      "without_replacement_within_support": true
+    },
+    "resample_primary_can_be_rescued_by_robustness": false,
+    "schema_version": "e32_4_sparse_internal_edge_set_protocol_v1",
+    "split_requests": {
+      "129": {
+        "confirmation": {
+          "candidate_count": 192,
+          "case_id": 129,
+          "clean_seed": 829400,
+          "conservative_capacity": 192,
+          "corrupt_seed": 829401,
+          "exclude_all_e32_3_raw_candidate_role_rows": true,
+          "raw_duplicates_permitted_but_selected_rows_unique": true,
+          "raw_identity_sha256": "42627b1c5d57412b0bdf6bba9b8051213d36929f4791a25ef0967f89228f22a2",
+          "required_count": 128,
+          "selection_policy": "ascending_first_jointly_behavior_correct_pair_with_globally_unique_clean_corrupt_rows_after_frozen_response_blind_exclusions",
+          "split": "confirmation",
+          "target_identity_sha256": "c71665081e17bad3f687bec8d5849d96f77b723b75898ff9f298be7aa8516e43"
+        },
+        "discovery": {
+          "candidate_count": 96,
+          "case_id": 129,
+          "clean_seed": 829300,
+          "conservative_capacity": 96,
+          "corrupt_seed": 829301,
+          "exclude_all_e32_3_raw_candidate_role_rows": true,
+          "raw_duplicates_permitted_but_selected_rows_unique": true,
+          "raw_identity_sha256": "cca526b44bd06f9191135b1e764323aecd7c647dcac3d9978605898fdcf38a35",
+          "required_count": 64,
+          "selection_policy": "ascending_first_jointly_behavior_correct_pair_with_globally_unique_clean_corrupt_rows_after_frozen_response_blind_exclusions",
+          "split": "discovery",
+          "target_identity_sha256": "12776f7293cad6efe98979877baf2211e68bc75a0844d08672093216b28e9bc2"
+        }
+      },
+      "25": {
+        "confirmation": {
+          "candidate_count": 192,
+          "case_id": 25,
+          "clean_seed": 725400,
+          "conservative_capacity": 172,
+          "corrupt_seed": 725401,
+          "exclude_all_e32_3_raw_candidate_role_rows": true,
+          "raw_duplicates_permitted_but_selected_rows_unique": true,
+          "raw_identity_sha256": "c4c8a0cbb9ff48bd9973e06a626644c6708180a9e2b6debe4d9d2e18eaa47719",
+          "required_count": 128,
+          "selection_policy": "ascending_first_jointly_behavior_correct_pair_with_globally_unique_clean_corrupt_rows_after_frozen_response_blind_exclusions",
+          "split": "confirmation",
+          "target_identity_sha256": "00b41e9e01aab9e870b3b79117af6273652c5d7cbebdbb89649bfce386f80848"
+        },
+        "discovery": {
+          "candidate_count": 96,
+          "case_id": 25,
+          "clean_seed": 725300,
+          "conservative_capacity": 86,
+          "corrupt_seed": 725301,
+          "exclude_all_e32_3_raw_candidate_role_rows": true,
+          "raw_duplicates_permitted_but_selected_rows_unique": true,
+          "raw_identity_sha256": "1e55a22b22df3a7b40a870498493596b9034ebcc1e192f9b10d21b870eab3fad",
+          "required_count": 64,
+          "selection_policy": "ascending_first_jointly_behavior_correct_pair_with_globally_unique_clean_corrupt_rows_after_frozen_response_blind_exclusions",
+          "split": "discovery",
+          "target_identity_sha256": "63af3ad08c7639822dedb4dbe88672e5bdb860389fd55a73569359c297b51382"
+        }
+      },
+      "58": {
+        "confirmation": {
+          "candidate_count": 192,
+          "case_id": 58,
+          "clean_seed": 758400,
+          "conservative_capacity": 192,
+          "corrupt_seed": 758401,
+          "exclude_all_e32_3_raw_candidate_role_rows": true,
+          "raw_duplicates_permitted_but_selected_rows_unique": true,
+          "raw_identity_sha256": "b40acc67a23373d5a733bbbc05fb059d447ef6e238f157df3ade7b68d1c6eff2",
+          "required_count": 128,
+          "selection_policy": "ascending_first_jointly_behavior_correct_pair_with_globally_unique_clean_corrupt_rows_after_frozen_response_blind_exclusions",
+          "split": "confirmation",
+          "target_identity_sha256": "d7248d18b2daf46a336cfcc9f5ce9fdfaac632bcb2b773faffa17f0e76c4d6c3"
+        },
+        "discovery": {
+          "candidate_count": 96,
+          "case_id": 58,
+          "clean_seed": 758300,
+          "conservative_capacity": 96,
+          "corrupt_seed": 758301,
+          "exclude_all_e32_3_raw_candidate_role_rows": true,
+          "raw_duplicates_permitted_but_selected_rows_unique": true,
+          "raw_identity_sha256": "bc8879564658999d87ffcd7e02ba257fd30f5c705575c179ed40fa806ea909e2",
+          "required_count": 64,
+          "selection_policy": "ascending_first_jointly_behavior_correct_pair_with_globally_unique_clean_corrupt_rows_after_frozen_response_blind_exclusions",
+          "split": "discovery",
+          "target_identity_sha256": "fa2b4270c357382c3e315b511229eb2ee8aa14d2c535f959ffe2ee58f4ef17e2"
+        }
+      }
+    },
+    "support_budgets": {
+      "129": {
+        "k05": 10,
+        "k15": 31,
+        "primary_k10": 20
+      },
+      "25": {
+        "k05": 3,
+        "k15": 10,
+        "primary_k10": 7
+      },
+      "58": {
+        "k05": 10,
+        "k15": 31,
+        "primary_k10": 20
+      }
+    },
+    "verdict_hierarchy": {
+      "all_three_cases_required_with_no_majority_rule": true,
+      "optional_end_to_end": "primary_plus_actual_input_endpoint_alignment",
+      "primary": "absolute_boundary_conditioned_resample_sparse_set",
+      "selector_requires_absolute_sparse_set": true,
+      "separate_robustness": "batch_tokenwise_mean_corrupt",
+      "separate_selector_usefulness": "absolute_primary_and_random95_and_best_deterministic"
+    }
+  },
+  "schema_version": "e32_4_internal_edge_set_faithfulness_v1_registration",
+  "source_sha256": {
+    "experiments/e32_interpbench/__init__.py": "cb82bf8127ceb8a3f66dd944bbc09ce1a3ed7f31d6c691251e5a15a3dfb03420",
+    "experiments/e32_interpbench/acquisition.py": "7acd7ad9917d20e5c7f3c459f7a581b0ae97412c513d52584de0225de1a41c0e",
+    "experiments/e32_interpbench/adapter.py": "4cae0b793a27f188b86265135c821239ee66477d22da9f391d46096a6d4b97c8",
+    "experiments/e32_interpbench/analysis.py": "f83f98da5dff42677ef0b90fd2c01c72403ab4fb673a1ba0a8c60dcd14eb2483",
+    "experiments/e32_interpbench/component_patching.py": "b56c06097c61859ab927d00edf8a0e718bc0151aea471913e26d41f3575efa89",
+    "experiments/e32_interpbench/e32_2_acquisition.py": "386a86b3542a3cd82b626ee62f90b10d3a4dab1cd9635fc0b0f879bdeed4bb13",
+    "experiments/e32_interpbench/e32_2_directed_replacement.py": "c5d3a5d0fc29c1b8fb54f04b2ca1180fbc15f53a4b06a8dba74b2c23879426e7",
+    "experiments/e32_interpbench/e32_2_orchestration.py": "5c4de039cf5229a8a20636f4b22da6a5e3c27d7a0ee02f989731c939a64dc37e",
+    "experiments/e32_interpbench/e32_2_protocol.py": "6c81e4d11128bae69be64008537d8fe897c3e0fbdade9826652a994717953e0b",
+    "experiments/e32_interpbench/e32_2_run.py": "74054f842b4b98da64a31748b69f65bf9f349d4b1a100943197976a7b3755915",
+    "experiments/e32_interpbench/e32_2_scoring.py": "2f05ca06f2711c2b57d51ef6e91fe253229df60771cf550aa3c15ad4e4779bbb",
+    "experiments/e32_interpbench/e32_3_acquisition.py": "278734e638a388d269afe4da46e57f51e856de28eaaef76fd231a423b6aff081",
+    "experiments/e32_interpbench/e32_3_baselines.py": "90f8611ca6954f6e24fc5c734d01796eedc3981a5d1d3881512ef1393c6740d8",
+    "experiments/e32_interpbench/e32_3_cohort.py": "7c88c5ff9ed5b740047d48ac99c974b1cbe705aa2a6f4086eed501578b685639",
+    "experiments/e32_interpbench/e32_3_orchestration.py": "03fe3d62e7e108661b99a8ef47d07108687cd497f9ad0240f64a683277c4c75c",
+    "experiments/e32_interpbench/e32_3_protocol.py": "60c55843ef2bf25ff2bfdf55d0db6d24ab544977f39d9cd703467e53f60c1025",
+    "experiments/e32_interpbench/e32_3_run.py": "ab930718ec72691082ab290a18fa7ff6df0105d581896767c21ed8fe3b408662",
+    "experiments/e32_interpbench/e32_3_scoring.py": "af660bfd45d4ee6e69fa163aa887e7cc3d7a4ab88b72f617a705c1e013d33081",
+    "experiments/e32_interpbench/e32_3_v2_input_repair.py": "5c1efe43ab15400f24d4c6c977ad4d246e2486fb5714b8e69df00cc465b5078c",
+    "experiments/e32_interpbench/e32_4_eap.py": "2b621065f4b28aef2128d64eb1e60beaa3ca0cc62b77e7561fb933f9f86e8ca1",
+    "experiments/e32_interpbench/e32_4_edge_sets.py": "ced05ddd42bc41b68cf3fb97dce95973b4a2336b1cb4e380509e723cb3398d57",
+    "experiments/e32_interpbench/e32_4_protocol.py": "cfc682cc2c4339f70ef7de97f336a1e3fa7221bf99b34d7285431b816e33cc84",
+    "experiments/e32_interpbench/e32_4_run.py": "84d2fc028ed40a10aadf82cd9c2c04b1e621c85b3b6f10f6310cfc6888f08ffe",
+    "experiments/e32_interpbench/e32_4_scoring.py": "559e344181f97b09c039961692e6b4271717398551c35add37ab20c719136eec",
+    "experiments/e32_interpbench/eap_baseline.py": "c83dcbc2bbff78d26ec328b7f9bc560f587c92e3060bf24ef1b454d6ce8369d4",
+    "experiments/e32_interpbench/methods.py": "4fb45d1dd1bf0ef3a1e0fff6e600311ec07e49d2fe5641a8b7c6493b45f2104f",
+    "experiments/e32_interpbench/protocol.py": "26716088c6296496c03d8a08068268915960dc5ddcdd67766b86d0d425a8696f",
+    "experiments/e32_interpbench/scoring.py": "9420d42c770e33757532b5b22a781443f9d2ec7c53dc4bd5a07c041597ddcff3"
+  }
+}

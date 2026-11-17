@@ -1,0 +1,33 @@
+[project]
+name = "bmi"
+version = "0.1.0"
+description = "Bilinear mechanistic interpretability: weight-sparse tensor-network transformers on exactly-solvable tasks"
+requires-python = ">=3.12"
+dependencies = [
+    "torch>=2.4",
+    "numpy",
+    "einops",
+    "transformers>=5.14,<5.15",
+    "safetensors>=0.8,<0.9",
+]
+
+[project.optional-dependencies]
+dev = ["pytest"]
+paper-repro = [
+    "torch==2.13.0",
+    "numpy==2.5.1",
+    "einops==0.8.2",
+    "transformers==5.14.1",
+    "safetensors==0.8.0",
+    "pytest==9.1.1",
+]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

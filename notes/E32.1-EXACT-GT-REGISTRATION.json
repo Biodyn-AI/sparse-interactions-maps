@@ -1,0 +1,449 @@
+{
+  "canonical_registration_path": "/Volumes/Crucial X6/MacBook/Code/fundamental-mechinterp/notes/E32.1-EXACT-GT-REGISTRATION.json",
+  "canonical_run_directory": "/Volumes/Crucial X6/MacBook/Code/fundamental-mechinterp/runs/e32_1_exact_gt_v1",
+  "case_order": [
+    97,
+    2,
+    21
+  ],
+  "dependencies": {
+    "case_artifact_sha256": {
+      "2": {
+        "edges.pkl": "dd8ee919e31a1590d5e02e7d6aa4625e2d9e3002e3bbb74402f5a49e7d0be36b",
+        "ll_model.pth": "2b2ef568269ef820d7d6975fed90fabf517f044f26f9b10a8a3724a7da3c4f83",
+        "ll_model_cfg.pkl": "274196ba87c5a5cc25f5e3ed93a4c7dace5a7924905804c2ee6d2112c460f534",
+        "meta.json": "c129be1d12e8293f56c5254d575399865ef1c89dfe67e717e1909d9e948d525c"
+      },
+      "21": {
+        "edges.pkl": "a284ff6ddccac91bf12f0f28a6786e739428c948c111ef6ad524e481f5d1461d",
+        "ll_model.pth": "42e739d16ee075d148c5b8a65b71422da53b90a32d706821708240c75124e4af",
+        "ll_model_cfg.pkl": "0199972dece30ed03433dd2e1cb712e7e718d94ff3cd4e2ca9c662253dc9f495",
+        "meta.json": "0562bcfe88845e70dc8a41c98953f60577ab635ffcb07104ddde8ff3dc23316f"
+      },
+      "97": {
+        "edges.pkl": "afdfd64f4c8be661a44ae212318dcb22d1cd61cd023a9f510b0ed3cf9ceceac6",
+        "ll_model.pth": "7edb6ff1572d3b7b43e97ff512fe1bd0c78f47b00724906c72ef175338173028",
+        "ll_model_cfg.pkl": "2cb2f82ed87ef19e802ed3400f3b508631496f474aae19e07304666c6d1a06d5",
+        "meta.json": "e7ea23a35d302a7952ab77e12344ab411837d3f5bd87992d211218aad3688bdd"
+      }
+    },
+    "source_directories": {
+      "iit": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/iit-ed44cbfa255b543bb2d4da3d193ae97c9715c4f7",
+      "interpbench": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/code-220791e4a9cd29957ed5edfa445e7c09152d7298",
+      "model_root": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/models-a1242a84f8a4d07d1be9a8f5ec710415198016b2",
+      "tracr": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/tracr-98f4910e3966805c83d80eb087c7a4e3328171c6"
+    },
+    "source_revisions": {
+      "iit": "ed44cbfa255b543bb2d4da3d193ae97c9715c4f7",
+      "interpbench": "220791e4a9cd29957ed5edfa445e7c09152d7298",
+      "tracr": "98f4910e3966805c83d80eb087c7a4e3328171c6"
+    },
+    "tracked_worktrees_clean": {
+      "iit": true,
+      "interpbench": true,
+      "tracr": true
+    }
+  },
+  "environment": {
+    "executable": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/bin/python",
+    "jax": "0.4.30",
+    "jaxlib": "0.4.30",
+    "numpy": "1.26.4",
+    "platform": "macOS-26.3-arm64-arm-64bit",
+    "python": "3.11.9",
+    "runtime_package_sources": {
+      "iit": {
+        "file_count": 45,
+        "file_sha256": {
+          "__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "model_pairs/__init__.py": "7d18a355344a2763f50dc374bf0f7e73ce1120fcdeb38c796adac765603d3118",
+          "model_pairs/base_model_pair.py": "987687e84446809626c772aa94bca0be35117ffc8619877d34be3553bf301297",
+          "model_pairs/freeze_model_pair.py": "43f0e59b0d5b0668d2042673e476b46562aa7f028b383f0ec9183cffb2fe2319",
+          "model_pairs/iit_behavior_model_pair.py": "31e182af16e1812cf1925e99568cad64cc80cbb87b55aecafe1968bc9bee236f",
+          "model_pairs/iit_model_pair.py": "5b42f9e2b7137dfa0adbc548760d1ce93b8b58abea1db24362313c9304cd5ba8",
+          "model_pairs/ioi_model_pair.py": "45ce3a5e118511f35a140117fd3476b2bd7c02aa8e3a46223f541b5a840d70ff",
+          "model_pairs/ll_model.py": "9161c857062b96c222d17c893a01d21c95fee1326217701bc956bea5ebe2177c",
+          "model_pairs/probed_sequential_pair.py": "2d4fad7ed2f023aa1cea5ae6f46201d7e4f820247502bd2ca44a932c42e4f4e1",
+          "model_pairs/stop_grad_pair.py": "26250b69e7c9a7c339346dfe310704fa2e1e0dbe870efd7e2a3eb5380825551e",
+          "model_pairs/strict_iit_model_pair.py": "00d389eb847b919cc4a366721fe7c0f7ef7d78d1564e3430fc36e2e8a7172be3",
+          "tasks/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "tasks/hl_model.py": "592988eeed59fedb09cf3393f9d4250e2174f442fb45a21fca18ea38b540a84a",
+          "tasks/ioi/__init__.py": "d01ce4f359842a5c1141222446fe4108d5d976252e57f9118bb2566b9cbb8ce6",
+          "tasks/ioi/ioi_config.py": "0bd58974cf9c2fe07ecdb3c3b12634aa0b2e3a3dfe03d3e669dbf96dc6c6b18f",
+          "tasks/ioi/ioi_dataset_tl.py": "6f54b6e121af3f73b5dfa6424ba804412b83e38f3d7761884ff31d18e9672e8f",
+          "tasks/ioi/ioi_hl.py": "ceb107add2cf04fe3491b7d1ed4191c40dfc34ff3bd8093f356035603a8291b2",
+          "tasks/ioi/utils.py": "ae037c7965a457dbcc67fd78eb99ac9478797064572ee6a5818c11e278ae21c3",
+          "tasks/mnist_pvr/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "tasks/mnist_pvr/dataset.py": "95bbe10fcaf662033ce70c15a9822390b6e68cce68fa7e12d4ff9b3b2a93a7d8",
+          "tasks/mnist_pvr/get_alignment.py": "e730946f25b1c84463c108a2b53350580479daf05f9bc02bfb2671bee24c0ede",
+          "tasks/mnist_pvr/pvr_check_leaky_hl.py": "fe0ae599f730601f84ae92ff5afab45a6775035e32452032eaebc4dbc9a3bc70",
+          "tasks/mnist_pvr/pvr_hl.py": "d4dad16f201be1ea535b8cad1848f2447292493eb27cfbcc6f6701965fd72627",
+          "tasks/mnist_pvr/utils.py": "203670747d7d626f3d5aca5172b1b737774188cfc404601390a33d0a5b6cea14",
+          "tasks/task_loader.py": "ca2b95e7641588f365e2dcca38a7e12a2d872ad4bcbf6962044427e40489a352",
+          "utils/__init__.py": "39295b18ad5d9f2c73ebba4c75a3a062a3398492508448549f7138d151d25a85",
+          "utils/argparsing.py": "21a107f2a018a4dc707a7b801a9f6fba45681da874ab2d8e7797e68d76669911",
+          "utils/config.py": "5a13e11c22b26e191cba919cfc236a46280627ab1e0f8163db5e3f2a0ed75d24",
+          "utils/correspondence.py": "59e2c7710203e710a8ad9c146d3308f2c2a3314798125a330001fbbf2243a14d",
+          "utils/eval_ablations.py": "fa7931b333ba5e2192be7e3a6882cddf5c3ef0fc655f44ffadc412b93935b3cc",
+          "utils/eval_datasets.py": "940d3e97b8b6181cc28afb3addc4fc5a8c7ce81d01c2c04de87a9b10b0682503",
+          "utils/eval_metrics.py": "221deb0bcca5deb43e8b2496aef07e78fca6610a338439e710d0a4076a7b87f0",
+          "utils/eval_scripts.py": "ed76ca4888c19259a789b0126ef3170267388883ebc2ff6d1db85bca3b4db8e6",
+          "utils/iit_dataset.py": "30d04e0821c753ba985c2e42772ba4266345d551f929815297949a322054a0b9",
+          "utils/index.py": "8f7e0505f9863c780388bd1b5c07e32812bfb70f59f7c0a940e7c334be60306b",
+          "utils/io_scripts.py": "4463f85a11cdf5c2ab2ce043a26c8d810422fb9763f6e10bbb4730cd8ad1c4a1",
+          "utils/logger.py": "2bda542a52e9f3f65d7b6b6e6dc46cd3b56ba450e3d3248b68a11d1a7e023fc2",
+          "utils/metric.py": "be590346c2a20d96b9b57fd78e98614433a3d465230950ee41065b47863e6d8d",
+          "utils/node_picker.py": "6c523862ed98b245e8308362857150d380ccfb9b27a7e7cbc92914617e3badf3",
+          "utils/nodes.py": "f0cd8035312430f037b5a7d1716822d997ef3df761a3b5cc85796b91d35566b5",
+          "utils/plotter.py": "bc93e235a6be620efd736570474471fafc5de3049dcb3eab0005bf577557d0ef",
+          "utils/probes.py": "c2f9b4fae980420248b273103eb0a010fb4c91c9f952a21300693a841ae6d794",
+          "utils/tqdm.py": "ec5484da60399c94f30e9e441dde297b94a5f43b366c5be19c669cbc3f69c83e",
+          "utils/train_scripts.py": "70843a8e28bc50bf9861e7b1d6471d6be569bf8da8d91d41248b0bc1e7ea0af1",
+          "utils/wrapper.py": "09ebda5e8d23b4baed6c966e2e2c174e1b34b7cb9fe2dfed3c0f9ccf4cf2d895"
+        },
+        "root": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/iit",
+        "status": "present",
+        "tree_sha256": "ec3992cfe9e3e2d1fbf397a30a3a508db8a9de8fb69334f392837bd5893fd262"
+      },
+      "tracr": {
+        "file_count": 57,
+        "file_sha256": {
+          "__init__.py": "dbd485f56b72c356361676088de05d358837f7b2f5d78f96879ad849e820eaad",
+          "compiler/__init__.py": "276052cc5c938d5cafce6a42868c886682fdc47b187cedae2721f99de81ad0c9",
+          "compiler/assemble.py": "82e273127675ac1eb5766c29492035e875c37caf8cd0746515729e7f93420ca0",
+          "compiler/assemble_test.py": "5126f455202da50c2fc6d40d03e523834218913baefbd3483d580b3482a74d84",
+          "compiler/basis_inference.py": "a42831cadf50ff5b4d2daca10f98ee32d83946c89f8f9814b214da02cbc86852",
+          "compiler/basis_inference_test.py": "50dcf42c80e740fc94de554352e980ced9b2bd11cddb3ce7952e5f055ab31c8a",
+          "compiler/compiling.py": "4a0acbb1ed44cd8a3ce4c0eb0d938c9809f0bdfcf18f10aaeabaa0f54bc1fe71",
+          "compiler/craft_graph_to_model.py": "1d8037b7370987b617967b282fbcdc022e9f031d9b84556bf5485baf3a2a0038",
+          "compiler/craft_graph_to_model_test.py": "ea047f9ee853eb856cc90681cba35fe0330ba51bfb3f6d0278a52f2a9f84bcc4",
+          "compiler/craft_model_to_transformer.py": "4f96f97865b40d706c19e9490f87467330aae7fdd1e6f04d7fac9f2a9d7df84c",
+          "compiler/expr_to_craft_graph.py": "ebdd7e8facd4919c94538104604824b82c85a606544a6aee5a488472f6896609",
+          "compiler/expr_to_craft_graph_test.py": "ab8091aef4e5ee0a1984e682ad27068f174ef6fc03b69007c9f0ffdbdafdf514",
+          "compiler/lib.py": "2ddfaf47cc8cf3e425497dd77434caa5d0bda2729c9a10764df9c2cddd167abc",
+          "compiler/lib_test.py": "5662a336127480d88c3304cb8f82695c02a614035081acdd1199dbc5c13d7950",
+          "compiler/nodes.py": "17ca881a63aee06010c31d0570960d7b955bce1f29d863b8714763c48e67cc66",
+          "compiler/rasp_to_craft_integration_test.py": "85bc3dae6d6ab6345f69fe77714b8816d3fe30cc673098ed749b9ece98793317",
+          "compiler/rasp_to_graph.py": "4f12f599ef273ce820af292495b43588f7cfab53d86a423b967d9a86b2a3ec51",
+          "compiler/rasp_to_graph_test.py": "6a9090280cbfa434a6654c75ccc4810bd3616bd6b709c60721c0772b498e45f5",
+          "compiler/rasp_to_transformer_integration_test.py": "2297702d90e0ee6c63bb0edd1f5cc2a04728b397d30825fed3b97361eb71c4eb",
+          "compiler/test_cases.py": "e9823ddfc5a5814b9e0a7ef1d89e666421598c43ba310116509703b0b309adde",
+          "compiler/validating.py": "66f797d5d91c8bc74d10e76fa55f5a5ffc7e23f39ff30474df4ac5cd7815dfd8",
+          "compiler/validating_test.py": "af4302125221195b6653b6f93d2d896ce768e83902dd70f9cd26a28cc83672bf",
+          "craft/__init__.py": "dbd485f56b72c356361676088de05d358837f7b2f5d78f96879ad849e820eaad",
+          "craft/bases.py": "ad05a25f6307d9a6e2de602646a314ff0d825eda249aba72ad244d7a0a3a996b",
+          "craft/bases_test.py": "70b87ce981307e2a8e7498a5cff642c098b6443b49d614efe36499e318fcacdc",
+          "craft/chamber/__init__.py": "dbd485f56b72c356361676088de05d358837f7b2f5d78f96879ad849e820eaad",
+          "craft/chamber/categorical_attn.py": "157b4615983d1226dd2a0c87b18b96235d87b641337208902e5ab839440ae030",
+          "craft/chamber/categorical_attn_test.py": "62e1e6ea7c0a4bccda085ab6e26b85689ed57a783f94082cd7f4c34e33799597",
+          "craft/chamber/categorical_mlp.py": "8e4b5a439ee095b2fbfb437b7839efe4c60ec11813616e00065c18bf11e8f973",
+          "craft/chamber/categorical_mlp_test.py": "56c079a15762b3e7e5e6de23db70ca00a9072c9813d561fcc736feff8d19a817",
+          "craft/chamber/numerical_mlp.py": "d5551a368f0638446dcfeba240210d46faa21a4d5452bfa55ce8b970806cab51",
+          "craft/chamber/numerical_mlp_test.py": "22db5ecb6c91b9e0fa4b9792c6d6256a89b443fdae94c2df64e0154610abcf43",
+          "craft/chamber/selector_width.py": "73e0592c0641a4328f4694bb2fec2e343b65344a74784b012cedebe188e1ecea",
+          "craft/chamber/selector_width_test.py": "b1cfe75f1a2487df46210ae9625a8148949673e04e8edd4c495aeb551460c3f0",
+          "craft/tests_common.py": "aca559d80e25c0cbe3d7d992ef1b3d7fa0639cf4a74a63e986493bea142d29ed",
+          "craft/transformers.py": "8a0e04201703107b1626bd8c625582ed13f2cbd34ae84cb875f2ead62c652a9c",
+          "craft/transformers_test.py": "07bcc527e0fd157c42418e2e0f69141a5a76955d913225395bdc320d63275937",
+          "craft/vectorspace_fns.py": "8e5f57813db79789309d9478a24ab80b80e344909688b083d999295793073c76",
+          "craft/vectorspace_fns_test.py": "4b86fa15a2c916e4aaab9b9254f0755a3efec5875b53be9b6fa538ef2071a560",
+          "examples/__init__.py": "dbd485f56b72c356361676088de05d358837f7b2f5d78f96879ad849e820eaad",
+          "rasp/__init__.py": "dbd485f56b72c356361676088de05d358837f7b2f5d78f96879ad849e820eaad",
+          "rasp/causal_eval.py": "9bd1e86fb531c04308a9313da16f2123a53602d8fcf858a365852f0a71e7b1b1",
+          "rasp/causal_eval_test.py": "7003ec1dafb5f4eb0cae7abe9856b17ef5824b0fea061da23309d7d340c2eef7",
+          "rasp/rasp.py": "811e3316f7b2d409ea065c438904e58e776e097abfbf325ab5e0b162c49df151",
+          "rasp/rasp_test.py": "5e3f861f660c89b29f52918171cb9f53c189108f0b8f017237b0ef227dc3818f",
+          "transformer/__init__.py": "dbd485f56b72c356361676088de05d358837f7b2f5d78f96879ad849e820eaad",
+          "transformer/attention.py": "cd365e874477a2b36d2c0812d22cd0c16356cfba4137a8fd5e40ff3a629de5c6",
+          "transformer/compressed_model.py": "b4f82d7faf9c35aa8b235dbc240132ae7077a88d8436a79681992b6db688d5bf",
+          "transformer/compressed_model_test.py": "3e48f0f730fe77845743cfaff11a0647fcec03ae6542f1ad880cc3f1eca9cfc6",
+          "transformer/encoder.py": "3ca6440220a91ca8242f37e337631f6ee0f9d7bc05d3170c53147100eb5d5eea",
+          "transformer/encoder_test.py": "e834c98ed1cf14cc94f6f56cb3712e7e5f92396d276afba4e1bacb612ddffe8d",
+          "transformer/model.py": "583941cd376bfc3c42ba0347ad17b2f0b3cfccfc4aa98f870e156f0a3223c2e9",
+          "transformer/model_test.py": "ec703d6f9ceeb0d45e463bc33b687065e3276c663f1468de8b199dcddcea41e5",
+          "utils/__init__.py": "dbd485f56b72c356361676088de05d358837f7b2f5d78f96879ad849e820eaad",
+          "utils/debugging.py": "0c75c12dcd28a1f4eda6829b5af55cf20e32eb98e1d4688604550f09a49f1ae5",
+          "utils/errors.py": "92c01d9bc5dd9976a1038acb6b05a4a4bbb100406305d98dbb3b86d7c3932a97",
+          "utils/errors_test.py": "ab694e07530dfc8edaf5d3b8663a109c730a3c0ea8c4b7e85806bb9b0d2e8809"
+        },
+        "root": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/tracr",
+        "status": "present",
+        "tree_sha256": "37f97634e3787fefe0e4ed3ec8389a06536c421e6bf48fcf3de9361cc660a5ed"
+      },
+      "transformer_lens": {
+        "file_count": 21,
+        "file_sha256": {
+          "ActivationCache.py": "f8a482d10b1a92ab5cc15906e6cf8c59667de52a4d3949b585b2739649a58c28",
+          "FactoredMatrix.py": "44e08ed7c05b24024fa43ebeffd22c67a2c8e45ea030275b89a5c3afa7aef649",
+          "HookedEncoder.py": "dc29cab2431ca22ac441bbf55655319223adfce615578654f933ad3ccfc5920d",
+          "HookedSAE.py": "0a577ed4a3266ff57a8c30878aa7e19cb8c6e8ed668d6fc3b66bef6327736b4a",
+          "HookedSAEConfig.py": "d4ae7bac5dab85f7b3aaa1e3dc294a1d11573a952494d1adf1b76fc444e0e35b",
+          "HookedSAETransformer.py": "5bf2f143ff1ed1efb3c074295dca94095ffc5c92eb444efd0ada53d3ad2dc7f9",
+          "HookedTransformer.py": "535efcb02af4a44657a2a088ff740694a3366a438212a991bddd13c3dfdbfc50",
+          "HookedTransformerConfig.py": "a4e0dd4d718ddc58e70e2fe6357b3c50cddd31269d090f19064c54ed74e3d4d4",
+          "SVDInterpreter.py": "5e036de3bf679f33edef9398640f97b062103ed1f7c10fc10867855a75495e33",
+          "__init__.py": "592ae45625883e5b6daea4d916e8761023bd324576409e32b76b1049a2813da2",
+          "components.py": "6fa7d1df86c07b0888a7f06f76dea4b582f6ee3b6f764a18575f9c186bcb0573",
+          "evals.py": "f32cbb675a7eec34aaa1da7471f7e17ea00fcb60d09a6e615a132fc6fb558ccc",
+          "head_detector.py": "dac62d5a44da5624f03e0bd7505ad833e187ec883337a2ae0a45368ade51a1c2",
+          "hook_points.py": "aa4391d5eae342d961a79f72d75ef4ca5752fa60a5e80e0e0c713cf8c30d7d5c",
+          "loading_from_pretrained.py": "a655abf0bc2f54f89de913b3d6eaf656cb3f40c55f353eb17503080884a690fd",
+          "past_key_value_caching.py": "1a994d26ac8a9acbc9da89c89659be5382c482e403732a933e5dc78045052642",
+          "patching.py": "caecded302467fd1c845db0dd141d9890d6279b9cebc945ec2fd9aba2754c6a1",
+          "train.py": "6609b9d99cb0abaa06aaab63abf49eb241516c4d15ff272c41dd2792c968f210",
+          "utilities/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "utilities/devices.py": "ceb319e310c7d1b3f3eb3efba1dee0ddc427959e29acddf834609035c1bd174f",
+          "utils.py": "6766df9f426e3c73eaae7d3278b17b743b94874685a208d2e5ab919b02bfea08"
+        },
+        "root": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19/lib/python3.11/site-packages/transformer_lens",
+        "status": "present",
+        "tree_sha256": "e35bb9d7c29f8d3bc510a826d9def1961efa2fdd05f5c716c355ac1cce8e859d"
+      }
+    },
+    "sys_prefix": "/Users/ihorkendiukhov/.cache/fundamental-mechinterp/e32-interpbench/venv-py311-tl1.19",
+    "torch": "2.3.1",
+    "transformer_lens": "1.19.0"
+  },
+  "execution": {
+    "all_selected_clean_source_rows_unique": true,
+    "atlas_artifacts_and_summary_are_write_once": true,
+    "behavior_selection_precedes_patched_outcomes": true,
+    "confirmation_rows_exclude_discovery_rows_response_blindly": true,
+    "device": "cpu",
+    "model_dtype": "checkpoint_float32",
+    "registration_precedes_every_model_call": true,
+    "single_canonical_run": true
+  },
+  "protocol": {
+    "case_order": [
+      97,
+      2,
+      21
+    ],
+    "cases": {
+      "2": {
+        "condition_count": 187,
+        "d_vocab_out": 26,
+        "directed_candidate_edge_count": 166,
+        "exact_provenance": {
+          "artifact_sha256": {
+            "edges.pkl": "dd8ee919e31a1590d5e02e7d6aa4625e2d9e3002e3bbb74402f5a49e7d0be36b",
+            "ll_model.pth": "2b2ef568269ef820d7d6975fed90fabf517f044f26f9b10a8a3724a7da3c4f83",
+            "ll_model_cfg.pkl": "274196ba87c5a5cc25f5e3ed93a4c7dace5a7924905804c2ee6d2112c460f534",
+            "meta.json": "c129be1d12e8293f56c5254d575399865ef1c89dfe67e717e1909d9e948d525c"
+          },
+          "model_revision": "a1242a84f8a4d07d1be9a8f5ec710415198016b2",
+          "source_revisions": {
+            "iit": "ed44cbfa255b543bb2d4da3d193ae97c9715c4f7",
+            "interpbench": "220791e4a9cd29957ed5edfa445e7c09152d7298",
+            "tracr": "98f4910e3966805c83d80eb087c7a4e3328171c6"
+          }
+        },
+        "internal_ground_truth_counts": {
+          "edges": 4,
+          "nodes": 5
+        },
+        "internal_node_count": 20,
+        "n_ctx": 10,
+        "n_heads": 4,
+        "n_layers": 4,
+        "output_kind": "categorical",
+        "role": "secondary",
+        "splits": {
+          "confirmation": {
+            "atlas_condition_batch_size": 32,
+            "candidate_count": 160,
+            "case_id": 2,
+            "clean_seed": 42034,
+            "corrupt_seed": 42035,
+            "expected_model_examples_including_eligibility": 28480,
+            "required_count": 128,
+            "smoke_condition_batch_size": 8,
+            "smoke_condition_count": 16,
+            "split": "confirmation"
+          },
+          "discovery": {
+            "atlas_condition_batch_size": 32,
+            "candidate_count": 80,
+            "case_id": 2,
+            "clean_seed": 42032,
+            "corrupt_seed": 42033,
+            "expected_model_examples_including_eligibility": 14240,
+            "required_count": 64,
+            "smoke_condition_batch_size": 8,
+            "smoke_condition_count": 16,
+            "split": "discovery"
+          }
+        },
+        "task": "reverse the input sequence"
+      },
+      "21": {
+        "condition_count": 187,
+        "d_vocab_out": 3,
+        "directed_candidate_edge_count": 166,
+        "exact_provenance": {
+          "artifact_sha256": {
+            "edges.pkl": "a284ff6ddccac91bf12f0f28a6786e739428c948c111ef6ad524e481f5d1461d",
+            "ll_model.pth": "42e739d16ee075d148c5b8a65b71422da53b90a32d706821708240c75124e4af",
+            "ll_model_cfg.pkl": "0199972dece30ed03433dd2e1cb712e7e718d94ff3cd4e2ca9c662253dc9f495",
+            "meta.json": "0562bcfe88845e70dc8a41c98953f60577ab635ffcb07104ddde8ff3dc23316f"
+          },
+          "model_revision": "a1242a84f8a4d07d1be9a8f5ec710415198016b2",
+          "source_revisions": {
+            "iit": "ed44cbfa255b543bb2d4da3d193ae97c9715c4f7",
+            "interpbench": "220791e4a9cd29957ed5edfa445e7c09152d7298",
+            "tracr": "98f4910e3966805c83d80eb087c7a4e3328171c6"
+          }
+        },
+        "internal_ground_truth_counts": {
+          "edges": 2,
+          "nodes": 4
+        },
+        "internal_node_count": 20,
+        "n_ctx": 10,
+        "n_heads": 4,
+        "n_layers": 4,
+        "output_kind": "categorical",
+        "role": "secondary",
+        "splits": {
+          "confirmation": {
+            "atlas_condition_batch_size": 32,
+            "candidate_count": 160,
+            "case_id": 21,
+            "clean_seed": 42034,
+            "corrupt_seed": 42035,
+            "expected_model_examples_including_eligibility": 28480,
+            "required_count": 128,
+            "smoke_condition_batch_size": 8,
+            "smoke_condition_count": 16,
+            "split": "confirmation"
+          },
+          "discovery": {
+            "atlas_condition_batch_size": 32,
+            "candidate_count": 80,
+            "case_id": 21,
+            "clean_seed": 42032,
+            "corrupt_seed": 42033,
+            "expected_model_examples_including_eligibility": 14240,
+            "required_count": 64,
+            "smoke_condition_batch_size": 8,
+            "smoke_condition_count": 16,
+            "split": "discovery"
+          }
+        },
+        "task": "extract unique tokens"
+      },
+      "97": {
+        "condition_count": 103,
+        "d_vocab_out": 64,
+        "directed_candidate_edge_count": 87,
+        "exact_provenance": {
+          "artifact_sha256": {
+            "edges.pkl": "afdfd64f4c8be661a44ae212318dcb22d1cd61cd023a9f510b0ed3cf9ceceac6",
+            "ll_model.pth": "7edb6ff1572d3b7b43e97ff512fe1bd0c78f47b00724906c72ef175338173028",
+            "ll_model_cfg.pkl": "2cb2f82ed87ef19e802ed3400f3b508631496f474aae19e07304666c6d1a06d5",
+            "meta.json": "e7ea23a35d302a7952ab77e12344ab411837d3f5bd87992d211218aad3688bdd"
+          },
+          "model_revision": "a1242a84f8a4d07d1be9a8f5ec710415198016b2",
+          "source_revisions": {
+            "iit": "ed44cbfa255b543bb2d4da3d193ae97c9715c4f7",
+            "interpbench": "220791e4a9cd29957ed5edfa445e7c09152d7298",
+            "tracr": "98f4910e3966805c83d80eb087c7a4e3328171c6"
+          }
+        },
+        "internal_ground_truth_counts": {
+          "edges": 6,
+          "nodes": 6
+        },
+        "internal_node_count": 15,
+        "n_ctx": 10,
+        "n_heads": 4,
+        "n_layers": 3,
+        "output_kind": "categorical",
+        "role": "primary",
+        "splits": {
+          "confirmation": {
+            "atlas_condition_batch_size": 32,
+            "candidate_count": 160,
+            "case_id": 97,
+            "clean_seed": 42034,
+            "corrupt_seed": 42035,
+            "expected_model_examples_including_eligibility": 17728,
+            "required_count": 128,
+            "smoke_condition_batch_size": 8,
+            "smoke_condition_count": 16,
+            "split": "confirmation"
+          },
+          "discovery": {
+            "atlas_condition_batch_size": 32,
+            "candidate_count": 80,
+            "case_id": 97,
+            "clean_seed": 42032,
+            "corrupt_seed": 42033,
+            "expected_model_examples_including_eligibility": 8864,
+            "required_count": 64,
+            "smoke_condition_batch_size": 8,
+            "smoke_condition_count": 16,
+            "split": "discovery"
+          }
+        },
+        "task": "scale each number by the sequence maximum"
+      }
+    },
+    "claims": {
+      "edge_direction_is_imposed_by_transformer_topology": true,
+      "external_generalization_claim": false,
+      "hidden_or_untouched_benchmark_claim": false,
+      "official_gt_and_case_identities_were_inspected_during_design": true,
+      "official_truth_scope": "promoted_internal_projection_only",
+      "pair_interaction_is_not_a_direct_communication_edge_estimator": true,
+      "pair_mask_is_symmetric": true,
+      "path_or_faithfulness_claims_in_e32_1": false,
+      "superiority_to_eap_or_eap_ig_claim": false,
+      "target": "internal_component_node_and_directed_edge_localization",
+      "transitive_candidate_non_edges_reported_separately": true
+    },
+    "full_panel_gate": {
+      "minimum_case_wins_out_of_three": 2,
+      "minimum_macro_auprc_margin_over_best_comparator": 0.05
+    },
+    "hierarchy": {
+      "primary_case": 97,
+      "secondary_cases": [
+        2,
+        21
+      ],
+      "secondary_cases_run_only_if_primary_passes": true
+    },
+    "maximum_model_examples_if_all_cases_run": 112032,
+    "maximum_model_examples_if_primary_fails": 26592,
+    "method_order": [
+      "raw_pair_interaction",
+      "singleton_endpoint_product",
+      "rank_one_node_factor",
+      "positive_pair_residual",
+      "absolute_pair_residual"
+    ],
+    "primary_gate": {
+      "minimum_additional_true_positives_at_6": 1,
+      "minimum_confirmation_auprc_margin_over_each_comparator": 0.05,
+      "minimum_discovery_confirmation_raw_energy_spearman": 0.5
+    },
+    "schema_version": "e32_1_exact_gt_protocol_v1",
+    "status": "dry_run_only_no_model_calls_no_seal"
+  },
+  "schema_version": "e32_1_exact_gt_registration_v1",
+  "source_sha256": {
+    "experiments/e32_interpbench/__init__.py": "cb82bf8127ceb8a3f66dd944bbc09ce1a3ed7f31d6c691251e5a15a3dfb03420",
+    "experiments/e32_interpbench/acquisition.py": "7acd7ad9917d20e5c7f3c459f7a581b0ae97412c513d52584de0225de1a41c0e",
+    "experiments/e32_interpbench/adapter.py": "4cae0b793a27f188b86265135c821239ee66477d22da9f391d46096a6d4b97c8",
+    "experiments/e32_interpbench/analysis.py": "f83f98da5dff42677ef0b90fd2c01c72403ab4fb673a1ba0a8c60dcd14eb2483",
+    "experiments/e32_interpbench/component_patching.py": "b56c06097c61859ab927d00edf8a0e718bc0151aea471913e26d41f3575efa89",
+    "experiments/e32_interpbench/e32_1_orchestration.py": "37a765d95afae175e2cf81192027f00422975f6eda2f6099701d1815c1c33b78",
+    "experiments/e32_interpbench/e32_1_protocol.py": "2464a7afc99cc760f309ae5fbcc36d5bb85089b0f51659308ac6c2b190140a38",
+    "experiments/e32_interpbench/e32_1_run.py": "95f80691123f126a8c0b30d4247aa3b54f3a703bd2d309772642951b2fc8e4fc",
+    "experiments/e32_interpbench/methods.py": "4fb45d1dd1bf0ef3a1e0fff6e600311ec07e49d2fe5641a8b7c6493b45f2104f",
+    "experiments/e32_interpbench/protocol.py": "26716088c6296496c03d8a08068268915960dc5ddcdd67766b86d0d425a8696f",
+    "experiments/e32_interpbench/scoring.py": "9420d42c770e33757532b5b22a781443f9d2ec7c53dc4bd5a07c041597ddcff3"
+  }
+}

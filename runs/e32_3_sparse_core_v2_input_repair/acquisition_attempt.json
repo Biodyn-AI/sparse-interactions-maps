@@ -1,0 +1,14 @@
+{
+  "phase_order": [
+    "global_behavior_screen",
+    "all_discoveries",
+    "all_authorizations",
+    "all_confirmations",
+    "score_attempt",
+    "score_and_exact_replay"
+  ],
+  "registration_sha256": "1c42b4761573286af06604094efc5a85b0f873d773a99afe97d9767e25ab86a4",
+  "run_attempt_sha256": "beac0e8d368c2a2f878819ef16a63d1f596ac2239f88d8b76fb36ec87a2255b2",
+  "schema_version": "e32_3_acquisition_attempt_v1",
+  "status": "durable_before_first_behavior_or_intervention_model_call"
+}

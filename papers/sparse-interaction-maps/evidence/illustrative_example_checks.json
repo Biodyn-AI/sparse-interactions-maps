@@ -1,0 +1,13 @@
+{
+  "status": "pass",
+  "scientific_status": "illustrative_exact_checks_not_a_new_transformer_experiment",
+  "chain_widths": [
+    3,
+    4,
+    8,
+    12
+  ],
+  "chain_masks_checked": 4376,
+  "chain_pairs_checked": 103,
+  "quadratic_pair_contexts_checked": 1792
+}

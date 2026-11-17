@@ -1,0 +1,10 @@
+{
+  "schema_version": "e31_2_discovery_geometry_custody_v1",
+  "status": "geometry_selections_and_controls_frozen_before_confirmation",
+  "registration_sha256": "bad36e15f37dd7147c43fcc4ecb5cf8db0f3bcf2525645692e19079d7ff26ede",
+  "discovery_labels_sha256": "b842d90a57e60f9f4bce15c1921726a7820cecee52d080981ec0264c800732a7",
+  "discovery_geometry_sha256": "e2d91522e5d79683bf57f4188bb6048ca2200fe71df19317fd9c58852da9cead",
+  "reconstruction_selection_sha256": "56d53332c5751cb5ac650d0b10bb05810498bfdbbd68e7512d0da7b06a432d0e",
+  "matched_control_support_count": 10000,
+  "confirmation_outcomes_used": false
+}

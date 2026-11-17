@@ -1,0 +1,16 @@
+{
+  "schema_version": "e31_1_order_repair_confirmation_custody_v2",
+  "status": "unchanged_v1_confirmation_masks_acquired_write_once",
+  "registration_sha256": "247c78888c7abf37761d89e78f279a1fcec971e00ea2a54c32950c8e796052ee",
+  "v1_registration_sha256": "a9600918bbeef14bf8db83c249106d888fd8bafbe8715cfc8787a4c877d1eb73",
+  "recovery_attempt_sha256": "03445a32da56d376ada761bc6647d2fc99daed94b29b04a839206a12a25a498d",
+  "discovery_geometry_sha256": "5658578c1b9b846f0d33e53715686160406f2d56bb76379df1f009a71a651972",
+  "authorization_sha256": "7d540786d162735fc2581583e24411c9e46293728aedc2e7841b4554c8540a6f",
+  "revalidation_sha256": "5a530d16e150ada78caaadc51a4218ed91d30c650276c9f0ac5372f4ffb7fb56",
+  "revalidation_custody_sha256": "ff6949dd733fbea0895906570ac615b5f3e92f6899ca72d477db09fc161531df",
+  "confirmation_labels_sha256": "eced70c97aed5ee0bb614aabb074789fbae3112350c54d4c3c40fdb3a2a88894",
+  "confirmation_clean_reprepare_examples": 64,
+  "confirmation_patched_examples": 248832,
+  "discovery_rerun_examples": 0,
+  "actual_lifetime_forward_examples": 373632
+}

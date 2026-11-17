@@ -1,0 +1,926 @@
+{
+  "actual_model_examples": 26592,
+  "atlas_artifact_sha256": {
+    "case97_confirmation_atlas.pt": "13c97d9a5eecbefdc1a0e79a8e0dcd1121232f9b8bff21ae39ea23912f9ab865",
+    "case97_discovery_atlas.pt": "1b3f371835cf7f41253ca07110b316adea6963c651e62dda78203e69a67fe5af"
+  },
+  "attempt_sha256": "275b7c4927b170fbf97ae2621cfc479282c88463228c21074350d6077ccc2efc",
+  "case_results": {
+    "97": {
+      "case_id": 97,
+      "claim_boundary": {
+        "deferred_graph_and_intervention_metrics_omitted": true,
+        "direct_edge_gt_but_pair_score_can_measure_indirect_mediation": true
+      },
+      "discovery_confirmation_disjointness": {
+        "confirmation_unique_token_rows": 256,
+        "discovery_unique_token_rows": 128,
+        "overlap_count": 0,
+        "policy": "all_clean_and_source_token_rows_unique_within_and_across_splits"
+      },
+      "discovery_confirmation_spearman": {
+        "absolute_pair_residual": 0.9866406648684115,
+        "positive_pair_residual": 0.9693037884474682,
+        "rank_one_node_factor": 0.9991251731428155,
+        "raw_pair_interaction": 0.9973208427498724,
+        "singleton_endpoint_product": 0.9987424363927973
+      },
+      "ground_truth_edge_count": 6,
+      "ground_truth_node_count": 6,
+      "methods": {
+        "absolute_pair_residual": {
+          "confirmation": {
+            "edge": {
+              "auprc": 0.24847883597883597,
+              "auprc_lift_over_chance": 0.17951331873745666,
+              "auprc_ratio_to_chance": 3.6029431216931216,
+              "auroc": 0.6419753086419753,
+              "chance_auprc": 0.06896551724137931,
+              "selected_indices": [
+                59,
+                54,
+                55,
+                53,
+                49,
+                48
+              ],
+              "selected_support": [
+                [
+                  "blocks.1.attn.hook_result[0]",
+                  "blocks.2.hook_mlp_out"
+                ],
+                [
+                  "blocks.1.attn.hook_result[0]",
+                  "blocks.1.hook_mlp_out"
+                ],
+                [
+                  "blocks.1.attn.hook_result[0]",
+                  "blocks.2.attn.hook_result[0]"
+                ],
+                [
+                  "blocks.0.hook_mlp_out",
+                  "blocks.2.hook_mlp_out"
+                ],
+                [
+                  "blocks.0.hook_mlp_out",
+                  "blocks.2.attn.hook_result[0]"
+                ],
+                [
+                  "blocks.0.hook_mlp_out",
+                  "blocks.1.hook_mlp_out"
+                ]
+              ],
+              "support_precision": 0.3333333333333333,
+              "top_k": 6,
+              "top_k_f1": 0.3333333333333333,
+              "top_k_precision": 0.3333333333333333,
+              "top_k_recall": 0.3333333333333333,
+              "true_positives_at_gt_k": 2
+            },
+            "ground_truth_edge_count": 6,
+            "ground_truth_node_count": 6,
+            "node": {
+              "auprc": 0.9444444444444444,
+              "auroc": 0.9444444444444444,
+              "selected_indices": [
+                5,
+                4,
+                10,
+                14,
+                9,
+                11
+              ],
+              "selected_support": [
+                "blocks.1.attn.hook_result[0]",
+                "blocks.0.hook_mlp_out",
+                "blocks.2.attn.hook_result[0]",
+                "blocks.2.hook_mlp_out",
+                "blocks.1.hook_mlp_out",
+                "blocks.2.attn.hook_result[1]"
+              ],
+              "support_precision": 0.8333333333333334,
+              "top_k": 6,
+              "top_k_f1": 0.8333333333333334,
+              "top_k_precision": 0.8333333333333334,
+              "top_k_recall": 0.8333333333333334
+            }
+          },
+          "confirmation_true_positives_at_gt_k": 2,
+          "discovery": {
+            "edge": {
+              "auprc": 0.26644488140967015,
+              "auprc_lift_over_chance": 0.19747936416829084,
+              "auprc_ratio_to_chance": 3.863450780440217,
+              "auroc": 0.6481481481481481,
+              "chance_auprc": 0.06896551724137931,
+              "selected_indices": [
+                59,
+                54,
+                55,
+                53,
+                49,
+                48
+              ],
+              "selected_support": [
+                [
+                  "blocks.1.attn.hook_result[0]",
+                  "blocks.2.hook_mlp_out"
+                ],
+                [
+                  "blocks.1.attn.hook_result[0]",
+                  "blocks.1.hook_mlp_out"
+                ],
+                [
+                  "blocks.1.attn.hook_result[0]",
+                  "blocks.2.attn.hook_result[0]"
+                ],
+                [
+                  "blocks.0.hook_mlp_out",
+                  "blocks.2.hook_mlp_out"
+                ],
+                [
+                  "blocks.0.hook_mlp_out",
+                  "blocks.2.attn.hook_result[0]"
+                ],
+                [
+                  "blocks.0.hook_mlp_out",
+                  "blocks.1.hook_mlp_out"
+                ]
+              ],
+              "support_precision": 0.3333333333333333,
+              "top_k": 6,
+              "top_k_f1": 0.3333333333333333,
+              "top_k_precision": 0.3333333333333333,
+              "top_k_recall": 0.3333333333333333,
+              "true_positives_at_gt_k": 2
+            },
+            "ground_truth_edge_count": 6,
+            "ground_truth_node_count": 6,
+            "node": {
+              "auprc": 0.9333333333333332,
+              "auroc": 0.9259259259259259,
+              "selected_indices": [
+                5,
+                10,
+                4,
+                14,
+                9,
+                11
+              ],
+              "selected_support": [
+                "blocks.1.attn.hook_result[0]",
+                "blocks.2.attn.hook_result[0]",
+                "blocks.0.hook_mlp_out",
+                "blocks.2.hook_mlp_out",
+                "blocks.1.hook_mlp_out",
+                "blocks.2.attn.hook_result[1]"
+              ],
+              "support_precision": 0.8333333333333334,
+              "top_k": 6,
+              "top_k_f1": 0.8333333333333334,
+              "top_k_precision": 0.8333333333333334,
+              "top_k_recall": 0.8333333333333334
+            }
+          },
+          "discovery_confirmation_edge_spearman": 0.9866406648684115
+        },
+        "positive_pair_residual": {
+          "confirmation": {
+            "edge": {
+              "auprc": 0.07595937480994952,
+              "auprc_lift_over_chance": 0.006993857568570211,
+              "auprc_ratio_to_chance": 1.101410934744268,
+              "auroc": 0.32098765432098764,
+              "chance_auprc": 0.06896551724137931,
+              "selected_indices": [
+                59,
+                55,
+                48,
+                56,
+                57,
+                58
+              ],
+              "selected_support": [
+                [
+                  "blocks.1.attn.hook_result[0]",
+                  "blocks.2.hook_mlp_out"
+                ],
+                [
+                  "blocks.1.attn.hook_result[0]",
+                  "blocks.2.attn.hook_result[0]"
+                ],
+                [
+                  "blocks.0.hook_mlp_out",
+                  "blocks.1.hook_mlp_out"
+                ],
+                [
+                  "blocks.1.attn.hook_result[0]",
+                  "blocks.2.attn.hook_result[1]"
+                ],
+                [
+                  "blocks.1.attn.hook_result[0]",
+                  "blocks.2.attn.hook_result[2]"
+                ],
+                [
+                  "blocks.1.attn.hook_result[0]",
+                  "blocks.2.attn.hook_result[3]"
+                ]
+              ],
+              "support_precision": 0.0,
+              "top_k": 6,
+              "top_k_f1": 0.0,
+              "top_k_precision": 0.0,
+              "top_k_recall": 0.0,
+              "true_positives_at_gt_k": 0
+            },
+            "ground_truth_edge_count": 6,
+            "ground_truth_node_count": 6,
+            "node": {
+              "auprc": 0.9444444444444444,
+              "auroc": 0.9444444444444444,
+              "selected_indices": [
+                5,
+                10,
+                14,
+                9,
+                4,
+                11
+              ],
+              "selected_support": [
+                "blocks.1.attn.hook_result[0]",
+                "blocks.2.attn.hook_result[0]",
+                "blocks.2.hook_mlp_out",
+                "blocks.1.hook_mlp_out",
+                "blocks.0.hook_mlp_out",
+                "blocks.2.attn.hook_result[1]"
+              ],
+              "support_precision": 0.8333333333333334,
+              "top_k": 6,
+              "top_k_f1": 0.8333333333333334,
+              "top_k_precision": 0.8333333333333334,
+              "top_k_recall": 0.8333333333333334
+            }
+          },
+          "confirmation_true_positives_at_gt_k": 0,
+          "discovery": {
+            "edge": {
+              "auprc": 0.08548318433375904,
+              "auprc_lift_over_chance": 0.01651766709237973,
+              "auprc_ratio_to_chance": 1.239506172839506,
+              "auroc": 0.32510288065843623,
+              "chance_auprc": 0.06896551724137931,
+              "selected_indices": [
+                59,
+                55,
+                48,
+                56,
+                78,
+                57
+              ],
+              "selected_support": [
+                [
+                  "blocks.1.attn.hook_result[0]",
+                  "blocks.2.hook_mlp_out"
+                ],
+                [
+                  "blocks.1.attn.hook_result[0]",
+                  "blocks.2.attn.hook_result[0]"
+                ],
+                [
+                  "blocks.0.hook_mlp_out",
+                  "blocks.1.hook_mlp_out"
+                ],
+                [
+                  "blocks.1.attn.hook_result[0]",
+                  "blocks.2.attn.hook_result[1]"
+                ],
+                [
+                  "blocks.1.hook_mlp_out",
+                  "blocks.2.attn.hook_result[0]"
+                ],
+                [
+                  "blocks.1.attn.hook_result[0]",
+                  "blocks.2.attn.hook_result[2]"
+                ]
+              ],
+              "support_precision": 0.16666666666666666,
+              "top_k": 6,
+              "top_k_f1": 0.16666666666666666,
+              "top_k_precision": 0.16666666666666666,
+              "top_k_recall": 0.16666666666666666,
+              "true_positives_at_gt_k": 1
+            },
+            "ground_truth_edge_count": 6,
+            "ground_truth_node_count": 6,
+            "node": {
+              "auprc": 0.9444444444444444,
+              "auroc": 0.9444444444444444,
+              "selected_indices": [
+                5,
+                10,
+                14,
+                9,
+                4,
+                11
+              ],
+              "selected_support": [
+                "blocks.1.attn.hook_result[0]",
+                "blocks.2.attn.hook_result[0]",
+                "blocks.2.hook_mlp_out",
+                "blocks.1.hook_mlp_out",
+                "blocks.0.hook_mlp_out",
+                "blocks.2.attn.hook_result[1]"
+              ],
+              "support_precision": 0.8333333333333334,
+              "top_k": 6,
+              "top_k_f1": 0.8333333333333334,
+              "top_k_precision": 0.8333333333333334,
+              "top_k_recall": 0.8333333333333334
+            }
+          },
+          "discovery_confirmation_edge_spearman": 0.9693037884474682
+        },
+        "rank_one_node_factor": {
+          "confirmation": {
+            "edge": {
+              "auprc": 0.537037037037037,
+              "auprc_lift_over_chance": 0.46807151979565764,
+              "auprc_ratio_to_chance": 7.787037037037036,
+              "auroc": 0.9588477366255144,
+              "chance_auprc": 0.06896551724137931,
+              "selected_indices": [
+                48,
+                54,
+                44,
+                53,
+                82,
+                49
+              ],
+              "selected_support": [
+                [
+                  "blocks.0.hook_mlp_out",
+                  "blocks.1.hook_mlp_out"
+                ],
+                [
+                  "blocks.1.attn.hook_result[0]",
+                  "blocks.1.hook_mlp_out"
+                ],
+                [
+                  "blocks.0.hook_mlp_out",
+                  "blocks.1.attn.hook_result[0]"
+                ],
+                [
+                  "blocks.0.hook_mlp_out",
+                  "blocks.2.hook_mlp_out"
+                ],
+                [
+                  "blocks.1.hook_mlp_out",
+                  "blocks.2.hook_mlp_out"
+                ],
+                [
+                  "blocks.0.hook_mlp_out",
+                  "blocks.2.attn.hook_result[0]"
+                ]
+              ],
+              "support_precision": 0.5,
+              "top_k": 6,
+              "top_k_f1": 0.5,
+              "top_k_precision": 0.5,
+              "top_k_recall": 0.5,
+              "true_positives_at_gt_k": 3
+            },
+            "ground_truth_edge_count": 6,
+            "ground_truth_node_count": 6,
+            "node": {
+              "auprc": 0.9444444444444444,
+              "auroc": 0.9444444444444444,
+              "selected_indices": [
+                4,
+                9,
+                5,
+                10,
+                14,
+                11
+              ],
+              "selected_support": [
+                "blocks.0.hook_mlp_out",
+                "blocks.1.hook_mlp_out",
+                "blocks.1.attn.hook_result[0]",
+                "blocks.2.attn.hook_result[0]",
+                "blocks.2.hook_mlp_out",
+                "blocks.2.attn.hook_result[1]"
+              ],
+              "support_precision": 0.8333333333333334,
+              "top_k": 6,
+              "top_k_f1": 0.8333333333333334,
+              "top_k_precision": 0.8333333333333334,
+              "top_k_recall": 0.8333333333333334
+            }
+          },
+          "confirmation_true_positives_at_gt_k": 3,
+          "discovery": {
+            "edge": {
+              "auprc": 0.5092592592592592,
+              "auprc_lift_over_chance": 0.44029374201787985,
+              "auprc_ratio_to_chance": 7.384259259259259,
+              "auroc": 0.9567901234567902,
+              "chance_auprc": 0.06896551724137931,
+              "selected_indices": [
+                48,
+                54,
+                53,
+                44,
+                82,
+                49
+              ],
+              "selected_support": [
+                [
+                  "blocks.0.hook_mlp_out",
+                  "blocks.1.hook_mlp_out"
+                ],
+                [
+                  "blocks.1.attn.hook_result[0]",
+                  "blocks.1.hook_mlp_out"
+                ],
+                [
+                  "blocks.0.hook_mlp_out",
+                  "blocks.2.hook_mlp_out"
+                ],
+                [
+                  "blocks.0.hook_mlp_out",
+                  "blocks.1.attn.hook_result[0]"
+                ],
+                [
+                  "blocks.1.hook_mlp_out",
+                  "blocks.2.hook_mlp_out"
+                ],
+                [
+                  "blocks.0.hook_mlp_out",
+                  "blocks.2.attn.hook_result[0]"
+                ]
+              ],
+              "support_precision": 0.5,
+              "top_k": 6,
+              "top_k_f1": 0.5,
+              "top_k_precision": 0.5,
+              "top_k_recall": 0.5,
+              "true_positives_at_gt_k": 3
+            },
+            "ground_truth_edge_count": 6,
+            "ground_truth_node_count": 6,
+            "node": {
+              "auprc": 0.9444444444444444,
+              "auroc": 0.9444444444444444,
+              "selected_indices": [
+                4,
+                9,
+                5,
+                10,
+                14,
+                11
+              ],
+              "selected_support": [
+                "blocks.0.hook_mlp_out",
+                "blocks.1.hook_mlp_out",
+                "blocks.1.attn.hook_result[0]",
+                "blocks.2.attn.hook_result[0]",
+                "blocks.2.hook_mlp_out",
+                "blocks.2.attn.hook_result[1]"
+              ],
+              "support_precision": 0.8333333333333334,
+              "top_k": 6,
+              "top_k_f1": 0.8333333333333334,
+              "top_k_precision": 0.8333333333333334,
+              "top_k_recall": 0.8333333333333334
+            }
+          },
+          "discovery_confirmation_edge_spearman": 0.9991251731428155
+        },
+        "raw_pair_interaction": {
+          "confirmation": {
+            "edge": {
+              "auprc": 0.48994708994708985,
+              "auprc_lift_over_chance": 0.42098157270571057,
+              "auprc_ratio_to_chance": 7.104232804232803,
+              "auroc": 0.948559670781893,
+              "chance_auprc": 0.06896551724137931,
+              "selected_indices": [
+                48,
+                54,
+                44,
+                82,
+                53,
+                59
+              ],
+              "selected_support": [
+                [
+                  "blocks.0.hook_mlp_out",
+                  "blocks.1.hook_mlp_out"
+                ],
+                [
+                  "blocks.1.attn.hook_result[0]",
+                  "blocks.1.hook_mlp_out"
+                ],
+                [
+                  "blocks.0.hook_mlp_out",
+                  "blocks.1.attn.hook_result[0]"
+                ],
+                [
+                  "blocks.1.hook_mlp_out",
+                  "blocks.2.hook_mlp_out"
+                ],
+                [
+                  "blocks.0.hook_mlp_out",
+                  "blocks.2.hook_mlp_out"
+                ],
+                [
+                  "blocks.1.attn.hook_result[0]",
+                  "blocks.2.hook_mlp_out"
+                ]
+              ],
+              "support_precision": 0.3333333333333333,
+              "top_k": 6,
+              "top_k_f1": 0.3333333333333333,
+              "top_k_precision": 0.3333333333333333,
+              "top_k_recall": 0.3333333333333333,
+              "true_positives_at_gt_k": 2
+            },
+            "ground_truth_edge_count": 6,
+            "ground_truth_node_count": 6,
+            "node": {
+              "auprc": 0.9444444444444444,
+              "auroc": 0.9444444444444444,
+              "selected_indices": [
+                9,
+                5,
+                4,
+                10,
+                14,
+                11
+              ],
+              "selected_support": [
+                "blocks.1.hook_mlp_out",
+                "blocks.1.attn.hook_result[0]",
+                "blocks.0.hook_mlp_out",
+                "blocks.2.attn.hook_result[0]",
+                "blocks.2.hook_mlp_out",
+                "blocks.2.attn.hook_result[1]"
+              ],
+              "support_precision": 0.8333333333333334,
+              "top_k": 6,
+              "top_k_f1": 0.8333333333333334,
+              "top_k_precision": 0.8333333333333334,
+              "top_k_recall": 0.8333333333333334
+            }
+          },
+          "confirmation_true_positives_at_gt_k": 2,
+          "discovery": {
+            "edge": {
+              "auprc": 0.4992063492063491,
+              "auprc_lift_over_chance": 0.43024083196496976,
+              "auprc_ratio_to_chance": 7.238492063492062,
+              "auroc": 0.9506172839506173,
+              "chance_auprc": 0.06896551724137931,
+              "selected_indices": [
+                48,
+                54,
+                44,
+                53,
+                82,
+                59
+              ],
+              "selected_support": [
+                [
+                  "blocks.0.hook_mlp_out",
+                  "blocks.1.hook_mlp_out"
+                ],
+                [
+                  "blocks.1.attn.hook_result[0]",
+                  "blocks.1.hook_mlp_out"
+                ],
+                [
+                  "blocks.0.hook_mlp_out",
+                  "blocks.1.attn.hook_result[0]"
+                ],
+                [
+                  "blocks.0.hook_mlp_out",
+                  "blocks.2.hook_mlp_out"
+                ],
+                [
+                  "blocks.1.hook_mlp_out",
+                  "blocks.2.hook_mlp_out"
+                ],
+                [
+                  "blocks.1.attn.hook_result[0]",
+                  "blocks.2.hook_mlp_out"
+                ]
+              ],
+              "support_precision": 0.3333333333333333,
+              "top_k": 6,
+              "top_k_f1": 0.3333333333333333,
+              "top_k_precision": 0.3333333333333333,
+              "top_k_recall": 0.3333333333333333,
+              "true_positives_at_gt_k": 2
+            },
+            "ground_truth_edge_count": 6,
+            "ground_truth_node_count": 6,
+            "node": {
+              "auprc": 0.9444444444444444,
+              "auroc": 0.9444444444444444,
+              "selected_indices": [
+                4,
+                9,
+                5,
+                10,
+                14,
+                11
+              ],
+              "selected_support": [
+                "blocks.0.hook_mlp_out",
+                "blocks.1.hook_mlp_out",
+                "blocks.1.attn.hook_result[0]",
+                "blocks.2.attn.hook_result[0]",
+                "blocks.2.hook_mlp_out",
+                "blocks.2.attn.hook_result[1]"
+              ],
+              "support_precision": 0.8333333333333334,
+              "top_k": 6,
+              "top_k_f1": 0.8333333333333334,
+              "top_k_precision": 0.8333333333333334,
+              "top_k_recall": 0.8333333333333334
+            }
+          },
+          "discovery_confirmation_edge_spearman": 0.9973208427498724
+        },
+        "singleton_endpoint_product": {
+          "confirmation": {
+            "edge": {
+              "auprc": 0.39219576719576715,
+              "auprc_lift_over_chance": 0.32323024995438787,
+              "auprc_ratio_to_chance": 5.686838624338624,
+              "auroc": 0.9300411522633745,
+              "chance_auprc": 0.06896551724137931,
+              "selected_indices": [
+                82,
+                53,
+                59,
+                83,
+                48,
+                54
+              ],
+              "selected_support": [
+                [
+                  "blocks.1.hook_mlp_out",
+                  "blocks.2.hook_mlp_out"
+                ],
+                [
+                  "blocks.0.hook_mlp_out",
+                  "blocks.2.hook_mlp_out"
+                ],
+                [
+                  "blocks.1.attn.hook_result[0]",
+                  "blocks.2.hook_mlp_out"
+                ],
+                [
+                  "blocks.2.attn.hook_result[0]",
+                  "blocks.2.hook_mlp_out"
+                ],
+                [
+                  "blocks.0.hook_mlp_out",
+                  "blocks.1.hook_mlp_out"
+                ],
+                [
+                  "blocks.1.attn.hook_result[0]",
+                  "blocks.1.hook_mlp_out"
+                ]
+              ],
+              "support_precision": 0.3333333333333333,
+              "top_k": 6,
+              "top_k_f1": 0.3333333333333333,
+              "top_k_precision": 0.3333333333333333,
+              "top_k_recall": 0.3333333333333333,
+              "true_positives_at_gt_k": 2
+            },
+            "ground_truth_edge_count": 6,
+            "ground_truth_node_count": 6,
+            "node": {
+              "auprc": 0.976190476190476,
+              "auroc": 0.9814814814814815,
+              "selected_indices": [
+                14,
+                9,
+                4,
+                5,
+                10,
+                1
+              ],
+              "selected_support": [
+                "blocks.2.hook_mlp_out",
+                "blocks.1.hook_mlp_out",
+                "blocks.0.hook_mlp_out",
+                "blocks.1.attn.hook_result[0]",
+                "blocks.2.attn.hook_result[0]",
+                "blocks.0.attn.hook_result[1]"
+              ],
+              "support_precision": 0.8333333333333334,
+              "top_k": 6,
+              "top_k_f1": 0.8333333333333334,
+              "top_k_precision": 0.8333333333333334,
+              "top_k_recall": 0.8333333333333334
+            }
+          },
+          "confirmation_true_positives_at_gt_k": 2,
+          "discovery": {
+            "edge": {
+              "auprc": 0.39720829852408795,
+              "auprc_lift_over_chance": 0.3282427812827087,
+              "auprc_ratio_to_chance": 5.759520328599275,
+              "auroc": 0.934156378600823,
+              "chance_auprc": 0.06896551724137931,
+              "selected_indices": [
+                53,
+                82,
+                59,
+                83,
+                48,
+                44
+              ],
+              "selected_support": [
+                [
+                  "blocks.0.hook_mlp_out",
+                  "blocks.2.hook_mlp_out"
+                ],
+                [
+                  "blocks.1.hook_mlp_out",
+                  "blocks.2.hook_mlp_out"
+                ],
+                [
+                  "blocks.1.attn.hook_result[0]",
+                  "blocks.2.hook_mlp_out"
+                ],
+                [
+                  "blocks.2.attn.hook_result[0]",
+                  "blocks.2.hook_mlp_out"
+                ],
+                [
+                  "blocks.0.hook_mlp_out",
+                  "blocks.1.hook_mlp_out"
+                ],
+                [
+                  "blocks.0.hook_mlp_out",
+                  "blocks.1.attn.hook_result[0]"
+                ]
+              ],
+              "support_precision": 0.3333333333333333,
+              "top_k": 6,
+              "top_k_f1": 0.3333333333333333,
+              "top_k_precision": 0.3333333333333333,
+              "top_k_recall": 0.3333333333333333,
+              "true_positives_at_gt_k": 2
+            },
+            "ground_truth_edge_count": 6,
+            "ground_truth_node_count": 6,
+            "node": {
+              "auprc": 0.976190476190476,
+              "auroc": 0.9814814814814815,
+              "selected_indices": [
+                14,
+                4,
+                9,
+                5,
+                10,
+                1
+              ],
+              "selected_support": [
+                "blocks.2.hook_mlp_out",
+                "blocks.0.hook_mlp_out",
+                "blocks.1.hook_mlp_out",
+                "blocks.1.attn.hook_result[0]",
+                "blocks.2.attn.hook_result[0]",
+                "blocks.0.attn.hook_result[1]"
+              ],
+              "support_precision": 0.8333333333333334,
+              "top_k": 6,
+              "top_k_f1": 0.8333333333333334,
+              "top_k_precision": 0.8333333333333334,
+              "top_k_recall": 0.8333333333333334
+            }
+          },
+          "discovery_confirmation_edge_spearman": 0.9987424363927973
+        }
+      },
+      "query_accounting": {
+        "combined_model_examples": 26592
+      },
+      "raw_pair_confirmation_sparsity": {
+        "edge_count": 87,
+        "effective_support": 9.63126754002768,
+        "k90": 10,
+        "normalized_effective_support": 0.11070422459801932,
+        "top_1_energy_fraction": 0.20243983917542113
+      },
+      "schema_version": "e32_1_case_score_v1",
+      "split_token_sha256": {
+        "confirmation_clean": "1d9b0c071dfc895830c77505f0335df51621fbd88c11996f282324d238a78930",
+        "confirmation_source": "d37ce87a09de7a4e50fd2fd112a5de303f94e8928f19005bdae3242957bf5ab7",
+        "discovery_clean": "168eabf3343afc4cd7137ecf71b2b4b875cfc43bd7ce091828685721c15c6e0e",
+        "discovery_source": "e5c65fb4a7d7350862d7ce6e0e54115ca025b8a31fd1ff3bc97e54fb13106d53"
+      },
+      "transitive_candidate_non_edges": {
+        "confirmation": {
+          "inside_gt_k_count": 4,
+          "median_rank": 8.0,
+          "ranks_one_based": [
+            25,
+            22,
+            33,
+            28,
+            1,
+            5,
+            8,
+            6,
+            4
+          ]
+        },
+        "count": 9,
+        "discovery": {
+          "inside_gt_k_count": 4,
+          "median_rank": 9.0,
+          "ranks_one_based": [
+            26,
+            23,
+            33,
+            28,
+            1,
+            4,
+            9,
+            6,
+            5
+          ]
+        },
+        "edges": [
+          [
+            "blocks.0.attn.hook_result[0]",
+            "blocks.1.attn.hook_result[0]"
+          ],
+          [
+            "blocks.0.attn.hook_result[0]",
+            "blocks.1.hook_mlp_out"
+          ],
+          [
+            "blocks.0.attn.hook_result[0]",
+            "blocks.2.attn.hook_result[0]"
+          ],
+          [
+            "blocks.0.attn.hook_result[0]",
+            "blocks.2.hook_mlp_out"
+          ],
+          [
+            "blocks.0.hook_mlp_out",
+            "blocks.1.hook_mlp_out"
+          ],
+          [
+            "blocks.0.hook_mlp_out",
+            "blocks.2.hook_mlp_out"
+          ],
+          [
+            "blocks.1.attn.hook_result[0]",
+            "blocks.2.attn.hook_result[0]"
+          ],
+          [
+            "blocks.1.attn.hook_result[0]",
+            "blocks.2.hook_mlp_out"
+          ],
+          [
+            "blocks.1.hook_mlp_out",
+            "blocks.2.hook_mlp_out"
+          ]
+        ]
+      }
+    }
+  },
+  "claim_boundary": {
+    "benchmark_was_not_hidden_during_method_design": true,
+    "internal_promoted_gt_only": true,
+    "no_eap_superiority_claim_in_e32_1": true
+  },
+  "full_panel_criterion": {
+    "status": "not_tested_primary_failed"
+  },
+  "primary_gate": {
+    "best_comparator_confirmation_auprc": 0.537037037037037,
+    "best_comparator_true_positives_at_6": 3,
+    "checks": {
+      "confirmation_auprc_margin_over_every_comparator": false,
+      "confirmation_true_positive_advantage_at_6": false,
+      "discovery_confirmation_raw_energy_spearman": true
+    },
+    "passed": false,
+    "raw_confirmation_auprc": 0.48994708994708985,
+    "raw_discovery_confirmation_spearman": 0.9973208427498724,
+    "raw_true_positives_at_6": 2
+  },
+  "registration_sha256": "7e3627e70bcfd7be63c742fc1b6d7c7a81d3d4202cbcb3cbae0bf8f4f2e883b2",
+  "schema_version": "e32_1_hierarchical_score_v1",
+  "secondary_status": "not_run_primary_gate_failed"
+}

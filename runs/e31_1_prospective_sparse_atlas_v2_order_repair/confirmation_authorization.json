@@ -1,0 +1,10 @@
+{
+  "schema_version": "e31_1_order_repair_confirmation_authorization_v2",
+  "status": "patched_confirmation_authorized_after_v2_geometry_seal",
+  "registration_sha256": "247c78888c7abf37761d89e78f279a1fcec971e00ea2a54c32950c8e796052ee",
+  "v1_registration_sha256": "a9600918bbeef14bf8db83c249106d888fd8bafbe8715cfc8787a4c877d1eb73",
+  "v1_discovery_labels_sha256": "e293f1c2895bf3ed3687a0f1aa7021cec453007d413ab6e0d1dde5082bb93e61",
+  "discovery_geometry_sha256": "5658578c1b9b846f0d33e53715686160406f2d56bb76379df1f009a71a651972",
+  "geometry_custody_sha256": "4ee7d3d1c7db6c8318b3ddc12709dbcf1d8e6a7266ceda9a8da6382d1ff5257e",
+  "adaptation_after_authorization_allowed": false
+}

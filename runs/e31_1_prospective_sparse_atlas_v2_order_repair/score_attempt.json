@@ -1,0 +1,29 @@
+{
+  "schema_version": "e31_1_order_repair_score_attempt_v2",
+  "status": "attempt_consumed_before_hashing_or_opening_outcome_artifacts",
+  "registration_sha256": "247c78888c7abf37761d89e78f279a1fcec971e00ea2a54c32950c8e796052ee",
+  "expected_geometry_sha256": "5658578c1b9b846f0d33e53715686160406f2d56bb76379df1f009a71a651972",
+  "expected_confirmation_sha256": "eced70c97aed5ee0bb614aabb074789fbae3112350c54d4c3c40fdb3a2a88894",
+  "expected_confirmation_custody_sha256": "9b794362ebe2a38a29987665952e52c0e5ce0ce3e3d8280e1034b64aa176e54e",
+  "source_code_sha256": {
+    "e31/__init__.py": "089a30a9aa6fcefbba3e619455a70aeb5f124457e662a6a1e7858f29126c0a20",
+    "e31/panel.py": "e33749d5395a6311c108dd1e7d71d80aa0b7cc10540658016d4aaff3ffa87e41",
+    "e31/prospective_protocol.py": "d6edde796e31434a505738c43fc0bfc997e75726c04affcf41488e9a5e01daac",
+    "e31/prospective_scoring.py": "182aefd99140ea09e6dcbf0e1300bea8d674301522d3086f5b5170a4c7c1486a",
+    "e31/prospective_custody.py": "0ef8fb4f768b5ed480ed5c54fa7bec07f0fdaf64406fb26b37bddb0cf3d32ef1",
+    "e31/prospective_registration.py": "a2ca077faacd9889cfd3ab635acdfbd8c69e05ab9a6cd2063ade52c38d67bc54",
+    "e31/prospective_acquisition.py": "6c9775be7a98e718af446d21d4b719a96d8119385964a1f5f4e145ebc4c7acd2",
+    "e31/prospective_orchestration.py": "b99add9595647d904890e0d4834f120b1c47f41c88c1d56938047933a759de0a",
+    "e31/run_prospective.py": "3379908dcc4379f6c048d9b27f4095e190003a823ba2f89e284c1c2497c005a7",
+    "e29/__init__.py": "efa04ac62c0b88d7c18b1dc64214d91289cc9ab44a870453d4b3937090f372ee",
+    "e29/e29_15_ioi_acquisition.py": "0f28a9b61161a07fcf2e2e3918484f22d8af437850c106278fff61f155d6ae56",
+    "e29/e29_15_ioi_patch_runner.py": "f3899408860a3f7a26a31dd01ed44ea37dd3c843df7aebe8efc3bbb07f6720d8",
+    "e29/e29_10_float64_protocol.py": "c387c3ad19e0e8fb2f438ac61292b4124c973a1bfee725b9d06929d6347b4e3e",
+    "e29/e29_10_float64_runner.py": "c9e2a0840830c8e709c63bb41178a3dae19aa24e9fcacd54f6b5f9afa2b87214",
+    "e29/e29_9_seven_gate_protocol.py": "1686ca75b8f6bff63044c272366986cf1871465d10d4ddd540ba27a0dd269cd0",
+    "e29/generalized_sublayer_patch.py": "fab05aa67a033d12b4d1ae09484e505009a888333fb3d40021a91395c98a2903",
+    "e30/__init__.py": "ab76d029969f266e4b48ae4ab74150cea7ad67d5c1d449d59d0e01678e296c28",
+    "e30/custody.py": "deaf93b7b2db3c221738e3c9cffe3729272738c4c7a97381102fd36843cb4638",
+    "e31/order_repair_v2.py": "e4df5f5be31639fe1405271ffb89dde30d0288bdc90dbc8ee2f33c4475672b01"
+  }
+}

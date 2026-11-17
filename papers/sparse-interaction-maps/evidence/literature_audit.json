@@ -1,0 +1,125 @@
+{
+  "schema_version": "sparse_interaction_maps_literature_audit_v1",
+  "checked_date": "2026-11-16",
+  "scope": "Primary-source metadata and claim-level comparison for an empirical diagnostic paper, not an exhaustive proof of novelty.",
+  "bibliography_path": "papers/sparse-interaction-maps/references.bib",
+  "reference_count": 12,
+  "sources": [
+    {
+      "key": "conmy2023acdc",
+      "primary_url": "https://arxiv.org/abs/2304.14997",
+      "metadata_verified": ["title", "authors", "year", "NeurIPS 2023"],
+      "prior_contribution": "Automated edge-pruning circuit discovery and recovery against established circuits.",
+      "our_relation": "A comparator and direct-edge discovery precedent. Pair nonadditivity is a different score from edge-specific patching."
+    },
+    {
+      "key": "hanna2024faithfulness",
+      "primary_url": "https://arxiv.org/abs/2403.17806",
+      "metadata_verified": ["title", "authors", "year", "COLM 2024"],
+      "prior_contribution": "EAP-IG and evidence that circuit overlap and faithfulness can disagree.",
+      "our_relation": "We must separately evaluate localization and whole-set behavior; this separation is not a new principle."
+    },
+    {
+      "key": "kramar2024atp",
+      "primary_url": "https://arxiv.org/abs/2403.00745",
+      "metadata_verified": ["title", "authors", "year", "arXiv identifier"],
+      "prior_contribution": "Efficient component localization with corrections for attribution-patching false negatives.",
+      "our_relation": "Scalable localization is established; our study does not claim a better discovery algorithm."
+    },
+    {
+      "key": "gupta2024interpbench",
+      "primary_url": "https://arxiv.org/abs/2407.14494",
+      "metadata_verified": ["title", "authors", "year", "NeurIPS 2024 Datasets and Benchmarks Track"],
+      "prior_contribution": "Semi-synthetic trained transformers with ground-truth circuits based on strict interchange intervention training.",
+      "our_relation": "Benchmark provenance. Exact task/case and node-level projection must be disclosed; projected edge labels are not universal causal ground truth."
+    },
+    {
+      "key": "miller2024robustness",
+      "primary_url": "https://arxiv.org/abs/2407.08734",
+      "metadata_verified": ["title", "authors", "year", "COLM 2024"],
+      "prior_contribution": "Circuit faithfulness depends strongly on ablation methodology; the ablation changes the task the retained circuit must perform.",
+      "our_relation": "Closest prior for corruption-regime dependence. We cannot claim first discovery that faithfulness metrics are fragile."
+    },
+    {
+      "key": "vaidyanathan2026mediators",
+      "primary_url": "https://arxiv.org/html/2606.27510v1",
+      "metadata_verified": ["title", "authors", "year", "arXiv identifier"],
+      "prior_contribution": "Activation-patching effects contain conditional interactions, including pairwise and higher-order terms; IOI examples show context-dependent importance.",
+      "our_relation": "Closest estimand-level prior. Our four-cell second difference and generic warning about interactions are not novel. Quantitative endpoint-factor and direct-versus-transitive tests are the narrower empirical focus.",
+      "targeted_text_checks": {"pairwise_found": true, "rank_one_literal_found": false, "reachability_literal_found": false},
+      "targeted_text_check_limit": "Absence of literal strings is not evidence of absence of a concept or proof of novelty."
+    },
+    {
+      "key": "gong2026coax",
+      "primary_url": "https://arxiv.org/html/2607.01940v3",
+      "metadata_verified": ["title", "authors", "year", "arXiv identifier"],
+      "prior_contribution": "Conditional co-ablation identifies backup heads and validates circuit completion; the paper also displays pairwise interaction blocks and compares conditional energy with intervention identity.",
+      "our_relation": "Strong overlap with conditional interaction maps. We measure sparse energy portability, rank-one endpoint structure, direct/transitive enrichment, and joint retained-set tests; we do not claim first backup discovery or that CoAx is refuted.",
+      "numerical_citation_warning": "The current abstract and HTML body report different versions of some baseline/completion numbers; use only qualitative comparisons unless the cited version and table are pinned."
+    },
+    {
+      "key": "geng2026recovery",
+      "primary_url": "https://arxiv.org/html/2610.02098v2",
+      "metadata_verified": ["title", "authors", "year", "arXiv identifier"],
+      "prior_contribution": "Intervention-defined faithfulness can misrank equally sized circuits because replacement of outside signals changes computational context; includes real discovery outputs and context-restoration tests.",
+      "our_relation": "A generic score-versus-mechanism critique is already established. Our narrower test concerns whether conditional pair scores primarily reflect endpoint factors and multistep participation, with localization and joint set behavior measured separately."
+    },
+    {
+      "key": "mueller2025mib",
+      "primary_url": "https://proceedings.mlr.press/v267/mueller25a.html",
+      "metadata_verified": ["title", "all 23 authors", "year", "ICML", "volume", "pages", "publisher"],
+      "prior_contribution": "Standardized circuit-localization and causal-variable-localization benchmarks across tasks and models.",
+      "our_relation": "Evaluation context. This study is narrower and must not imply a full MIB benchmark or state-of-the-art result."
+    },
+    {
+      "key": "lindner2023tracr",
+      "primary_url": "https://arxiv.org/abs/2301.05062",
+      "metadata_verified": ["title", "all six authors", "year", "NeurIPS 2023"],
+      "prior_contribution": "Compilation of known programs into transformers for interpretability evaluation.",
+      "our_relation": "Ground-truth program provenance for controlled cases."
+    },
+    {
+      "key": "wang2023ioi",
+      "primary_url": "https://arxiv.org/abs/2211.00593",
+      "venue_primary_url": "https://openreview.net/pdf/1e69126a0944a99f44e32245d87e213a30cc2eb2.pdf",
+      "metadata_verified": ["title", "all five authors", "ICLR 2023"],
+      "year_note": "The arXiv preprint appeared in 2022; the conference version is 2023.",
+      "prior_contribution": "Detailed GPT-2 IOI head circuit with faithfulness, completeness, and minimality criteria and known backup structure.",
+      "our_relation": "The IOI behavior and many component roles are prior knowledge, not discoveries of this paper."
+    },
+    {
+      "key": "bushnaq2024lib",
+      "primary_url": "https://arxiv.org/abs/2405.10928",
+      "metadata_verified": ["title", "all ten authors", "year", "arXiv identifier"],
+      "prior_contribution": "A basis derived from downstream importance and adjacent-layer Jacobians to find computationally relevant sparse interactions.",
+      "our_relation": "Sparse interaction descriptions have direct precedents. Our finite donor-patch second differences are different from adjacent-layer Jacobian interactions; the study does not establish a better representation basis."
+    }
+  ],
+  "defensible_delta": "A coordinated empirical diagnostic that separates fresh-input portability and energy concentration of finite pair-intervention maps from endpoint-factor explanations, direct-versus-transitive known-circuit localization, and the behavior of jointly retained component/edge sets. The contribution is the measured conjunction and failure boundary, not a new general causal principle or a superior discovery method.",
+  "suggested_abstract_claim": "Conditional pair-intervention maps can be sparse and reproducible across fresh inputs while supporting much weaker structural conclusions. In GPT-2 IOI, a small discovery-selected head support captures most confirmation interaction energy; in controlled known-circuit transformers, leading scores can include indirect connections and be explained by simple endpoint factors. Joint retained-set tests provide an additional requirement not certified by pair-map stability or sparsity.",
+  "claims_to_avoid": [
+    "first discovery that interaction or faithfulness scores can disagree with mechanisms",
+    "first sparse interaction graph or backup circuit",
+    "second-difference or Boolean interaction decomposition is new mathematics",
+    "all pair interaction maps recover causal reachability",
+    "a nonzero pair interaction proves direct communication or a directed path between its endpoints",
+    "rank-one fit proves a single internal mediator or mechanism",
+    "failure of one sparse edge selector proves no small faithful circuit exists",
+    "selected benchmark cases imply model- or task-population generality"
+  ],
+  "illustrative_counterexample": {
+    "status": "Standard algebraic illustration, not a novel theorem.",
+    "model": "Independent masked source contributions feed a shared nonlinear readout: f(m)=(sum_i a_i m_i)^2.",
+    "second_difference": "J_ij=2 a_i a_j for the empty background (the same result holds for any fixed additive background).",
+    "energy": "J_ij^2=4 a_i^2 a_j^2 is rank one on a cross-group rectangular map; the diagonal is excluded for distinct-source pairs.",
+    "consequence": "Stable, highly concentrated endpoint-factor interactions require neither direct wiring nor a directed source-to-source path. Causal reachability enrichment in an empirical benchmark is therefore an observed result, not a general consequence of nonadditivity."
+  },
+  "study_limitations_requiring_manuscript_disclosure": [
+    "E31.2 parent block pairs were selected after E31.1; head outcomes and confirmation support were prospective.",
+    "E31.2's all-gates claim failed despite strong energy portability; singleton-selected groups reconstructed parent interactions better overall.",
+    "E32.1 used one inspected known-circuit case; direct-plus-transitive closure enrichment and endpoint-factor analysis are post-hoc diagnostics.",
+    "Different E31/E32 stages use different response objects, interventions, backgrounds, and task cohorts; they are converging diagnostics, not a single matched causal chain.",
+    "E32.3 node-core existence did not establish selector superiority; E32.4's stronger panel-wide sparse edge-set claim failed.",
+    "Current evidence supports case studies and targeted counterexamples, not a universal impossibility theorem."
+  ]
+}

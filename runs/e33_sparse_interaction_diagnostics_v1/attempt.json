@@ -1,0 +1,6 @@
+{
+  "before_any_model_load_or_call": true,
+  "created_utc": "2026-11-16T18:43:10.383140+00:00",
+  "registration_sha256": "e16a974dc0b533a71016ff433a1eca5eedcccbce22670b7557d2a2d9a42fe2e9",
+  "schema_version": "e33_attempt_v1"
+}

@@ -1,0 +1,24 @@
+{
+  "mandatory_panel": [
+    [
+      2,
+      "discovery"
+    ],
+    [
+      2,
+      "confirmation"
+    ],
+    [
+      21,
+      "discovery"
+    ],
+    [
+      21,
+      "confirmation"
+    ]
+  ],
+  "registration_sha256": "739af7d479f46ee03c91c3c50c237ca9c90bb022b9e5fa70923df5db031060aa",
+  "run_attempt_sha256": "8fb54d7c23e3c8c74e0bde7d0a58bc3643ccda2736437ff0c1582785fc2993ab",
+  "schema_version": "e32_2_acquisition_attempt_v1",
+  "status": "durable_before_first_model_call"
+}

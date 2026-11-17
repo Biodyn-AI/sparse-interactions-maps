@@ -1,0 +1,31 @@
+{
+  "auto_circuit": {
+    "revision": "0b74956bbe472cf961deb8ae0ef574f725daca96",
+    "url": "https://github.com/FlyingPumba/auto-circuit"
+  },
+  "gpt2": {
+    "revision": "607a30d783dfa663caf39e06633721c8d4cfcd7e",
+    "url": "https://huggingface.co/openai-community/gpt2"
+  },
+  "graph_verification_limit": "Offline replay uses archived declared reference labels. Independent comparison with original graph files requires fetching pinned upstream artifacts and checking the hashes recorded in registrations.",
+  "iit": {
+    "revision": "ed44cbfa255b543bb2d4da3d193ae97c9715c4f7",
+    "url": "https://github.com/cybershiptrooper/iit"
+  },
+  "interpbench_code": {
+    "revision": "220791e4a9cd29957ed5edfa445e7c09152d7298",
+    "url": "https://github.com/FlyingPumba/InterpBench"
+  },
+  "interpbench_models": {
+    "revision": "a1242a84f8a4d07d1be9a8f5ec710415198016b2",
+    "url": "https://huggingface.co/cybershiptrooper/InterpBench"
+  },
+  "license_notice": "Original code: MIT, copyright2026 Ihor Kendiukhov. Original data/manuscript/figures/non-code research documentation: CC BY4.0. Public redistribution and these licenses approved by the author. Third-party software and model files remain governed by their respective upstream terms. No upstream source or checkpoint is relicensed or redistributed.",
+  "release_availability_verified_by_packager": false,
+  "release_target": "https://github.com/Biodyn-AI/sparse-interactions-maps/releases/tag/v1.0.0",
+  "tracr": {
+    "revision": "98f4910e3966805c83d80eb087c7a4e3328171c6",
+    "url": "https://github.com/FlyingPumba/tracr"
+  },
+  "weights_redistributed": false
+}

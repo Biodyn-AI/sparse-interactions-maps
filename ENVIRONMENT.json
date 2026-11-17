@@ -1,0 +1,39 @@
+{
+  "e33_acquisition": {
+    "analysis_dtype": "float64",
+    "device": "cpu",
+    "model_native_dtype": "float32",
+    "packages": {
+      "einops": "0.7.0",
+      "numpy": "1.26.4",
+      "scipy": "1.14.0",
+      "transformer-lens": "1.19.0"
+    },
+    "python": "3.11.17",
+    "torch": "2.3.1",
+    "torch_threads": 2
+  },
+  "other_acquisition_environments": "See original registrations for exact versions; root pyproject.toml is not the complete InterpBench environment.",
+  "packaging_environment_not_acquisition": {
+    "packages": {
+      "einops": "0.8.2",
+      "matplotlib": "3.11.1",
+      "numpy": "2.5.1",
+      "pytest": "9.1.1",
+      "safetensors": "0.8.0",
+      "scipy": null,
+      "torch": "2.13.0",
+      "transformers": "5.14.1"
+    },
+    "python": "3.12.15"
+  },
+  "tested_offline_replay_environment": {
+    "packages": {
+      "matplotlib": "3.8.2",
+      "numpy": "1.26.4",
+      "scipy": "1.14.0",
+      "torch": "2.3.1"
+    },
+    "python": "3.11.17"
+  }
+}

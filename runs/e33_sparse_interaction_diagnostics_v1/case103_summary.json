@@ -1,0 +1,699 @@
+{
+  "bootstrap": {
+    "direct": {
+      "mass_fraction_95_percentile_interval": [
+        0.26052984092936315,
+        0.27432302575141193
+      ],
+      "mean_score_95_percentile_interval": [
+        64.94784481077903,
+        70.5214526222233
+      ]
+    },
+    "transitive_only": {
+      "mass_fraction_95_percentile_interval": [
+        0.1828485837430467,
+        0.1931807790104032
+      ],
+      "mean_score_95_percentile_interval": [
+        45.86846251415765,
+        49.518167817504526
+      ]
+    },
+    "unrelated": {
+      "mass_fraction_95_percentile_interval": [
+        0.5364254944760682,
+        0.5536704556156894
+      ],
+      "mean_score_95_percentile_interval": [
+        4.9045593341204725,
+        5.317163934204607
+      ]
+    }
+  },
+  "candidate_pair_count": 87,
+  "case_id": 103,
+  "class_statistics": {
+    "direct": {
+      "class_fraction": 0.034482758620689655,
+      "count": 3,
+      "mass_enrichment": 7.749173332123299,
+      "mass_fraction": 0.2672128735214931,
+      "mean_score": 67.59885121064427
+    },
+    "transitive_only": {
+      "class_fraction": 0.034482758620689655,
+      "count": 3,
+      "mass_enrichment": 5.450063097847172,
+      "mass_fraction": 0.18793321027059215,
+      "mean_score": 47.542878272287425
+    },
+    "unrelated": {
+      "class_fraction": 0.9310344827586207,
+      "count": 81,
+      "mass_enrichment": 0.5852134655566491,
+      "mass_fraction": 0.5448539162079147,
+      "mean_score": 5.105029438513012
+    }
+  },
+  "closure_edge_count": 6,
+  "closure_edges": [
+    [
+      "blocks.0.attn.hook_result[0]",
+      "blocks.0.hook_mlp_out"
+    ],
+    [
+      "blocks.0.attn.hook_result[0]",
+      "blocks.1.hook_mlp_out"
+    ],
+    [
+      "blocks.0.attn.hook_result[0]",
+      "blocks.2.attn.hook_result[0]"
+    ],
+    [
+      "blocks.0.hook_mlp_out",
+      "blocks.1.hook_mlp_out"
+    ],
+    [
+      "blocks.0.hook_mlp_out",
+      "blocks.2.attn.hook_result[0]"
+    ],
+    [
+      "blocks.1.hook_mlp_out",
+      "blocks.2.attn.hook_result[0]"
+    ]
+  ],
+  "direct_edge_count": 3,
+  "direct_edges": [
+    [
+      "blocks.0.attn.hook_result[0]",
+      "blocks.0.hook_mlp_out"
+    ],
+    [
+      "blocks.0.hook_mlp_out",
+      "blocks.1.hook_mlp_out"
+    ],
+    [
+      "blocks.1.hook_mlp_out",
+      "blocks.2.attn.hook_result[0]"
+    ]
+  ],
+  "discovery_confirmation_spearman": 0.9908325435590871,
+  "discovery_frozen_top10_percent_confirmation_mass": 0.6319704350753005,
+  "discovery_frozen_top10_percent_count": 9,
+  "discovery_frozen_top10_percent_indices": [
+    48,
+    83,
+    6,
+    78,
+    49,
+    0,
+    10,
+    5,
+    22
+  ],
+  "discovery_scores": [
+    32.58372964646249,
+    2.608213479145574,
+    3.8536773805659053,
+    0.842269055665529,
+    2.64483975809393,
+    23.235527671683478,
+    79.08456039930778,
+    1.6170271179144777,
+    0.7553101633263997,
+    1.616439557783628,
+    27.33783697746983,
+    20.048366420492407,
+    0.5498930839629532,
+    0.8157419529951708,
+    0.24709667149771494,
+    0.6560507504759976,
+    17.462494548961917,
+    5.695969869129001,
+    0.4222443633797466,
+    0.23783256089529553,
+    0.329962868127564,
+    2.211252355119516,
+    20.540614821135854,
+    1.3133909566213018,
+    2.1760790579321476,
+    0.3976500753433756,
+    0.7630920629679165,
+    12.173580085161966,
+    8.37060607461455,
+    1.0404600224169174,
+    0.4305547732870151,
+    0.4874983805750555,
+    6.7523261445726686,
+    18.150839147002735,
+    0.7203387381918712,
+    1.7017583320647771,
+    0.3543508955014601,
+    0.6225774088881532,
+    16.301555221553915,
+    11.917997779959151,
+    0.6064029443813654,
+    0.2826488448095498,
+    0.9620093135899058,
+    7.933368445074251,
+    4.766219181957128,
+    4.006992305345932,
+    1.8030575991221558,
+    3.5583786958399797,
+    134.52248999379634,
+    38.06689657253167,
+    2.9533656247845506,
+    1.8633371019235199,
+    2.098451067643476,
+    13.542594707682369,
+    9.832072020181162,
+    6.3437759020192015,
+    0.42807986494515626,
+    0.41141653508790826,
+    0.593372806459899,
+    4.833784465448637,
+    2.7842399949622902,
+    5.410412511096753,
+    0.7599434322254821,
+    0.29615621123120434,
+    0.5251004881932628,
+    3.662685454475871,
+    2.1954603202449245,
+    1.3480269700291971,
+    0.12653419814266934,
+    0.132887838978018,
+    0.1479761929639017,
+    0.7133430553326285,
+    2.3912935166189753,
+    2.2485976751188095,
+    0.30726458052236305,
+    0.18034325687939795,
+    0.33083097646635407,
+    1.6730847617782478,
+    39.91696428062167,
+    3.3800734202413887,
+    1.62763919493338,
+    1.6591207902685072,
+    13.267522909521908,
+    82.84340310816629,
+    3.320313496995733,
+    1.2655246487806213,
+    4.436498124698781
+  ],
+  "edges": [
+    [
+      "blocks.0.attn.hook_result[0]",
+      "blocks.0.hook_mlp_out"
+    ],
+    [
+      "blocks.0.attn.hook_result[0]",
+      "blocks.1.attn.hook_result[0]"
+    ],
+    [
+      "blocks.0.attn.hook_result[0]",
+      "blocks.1.attn.hook_result[1]"
+    ],
+    [
+      "blocks.0.attn.hook_result[0]",
+      "blocks.1.attn.hook_result[2]"
+    ],
+    [
+      "blocks.0.attn.hook_result[0]",
+      "blocks.1.attn.hook_result[3]"
+    ],
+    [
+      "blocks.0.attn.hook_result[0]",
+      "blocks.1.hook_mlp_out"
+    ],
+    [
+      "blocks.0.attn.hook_result[0]",
+      "blocks.2.attn.hook_result[0]"
+    ],
+    [
+      "blocks.0.attn.hook_result[0]",
+      "blocks.2.attn.hook_result[1]"
+    ],
+    [
+      "blocks.0.attn.hook_result[0]",
+      "blocks.2.attn.hook_result[2]"
+    ],
+    [
+      "blocks.0.attn.hook_result[0]",
+      "blocks.2.attn.hook_result[3]"
+    ],
+    [
+      "blocks.0.attn.hook_result[0]",
+      "blocks.2.hook_mlp_out"
+    ],
+    [
+      "blocks.0.attn.hook_result[1]",
+      "blocks.0.hook_mlp_out"
+    ],
+    [
+      "blocks.0.attn.hook_result[1]",
+      "blocks.1.attn.hook_result[0]"
+    ],
+    [
+      "blocks.0.attn.hook_result[1]",
+      "blocks.1.attn.hook_result[1]"
+    ],
+    [
+      "blocks.0.attn.hook_result[1]",
+      "blocks.1.attn.hook_result[2]"
+    ],
+    [
+      "blocks.0.attn.hook_result[1]",
+      "blocks.1.attn.hook_result[3]"
+    ],
+    [
+      "blocks.0.attn.hook_result[1]",
+      "blocks.1.hook_mlp_out"
+    ],
+    [
+      "blocks.0.attn.hook_result[1]",
+      "blocks.2.attn.hook_result[0]"
+    ],
+    [
+      "blocks.0.attn.hook_result[1]",
+      "blocks.2.attn.hook_result[1]"
+    ],
+    [
+      "blocks.0.attn.hook_result[1]",
+      "blocks.2.attn.hook_result[2]"
+    ],
+    [
+      "blocks.0.attn.hook_result[1]",
+      "blocks.2.attn.hook_result[3]"
+    ],
+    [
+      "blocks.0.attn.hook_result[1]",
+      "blocks.2.hook_mlp_out"
+    ],
+    [
+      "blocks.0.attn.hook_result[2]",
+      "blocks.0.hook_mlp_out"
+    ],
+    [
+      "blocks.0.attn.hook_result[2]",
+      "blocks.1.attn.hook_result[0]"
+    ],
+    [
+      "blocks.0.attn.hook_result[2]",
+      "blocks.1.attn.hook_result[1]"
+    ],
+    [
+      "blocks.0.attn.hook_result[2]",
+      "blocks.1.attn.hook_result[2]"
+    ],
+    [
+      "blocks.0.attn.hook_result[2]",
+      "blocks.1.attn.hook_result[3]"
+    ],
+    [
+      "blocks.0.attn.hook_result[2]",
+      "blocks.1.hook_mlp_out"
+    ],
+    [
+      "blocks.0.attn.hook_result[2]",
+      "blocks.2.attn.hook_result[0]"
+    ],
+    [
+      "blocks.0.attn.hook_result[2]",
+      "blocks.2.attn.hook_result[1]"
+    ],
+    [
+      "blocks.0.attn.hook_result[2]",
+      "blocks.2.attn.hook_result[2]"
+    ],
+    [
+      "blocks.0.attn.hook_result[2]",
+      "blocks.2.attn.hook_result[3]"
+    ],
+    [
+      "blocks.0.attn.hook_result[2]",
+      "blocks.2.hook_mlp_out"
+    ],
+    [
+      "blocks.0.attn.hook_result[3]",
+      "blocks.0.hook_mlp_out"
+    ],
+    [
+      "blocks.0.attn.hook_result[3]",
+      "blocks.1.attn.hook_result[0]"
+    ],
+    [
+      "blocks.0.attn.hook_result[3]",
+      "blocks.1.attn.hook_result[1]"
+    ],
+    [
+      "blocks.0.attn.hook_result[3]",
+      "blocks.1.attn.hook_result[2]"
+    ],
+    [
+      "blocks.0.attn.hook_result[3]",
+      "blocks.1.attn.hook_result[3]"
+    ],
+    [
+      "blocks.0.attn.hook_result[3]",
+      "blocks.1.hook_mlp_out"
+    ],
+    [
+      "blocks.0.attn.hook_result[3]",
+      "blocks.2.attn.hook_result[0]"
+    ],
+    [
+      "blocks.0.attn.hook_result[3]",
+      "blocks.2.attn.hook_result[1]"
+    ],
+    [
+      "blocks.0.attn.hook_result[3]",
+      "blocks.2.attn.hook_result[2]"
+    ],
+    [
+      "blocks.0.attn.hook_result[3]",
+      "blocks.2.attn.hook_result[3]"
+    ],
+    [
+      "blocks.0.attn.hook_result[3]",
+      "blocks.2.hook_mlp_out"
+    ],
+    [
+      "blocks.0.hook_mlp_out",
+      "blocks.1.attn.hook_result[0]"
+    ],
+    [
+      "blocks.0.hook_mlp_out",
+      "blocks.1.attn.hook_result[1]"
+    ],
+    [
+      "blocks.0.hook_mlp_out",
+      "blocks.1.attn.hook_result[2]"
+    ],
+    [
+      "blocks.0.hook_mlp_out",
+      "blocks.1.attn.hook_result[3]"
+    ],
+    [
+      "blocks.0.hook_mlp_out",
+      "blocks.1.hook_mlp_out"
+    ],
+    [
+      "blocks.0.hook_mlp_out",
+      "blocks.2.attn.hook_result[0]"
+    ],
+    [
+      "blocks.0.hook_mlp_out",
+      "blocks.2.attn.hook_result[1]"
+    ],
+    [
+      "blocks.0.hook_mlp_out",
+      "blocks.2.attn.hook_result[2]"
+    ],
+    [
+      "blocks.0.hook_mlp_out",
+      "blocks.2.attn.hook_result[3]"
+    ],
+    [
+      "blocks.0.hook_mlp_out",
+      "blocks.2.hook_mlp_out"
+    ],
+    [
+      "blocks.1.attn.hook_result[0]",
+      "blocks.1.hook_mlp_out"
+    ],
+    [
+      "blocks.1.attn.hook_result[0]",
+      "blocks.2.attn.hook_result[0]"
+    ],
+    [
+      "blocks.1.attn.hook_result[0]",
+      "blocks.2.attn.hook_result[1]"
+    ],
+    [
+      "blocks.1.attn.hook_result[0]",
+      "blocks.2.attn.hook_result[2]"
+    ],
+    [
+      "blocks.1.attn.hook_result[0]",
+      "blocks.2.attn.hook_result[3]"
+    ],
+    [
+      "blocks.1.attn.hook_result[0]",
+      "blocks.2.hook_mlp_out"
+    ],
+    [
+      "blocks.1.attn.hook_result[1]",
+      "blocks.1.hook_mlp_out"
+    ],
+    [
+      "blocks.1.attn.hook_result[1]",
+      "blocks.2.attn.hook_result[0]"
+    ],
+    [
+      "blocks.1.attn.hook_result[1]",
+      "blocks.2.attn.hook_result[1]"
+    ],
+    [
+      "blocks.1.attn.hook_result[1]",
+      "blocks.2.attn.hook_result[2]"
+    ],
+    [
+      "blocks.1.attn.hook_result[1]",
+      "blocks.2.attn.hook_result[3]"
+    ],
+    [
+      "blocks.1.attn.hook_result[1]",
+      "blocks.2.hook_mlp_out"
+    ],
+    [
+      "blocks.1.attn.hook_result[2]",
+      "blocks.1.hook_mlp_out"
+    ],
+    [
+      "blocks.1.attn.hook_result[2]",
+      "blocks.2.attn.hook_result[0]"
+    ],
+    [
+      "blocks.1.attn.hook_result[2]",
+      "blocks.2.attn.hook_result[1]"
+    ],
+    [
+      "blocks.1.attn.hook_result[2]",
+      "blocks.2.attn.hook_result[2]"
+    ],
+    [
+      "blocks.1.attn.hook_result[2]",
+      "blocks.2.attn.hook_result[3]"
+    ],
+    [
+      "blocks.1.attn.hook_result[2]",
+      "blocks.2.hook_mlp_out"
+    ],
+    [
+      "blocks.1.attn.hook_result[3]",
+      "blocks.1.hook_mlp_out"
+    ],
+    [
+      "blocks.1.attn.hook_result[3]",
+      "blocks.2.attn.hook_result[0]"
+    ],
+    [
+      "blocks.1.attn.hook_result[3]",
+      "blocks.2.attn.hook_result[1]"
+    ],
+    [
+      "blocks.1.attn.hook_result[3]",
+      "blocks.2.attn.hook_result[2]"
+    ],
+    [
+      "blocks.1.attn.hook_result[3]",
+      "blocks.2.attn.hook_result[3]"
+    ],
+    [
+      "blocks.1.attn.hook_result[3]",
+      "blocks.2.hook_mlp_out"
+    ],
+    [
+      "blocks.1.hook_mlp_out",
+      "blocks.2.attn.hook_result[0]"
+    ],
+    [
+      "blocks.1.hook_mlp_out",
+      "blocks.2.attn.hook_result[1]"
+    ],
+    [
+      "blocks.1.hook_mlp_out",
+      "blocks.2.attn.hook_result[2]"
+    ],
+    [
+      "blocks.1.hook_mlp_out",
+      "blocks.2.attn.hook_result[3]"
+    ],
+    [
+      "blocks.1.hook_mlp_out",
+      "blocks.2.hook_mlp_out"
+    ],
+    [
+      "blocks.2.attn.hook_result[0]",
+      "blocks.2.hook_mlp_out"
+    ],
+    [
+      "blocks.2.attn.hook_result[1]",
+      "blocks.2.hook_mlp_out"
+    ],
+    [
+      "blocks.2.attn.hook_result[2]",
+      "blocks.2.hook_mlp_out"
+    ],
+    [
+      "blocks.2.attn.hook_result[3]",
+      "blocks.2.hook_mlp_out"
+    ]
+  ],
+  "gates": {
+    "endpoint_factor": false,
+    "score_stability": true,
+    "sparse_portability": false,
+    "transitive_mean_enriched": true
+  },
+  "interpretation_scope": "known_case_conditional_on_clean_correct_panels; scores_are_symmetric_patch_statistics_not_directed_edge_measurements",
+  "node_count": 15,
+  "rank_one_endpoint_factor": {
+    "converged": true,
+    "explained_squared_score_norm": 0.8708743775693815,
+    "iterations": 166
+  },
+  "ranking": {
+    "closure": {
+      "auprc": 0.7861111111111112,
+      "auprc_lift_over_chance": 11.398611111111112,
+      "auroc": 0.98559670781893,
+      "chance_auprc": 0.06896551724137931,
+      "selected_indices": [
+        48,
+        83,
+        6,
+        78,
+        49,
+        0
+      ],
+      "top_k": 6,
+      "top_k_f1": 0.8333333333333334,
+      "top_k_precision": 0.8333333333333334,
+      "top_k_recall": 0.8333333333333334
+    },
+    "direct": {
+      "auprc": 0.6666666666666666,
+      "auprc_lift_over_chance": 19.333333333333332,
+      "auroc": 0.9801587301587301,
+      "chance_auprc": 0.034482758620689655,
+      "selected_indices": [
+        48,
+        83,
+        6
+      ],
+      "top_k": 3,
+      "top_k_f1": 0.3333333333333333,
+      "top_k_precision": 0.3333333333333333,
+      "top_k_recall": 0.3333333333333333
+    }
+  },
+  "scores": [
+    30.683955974491848,
+    3.144491590385697,
+    2.139966164294146,
+    1.3799924676375979,
+    3.0484520435631186,
+    21.57462213241225,
+    80.85999683202765,
+    1.6821525524718357,
+    0.8007502167135505,
+    1.6197501602097253,
+    26.869929001406298,
+    20.617223801463954,
+    0.8300779471602895,
+    0.7875240094820045,
+    0.27078540499358916,
+    0.8291777370721234,
+    18.046573397547082,
+    5.7628459772519385,
+    0.4031397867527613,
+    0.24588839521576755,
+    0.2909591679073508,
+    2.361031367688442,
+    22.174903777392263,
+    1.4344403197403153,
+    2.1727051858889688,
+    0.4345235233529973,
+    0.735795173947247,
+    12.865917684739319,
+    9.028471100115677,
+    1.0497918558009136,
+    0.4423064684018858,
+    0.49529288052046894,
+    7.056828285579688,
+    18.638422864151828,
+    0.6646854443543733,
+    2.8177171331808024,
+    1.0577633131392656,
+    0.6292705106375296,
+    16.02369637119479,
+    12.719487291850717,
+    0.5693300791166739,
+    0.24428994746857421,
+    0.979907581133328,
+    8.102124913941566,
+    5.492558543169446,
+    4.51299129434307,
+    1.9039177006624013,
+    3.4500813456670105,
+    131.62492348390367,
+    40.194015852422375,
+    2.9351933374674513,
+    1.9838773665176204,
+    2.2612034359863697,
+    14.59723018668079,
+    10.099227007124123,
+    6.845788518594533,
+    0.43455304567008185,
+    0.4436395269294158,
+    0.5710927206836849,
+    5.103531804161528,
+    3.2919070669652144,
+    5.9658409401697154,
+    0.8251642440256646,
+    0.3343228340046628,
+    0.534480463540487,
+    3.964356043125545,
+    2.0335377108953865,
+    1.2568348017241622,
+    0.11228564023250516,
+    0.12664997874018047,
+    0.15205003826115746,
+    0.6705281015054019,
+    2.399259027824379,
+    2.3634611113974264,
+    0.28574707851926995,
+    0.17893148918141935,
+    0.31014595706255815,
+    1.6114802967873825,
+    40.48767417353728,
+    3.555282290005499,
+    1.8289835267073884,
+    1.702138958895003,
+    13.344413163987088,
+    85.15292710403116,
+    3.4530732603957945,
+    1.2986782205069094,
+    4.651636442538571
+  ],
+  "task": "swap consecutive sequence positions",
+  "transitive_minus_unrelated_mean": {
+    "difference_95_percentile_interval": [
+      40.79646614958993,
+      44.34985174807307
+    ],
+    "point_difference": 42.43784883377441
+  }
+}

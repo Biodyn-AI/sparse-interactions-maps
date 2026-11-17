@@ -1,0 +1,173 @@
+{
+  "case97_posthoc": {
+    "analysis_status": "posthoc_replayed_from_sealed_confirmation_labels",
+    "closure_auprc": 0.8502222222222221,
+    "direct_edge_count": 6,
+    "direct_energy_fraction": 0.41200874682228406,
+    "model_calls": 0,
+    "rank_one_centered_r2": 0.9859060520200466,
+    "rank_one_converged": true,
+    "rank_one_iterations": 74,
+    "rank_one_squared_norm_explained": 0.9874663116026922,
+    "reachability_closure_count": 15,
+    "top10_direct_count": 5,
+    "top10_transitive_nonedge_count": 5,
+    "top10_unrelated_count": 0,
+    "transitive_nonedge_count": 9,
+    "transitive_nonedge_energy_fraction": 0.5367323795343814,
+    "unrelated_energy_fraction": 0.05125887364333481,
+    "warning": "Confirmation-local factor fit is descriptive, not cross-split prediction."
+  },
+  "e32_2_table_rows": [
+    {
+      "best_eap_ap": 0.33942307692307694,
+      "best_eap_variant": "eap_absolute_max",
+      "candidate_fine_edge_fraction": 0.17980295566502463,
+      "case_id": 2,
+      "directed_replacement_ap": 0.18933733384952897,
+      "node_factor_ap": 0.7166666666666667,
+      "raw_pair_ap": 0.7166666666666667,
+      "registered_useful_pass": false
+    },
+    {
+      "best_eap_ap": 0.41666666666666663,
+      "best_eap_variant": "eap_ig_signed_max",
+      "candidate_fine_edge_fraction": 0.16009852216748768,
+      "case_id": 21,
+      "directed_replacement_ap": 0.5909090909090909,
+      "node_factor_ap": 0.41666666666666663,
+      "raw_pair_ap": 0.7,
+      "registered_useful_pass": false
+    }
+  ],
+  "fresh_cases": [
+    {
+      "candidate_pair_count": 33,
+      "case_id": 63,
+      "classes": {
+        "direct": {
+          "class_fraction": 0.030303030303030304,
+          "count": 1,
+          "mass_enrichment": 32.64538113674032,
+          "mass_fraction": 0.9892539738406158,
+          "mean_score": 230154.40145803097
+        },
+        "transitive_only": {
+          "class_fraction": 0.0,
+          "count": 0,
+          "mass_enrichment": null,
+          "mass_fraction": 0.0,
+          "mean_score": null
+        },
+        "unrelated": {
+          "class_fraction": 0.9696969696969697,
+          "count": 32,
+          "mass_enrichment": 0.011081839476864967,
+          "mass_fraction": 0.010746026159384211,
+          "mean_score": 78.12848381731314
+        }
+      },
+      "closure_auprc": 1.0,
+      "direct_auprc": 1.0,
+      "discovery_confirmation_spearman": 0.9869652406417113,
+      "rank_one_squared_score_norm_explained": 0.9999999900901697,
+      "task": "replace each element by the number of smaller sequence elements"
+    },
+    {
+      "candidate_pair_count": 87,
+      "case_id": 103,
+      "classes": {
+        "direct": {
+          "class_fraction": 0.034482758620689655,
+          "count": 3,
+          "mass_enrichment": 7.749173332123299,
+          "mass_fraction": 0.2672128735214931,
+          "mean_score": 67.59885121064427
+        },
+        "transitive_only": {
+          "class_fraction": 0.034482758620689655,
+          "count": 3,
+          "mass_enrichment": 5.450063097847172,
+          "mass_fraction": 0.18793321027059215,
+          "mean_score": 47.542878272287425
+        },
+        "unrelated": {
+          "class_fraction": 0.9310344827586207,
+          "count": 81,
+          "mass_enrichment": 0.5852134655566491,
+          "mass_fraction": 0.5448539162079147,
+          "mean_score": 5.105029438513012
+        }
+      },
+      "closure_auprc": 0.7861111111111112,
+      "direct_auprc": 0.6666666666666666,
+      "discovery_confirmation_spearman": 0.9908325435590871,
+      "rank_one_squared_score_norm_explained": 0.8708743775693815,
+      "task": "swap consecutive sequence positions"
+    },
+    {
+      "candidate_pair_count": 166,
+      "case_id": 82,
+      "classes": {
+        "direct": {
+          "class_fraction": 0.024096385542168676,
+          "count": 4,
+          "mass_enrichment": 13.709454588712399,
+          "mass_fraction": 0.33034830334246745,
+          "mean_score": 149.0833392819281
+        },
+        "transitive_only": {
+          "class_fraction": 0.03614457831325301,
+          "count": 6,
+          "mass_enrichment": 6.432936099486455,
+          "mass_fraction": 0.23251576263204055,
+          "mean_score": 69.9549051271759
+        },
+        "unrelated": {
+          "class_fraction": 0.9397590361445783,
+          "count": 156,
+          "mass_enrichment": 0.46515746825789533,
+          "mass_fraction": 0.437135934025492,
+          "mean_score": 5.058350659471978
+        }
+      },
+      "closure_auprc": 0.6997779997779998,
+      "direct_auprc": 0.6185897435897436,
+      "discovery_confirmation_spearman": 0.9975496979753529,
+      "rank_one_squared_score_norm_explained": 0.9855364311582172,
+      "task": "halve elements in the second half of the sequence"
+    }
+  ],
+  "head_parents": [
+    {
+      "confirmation_energy_coverage": 0.9727739164722049,
+      "pair_group_r2": 0.9265275789168618,
+      "parent": "l05a_l08a",
+      "singleton_group_r2": 0.8900275337268222
+    },
+    {
+      "confirmation_energy_coverage": 0.9681060319387057,
+      "pair_group_r2": 0.980072938144219,
+      "parent": "l08a_l09a",
+      "singleton_group_r2": 0.9880533046555201
+    },
+    {
+      "confirmation_energy_coverage": 0.8946871902225009,
+      "pair_group_r2": 0.711040756742504,
+      "parent": "l05a_l10a",
+      "singleton_group_r2": 0.8354823024486739
+    }
+  ],
+  "model_calls": 0,
+  "schema_version": "sparse_interaction_paper_figure_data_v1",
+  "sources": {
+    "e33_summary": {
+      "path": "/Volumes/Crucial X6/MacBook/Code/fundamental-mechinterp/runs/e33_sparse_interaction_diagnostics_v1/summary.json",
+      "sha256": "42f849f56cadc33c4808a6cc3fd03d110f7bf45646d42cdc4825ef824e0796d8"
+    },
+    "scalar_manifest": {
+      "path": "/Volumes/Crucial X6/MacBook/Code/fundamental-mechinterp/papers/sparse-interaction-maps/evidence/scalar_manifest.json",
+      "sha256": "026330202cbd8dc6073ed961017d486e0007ee1a38d908ae9817e3dd2dd5adb5"
+    }
+  }
+}

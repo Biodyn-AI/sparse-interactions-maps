@@ -1,0 +1,10 @@
+{
+  "schema_version": "e31_2_global_clean_screen_custody_v1",
+  "status": "all_48_clean_rows_passed_before_any_patch",
+  "registration_sha256": "bad36e15f37dd7147c43fcc4ecb5cf8db0f3bcf2525645692e19079d7ff26ede",
+  "global_attempt_sha256": "32b1547606b4cb008b560e6c865820ee8d6b997da5854bb4ffc9aaabd51c8cf6",
+  "clean_screen_sha256": "a4faaabe6640083c71a492b0dee9a5de5056ccb3ce997861687be810db5607ca",
+  "context_count": 48,
+  "clean_forward_examples": 96,
+  "duplicate_clean_forwards": 0
+}

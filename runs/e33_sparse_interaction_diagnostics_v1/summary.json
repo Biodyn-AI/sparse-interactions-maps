@@ -1,0 +1,2293 @@
+{
+  "acquisition_sha256": {
+    "103/confirmation": "a37ee716270fda9a88ef6b67154cce44f928e25bbede506d98661ff8f68bd322",
+    "103/discovery": "842dc2196d8d67febee9f1a07b4d5a7aabc0317751a901559a7e56bfe620a3ae",
+    "63/confirmation": "077cedd8791466247c34adca4b2ba963999cf72d5c73ec025ebb6fad90548f61",
+    "63/discovery": "d67a98b9c6c942412fac39d886ff8d7a7233c44d6ed68e317503facafec91a5c",
+    "82/confirmation": "ee540074aca3c01bf1dd91929efa5d8096947b5ef819e30677b147da384abe01",
+    "82/discovery": "a60d881439ed37c543fdbc3fe42defcae4231ae4988403bdbc2ad1c2c6ce4f8f"
+  },
+  "actual_query_accounting": {
+    "model_examples": 84864,
+    "physical_forwards": 156
+  },
+  "case_pool_is_not_random_benchmark_sample": true,
+  "cases": [
+    {
+      "bootstrap": {
+        "direct": {
+          "mass_fraction_95_percentile_interval": [
+            0.9886137172710356,
+            0.9898771584957154
+          ],
+          "mean_score_95_percentile_interval": [
+            217209.9324410433,
+            242599.40242144602
+          ]
+        },
+        "unrelated": {
+          "mass_fraction_95_percentile_interval": [
+            0.01012284150428469,
+            0.011386282728964173
+          ],
+          "mean_score_95_percentile_interval": [
+            72.68086231148871,
+            83.87858931326566
+          ]
+        }
+      },
+      "candidate_pair_count": 33,
+      "case_id": 63,
+      "class_statistics": {
+        "direct": {
+          "class_fraction": 0.030303030303030304,
+          "count": 1,
+          "mass_enrichment": 32.64538113674032,
+          "mass_fraction": 0.9892539738406158,
+          "mean_score": 230154.40145803097
+        },
+        "transitive_only": {
+          "class_fraction": 0.0,
+          "count": 0,
+          "mass_enrichment": null,
+          "mass_fraction": 0.0,
+          "mean_score": null
+        },
+        "unrelated": {
+          "class_fraction": 0.9696969696969697,
+          "count": 32,
+          "mass_enrichment": 0.011081839476864967,
+          "mass_fraction": 0.010746026159384211,
+          "mean_score": 78.12848381731314
+        }
+      },
+      "closure_edge_count": 1,
+      "closure_edges": [
+        [
+          "blocks.0.attn.hook_result[0]",
+          "blocks.0.hook_mlp_out"
+        ]
+      ],
+      "direct_edge_count": 1,
+      "direct_edges": [
+        [
+          "blocks.0.attn.hook_result[0]",
+          "blocks.0.hook_mlp_out"
+        ]
+      ],
+      "discovery_confirmation_spearman": 0.9869652406417113,
+      "discovery_frozen_top10_percent_confirmation_mass": 0.9991365180299471,
+      "discovery_frozen_top10_percent_count": 4,
+      "discovery_frozen_top10_percent_indices": [
+        0,
+        28,
+        5,
+        18
+      ],
+      "discovery_scores": [
+        212906.8191634418,
+        3.0639822202317495,
+        18.41801263486623,
+        5.25605031240986,
+        10.377777612658939,
+        924.988205728402,
+        0.9590003739326449,
+        0.020175595945265617,
+        0.18821981401350427,
+        0.006484059072535804,
+        0.0074289054620054334,
+        0.18165790306746885,
+        0.4735441959547302,
+        0.0004569834707953962,
+        0.007346819320314227,
+        0.001174743000057611,
+        0.0007136348804446394,
+        0.027838288242879296,
+        35.40483510965597,
+        18.23714231868822,
+        4.088499778030754,
+        0.17779734368406508,
+        0.16674675803910255,
+        5.697791968823966,
+        23.029486729431195,
+        30.00225042587342,
+        10.061995525856045,
+        18.928915800329165,
+        1200.359766681444,
+        1.3110309747238225,
+        15.86895312387037,
+        26.59648844801229,
+        1.6551335759698018
+      ],
+      "edges": [
+        [
+          "blocks.0.attn.hook_result[0]",
+          "blocks.0.hook_mlp_out"
+        ],
+        [
+          "blocks.0.attn.hook_result[0]",
+          "blocks.1.attn.hook_result[0]"
+        ],
+        [
+          "blocks.0.attn.hook_result[0]",
+          "blocks.1.attn.hook_result[1]"
+        ],
+        [
+          "blocks.0.attn.hook_result[0]",
+          "blocks.1.attn.hook_result[2]"
+        ],
+        [
+          "blocks.0.attn.hook_result[0]",
+          "blocks.1.attn.hook_result[3]"
+        ],
+        [
+          "blocks.0.attn.hook_result[0]",
+          "blocks.1.hook_mlp_out"
+        ],
+        [
+          "blocks.0.attn.hook_result[1]",
+          "blocks.0.hook_mlp_out"
+        ],
+        [
+          "blocks.0.attn.hook_result[1]",
+          "blocks.1.attn.hook_result[0]"
+        ],
+        [
+          "blocks.0.attn.hook_result[1]",
+          "blocks.1.attn.hook_result[1]"
+        ],
+        [
+          "blocks.0.attn.hook_result[1]",
+          "blocks.1.attn.hook_result[2]"
+        ],
+        [
+          "blocks.0.attn.hook_result[1]",
+          "blocks.1.attn.hook_result[3]"
+        ],
+        [
+          "blocks.0.attn.hook_result[1]",
+          "blocks.1.hook_mlp_out"
+        ],
+        [
+          "blocks.0.attn.hook_result[2]",
+          "blocks.0.hook_mlp_out"
+        ],
+        [
+          "blocks.0.attn.hook_result[2]",
+          "blocks.1.attn.hook_result[0]"
+        ],
+        [
+          "blocks.0.attn.hook_result[2]",
+          "blocks.1.attn.hook_result[1]"
+        ],
+        [
+          "blocks.0.attn.hook_result[2]",
+          "blocks.1.attn.hook_result[2]"
+        ],
+        [
+          "blocks.0.attn.hook_result[2]",
+          "blocks.1.attn.hook_result[3]"
+        ],
+        [
+          "blocks.0.attn.hook_result[2]",
+          "blocks.1.hook_mlp_out"
+        ],
+        [
+          "blocks.0.attn.hook_result[3]",
+          "blocks.0.hook_mlp_out"
+        ],
+        [
+          "blocks.0.attn.hook_result[3]",
+          "blocks.1.attn.hook_result[0]"
+        ],
+        [
+          "blocks.0.attn.hook_result[3]",
+          "blocks.1.attn.hook_result[1]"
+        ],
+        [
+          "blocks.0.attn.hook_result[3]",
+          "blocks.1.attn.hook_result[2]"
+        ],
+        [
+          "blocks.0.attn.hook_result[3]",
+          "blocks.1.attn.hook_result[3]"
+        ],
+        [
+          "blocks.0.attn.hook_result[3]",
+          "blocks.1.hook_mlp_out"
+        ],
+        [
+          "blocks.0.hook_mlp_out",
+          "blocks.1.attn.hook_result[0]"
+        ],
+        [
+          "blocks.0.hook_mlp_out",
+          "blocks.1.attn.hook_result[1]"
+        ],
+        [
+          "blocks.0.hook_mlp_out",
+          "blocks.1.attn.hook_result[2]"
+        ],
+        [
+          "blocks.0.hook_mlp_out",
+          "blocks.1.attn.hook_result[3]"
+        ],
+        [
+          "blocks.0.hook_mlp_out",
+          "blocks.1.hook_mlp_out"
+        ],
+        [
+          "blocks.1.attn.hook_result[0]",
+          "blocks.1.hook_mlp_out"
+        ],
+        [
+          "blocks.1.attn.hook_result[1]",
+          "blocks.1.hook_mlp_out"
+        ],
+        [
+          "blocks.1.attn.hook_result[2]",
+          "blocks.1.hook_mlp_out"
+        ],
+        [
+          "blocks.1.attn.hook_result[3]",
+          "blocks.1.hook_mlp_out"
+        ]
+      ],
+      "gates": {
+        "endpoint_factor": true,
+        "score_stability": true,
+        "sparse_portability": true,
+        "transitive_mean_enriched": null
+      },
+      "interpretation_scope": "known_case_conditional_on_clean_correct_panels; scores_are_symmetric_patch_statistics_not_directed_edge_measurements",
+      "node_count": 10,
+      "rank_one_endpoint_factor": {
+        "converged": true,
+        "explained_squared_score_norm": 0.9999999900901697,
+        "iterations": 38
+      },
+      "ranking": {
+        "closure": {
+          "auprc": 1.0,
+          "auprc_lift_over_chance": 33.0,
+          "auroc": 1.0,
+          "chance_auprc": 0.030303030303030304,
+          "selected_indices": [
+            0
+          ],
+          "top_k": 1,
+          "top_k_f1": 1.0,
+          "top_k_precision": 1.0,
+          "top_k_recall": 1.0
+        },
+        "direct": {
+          "auprc": 1.0,
+          "auprc_lift_over_chance": 33.0,
+          "auroc": 1.0,
+          "chance_auprc": 0.030303030303030304,
+          "selected_indices": [
+            0
+          ],
+          "top_k": 1,
+          "top_k_f1": 1.0,
+          "top_k_precision": 1.0,
+          "top_k_recall": 1.0
+        }
+      },
+      "scores": [
+        230154.40145803097,
+        6.865993532324129,
+        19.893977554334185,
+        5.89089521388679,
+        11.298608581470344,
+        984.9859790210285,
+        1.7724860658924002,
+        0.044475969853623884,
+        0.31557645243611543,
+        0.007019370000111911,
+        0.006869738582619156,
+        0.31025011693821547,
+        0.5001014123351522,
+        0.009778750653752707,
+        0.06542877599561367,
+        0.004958070451011862,
+        0.0011998765789684286,
+        0.13543014656657482,
+        31.60570270707821,
+        21.037116876830503,
+        3.25687949510033,
+        0.07981119632608574,
+        0.12307277423519546,
+        4.779434710735133,
+        17.379131252304227,
+        33.06226146332477,
+        9.355690862029391,
+        17.845498456334695,
+        1282.6268232506245,
+        0.8405144316722357,
+        16.684565866451354,
+        27.50448710457566,
+        1.8214630570698114
+      ],
+      "task": "replace each element by the number of smaller sequence elements",
+      "transitive_minus_unrelated_mean": null
+    },
+    {
+      "bootstrap": {
+        "direct": {
+          "mass_fraction_95_percentile_interval": [
+            0.26052984092936315,
+            0.27432302575141193
+          ],
+          "mean_score_95_percentile_interval": [
+            64.94784481077903,
+            70.5214526222233
+          ]
+        },
+        "transitive_only": {
+          "mass_fraction_95_percentile_interval": [
+            0.1828485837430467,
+            0.1931807790104032
+          ],
+          "mean_score_95_percentile_interval": [
+            45.86846251415765,
+            49.518167817504526
+          ]
+        },
+        "unrelated": {
+          "mass_fraction_95_percentile_interval": [
+            0.5364254944760682,
+            0.5536704556156894
+          ],
+          "mean_score_95_percentile_interval": [
+            4.9045593341204725,
+            5.317163934204607
+          ]
+        }
+      },
+      "candidate_pair_count": 87,
+      "case_id": 103,
+      "class_statistics": {
+        "direct": {
+          "class_fraction": 0.034482758620689655,
+          "count": 3,
+          "mass_enrichment": 7.749173332123299,
+          "mass_fraction": 0.2672128735214931,
+          "mean_score": 67.59885121064427
+        },
+        "transitive_only": {
+          "class_fraction": 0.034482758620689655,
+          "count": 3,
+          "mass_enrichment": 5.450063097847172,
+          "mass_fraction": 0.18793321027059215,
+          "mean_score": 47.542878272287425
+        },
+        "unrelated": {
+          "class_fraction": 0.9310344827586207,
+          "count": 81,
+          "mass_enrichment": 0.5852134655566491,
+          "mass_fraction": 0.5448539162079147,
+          "mean_score": 5.105029438513012
+        }
+      },
+      "closure_edge_count": 6,
+      "closure_edges": [
+        [
+          "blocks.0.attn.hook_result[0]",
+          "blocks.0.hook_mlp_out"
+        ],
+        [
+          "blocks.0.attn.hook_result[0]",
+          "blocks.1.hook_mlp_out"
+        ],
+        [
+          "blocks.0.attn.hook_result[0]",
+          "blocks.2.attn.hook_result[0]"
+        ],
+        [
+          "blocks.0.hook_mlp_out",
+          "blocks.1.hook_mlp_out"
+        ],
+        [
+          "blocks.0.hook_mlp_out",
+          "blocks.2.attn.hook_result[0]"
+        ],
+        [
+          "blocks.1.hook_mlp_out",
+          "blocks.2.attn.hook_result[0]"
+        ]
+      ],
+      "direct_edge_count": 3,
+      "direct_edges": [
+        [
+          "blocks.0.attn.hook_result[0]",
+          "blocks.0.hook_mlp_out"
+        ],
+        [
+          "blocks.0.hook_mlp_out",
+          "blocks.1.hook_mlp_out"
+        ],
+        [
+          "blocks.1.hook_mlp_out",
+          "blocks.2.attn.hook_result[0]"
+        ]
+      ],
+      "discovery_confirmation_spearman": 0.9908325435590871,
+      "discovery_frozen_top10_percent_confirmation_mass": 0.6319704350753005,
+      "discovery_frozen_top10_percent_count": 9,
+      "discovery_frozen_top10_percent_indices": [
+        48,
+        83,
+        6,
+        78,
+        49,
+        0,
+        10,
+        5,
+        22
+      ],
+      "discovery_scores": [
+        32.58372964646249,
+        2.608213479145574,
+        3.8536773805659053,
+        0.842269055665529,
+        2.64483975809393,
+        23.235527671683478,
+        79.08456039930778,
+        1.6170271179144777,
+        0.7553101633263997,
+        1.616439557783628,
+        27.33783697746983,
+        20.048366420492407,
+        0.5498930839629532,
+        0.8157419529951708,
+        0.24709667149771494,
+        0.6560507504759976,
+        17.462494548961917,
+        5.695969869129001,
+        0.4222443633797466,
+        0.23783256089529553,
+        0.329962868127564,
+        2.211252355119516,
+        20.540614821135854,
+        1.3133909566213018,
+        2.1760790579321476,
+        0.3976500753433756,
+        0.7630920629679165,
+        12.173580085161966,
+        8.37060607461455,
+        1.0404600224169174,
+        0.4305547732870151,
+        0.4874983805750555,
+        6.7523261445726686,
+        18.150839147002735,
+        0.7203387381918712,
+        1.7017583320647771,
+        0.3543508955014601,
+        0.6225774088881532,
+        16.301555221553915,
+        11.917997779959151,
+        0.6064029443813654,
+        0.2826488448095498,
+        0.9620093135899058,
+        7.933368445074251,
+        4.766219181957128,
+        4.006992305345932,
+        1.8030575991221558,
+        3.5583786958399797,
+        134.52248999379634,
+        38.06689657253167,
+        2.9533656247845506,
+        1.8633371019235199,
+        2.098451067643476,
+        13.542594707682369,
+        9.832072020181162,
+        6.3437759020192015,
+        0.42807986494515626,
+        0.41141653508790826,
+        0.593372806459899,
+        4.833784465448637,
+        2.7842399949622902,
+        5.410412511096753,
+        0.7599434322254821,
+        0.29615621123120434,
+        0.5251004881932628,
+        3.662685454475871,
+        2.1954603202449245,
+        1.3480269700291971,
+        0.12653419814266934,
+        0.132887838978018,
+        0.1479761929639017,
+        0.7133430553326285,
+        2.3912935166189753,
+        2.2485976751188095,
+        0.30726458052236305,
+        0.18034325687939795,
+        0.33083097646635407,
+        1.6730847617782478,
+        39.91696428062167,
+        3.3800734202413887,
+        1.62763919493338,
+        1.6591207902685072,
+        13.267522909521908,
+        82.84340310816629,
+        3.320313496995733,
+        1.2655246487806213,
+        4.436498124698781
+      ],
+      "edges": [
+        [
+          "blocks.0.attn.hook_result[0]",
+          "blocks.0.hook_mlp_out"
+        ],
+        [
+          "blocks.0.attn.hook_result[0]",
+          "blocks.1.attn.hook_result[0]"
+        ],
+        [
+          "blocks.0.attn.hook_result[0]",
+          "blocks.1.attn.hook_result[1]"
+        ],
+        [
+          "blocks.0.attn.hook_result[0]",
+          "blocks.1.attn.hook_result[2]"
+        ],
+        [
+          "blocks.0.attn.hook_result[0]",
+          "blocks.1.attn.hook_result[3]"
+        ],
+        [
+          "blocks.0.attn.hook_result[0]",
+          "blocks.1.hook_mlp_out"
+        ],
+        [
+          "blocks.0.attn.hook_result[0]",
+          "blocks.2.attn.hook_result[0]"
+        ],
+        [
+          "blocks.0.attn.hook_result[0]",
+          "blocks.2.attn.hook_result[1]"
+        ],
+        [
+          "blocks.0.attn.hook_result[0]",
+          "blocks.2.attn.hook_result[2]"
+        ],
+        [
+          "blocks.0.attn.hook_result[0]",
+          "blocks.2.attn.hook_result[3]"
+        ],
+        [
+          "blocks.0.attn.hook_result[0]",
+          "blocks.2.hook_mlp_out"
+        ],
+        [
+          "blocks.0.attn.hook_result[1]",
+          "blocks.0.hook_mlp_out"
+        ],
+        [
+          "blocks.0.attn.hook_result[1]",
+          "blocks.1.attn.hook_result[0]"
+        ],
+        [
+          "blocks.0.attn.hook_result[1]",
+          "blocks.1.attn.hook_result[1]"
+        ],
+        [
+          "blocks.0.attn.hook_result[1]",
+          "blocks.1.attn.hook_result[2]"
+        ],
+        [
+          "blocks.0.attn.hook_result[1]",
+          "blocks.1.attn.hook_result[3]"
+        ],
+        [
+          "blocks.0.attn.hook_result[1]",
+          "blocks.1.hook_mlp_out"
+        ],
+        [
+          "blocks.0.attn.hook_result[1]",
+          "blocks.2.attn.hook_result[0]"
+        ],
+        [
+          "blocks.0.attn.hook_result[1]",
+          "blocks.2.attn.hook_result[1]"
+        ],
+        [
+          "blocks.0.attn.hook_result[1]",
+          "blocks.2.attn.hook_result[2]"
+        ],
+        [
+          "blocks.0.attn.hook_result[1]",
+          "blocks.2.attn.hook_result[3]"
+        ],
+        [
+          "blocks.0.attn.hook_result[1]",
+          "blocks.2.hook_mlp_out"
+        ],
+        [
+          "blocks.0.attn.hook_result[2]",
+          "blocks.0.hook_mlp_out"
+        ],
+        [
+          "blocks.0.attn.hook_result[2]",
+          "blocks.1.attn.hook_result[0]"
+        ],
+        [
+          "blocks.0.attn.hook_result[2]",
+          "blocks.1.attn.hook_result[1]"
+        ],
+        [
+          "blocks.0.attn.hook_result[2]",
+          "blocks.1.attn.hook_result[2]"
+        ],
+        [
+          "blocks.0.attn.hook_result[2]",
+          "blocks.1.attn.hook_result[3]"
+        ],
+        [
+          "blocks.0.attn.hook_result[2]",
+          "blocks.1.hook_mlp_out"
+        ],
+        [
+          "blocks.0.attn.hook_result[2]",
+          "blocks.2.attn.hook_result[0]"
+        ],
+        [
+          "blocks.0.attn.hook_result[2]",
+          "blocks.2.attn.hook_result[1]"
+        ],
+        [
+          "blocks.0.attn.hook_result[2]",
+          "blocks.2.attn.hook_result[2]"
+        ],
+        [
+          "blocks.0.attn.hook_result[2]",
+          "blocks.2.attn.hook_result[3]"
+        ],
+        [
+          "blocks.0.attn.hook_result[2]",
+          "blocks.2.hook_mlp_out"
+        ],
+        [
+          "blocks.0.attn.hook_result[3]",
+          "blocks.0.hook_mlp_out"
+        ],
+        [
+          "blocks.0.attn.hook_result[3]",
+          "blocks.1.attn.hook_result[0]"
+        ],
+        [
+          "blocks.0.attn.hook_result[3]",
+          "blocks.1.attn.hook_result[1]"
+        ],
+        [
+          "blocks.0.attn.hook_result[3]",
+          "blocks.1.attn.hook_result[2]"
+        ],
+        [
+          "blocks.0.attn.hook_result[3]",
+          "blocks.1.attn.hook_result[3]"
+        ],
+        [
+          "blocks.0.attn.hook_result[3]",
+          "blocks.1.hook_mlp_out"
+        ],
+        [
+          "blocks.0.attn.hook_result[3]",
+          "blocks.2.attn.hook_result[0]"
+        ],
+        [
+          "blocks.0.attn.hook_result[3]",
+          "blocks.2.attn.hook_result[1]"
+        ],
+        [
+          "blocks.0.attn.hook_result[3]",
+          "blocks.2.attn.hook_result[2]"
+        ],
+        [
+          "blocks.0.attn.hook_result[3]",
+          "blocks.2.attn.hook_result[3]"
+        ],
+        [
+          "blocks.0.attn.hook_result[3]",
+          "blocks.2.hook_mlp_out"
+        ],
+        [
+          "blocks.0.hook_mlp_out",
+          "blocks.1.attn.hook_result[0]"
+        ],
+        [
+          "blocks.0.hook_mlp_out",
+          "blocks.1.attn.hook_result[1]"
+        ],
+        [
+          "blocks.0.hook_mlp_out",
+          "blocks.1.attn.hook_result[2]"
+        ],
+        [
+          "blocks.0.hook_mlp_out",
+          "blocks.1.attn.hook_result[3]"
+        ],
+        [
+          "blocks.0.hook_mlp_out",
+          "blocks.1.hook_mlp_out"
+        ],
+        [
+          "blocks.0.hook_mlp_out",
+          "blocks.2.attn.hook_result[0]"
+        ],
+        [
+          "blocks.0.hook_mlp_out",
+          "blocks.2.attn.hook_result[1]"
+        ],
+        [
+          "blocks.0.hook_mlp_out",
+          "blocks.2.attn.hook_result[2]"
+        ],
+        [
+          "blocks.0.hook_mlp_out",
+          "blocks.2.attn.hook_result[3]"
+        ],
+        [
+          "blocks.0.hook_mlp_out",
+          "blocks.2.hook_mlp_out"
+        ],
+        [
+          "blocks.1.attn.hook_result[0]",
+          "blocks.1.hook_mlp_out"
+        ],
+        [
+          "blocks.1.attn.hook_result[0]",
+          "blocks.2.attn.hook_result[0]"
+        ],
+        [
+          "blocks.1.attn.hook_result[0]",
+          "blocks.2.attn.hook_result[1]"
+        ],
+        [
+          "blocks.1.attn.hook_result[0]",
+          "blocks.2.attn.hook_result[2]"
+        ],
+        [
+          "blocks.1.attn.hook_result[0]",
+          "blocks.2.attn.hook_result[3]"
+        ],
+        [
+          "blocks.1.attn.hook_result[0]",
+          "blocks.2.hook_mlp_out"
+        ],
+        [
+          "blocks.1.attn.hook_result[1]",
+          "blocks.1.hook_mlp_out"
+        ],
+        [
+          "blocks.1.attn.hook_result[1]",
+          "blocks.2.attn.hook_result[0]"
+        ],
+        [
+          "blocks.1.attn.hook_result[1]",
+          "blocks.2.attn.hook_result[1]"
+        ],
+        [
+          "blocks.1.attn.hook_result[1]",
+          "blocks.2.attn.hook_result[2]"
+        ],
+        [
+          "blocks.1.attn.hook_result[1]",
+          "blocks.2.attn.hook_result[3]"
+        ],
+        [
+          "blocks.1.attn.hook_result[1]",
+          "blocks.2.hook_mlp_out"
+        ],
+        [
+          "blocks.1.attn.hook_result[2]",
+          "blocks.1.hook_mlp_out"
+        ],
+        [
+          "blocks.1.attn.hook_result[2]",
+          "blocks.2.attn.hook_result[0]"
+        ],
+        [
+          "blocks.1.attn.hook_result[2]",
+          "blocks.2.attn.hook_result[1]"
+        ],
+        [
+          "blocks.1.attn.hook_result[2]",
+          "blocks.2.attn.hook_result[2]"
+        ],
+        [
+          "blocks.1.attn.hook_result[2]",
+          "blocks.2.attn.hook_result[3]"
+        ],
+        [
+          "blocks.1.attn.hook_result[2]",
+          "blocks.2.hook_mlp_out"
+        ],
+        [
+          "blocks.1.attn.hook_result[3]",
+          "blocks.1.hook_mlp_out"
+        ],
+        [
+          "blocks.1.attn.hook_result[3]",
+          "blocks.2.attn.hook_result[0]"
+        ],
+        [
+          "blocks.1.attn.hook_result[3]",
+          "blocks.2.attn.hook_result[1]"
+        ],
+        [
+          "blocks.1.attn.hook_result[3]",
+          "blocks.2.attn.hook_result[2]"
+        ],
+        [
+          "blocks.1.attn.hook_result[3]",
+          "blocks.2.attn.hook_result[3]"
+        ],
+        [
+          "blocks.1.attn.hook_result[3]",
+          "blocks.2.hook_mlp_out"
+        ],
+        [
+          "blocks.1.hook_mlp_out",
+          "blocks.2.attn.hook_result[0]"
+        ],
+        [
+          "blocks.1.hook_mlp_out",
+          "blocks.2.attn.hook_result[1]"
+        ],
+        [
+          "blocks.1.hook_mlp_out",
+          "blocks.2.attn.hook_result[2]"
+        ],
+        [
+          "blocks.1.hook_mlp_out",
+          "blocks.2.attn.hook_result[3]"
+        ],
+        [
+          "blocks.1.hook_mlp_out",
+          "blocks.2.hook_mlp_out"
+        ],
+        [
+          "blocks.2.attn.hook_result[0]",
+          "blocks.2.hook_mlp_out"
+        ],
+        [
+          "blocks.2.attn.hook_result[1]",
+          "blocks.2.hook_mlp_out"
+        ],
+        [
+          "blocks.2.attn.hook_result[2]",
+          "blocks.2.hook_mlp_out"
+        ],
+        [
+          "blocks.2.attn.hook_result[3]",
+          "blocks.2.hook_mlp_out"
+        ]
+      ],
+      "gates": {
+        "endpoint_factor": false,
+        "score_stability": true,
+        "sparse_portability": false,
+        "transitive_mean_enriched": true
+      },
+      "interpretation_scope": "known_case_conditional_on_clean_correct_panels; scores_are_symmetric_patch_statistics_not_directed_edge_measurements",
+      "node_count": 15,
+      "rank_one_endpoint_factor": {
+        "converged": true,
+        "explained_squared_score_norm": 0.8708743775693815,
+        "iterations": 166
+      },
+      "ranking": {
+        "closure": {
+          "auprc": 0.7861111111111112,
+          "auprc_lift_over_chance": 11.398611111111112,
+          "auroc": 0.98559670781893,
+          "chance_auprc": 0.06896551724137931,
+          "selected_indices": [
+            48,
+            83,
+            6,
+            78,
+            49,
+            0
+          ],
+          "top_k": 6,
+          "top_k_f1": 0.8333333333333334,
+          "top_k_precision": 0.8333333333333334,
+          "top_k_recall": 0.8333333333333334
+        },
+        "direct": {
+          "auprc": 0.6666666666666666,
+          "auprc_lift_over_chance": 19.333333333333332,
+          "auroc": 0.9801587301587301,
+          "chance_auprc": 0.034482758620689655,
+          "selected_indices": [
+            48,
+            83,
+            6
+          ],
+          "top_k": 3,
+          "top_k_f1": 0.3333333333333333,
+          "top_k_precision": 0.3333333333333333,
+          "top_k_recall": 0.3333333333333333
+        }
+      },
+      "scores": [
+        30.683955974491848,
+        3.144491590385697,
+        2.139966164294146,
+        1.3799924676375979,
+        3.0484520435631186,
+        21.57462213241225,
+        80.85999683202765,
+        1.6821525524718357,
+        0.8007502167135505,
+        1.6197501602097253,
+        26.869929001406298,
+        20.617223801463954,
+        0.8300779471602895,
+        0.7875240094820045,
+        0.27078540499358916,
+        0.8291777370721234,
+        18.046573397547082,
+        5.7628459772519385,
+        0.4031397867527613,
+        0.24588839521576755,
+        0.2909591679073508,
+        2.361031367688442,
+        22.174903777392263,
+        1.4344403197403153,
+        2.1727051858889688,
+        0.4345235233529973,
+        0.735795173947247,
+        12.865917684739319,
+        9.028471100115677,
+        1.0497918558009136,
+        0.4423064684018858,
+        0.49529288052046894,
+        7.056828285579688,
+        18.638422864151828,
+        0.6646854443543733,
+        2.8177171331808024,
+        1.0577633131392656,
+        0.6292705106375296,
+        16.02369637119479,
+        12.719487291850717,
+        0.5693300791166739,
+        0.24428994746857421,
+        0.979907581133328,
+        8.102124913941566,
+        5.492558543169446,
+        4.51299129434307,
+        1.9039177006624013,
+        3.4500813456670105,
+        131.62492348390367,
+        40.194015852422375,
+        2.9351933374674513,
+        1.9838773665176204,
+        2.2612034359863697,
+        14.59723018668079,
+        10.099227007124123,
+        6.845788518594533,
+        0.43455304567008185,
+        0.4436395269294158,
+        0.5710927206836849,
+        5.103531804161528,
+        3.2919070669652144,
+        5.9658409401697154,
+        0.8251642440256646,
+        0.3343228340046628,
+        0.534480463540487,
+        3.964356043125545,
+        2.0335377108953865,
+        1.2568348017241622,
+        0.11228564023250516,
+        0.12664997874018047,
+        0.15205003826115746,
+        0.6705281015054019,
+        2.399259027824379,
+        2.3634611113974264,
+        0.28574707851926995,
+        0.17893148918141935,
+        0.31014595706255815,
+        1.6114802967873825,
+        40.48767417353728,
+        3.555282290005499,
+        1.8289835267073884,
+        1.702138958895003,
+        13.344413163987088,
+        85.15292710403116,
+        3.4530732603957945,
+        1.2986782205069094,
+        4.651636442538571
+      ],
+      "task": "swap consecutive sequence positions",
+      "transitive_minus_unrelated_mean": {
+        "difference_95_percentile_interval": [
+          40.79646614958993,
+          44.34985174807307
+        ],
+        "point_difference": 42.43784883377441
+      }
+    },
+    {
+      "bootstrap": {
+        "direct": {
+          "mass_fraction_95_percentile_interval": [
+            0.3246646452340852,
+            0.3360759194088432
+          ],
+          "mean_score_95_percentile_interval": [
+            143.04155058003477,
+            155.6470774976498
+          ]
+        },
+        "transitive_only": {
+          "mass_fraction_95_percentile_interval": [
+            0.2282521142017372,
+            0.2368709088935062
+          ],
+          "mean_score_95_percentile_interval": [
+            67.38619703310736,
+            72.52965981677805
+          ]
+        },
+        "unrelated": {
+          "mass_fraction_95_percentile_interval": [
+            0.42992612293525273,
+            0.44426129421444815
+          ],
+          "mean_score_95_percentile_interval": [
+            4.835706351500725,
+            5.284162181176674
+          ]
+        }
+      },
+      "candidate_pair_count": 166,
+      "case_id": 82,
+      "class_statistics": {
+        "direct": {
+          "class_fraction": 0.024096385542168676,
+          "count": 4,
+          "mass_enrichment": 13.709454588712399,
+          "mass_fraction": 0.33034830334246745,
+          "mean_score": 149.0833392819281
+        },
+        "transitive_only": {
+          "class_fraction": 0.03614457831325301,
+          "count": 6,
+          "mass_enrichment": 6.432936099486455,
+          "mass_fraction": 0.23251576263204055,
+          "mean_score": 69.9549051271759
+        },
+        "unrelated": {
+          "class_fraction": 0.9397590361445783,
+          "count": 156,
+          "mass_enrichment": 0.46515746825789533,
+          "mass_fraction": 0.437135934025492,
+          "mean_score": 5.058350659471978
+        }
+      },
+      "closure_edge_count": 10,
+      "closure_edges": [
+        [
+          "blocks.0.attn.hook_result[0]",
+          "blocks.0.hook_mlp_out"
+        ],
+        [
+          "blocks.0.attn.hook_result[0]",
+          "blocks.1.hook_mlp_out"
+        ],
+        [
+          "blocks.0.attn.hook_result[0]",
+          "blocks.2.hook_mlp_out"
+        ],
+        [
+          "blocks.0.attn.hook_result[0]",
+          "blocks.3.hook_mlp_out"
+        ],
+        [
+          "blocks.0.hook_mlp_out",
+          "blocks.1.hook_mlp_out"
+        ],
+        [
+          "blocks.0.hook_mlp_out",
+          "blocks.2.hook_mlp_out"
+        ],
+        [
+          "blocks.0.hook_mlp_out",
+          "blocks.3.hook_mlp_out"
+        ],
+        [
+          "blocks.1.hook_mlp_out",
+          "blocks.2.hook_mlp_out"
+        ],
+        [
+          "blocks.1.hook_mlp_out",
+          "blocks.3.hook_mlp_out"
+        ],
+        [
+          "blocks.2.hook_mlp_out",
+          "blocks.3.hook_mlp_out"
+        ]
+      ],
+      "direct_edge_count": 4,
+      "direct_edges": [
+        [
+          "blocks.0.attn.hook_result[0]",
+          "blocks.0.hook_mlp_out"
+        ],
+        [
+          "blocks.0.hook_mlp_out",
+          "blocks.1.hook_mlp_out"
+        ],
+        [
+          "blocks.1.hook_mlp_out",
+          "blocks.2.hook_mlp_out"
+        ],
+        [
+          "blocks.2.hook_mlp_out",
+          "blocks.3.hook_mlp_out"
+        ]
+      ],
+      "discovery_confirmation_spearman": 0.9975496979753529,
+      "discovery_frozen_top10_percent_confirmation_mass": 0.8346176501492634,
+      "discovery_frozen_top10_percent_count": 17,
+      "discovery_frozen_top10_percent_indices": [
+        68,
+        127,
+        73,
+        32,
+        37,
+        0,
+        16,
+        78,
+        48,
+        132,
+        15,
+        42,
+        161,
+        5,
+        21,
+        53,
+        58
+      ],
+      "discovery_scores": [
+        61.59666804908774,
+        1.925350284940974,
+        1.8536611706350665,
+        1.3779455861814247,
+        3.2383172955246358,
+        35.6559677502359,
+        0.5923792215090035,
+        0.6630381028234232,
+        1.2350680318222518,
+        2.5296371197354537,
+        21.251807066637443,
+        1.0542817036608716,
+        0.5146221024079326,
+        0.9251325296043715,
+        0.42079608543238034,
+        51.50302733589445,
+        61.474570339860875,
+        0.9925904342137388,
+        1.4298331774367448,
+        0.7277799992319722,
+        2.947056473140425,
+        31.785994322062578,
+        0.3334082112621516,
+        0.539420719557198,
+        0.795383132331508,
+        2.0539487942045906,
+        20.600056640201437,
+        0.3616095456212657,
+        0.1693839903776052,
+        0.31813730870328827,
+        0.10926523230770593,
+        16.47079232052883,
+        180.78031524399947,
+        2.1203526560625687,
+        1.9446878521691253,
+        1.6041461627795304,
+        2.4694825207035187,
+        76.74692067601305,
+        0.3827597854290615,
+        0.5536893458035825,
+        1.1893496589311716,
+        1.5062252535656557,
+        39.82774211718233,
+        0.3131073907133891,
+        0.232734360240091,
+        0.6158698608233235,
+        0.16261141885150396,
+        18.499163485741157,
+        53.799743428714194,
+        1.6424446363840255,
+        2.1984394920449226,
+        0.9003743369005521,
+        3.5201722260390467,
+        28.524850885807126,
+        0.5857957823187105,
+        0.49852508697316594,
+        1.0997640616830866,
+        3.5439903518493088,
+        25.31419704042671,
+        0.5591429588930941,
+        0.31242877220739323,
+        0.4640274316414247,
+        0.24111491601428986,
+        20.2284154764049,
+        4.72748307108106,
+        3.8666618367237335,
+        2.9559025279038202,
+        6.564558863078273,
+        291.3237043446011,
+        1.611342298700786,
+        1.637131134247886,
+        2.1970177966826667,
+        7.090195737872879,
+        186.08655656257514,
+        1.6832257288347934,
+        0.9192349058455049,
+        1.9043914970330107,
+        1.0522626311671188,
+        56.284687446684856,
+        3.386228622285477,
+        0.09707164856814088,
+        0.13853668723033585,
+        0.22658942445245556,
+        0.7246726596527131,
+        2.6222710467551065,
+        0.09472015391754232,
+        0.05309829109351712,
+        0.12640923545805258,
+        0.06830307535573737,
+        3.0631340849866104,
+        2.6358830950417285,
+        0.0963489812855611,
+        0.1102442107890127,
+        0.14732629769946493,
+        0.37003181920968314,
+        1.961673938531385,
+        0.051374703056450644,
+        0.05567919411875561,
+        0.09047060175126773,
+        0.07421749812025885,
+        3.022311233273828,
+        2.5511166152393847,
+        0.12349763098644945,
+        0.0962383635093773,
+        0.19265464204154295,
+        0.3748646377877384,
+        1.6477045603351008,
+        0.056710253869823216,
+        0.053839178070079055,
+        0.1039343447158973,
+        0.07626518361211951,
+        2.9742174166541866,
+        8.42959398176586,
+        0.1588585323400053,
+        0.14865290024575406,
+        0.31031540187227546,
+        2.5747476561455427,
+        5.668335320175009,
+        0.11587384494795547,
+        0.11071340901606327,
+        0.21204443974842424,
+        0.07860439602904414,
+        5.973739103667737,
+        1.3255882997204735,
+        1.1835957531613726,
+        2.6944569735356745,
+        7.889763979796779,
+        187.70346764084564,
+        1.6286515881653818,
+        0.6144857070562404,
+        0.9772884774328852,
+        0.5918249862694794,
+        52.025284858993054,
+        1.1116953160684213,
+        0.02769670956465949,
+        0.03172950434050017,
+        0.04188523475291541,
+        0.03677522112958096,
+        2.0611984692438137,
+        1.8653018767246887,
+        0.0494450771337229,
+        0.03143081127978354,
+        0.041395618830755015,
+        0.03220329222504866,
+        0.9049613861788414,
+        3.786057175320453,
+        0.12200130611118885,
+        0.07145586066659454,
+        0.16531736163112512,
+        0.031082731572010632,
+        2.8430133439984555,
+        3.5408713683335966,
+        0.1364303078579331,
+        0.14824591933476555,
+        0.15815034601543093,
+        0.09370868160584517,
+        5.864822537200986,
+        1.6471993283129591,
+        0.6983094588919097,
+        2.694499707986714,
+        0.8305254825062619,
+        36.74594972703192,
+        1.3879548162822228,
+        0.47430397491533505,
+        1.5380705766455174,
+        0.7901778814656696
+      ],
+      "edges": [
+        [
+          "blocks.0.attn.hook_result[0]",
+          "blocks.0.hook_mlp_out"
+        ],
+        [
+          "blocks.0.attn.hook_result[0]",
+          "blocks.1.attn.hook_result[0]"
+        ],
+        [
+          "blocks.0.attn.hook_result[0]",
+          "blocks.1.attn.hook_result[1]"
+        ],
+        [
+          "blocks.0.attn.hook_result[0]",
+          "blocks.1.attn.hook_result[2]"
+        ],
+        [
+          "blocks.0.attn.hook_result[0]",
+          "blocks.1.attn.hook_result[3]"
+        ],
+        [
+          "blocks.0.attn.hook_result[0]",
+          "blocks.1.hook_mlp_out"
+        ],
+        [
+          "blocks.0.attn.hook_result[0]",
+          "blocks.2.attn.hook_result[0]"
+        ],
+        [
+          "blocks.0.attn.hook_result[0]",
+          "blocks.2.attn.hook_result[1]"
+        ],
+        [
+          "blocks.0.attn.hook_result[0]",
+          "blocks.2.attn.hook_result[2]"
+        ],
+        [
+          "blocks.0.attn.hook_result[0]",
+          "blocks.2.attn.hook_result[3]"
+        ],
+        [
+          "blocks.0.attn.hook_result[0]",
+          "blocks.2.hook_mlp_out"
+        ],
+        [
+          "blocks.0.attn.hook_result[0]",
+          "blocks.3.attn.hook_result[0]"
+        ],
+        [
+          "blocks.0.attn.hook_result[0]",
+          "blocks.3.attn.hook_result[1]"
+        ],
+        [
+          "blocks.0.attn.hook_result[0]",
+          "blocks.3.attn.hook_result[2]"
+        ],
+        [
+          "blocks.0.attn.hook_result[0]",
+          "blocks.3.attn.hook_result[3]"
+        ],
+        [
+          "blocks.0.attn.hook_result[0]",
+          "blocks.3.hook_mlp_out"
+        ],
+        [
+          "blocks.0.attn.hook_result[1]",
+          "blocks.0.hook_mlp_out"
+        ],
+        [
+          "blocks.0.attn.hook_result[1]",
+          "blocks.1.attn.hook_result[0]"
+        ],
+        [
+          "blocks.0.attn.hook_result[1]",
+          "blocks.1.attn.hook_result[1]"
+        ],
+        [
+          "blocks.0.attn.hook_result[1]",
+          "blocks.1.attn.hook_result[2]"
+        ],
+        [
+          "blocks.0.attn.hook_result[1]",
+          "blocks.1.attn.hook_result[3]"
+        ],
+        [
+          "blocks.0.attn.hook_result[1]",
+          "blocks.1.hook_mlp_out"
+        ],
+        [
+          "blocks.0.attn.hook_result[1]",
+          "blocks.2.attn.hook_result[0]"
+        ],
+        [
+          "blocks.0.attn.hook_result[1]",
+          "blocks.2.attn.hook_result[1]"
+        ],
+        [
+          "blocks.0.attn.hook_result[1]",
+          "blocks.2.attn.hook_result[2]"
+        ],
+        [
+          "blocks.0.attn.hook_result[1]",
+          "blocks.2.attn.hook_result[3]"
+        ],
+        [
+          "blocks.0.attn.hook_result[1]",
+          "blocks.2.hook_mlp_out"
+        ],
+        [
+          "blocks.0.attn.hook_result[1]",
+          "blocks.3.attn.hook_result[0]"
+        ],
+        [
+          "blocks.0.attn.hook_result[1]",
+          "blocks.3.attn.hook_result[1]"
+        ],
+        [
+          "blocks.0.attn.hook_result[1]",
+          "blocks.3.attn.hook_result[2]"
+        ],
+        [
+          "blocks.0.attn.hook_result[1]",
+          "blocks.3.attn.hook_result[3]"
+        ],
+        [
+          "blocks.0.attn.hook_result[1]",
+          "blocks.3.hook_mlp_out"
+        ],
+        [
+          "blocks.0.attn.hook_result[2]",
+          "blocks.0.hook_mlp_out"
+        ],
+        [
+          "blocks.0.attn.hook_result[2]",
+          "blocks.1.attn.hook_result[0]"
+        ],
+        [
+          "blocks.0.attn.hook_result[2]",
+          "blocks.1.attn.hook_result[1]"
+        ],
+        [
+          "blocks.0.attn.hook_result[2]",
+          "blocks.1.attn.hook_result[2]"
+        ],
+        [
+          "blocks.0.attn.hook_result[2]",
+          "blocks.1.attn.hook_result[3]"
+        ],
+        [
+          "blocks.0.attn.hook_result[2]",
+          "blocks.1.hook_mlp_out"
+        ],
+        [
+          "blocks.0.attn.hook_result[2]",
+          "blocks.2.attn.hook_result[0]"
+        ],
+        [
+          "blocks.0.attn.hook_result[2]",
+          "blocks.2.attn.hook_result[1]"
+        ],
+        [
+          "blocks.0.attn.hook_result[2]",
+          "blocks.2.attn.hook_result[2]"
+        ],
+        [
+          "blocks.0.attn.hook_result[2]",
+          "blocks.2.attn.hook_result[3]"
+        ],
+        [
+          "blocks.0.attn.hook_result[2]",
+          "blocks.2.hook_mlp_out"
+        ],
+        [
+          "blocks.0.attn.hook_result[2]",
+          "blocks.3.attn.hook_result[0]"
+        ],
+        [
+          "blocks.0.attn.hook_result[2]",
+          "blocks.3.attn.hook_result[1]"
+        ],
+        [
+          "blocks.0.attn.hook_result[2]",
+          "blocks.3.attn.hook_result[2]"
+        ],
+        [
+          "blocks.0.attn.hook_result[2]",
+          "blocks.3.attn.hook_result[3]"
+        ],
+        [
+          "blocks.0.attn.hook_result[2]",
+          "blocks.3.hook_mlp_out"
+        ],
+        [
+          "blocks.0.attn.hook_result[3]",
+          "blocks.0.hook_mlp_out"
+        ],
+        [
+          "blocks.0.attn.hook_result[3]",
+          "blocks.1.attn.hook_result[0]"
+        ],
+        [
+          "blocks.0.attn.hook_result[3]",
+          "blocks.1.attn.hook_result[1]"
+        ],
+        [
+          "blocks.0.attn.hook_result[3]",
+          "blocks.1.attn.hook_result[2]"
+        ],
+        [
+          "blocks.0.attn.hook_result[3]",
+          "blocks.1.attn.hook_result[3]"
+        ],
+        [
+          "blocks.0.attn.hook_result[3]",
+          "blocks.1.hook_mlp_out"
+        ],
+        [
+          "blocks.0.attn.hook_result[3]",
+          "blocks.2.attn.hook_result[0]"
+        ],
+        [
+          "blocks.0.attn.hook_result[3]",
+          "blocks.2.attn.hook_result[1]"
+        ],
+        [
+          "blocks.0.attn.hook_result[3]",
+          "blocks.2.attn.hook_result[2]"
+        ],
+        [
+          "blocks.0.attn.hook_result[3]",
+          "blocks.2.attn.hook_result[3]"
+        ],
+        [
+          "blocks.0.attn.hook_result[3]",
+          "blocks.2.hook_mlp_out"
+        ],
+        [
+          "blocks.0.attn.hook_result[3]",
+          "blocks.3.attn.hook_result[0]"
+        ],
+        [
+          "blocks.0.attn.hook_result[3]",
+          "blocks.3.attn.hook_result[1]"
+        ],
+        [
+          "blocks.0.attn.hook_result[3]",
+          "blocks.3.attn.hook_result[2]"
+        ],
+        [
+          "blocks.0.attn.hook_result[3]",
+          "blocks.3.attn.hook_result[3]"
+        ],
+        [
+          "blocks.0.attn.hook_result[3]",
+          "blocks.3.hook_mlp_out"
+        ],
+        [
+          "blocks.0.hook_mlp_out",
+          "blocks.1.attn.hook_result[0]"
+        ],
+        [
+          "blocks.0.hook_mlp_out",
+          "blocks.1.attn.hook_result[1]"
+        ],
+        [
+          "blocks.0.hook_mlp_out",
+          "blocks.1.attn.hook_result[2]"
+        ],
+        [
+          "blocks.0.hook_mlp_out",
+          "blocks.1.attn.hook_result[3]"
+        ],
+        [
+          "blocks.0.hook_mlp_out",
+          "blocks.1.hook_mlp_out"
+        ],
+        [
+          "blocks.0.hook_mlp_out",
+          "blocks.2.attn.hook_result[0]"
+        ],
+        [
+          "blocks.0.hook_mlp_out",
+          "blocks.2.attn.hook_result[1]"
+        ],
+        [
+          "blocks.0.hook_mlp_out",
+          "blocks.2.attn.hook_result[2]"
+        ],
+        [
+          "blocks.0.hook_mlp_out",
+          "blocks.2.attn.hook_result[3]"
+        ],
+        [
+          "blocks.0.hook_mlp_out",
+          "blocks.2.hook_mlp_out"
+        ],
+        [
+          "blocks.0.hook_mlp_out",
+          "blocks.3.attn.hook_result[0]"
+        ],
+        [
+          "blocks.0.hook_mlp_out",
+          "blocks.3.attn.hook_result[1]"
+        ],
+        [
+          "blocks.0.hook_mlp_out",
+          "blocks.3.attn.hook_result[2]"
+        ],
+        [
+          "blocks.0.hook_mlp_out",
+          "blocks.3.attn.hook_result[3]"
+        ],
+        [
+          "blocks.0.hook_mlp_out",
+          "blocks.3.hook_mlp_out"
+        ],
+        [
+          "blocks.1.attn.hook_result[0]",
+          "blocks.1.hook_mlp_out"
+        ],
+        [
+          "blocks.1.attn.hook_result[0]",
+          "blocks.2.attn.hook_result[0]"
+        ],
+        [
+          "blocks.1.attn.hook_result[0]",
+          "blocks.2.attn.hook_result[1]"
+        ],
+        [
+          "blocks.1.attn.hook_result[0]",
+          "blocks.2.attn.hook_result[2]"
+        ],
+        [
+          "blocks.1.attn.hook_result[0]",
+          "blocks.2.attn.hook_result[3]"
+        ],
+        [
+          "blocks.1.attn.hook_result[0]",
+          "blocks.2.hook_mlp_out"
+        ],
+        [
+          "blocks.1.attn.hook_result[0]",
+          "blocks.3.attn.hook_result[0]"
+        ],
+        [
+          "blocks.1.attn.hook_result[0]",
+          "blocks.3.attn.hook_result[1]"
+        ],
+        [
+          "blocks.1.attn.hook_result[0]",
+          "blocks.3.attn.hook_result[2]"
+        ],
+        [
+          "blocks.1.attn.hook_result[0]",
+          "blocks.3.attn.hook_result[3]"
+        ],
+        [
+          "blocks.1.attn.hook_result[0]",
+          "blocks.3.hook_mlp_out"
+        ],
+        [
+          "blocks.1.attn.hook_result[1]",
+          "blocks.1.hook_mlp_out"
+        ],
+        [
+          "blocks.1.attn.hook_result[1]",
+          "blocks.2.attn.hook_result[0]"
+        ],
+        [
+          "blocks.1.attn.hook_result[1]",
+          "blocks.2.attn.hook_result[1]"
+        ],
+        [
+          "blocks.1.attn.hook_result[1]",
+          "blocks.2.attn.hook_result[2]"
+        ],
+        [
+          "blocks.1.attn.hook_result[1]",
+          "blocks.2.attn.hook_result[3]"
+        ],
+        [
+          "blocks.1.attn.hook_result[1]",
+          "blocks.2.hook_mlp_out"
+        ],
+        [
+          "blocks.1.attn.hook_result[1]",
+          "blocks.3.attn.hook_result[0]"
+        ],
+        [
+          "blocks.1.attn.hook_result[1]",
+          "blocks.3.attn.hook_result[1]"
+        ],
+        [
+          "blocks.1.attn.hook_result[1]",
+          "blocks.3.attn.hook_result[2]"
+        ],
+        [
+          "blocks.1.attn.hook_result[1]",
+          "blocks.3.attn.hook_result[3]"
+        ],
+        [
+          "blocks.1.attn.hook_result[1]",
+          "blocks.3.hook_mlp_out"
+        ],
+        [
+          "blocks.1.attn.hook_result[2]",
+          "blocks.1.hook_mlp_out"
+        ],
+        [
+          "blocks.1.attn.hook_result[2]",
+          "blocks.2.attn.hook_result[0]"
+        ],
+        [
+          "blocks.1.attn.hook_result[2]",
+          "blocks.2.attn.hook_result[1]"
+        ],
+        [
+          "blocks.1.attn.hook_result[2]",
+          "blocks.2.attn.hook_result[2]"
+        ],
+        [
+          "blocks.1.attn.hook_result[2]",
+          "blocks.2.attn.hook_result[3]"
+        ],
+        [
+          "blocks.1.attn.hook_result[2]",
+          "blocks.2.hook_mlp_out"
+        ],
+        [
+          "blocks.1.attn.hook_result[2]",
+          "blocks.3.attn.hook_result[0]"
+        ],
+        [
+          "blocks.1.attn.hook_result[2]",
+          "blocks.3.attn.hook_result[1]"
+        ],
+        [
+          "blocks.1.attn.hook_result[2]",
+          "blocks.3.attn.hook_result[2]"
+        ],
+        [
+          "blocks.1.attn.hook_result[2]",
+          "blocks.3.attn.hook_result[3]"
+        ],
+        [
+          "blocks.1.attn.hook_result[2]",
+          "blocks.3.hook_mlp_out"
+        ],
+        [
+          "blocks.1.attn.hook_result[3]",
+          "blocks.1.hook_mlp_out"
+        ],
+        [
+          "blocks.1.attn.hook_result[3]",
+          "blocks.2.attn.hook_result[0]"
+        ],
+        [
+          "blocks.1.attn.hook_result[3]",
+          "blocks.2.attn.hook_result[1]"
+        ],
+        [
+          "blocks.1.attn.hook_result[3]",
+          "blocks.2.attn.hook_result[2]"
+        ],
+        [
+          "blocks.1.attn.hook_result[3]",
+          "blocks.2.attn.hook_result[3]"
+        ],
+        [
+          "blocks.1.attn.hook_result[3]",
+          "blocks.2.hook_mlp_out"
+        ],
+        [
+          "blocks.1.attn.hook_result[3]",
+          "blocks.3.attn.hook_result[0]"
+        ],
+        [
+          "blocks.1.attn.hook_result[3]",
+          "blocks.3.attn.hook_result[1]"
+        ],
+        [
+          "blocks.1.attn.hook_result[3]",
+          "blocks.3.attn.hook_result[2]"
+        ],
+        [
+          "blocks.1.attn.hook_result[3]",
+          "blocks.3.attn.hook_result[3]"
+        ],
+        [
+          "blocks.1.attn.hook_result[3]",
+          "blocks.3.hook_mlp_out"
+        ],
+        [
+          "blocks.1.hook_mlp_out",
+          "blocks.2.attn.hook_result[0]"
+        ],
+        [
+          "blocks.1.hook_mlp_out",
+          "blocks.2.attn.hook_result[1]"
+        ],
+        [
+          "blocks.1.hook_mlp_out",
+          "blocks.2.attn.hook_result[2]"
+        ],
+        [
+          "blocks.1.hook_mlp_out",
+          "blocks.2.attn.hook_result[3]"
+        ],
+        [
+          "blocks.1.hook_mlp_out",
+          "blocks.2.hook_mlp_out"
+        ],
+        [
+          "blocks.1.hook_mlp_out",
+          "blocks.3.attn.hook_result[0]"
+        ],
+        [
+          "blocks.1.hook_mlp_out",
+          "blocks.3.attn.hook_result[1]"
+        ],
+        [
+          "blocks.1.hook_mlp_out",
+          "blocks.3.attn.hook_result[2]"
+        ],
+        [
+          "blocks.1.hook_mlp_out",
+          "blocks.3.attn.hook_result[3]"
+        ],
+        [
+          "blocks.1.hook_mlp_out",
+          "blocks.3.hook_mlp_out"
+        ],
+        [
+          "blocks.2.attn.hook_result[0]",
+          "blocks.2.hook_mlp_out"
+        ],
+        [
+          "blocks.2.attn.hook_result[0]",
+          "blocks.3.attn.hook_result[0]"
+        ],
+        [
+          "blocks.2.attn.hook_result[0]",
+          "blocks.3.attn.hook_result[1]"
+        ],
+        [
+          "blocks.2.attn.hook_result[0]",
+          "blocks.3.attn.hook_result[2]"
+        ],
+        [
+          "blocks.2.attn.hook_result[0]",
+          "blocks.3.attn.hook_result[3]"
+        ],
+        [
+          "blocks.2.attn.hook_result[0]",
+          "blocks.3.hook_mlp_out"
+        ],
+        [
+          "blocks.2.attn.hook_result[1]",
+          "blocks.2.hook_mlp_out"
+        ],
+        [
+          "blocks.2.attn.hook_result[1]",
+          "blocks.3.attn.hook_result[0]"
+        ],
+        [
+          "blocks.2.attn.hook_result[1]",
+          "blocks.3.attn.hook_result[1]"
+        ],
+        [
+          "blocks.2.attn.hook_result[1]",
+          "blocks.3.attn.hook_result[2]"
+        ],
+        [
+          "blocks.2.attn.hook_result[1]",
+          "blocks.3.attn.hook_result[3]"
+        ],
+        [
+          "blocks.2.attn.hook_result[1]",
+          "blocks.3.hook_mlp_out"
+        ],
+        [
+          "blocks.2.attn.hook_result[2]",
+          "blocks.2.hook_mlp_out"
+        ],
+        [
+          "blocks.2.attn.hook_result[2]",
+          "blocks.3.attn.hook_result[0]"
+        ],
+        [
+          "blocks.2.attn.hook_result[2]",
+          "blocks.3.attn.hook_result[1]"
+        ],
+        [
+          "blocks.2.attn.hook_result[2]",
+          "blocks.3.attn.hook_result[2]"
+        ],
+        [
+          "blocks.2.attn.hook_result[2]",
+          "blocks.3.attn.hook_result[3]"
+        ],
+        [
+          "blocks.2.attn.hook_result[2]",
+          "blocks.3.hook_mlp_out"
+        ],
+        [
+          "blocks.2.attn.hook_result[3]",
+          "blocks.2.hook_mlp_out"
+        ],
+        [
+          "blocks.2.attn.hook_result[3]",
+          "blocks.3.attn.hook_result[0]"
+        ],
+        [
+          "blocks.2.attn.hook_result[3]",
+          "blocks.3.attn.hook_result[1]"
+        ],
+        [
+          "blocks.2.attn.hook_result[3]",
+          "blocks.3.attn.hook_result[2]"
+        ],
+        [
+          "blocks.2.attn.hook_result[3]",
+          "blocks.3.attn.hook_result[3]"
+        ],
+        [
+          "blocks.2.attn.hook_result[3]",
+          "blocks.3.hook_mlp_out"
+        ],
+        [
+          "blocks.2.hook_mlp_out",
+          "blocks.3.attn.hook_result[0]"
+        ],
+        [
+          "blocks.2.hook_mlp_out",
+          "blocks.3.attn.hook_result[1]"
+        ],
+        [
+          "blocks.2.hook_mlp_out",
+          "blocks.3.attn.hook_result[2]"
+        ],
+        [
+          "blocks.2.hook_mlp_out",
+          "blocks.3.attn.hook_result[3]"
+        ],
+        [
+          "blocks.2.hook_mlp_out",
+          "blocks.3.hook_mlp_out"
+        ],
+        [
+          "blocks.3.attn.hook_result[0]",
+          "blocks.3.hook_mlp_out"
+        ],
+        [
+          "blocks.3.attn.hook_result[1]",
+          "blocks.3.hook_mlp_out"
+        ],
+        [
+          "blocks.3.attn.hook_result[2]",
+          "blocks.3.hook_mlp_out"
+        ],
+        [
+          "blocks.3.attn.hook_result[3]",
+          "blocks.3.hook_mlp_out"
+        ]
+      ],
+      "gates": {
+        "endpoint_factor": true,
+        "score_stability": true,
+        "sparse_portability": true,
+        "transitive_mean_enriched": true
+      },
+      "interpretation_scope": "known_case_conditional_on_clean_correct_panels; scores_are_symmetric_patch_statistics_not_directed_edge_measurements",
+      "node_count": 20,
+      "rank_one_endpoint_factor": {
+        "converged": true,
+        "explained_squared_score_norm": 0.9855364311582172,
+        "iterations": 78
+      },
+      "ranking": {
+        "closure": {
+          "auprc": 0.6997779997779998,
+          "auprc_lift_over_chance": 11.616314796314796,
+          "auroc": 0.9807692307692307,
+          "chance_auprc": 0.060240963855421686,
+          "selected_indices": [
+            68,
+            32,
+            127,
+            73,
+            37,
+            0,
+            78,
+            15,
+            48,
+            16
+          ],
+          "top_k": 10,
+          "top_k_f1": 0.6,
+          "top_k_precision": 0.6,
+          "top_k_recall": 0.6
+        },
+        "direct": {
+          "auprc": 0.6185897435897436,
+          "auprc_lift_over_chance": 25.671474358974358,
+          "auroc": 0.9799382716049383,
+          "chance_auprc": 0.024096385542168676,
+          "selected_indices": [
+            68,
+            32,
+            127,
+            73
+          ],
+          "top_k": 4,
+          "top_k_f1": 0.5,
+          "top_k_precision": 0.5,
+          "top_k_recall": 0.5
+        }
+      },
+      "scores": [
+        64.76854498520845,
+        2.0909689289022313,
+        1.909595910530521,
+        1.661646552533591,
+        3.4175380156210977,
+        36.72880935776668,
+        0.6090736231474461,
+        0.6996289779171139,
+        1.178214945279408,
+        2.684730038808404,
+        21.800731917791587,
+        1.058172366355791,
+        0.5536123847611429,
+        0.9355734450541671,
+        0.48576583318774236,
+        57.50389205423564,
+        53.6296683839562,
+        1.073359467152923,
+        1.4647207444587513,
+        0.9726799439743696,
+        2.8078729402841254,
+        26.992557940239312,
+        0.35569052543613444,
+        0.48808911711655384,
+        0.7420230121103549,
+        2.14381863608953,
+        18.25981447268147,
+        0.30204380371846484,
+        0.15695584523674916,
+        0.31314442139241083,
+        0.12605348645872072,
+        15.412546676753097,
+        199.93801543968982,
+        2.447998198138314,
+        1.949568818124586,
+        2.156740586480607,
+        2.5232873824298814,
+        81.88403314797694,
+        0.4359386029940152,
+        0.5834882857946991,
+        1.1840789257520226,
+        1.7363649277640931,
+        44.30462215891121,
+        0.35655278353247083,
+        0.22379435214976542,
+        0.6461986480849985,
+        0.20579825013631647,
+        19.975884139316943,
+        54.51871877540236,
+        1.6084390808448221,
+        2.0558213625955886,
+        1.160444447442397,
+        3.5226813382843005,
+        27.26774591085627,
+        0.5966352520089133,
+        0.5031780318824931,
+        0.9758689047391582,
+        3.4843360942162365,
+        23.825562305652394,
+        0.53149823771219,
+        0.3119081383236622,
+        0.4902326161366509,
+        0.253100203916737,
+        19.88007435619945,
+        5.255031513819565,
+        3.7092624485115695,
+        3.581585586651374,
+        7.183212169513689,
+        299.55333057117,
+        1.762278749106045,
+        1.7077134489944263,
+        2.153253556595879,
+        6.999182934253481,
+        192.34709898701666,
+        1.610024424651019,
+        0.9236815864130858,
+        1.796721177021733,
+        1.0576297989761971,
+        58.30675297248034,
+        3.761179878442355,
+        0.10451039603920112,
+        0.15521158289956194,
+        0.232001133778646,
+        0.7801432279816471,
+        2.789920662306863,
+        0.10109698809332661,
+        0.055408026278529955,
+        0.15203967752893954,
+        0.06627498606093254,
+        3.353963476782514,
+        2.6481840052103873,
+        0.1131730652294192,
+        0.10916962364454565,
+        0.1615213950749755,
+        0.42005078877368934,
+        2.0813256515198066,
+        0.0678907406825676,
+        0.05778077573779487,
+        0.09676015819035161,
+        0.07569329763428549,
+        2.9843675392485083,
+        3.081302247476641,
+        0.13410031161391983,
+        0.09776862196791797,
+        0.2290323115641282,
+        0.5034755454570546,
+        2.02113615569634,
+        0.05485986240167934,
+        0.06838518868726419,
+        0.11217987806994789,
+        0.08485379515174288,
+        3.268898670583968,
+        8.92364876455954,
+        0.15878944804004558,
+        0.16871217199430064,
+        0.2795475887131007,
+        3.1744559362069036,
+        5.780995358240877,
+        0.12052294689771548,
+        0.11666223964391043,
+        0.23936938520117954,
+        0.11048689880935866,
+        6.457721095146131,
+        1.4802550082556554,
+        1.2476882349046141,
+        2.5708444188254824,
+        8.48116257459657,
+        194.27154148104145,
+        1.7068178712174618,
+        0.6168277376546274,
+        1.0485475301384102,
+        0.6206681036968267,
+        53.04214547376454,
+        1.0514316661430876,
+        0.03398824533689995,
+        0.026026643146528635,
+        0.03851536098420465,
+        0.043020975366437786,
+        1.9554490785105496,
+        1.7770786740838196,
+        0.0431598863804454,
+        0.029972124748580325,
+        0.05438675059665845,
+        0.04913792966087083,
+        0.9703263527750547,
+        3.503924840147685,
+        0.10790869885930846,
+        0.06298363792848523,
+        0.15153943108356674,
+        0.047778483099745105,
+        2.719250013175922,
+        3.856130279546157,
+        0.12806978057937035,
+        0.14934780997928393,
+        0.15959770866618067,
+        0.143465309441835,
+        6.64327450645999,
+        1.7773839079482814,
+        0.6948203419336061,
+        2.7232762329174744,
+        0.7721117297628382,
+        37.73994009029246,
+        1.3459436162511178,
+        0.4982676620732905,
+        1.5459324536146486,
+        0.8680722307182849
+      ],
+      "task": "halve elements in the second half of the sequence",
+      "transitive_minus_unrelated_mean": {
+        "difference_95_percentile_interval": [
+          62.54130984048485,
+          67.3249429685364
+        ],
+        "point_difference": 64.89655446770392
+      }
+    }
+  ],
+  "protocol": {
+    "all_cases_run_regardless_of_outcomes": true,
+    "atlas_condition_batch_size": 32,
+    "bootstrap_replicates": 1000,
+    "bootstrap_seed": 330033,
+    "case_order": [
+      63,
+      103,
+      82
+    ],
+    "claims": {
+      "all_negative_and_heterogeneous_results_retained": true,
+      "benchmark_blind": false,
+      "case_ids_and_public_ground_truth_known_during_design": true,
+      "closure_auprc_not_directly_compared_without_prevalence": true,
+      "direct_wiring_recovery_claim": false,
+      "intervention_model_responses_previously_unseen_for_these_cases": true,
+      "no_outcome_adaptive_thresholds_or_case_replacement": true,
+      "parameter_training": false,
+      "whole_circuit_faithfulness_test": false
+    },
+    "hypotheses": {
+      "chain_reachability": "in cases103/82 transitive-only mean score > unrelated mean; report class-size-adjusted enrichment and CIs",
+      "endpoint_factor": "one nonnegative source/target factor explains >=0.90 squared score norm",
+      "negative_control": "case63 has no non-direct transitive path; no reachability gap is claimed there",
+      "score_stability": "discovery-confirmation score Spearman >=0.8 per case",
+      "sparse_portability": "discovery top ceil(0.1*E) captures >=0.75 confirmation score mass"
+    },
+    "maximum_model_examples": 85440,
+    "maximum_model_examples_note": "conservative ceiling also charging the cached empty atlas row",
+    "maximum_physical_forwards": 156,
+    "schema_version": "e33_sparse_interaction_protocol_v1",
+    "score": "mean class-centered squared logit second difference, positions1:",
+    "seed_rule": "6300000+1000*case_id+100*split_index; corrupt=clean+1",
+    "smoke_batch_size": 8,
+    "smoke_conditions": 16,
+    "smoke_max_absolute_error": 0.0001,
+    "splits": {
+      "confirmation": {
+        "candidate_count": 192,
+        "required_count": 128
+      },
+      "discovery": {
+        "candidate_count": 96,
+        "required_count": 64
+      }
+    },
+    "top_support_fraction": 0.1
+  },
+  "registration_sha256": "e16a974dc0b533a71016ff433a1eca5eedcccbce22670b7557d2a2d9a42fe2e9",
+  "schema_version": "e33_sparse_interaction_summary_v1",
+  "uncertainty_scope": "context_bootstrap_within_each_fixed_checkpoint_not_model_population"
+}

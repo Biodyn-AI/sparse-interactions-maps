@@ -1,0 +1,17 @@
+{
+  "artifact_filename": "case2_confirmation.pt",
+  "artifact_sha256": "875287b243820660919fc2153e6e18608dda2eb4124a8459d282da3fe8d666bc",
+  "case_id": 2,
+  "confirmation_authorization_sha256": "5c13713059c76cd5634cec5c96828dd02a304f45e5782d47b9f2fc702b22997a",
+  "registration_sha256": "739af7d479f46ee03c91c3c50c237ca9c90bb022b9e5fa70923df5db031060aa",
+  "row_custody": {
+    "excluded_prior_row_count": 608,
+    "overlap_count": 0,
+    "policy": "all_clean_source_rows_unique_and_disjoint_from_full_prior_candidate_pools_and_earlier_e32_2_roles",
+    "role": "case2_confirmation",
+    "selected_unique_role_rows": 256
+  },
+  "run_attempt_sha256": "8fb54d7c23e3c8c74e0bde7d0a58bc3643ccda2736437ff0c1582785fc2993ab",
+  "schema_version": "e32_2_split_custody_v1",
+  "split": "confirmation"
+}

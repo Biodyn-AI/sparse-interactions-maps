@@ -1,0 +1,21 @@
+{
+  "acquisition_artifact_sha256": {
+    "case21_confirmation.pt": "30741e602ab2cf13f8c188e4b36d0de2efa82cd1be2fae2a894039ea63840e56",
+    "case21_discovery.pt": "d0ddc237502a259d0028012f83743070208496d3d3a9c0fd3c2b1c0e5c4d0c5f",
+    "case2_confirmation.pt": "875287b243820660919fc2153e6e18608dda2eb4124a8459d282da3fe8d666bc",
+    "case2_discovery.pt": "d7a6fc47aee4377aa18d8f53021976a2fdf1503b5759eb240cd8fcc73028c607"
+  },
+  "custody_artifact_sha256": {
+    "acquisition_custody.json": "85c2dd5428ef2201042977730bf9384d43c880fc2eb9314ec52d0d7f49f8cc79",
+    "case21_confirmation_authorization.json": "a5909ed26b60cf212e82e9a85e4e38a3d5699fb7ae34f5fbc5a60971a7550b0a",
+    "case21_confirmation_custody.json": "a338fe0d838b36788114e2e6255ec6ecdbb059050142b84e8085c45189e91be1",
+    "case21_discovery_custody.json": "7ef11a3df651019a09e26676e3ecb597a7e7cce57609cc917eae7226269624ba",
+    "case2_confirmation_authorization.json": "5c13713059c76cd5634cec5c96828dd02a304f45e5782d47b9f2fc702b22997a",
+    "case2_confirmation_custody.json": "b1007616abe581ef7ed901ff691138c5b4e3a6c5fd768290cc6c4e78a13972a7",
+    "case2_discovery_custody.json": "fbe5248e3c211ee02eea18f3ff5ce30a8faa5eddc804f33450d8ec60245a1cfd"
+  },
+  "registration_sha256": "739af7d479f46ee03c91c3c50c237ca9c90bb022b9e5fa70923df5db031060aa",
+  "run_attempt_sha256": "8fb54d7c23e3c8c74e0bde7d0a58bc3643ccda2736437ff0c1582785fc2993ab",
+  "schema_version": "e32_2_score_attempt_v1",
+  "status": "durable_before_score_stage_opens_acquisition_outcomes_or_gt"
+}

@@ -1,0 +1,39 @@
+{
+  "schema_version": "e31_1_order_repair_score_custody_v2",
+  "status": "complete_write_once_v2_score",
+  "registration_sha256": "247c78888c7abf37761d89e78f279a1fcec971e00ea2a54c32950c8e796052ee",
+  "score_attempt_sha256": "286441e0ee82adc0089725a69cb63c04f6547ec01cabd5daa5fb5c1e2136b0de",
+  "score_sha256": "ddde7dcdef70525f8fdc3ccc75fe4c57852f87be805b4406a8c716624be57ba5",
+  "acquisition_custody_chain": {
+    "v1_registration_sha256": "a9600918bbeef14bf8db83c249106d888fd8bafbe8715cfc8787a4c877d1eb73",
+    "v1_global_attempt_sha256": "865e649ed879344b61dd277e5f1f09c73f53ee62d06f2bb55f5c7bf1c4c1e9ac",
+    "v1_clean_screen_sha256": "f6f649698d2f5d6d0434346187e6a0f11e895b5332df6e709847bc3f8ceb8033",
+    "v1_clean_custody_sha256": "ad813dd6597ca5719e73616b7417990e93a78808e7327f1eccffc506623efa11",
+    "v1_discovery_labels_sha256": "e293f1c2895bf3ed3687a0f1aa7021cec453007d413ab6e0d1dde5082bb93e61",
+    "v1_discovery_custody_sha256": "a1741ee02664ffe9e12c379dc728aa94085f4fde41994f7ff6402640474bdb9b",
+    "v2_attempt_sha256": "03445a32da56d376ada761bc6647d2fc99daed94b29b04a839206a12a25a498d",
+    "v2_geometry_sha256": "5658578c1b9b846f0d33e53715686160406f2d56bb76379df1f009a71a651972",
+    "v2_geometry_custody_sha256": "4ee7d3d1c7db6c8318b3ddc12709dbcf1d8e6a7266ceda9a8da6382d1ff5257e",
+    "v2_authorization_sha256": "7d540786d162735fc2581583e24411c9e46293728aedc2e7841b4554c8540a6f",
+    "v2_revalidation_sha256": "5a530d16e150ada78caaadc51a4218ed91d30c650276c9f0ac5372f4ffb7fb56",
+    "v2_revalidation_custody_sha256": "ff6949dd733fbea0895906570ac615b5f3e92f6899ca72d477db09fc161531df",
+    "v2_confirmation_sha256": "eced70c97aed5ee0bb614aabb074789fbae3112350c54d4c3c40fdb3a2a88894",
+    "v2_confirmation_custody_sha256": "9b794362ebe2a38a29987665952e52c0e5ce0ce3e3d8280e1034b64aa176e54e"
+  },
+  "atlas_verdict": "fail",
+  "actual_lifetime_forward_examples": 373632,
+  "post_discovery_repair_disclosed": true,
+  "preseal_discovery_geometry_implementation_test_disclosed": true,
+  "claim_boundary": {
+    "prospective_relative_to_patched_confirmation_outcomes": true,
+    "prospective_relative_to_discovery": false,
+    "ordinary_v1_completion": false,
+    "post_discovery_operational_repair_disclosed": true,
+    "unsealed_real_discovery_geometry_implementation_test": true,
+    "preseal_geometry_fields_exposed": "fixed_primary_regime_id_and_successful_10000_control_count_only",
+    "preseal_selected_edge_identities_or_ranks_inspected": false,
+    "preseal_matched_control_support_memberships_or_identities_inspected": false,
+    "preseal_lambda_curvature_or_effect_energy_values_inspected": false,
+    "prediction_topology_direct_communication_global_sparsity": "not_authorized"
+  }
+}

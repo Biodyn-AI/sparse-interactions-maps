@@ -1,0 +1,44 @@
+{
+  "artifact_filename": "case129_confirmation.pt",
+  "artifact_sha256": "72d6d9d54ce18936db8e0080df310844fc2c7bce75d2c501e8991c18bae6941a",
+  "case_id": 129,
+  "confirmation_authorization_sha256": "661d471655a52c0bf5b3376452b518c5b6dcae9b33bed34e28005ef2ab592150",
+  "panel_identity_sha256": "106afc6a9b3c7d83b05394168d4a30ef618ad124e6b15cb8b7ee025b7718a489",
+  "query_accounting": {
+    "behavioral_eligibility": {
+      "backward_passes_inferred_from_pinned_control_flow": 0,
+      "gradient_examples": 0,
+      "gradient_forwards": 0,
+      "model_examples": 384,
+      "physical_forwards": 2
+    },
+    "mean_corrupt_primary_sensitivity": {
+      "backward_passes_inferred_from_pinned_control_flow": 0,
+      "condition_count": 5,
+      "gradient_examples": 0,
+      "gradient_forwards": 0,
+      "model_examples": 1024,
+      "physical_forwards": 8
+    },
+    "resample_set_panel": {
+      "backward_passes_inferred_from_pinned_control_flow": 0,
+      "condition_count": 530,
+      "gradient_examples": 0,
+      "gradient_forwards": 0,
+      "model_examples": 68224,
+      "physical_forwards": 533
+    },
+    "total": {
+      "backward_passes_inferred_from_pinned_control_flow": 0,
+      "gradient_examples": 0,
+      "gradient_forwards": 0,
+      "model_examples": 69632,
+      "physical_forwards": 543
+    }
+  },
+  "registration_sha256": "a49d342ec14613e5153cf0809e75c7712bc2cac862bbb798933c22b32b0f564a",
+  "run_attempt_sha256": "f0b938367e3159e1f74722c6952c25808a816af1bb1aa6171a086f1434bdb24c",
+  "schema_version": "e32_4_internal_edge_set_faithfulness_v1_split_custody",
+  "selected_role_row_count": 256,
+  "split": "confirmation"
+}

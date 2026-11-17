@@ -1,0 +1,721 @@
+\documentclass[11pt]{article}
+\usepackage[margin=0.92in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,microtype}
+\usepackage{amsmath,amssymb,amsthm,booktabs,graphicx,array}
+\usepackage[dvipsnames]{xcolor}
+\usepackage[round,authoryear]{natbib}
+\usepackage[colorlinks=true,linkcolor=MidnightBlue,citecolor=MidnightBlue,urlcolor=MidnightBlue]{hyperref}
+\hypersetup{pdftitle={Repeatable Interaction Scores Do Not Guarantee a Correct Circuit},pdfauthor={Research manuscript draft},pdfsubject={What tests of pairs of model parts reveal about a circuit}}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\setlist{nosep,leftmargin=1.4em}
+\setlength{\parskip}{0.35em}
+\setlength{\parindent}{0pt}
+\setlength{\emergencystretch}{1.5em}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small Interaction scores and model circuits}
+\fancyhead[R]{\small Research draft}
+\fancyfoot[C]{\thepage}
+\setlength{\headheight}{14pt}
+\newcommand{\E}{\mathbb E}
+\newcommand{\R}{\mathbb R}
+\newcommand{\norm}[1]{\left\lVert#1\right\rVert}
+\newtheorem{proposition}{Example}
+\title{Repeatable Interaction Scores\\Do Not Guarantee a Correct Circuit}
+\author{Research manuscript draft}
+\date{16 November 2026}
+
+\begin{document}
+\maketitle
+\begin{abstract}
+Researchers study neural networks by copying the outputs of internal parts
+from one run into another. Changing two parts together reveals when their
+effects do not simply add. Can the strongest such interactions show which
+parts are directly connected, and which parts form a working circuit? We test
+this in GPT-2 Small and in small transformers with known task circuits. In
+GPT-2, 48 of 432 tested pairs account for 93.8\% of measured interaction
+strength on new prompts. However, choosing parts from their individual effects
+reproduces the tested block interactions better. In one model with a known
+circuit, the ten strongest pairs contain five direct links and five pairs
+connected only through intermediate parts. Three further models produce
+closely repeated rankings on fresh inputs, yet in two, about 44--54\% of total score
+belongs to pairs with no path in the known task circuit. In a separate
+experiment, we kept a small set of connections unchanged and replaced the others
+with values from another run. Only one of three models met all our criteria
+for a working circuit. These results matter because researchers
+use interaction scores to decide which parts to study and include in explanations.
+A short, repeatable list can identify promising parts without revealing the
+links between them or establishing that the selected circuit preserves the
+computation. We give concrete checks that separate these claims before
+researchers interpret a score map as an explanation of the model's algorithm.
+\end{abstract}
+
+\section{Introduction}
+A model can contain thousands of parts, while a particular task may use only
+a small number of them. Researchers try to find these parts and their
+connections: the task's \emph{circuit}. The goal is an explanation small enough
+to understand that still accounts for how the model produces its answer
+\citep{conmy2023acdc,hanna2024faithfulness,kramar2024atp}.
+
+One way to investigate a part is to copy its internal output from a run on one
+input into a run on another input. If the answer changes, the copied state
+has affected the computation. This procedure is often called activation
+patching. Testing two parts together can reveal an effect that testing either
+part alone misses. For example, one part may compensate when another is changed
+\citep{vaidyanathan2026mediators,gong2026coax}.
+
+For each pair, we compare the effect of changing both parts with the sum of
+their separate effects. We collect these differences in a table, called an
+interaction map. A promising map would be dominated by a few pairs, and the
+same pairs would stand out on new inputs. Our initial experiments asked
+whether such a map could help identify a small circuit.
+
+This requires four separate checks. Do the scores repeat on new inputs? Does
+testing pairs tell us more than testing individual parts? Do strong pairs
+correspond to direct connections? When we keep a selected set of connections,
+does the model still compute the answer? A pair can pass one check and fail
+another. In particular, replacing two parts changes everything that happens
+after them; it does not isolate the connection between them.
+
+We study a pretrained language model and small transformers with known task
+circuits. GPT-2 provides a test in a model trained on language. The small
+models let us compare scores with known direct connections and longer paths.
+The experiments were designed in stages, using earlier results to choose later
+tests. We use new inputs within each test, but the stages are not independent
+replications of one fixed experiment.
+
+Our contribution is to measure how these four checks can disagree. We retain
+failed tests and identify the narrower findings that survive them. The study
+does not assume that existing pair-intervention methods claim to recover direct
+wiring; it tests whether that stronger interpretation is justified in our data.
+
+\section{Related work}
+\paragraph{Finding a circuit and checking its behavior.}
+ACDC removes connections and measures the effect. EAP-IG uses derivatives to
+estimate which connections matter, and AtP* reduces the cost of finding
+important model parts while checking for errors in those estimates
+\citep{conmy2023acdc,hanna2024faithfulness,kramar2024atp}. InterpBench provides
+small transformers with known task circuits. MIB separately tests methods for
+finding circuits and methods for finding representations of meaningful
+variables \citep{gupta2024interpbench,mueller2025mib}. These benchmarks help
+separate finding an important part from explaining the full computation.
+
+\paragraph{Parts that work together or compensate for one another.}
+Work on indirect object identification (IOI), a name-completion task, shows
+that several model parts can share a role \citep{wang2023ioi}. More recent
+work explains how a part's effect depends on the states of other parts, and
+uses joint changes to find compensation
+\citep{vaidyanathan2026mediators,gong2026coax}. We ask what a repeatable pair
+score establishes about direct connections and the behavior of a selected circuit.
+
+\paragraph{Choice of computational units.}
+The Local Interaction Basis seeks representations with a small number of
+important interactions \citep{bushnaq2024lib}. We keep the model's existing
+attention heads and feed-forward blocks (MLPs) as the parts we change. A
+different choice of parts could produce a different, more useful map.
+
+\paragraph{Whether a selected circuit preserves behavior.}
+This property is usually called \emph{faithfulness}. Its measured value
+depends on what replaces the parts outside the selected circuit
+\citep{miller2024robustness}. Those replacements can change the setting in
+which the remaining parts operate and can cause a test to prefer a worse
+circuit \citep{geng2026recovery}. Our study adds concrete comparisons between
+pair scores, direct and indirect connections, and tests that run selected sets
+together. The general concern about misleading circuit scores is already known.
+
+\section{What we change and measure}
+\subsection{Compare changes to one part and to two parts}
+We run the model on two inputs. We then copy selected internal outputs from
+the \emph{source} run into the \emph{recipient} run and let the rest of the model
+recompute. For a pair of parts $i,j$, we need four runs: change neither part,
+change $i$ alone, change $j$ alone, and change both. Other changes, if present,
+stay fixed across all four runs. We call those fixed changes the background $B$.
+
+Let $Y_x(S)$ be the output on recipient input $x$ after replacing the parts in
+$S$ with their outputs from source input $x'$. We leave $x'$ out of this
+notation for readability. For $B$ containing neither $i$ nor $j$, the
+interaction is
+\begin{equation}
+ J_{ij}(x,x';B)=Y_x(B\cup\{i,j\})-Y_x(B\cup\{i\})
+             -Y_x(B\cup\{j\})+Y_x(B).
+ \label{eq:interaction}
+\end{equation}
+If the effects simply add, $J_{ij}=0$. A nonzero value means that the two
+changes combine differently from their separate effects.
+
+For GPT-2 IOI, $Y$ measures the change in the difference between two answer
+scores, normalized by the difference between the original source and recipient
+answers. For InterpBench, we keep the model's scores for all answer classes at
+all positions except the special start token. At each position, we subtract
+the mean score across classes. These experiments therefore measure different
+outputs, under different fixed backgrounds.
+
+To summarize the strength of a pair's interaction, we square its differences
+before averaging over inputs and backgrounds:
+\begin{equation}
+ s_{ij}=\E_{x,x',B}\!\left[d^{-1}\norm{J_{ij}(x,x';B)}_2^2\right],
+ \label{eq:energy}
+\end{equation}
+where $d$ is the number of output values. Squaring prevents positive and
+negative differences from cancelling. We refer to $s_{ij}$ as the interaction
+strength, or energy, of a pair. It does not measure information flowing through
+a connection. Accounting for 94\% of this score also does not mean preserving
+94\% of task performance.
+
+Equation~\ref{eq:interaction} gives the same value if $i$ and $j$ are exchanged.
+It cannot determine which way information travels. When we draw an arrow, its
+direction comes from the model's known order of computation. The two parts
+could be connected directly, through several steps, or only through a later
+part that uses both of their outputs.
+
+\subsection{Four checks that answer different questions}
+\textbf{Do the scores repeat on new inputs?} We use a first set of inputs to
+choose pairs, then test the same pairs on a separate set. We call these the
+discovery and confirmation sets. The selected pairs' share of the confirmation
+score is $\sum_{e\in S}s_e^{C}/\sum_e s_e^{C}$. A rank correlation checks whether
+the same pairs tend to remain near the top.
+
+\textbf{Do we need a separate score for every pair?} We try to predict pair
+scores by multiplying one number for the first part by one number for the
+second: $s_{ij}\approx a_i b_j$. We fit a separate set of numbers for each table;
+the same part can receive different values in different tables or in its
+earlier and later roles. This simple model is called a rank-one approximation.
+For rectangular tables we use a singular value decomposition
+(SVD). When only some pairs are allowed by the order of computation, we fit
+the two sets of nonnegative numbers on those pairs alone. Missing pairs are
+not observations with score zero. A good fit describes the table; it does not
+prove that either fitted number is a part's causal importance.
+
+\textbf{Are the pairs direct connections?} In the small benchmark models, we
+compare the scores with the known task circuit. We distinguish direct links,
+pairs connected through several links, and pairs with no connecting path in
+that circuit. These labels combine finer benchmark connections into links
+between heads and MLPs; they do not list every physical connection in the full
+transformer. Average precision (AP) summarizes whether the known links appear
+near the top of a ranking. Because indirect links add more positive labels,
+we also report how common each label is and how the scores are divided among
+the three groups.
+
+\textbf{Does the selected circuit still work?} We run changes to a selected set
+and to everything outside that set. This checks what happens when the parts
+are changed together. High individual scores or many correctly ranked links
+do not replace this test.
+
+\subsection{Two simple examples}
+The following examples show why strong, repeatable pair scores need not mean
+direct connections. They use elementary algebra, not new theoretical results.
+
+\begin{proposition}[Two parts feed the same output]
+Suppose independent parts contribute $a_i m_i$, where $m_i$ indicates whether
+part $i$ is changed. A later operation squares their sum:
+$Y(m)=(\sum_i a_i m_i)^2$. With no other changes,
+$J_{ij}=2a_i a_j$ and $s_{ij}=4a_i^2a_j^2$. Thus a single number for each part
+predicts every pair's score, even though no part feeds another. If only a few
+$a_i$ are nonzero, only a few pairs have nonzero scores.
+\end{proposition}
+\begin{proof}
+Expand $(a_i+a_j)^2-a_i^2-a_j^2$. Squaring yields the stated score.
+\end{proof}
+
+\begin{proposition}[Information is copied along a chain]
+Consider a chain that copies its input from one part to the next:
+$z_1=x$, $z_{k+1}=z_k$, with output $z_n$.
+The recipient input is zero and the source input is one. Replacing any $z_k$
+with its source value makes the final output one. Hence
+$Y(S)=\mathbf1\{S\ne\varnothing\}$. With no background changes,
+every distinct pair has $J_{ij}=-1$, even if the two parts are several steps
+apart. If any other part is already replaced, the pair instead has $J_{ij}=0$.
+\end{proposition}
+\begin{proof}
+The first replaced node makes every downstream node equal to one. Thus the
+four outputs for a pair are $0,1,1,1$.
+\end{proof}
+The first example produces a strong interaction between parts that meet only
+later in the computation. The second produces one between parts linked through
+several steps. A pair score alone therefore does not establish even an indirect
+path; that too needs a separate check. The rank-one statement in the first
+example concerns distinct parts only. Adding a zero diagonal to make a full
+square table can change its rank.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=\linewidth]{figures/illustrative_counterexamples.pdf}
+\caption{Simple examples of misleading pair scores. Left: a chain's actual
+direct links. Middle: changing pairs of parts in that chain gives a nonzero
+interaction for every pair, including parts several steps apart. Right:
+independent parts can also interact through a later operation that squares
+their summed outputs. Gray cells are excluded by the known order of the parts.
+Blue intensity is scaled separately in each panel.}
+\label{fig:counterexample}
+\end{figure}
+
+\section{Experiments}
+\subsection{GPT-2 on a name-completion task}
+We use one fixed GPT-2 Small model on IOI prompts, where the model must choose
+the appropriate name to complete a sentence. The first experiment measured
+all 253 pairs among 23 candidate attention or MLP blocks. It used 16 discovery
+and 32 new confirmation contexts. We had specified a correction intended to
+remove score patterns caused by answers approaching a fixed limit. The main
+test asked whether a small set of corrected scores would repeat on new
+inputs. It failed.
+
+Using those earlier results, we chose three pairs of attention blocks for a
+closer test: layers 5--8, 8--9, and 5--10, counting layers from zero. Each
+block has 12 heads, giving 144 head pairs per block pair. We tested all of
+them under four fixed backgrounds. Each background replaced ten other blocks
+and left the layer-0 MLP unchanged. On 16 new discovery contexts, we chose
+four heads from each block, giving 16 pairs per block pair. We then tested
+those choices on 32 separate confirmation contexts. All required conditions
+had to pass, including repeated effect signs and improvement over heads chosen
+by their individual effects. Those two conditions failed in part of the study.
+
+We also changed the chosen head groups together and compared the result with
+changing the complete attention blocks. This was an actual group test, without
+adding up pair scores or fitting an extra predictor. It checks whether the
+small group reproduces the blocks' interaction, which is weaker than showing
+that a pruned model still performs the full task.
+
+\subsection{Small models with known task circuits}
+InterpBench supplies small transformers based on programs compiled by Tracr,
+with known task circuits \citep{gupta2024interpbench,lindner2023tracr}. We first
+used case 97, a three-layer model with four heads per layer, for a categorical
+scale-by-maximum task. Its 15 heads and MLPs give 87 allowed candidate pairs.
+The reference circuit, expressed in these units, has six parts and six direct
+links. We tested no changes, each part alone, and every allowed pair, on 64
+discovery and 128 confirmation input pairs. This required 26,592 model
+examples. The pair scores failed the required improvement over simpler methods
+for ranking direct links, so the follow-on cases planned within that test
+were not run.
+
+Separate follow-ups used new inputs and separately fixed plans. Cases 2 and 21
+tested changes to individual directed connections after first choosing a small
+set of parts. Cases 58, 129, and 25 tested small sets of parts, then small sets
+of connections between them. For connection tests, the query, key, and value
+inputs to attention remain separate. We knew the models and their reference
+circuits when designing these tests; only the confirmation inputs were held out.
+
+\subsection{A further test on three models}
+We next fixed a new plan before measuring interaction responses in cases 63,
+103, and 82. These models count smaller sequence elements, swap adjacent
+positions, and halve elements in the second half of a sequence. We already
+knew their identities, reference circuits, and earlier feasibility information.
+Case 63 has one direct reference link and no pairs connected only through
+longer paths. It is a control for the claim that pair scores can sometimes
+identify a direct link. Cases 103 and 82 contain longer paths.
+
+We ran all three cases regardless of the first result. Each used 64 discovery
+and 128 confirmation input pairs, with both inputs correctly answered by the
+unchanged model. No selected input was repeated within a case. Confirmation
+also excluded every candidate discovery input, including those not selected.
+We saved all screening results and did not replace cases after a failure.
+The models have 10, 15, and 20 parts; testing the unchanged model, single parts,
+and pairs gives 44, 103, and 187 conditions. Checks across batch sizes agreed
+within the fixed absolute tolerance of $10^{-4}$. The study required 84,864
+model examples in 156 forward calls.
+
+Before running, we set four tests: pair rankings must have correlation at least
+0.80 across splits; the first set's top 10\% of pairs must capture at least
+75\% of the new set's total score; one number per part must explain at least
+90\% of the squared score-table norm; and, in the two models with longer
+paths, indirectly linked pairs must have higher mean scores than pairs with
+no path in the reference circuit. The rank-one fit uses the confirmation
+table itself. It describes an already measured table and does not test whether
+we can estimate it cheaply from discovery inputs.
+
+For uncertainty, we resample the confirmation input pairs 1,000 times and use
+the 2.5th and 97.5th percentiles. These intervals describe variation across
+inputs for each fixed model, not across a population of models, and are not
+adjusted for multiple comparisons. The model runs and class-mean subtraction
+use float32; differences and score analysis use float64.
+
+\subsection{Run the selected parts and connections together}
+For a chosen set $S$, we ask two questions. Does changing $S$ reproduce the
+effect of changing every part under study? And, if we keep $S$ unchanged while
+replacing everything else, does the output stay close to the original?
+
+Let $C$ be the original recipient output. Let $A$ be the output after replacing
+every unit in the declared internal set $U$ with its source value. Let $N_S$
+be the output after replacing $S$ alone, and $K_S$ the output after replacing
+everything in $U$ outside $S$. We measure movement along the original-to-all-
+changed difference $C-A$, and the remaining squared errors:
+\begin{align}
+ p_N &= \frac{\langle C-N_S,C-A\rangle}{\norm{C-A}^2}, &
+ e_N &= \frac{\norm{N_S-A}^2}{\norm{C-A}^2},\\
+ p_K &= \frac{\langle K_S-A,C-A\rangle}{\norm{C-A}^2}, &
+ e_K &= \frac{\norm{K_S-C}^2}{\norm{C-A}^2}.
+\end{align}
+Here $p_N,p_K$ measure how much of the relevant output change is reproduced;
+$e_N,e_K$ measure the squared error left over. We add over examples, positions,
+and answer-score coordinates. We separately measure changes in cross-entropy
+loss on the correct recipient answers. Values outside $[0,1]$ are retained.
+
+The small-connection-set test requires at least 0.90 for both projections and
+both loss-recovery measures, at most 0.10 for both squared errors, and at most
+10\% of all candidate internal connections. We first check all connections
+between the shortlisted parts using looser thresholds: 0.75 recovery and 0.25
+error. We also test replacing outside values with their means and compare the
+all-internal-change output with the actual source-input output. A later
+calculation that normalizes by only the shortlisted region is reported
+separately; it does not replace the original test.
+
+\section{Results}
+\subsection{A few head pairs account for most of the measured strength}
+The first test, using whole blocks, failed. The 24 pairs chosen from corrected
+discovery scores captured only 12.72\% of the score on new inputs. Only three
+were also among the new inputs' strongest 24. Uncorrected scores did better:
+61.42\% coverage and 18/24 overlap. The correction learned on the first set
+did not work well on the second. This rejects that corrected-map method, not
+every use of pair scores.
+
+The closer test of individual heads gave a clearer positive result. Choosing
+four heads from each block gave 48 of the 432 tested pairs. These pairs capture
+93.82\% of the total interaction score on new inputs. Resampling the contexts
+gives a one-sided 95\% lower bound of 92.43\%. Equally sized random choices
+have only 42.64\% coverage at their 95th percentile.
+Table~\ref{tab:heads} gives the results for each block pair.
+
+\begin{table}[t]
+\centering
+\caption{Results on new prompts. We select four of 12 heads from each block,
+giving 16 of 144 pairs. Score share is the fraction of measured interaction
+strength captured by those pairs. Group $R^2$ measures how well changing the
+chosen heads together reproduces the complete blocks' interaction.}
+\label{tab:heads}
+\begin{tabular}{lrrrr}
+\toprule
+Block pair & Score share & Rank correlation & Group $R^2$ & Same sign\\
+\midrule
+L5A--L8A  & 0.9728 & 0.8823 & 0.9265 & 10/16\\
+L8A--L9A  & 0.9681 & 0.8181 & 0.9801 & 11/16\\
+L5A--L10A & 0.8947 & 0.9099 & 0.7110 & 16/16\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The full planned test still failed. In two block pairs, fewer than 12 of 16
+chosen pairs kept the same effect sign. Those sign changes occur mainly in
+weak pairs, carrying only 2.83\% and 0.24\% of the selected score. The dominant
+interaction strengths therefore remain repeatable despite this failure.
+
+More importantly, choosing heads from pair scores did not improve on choosing
+them from their individual effects. Pair selection was better in only one of
+three block pairs. Across all three, individual-effect selection reproduced
+the block interactions better: $R^2=0.9074$ versus 0.8617 for pair selection.
+The pair map reveals a short, repeatable list, but this test does not show
+that the list is more useful than the simpler method.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=\linewidth]{figures/historical_diagnostics.pdf}
+\caption{Three results from the earlier tests. Left: a few selected head pairs
+account for most interaction strength on new prompts. Middle: choosing heads
+from their individual effects reproduces block interactions better overall.
+Right: in a separate small model, most of the score belongs to direct links
+or pairs connected through longer paths. Matching an interaction does not by
+itself show that a selected circuit preserves the full task.}
+\label{fig:historical}
+\end{figure}
+
+\subsection{One number per part explains most of the pair table}
+After the main test, we checked whether the table needs a separate description
+for each pair. It mostly does not. Multiplying one fitted number for each head
+by one for its partner gives an almost complete description. On confirmation,
+the best rank-one fit explains more than 99.7\% of the sum of squared table
+entries. This fit statistic is different from the total score used for coverage.
+
+Numbers fitted from discovery rows and columns predict the new pair scores
+about as well as the complete old table: $R^2=0.711$ versus 0.699 across all
+432 pairs. Both methods had already measured every discovery pair. The result
+shows that the table is easy to summarize, not that it was cheaper to obtain.
+
+After removing a separate rank-one fit from each table, at most 0.43\% of the
+discovery table's squared norm and 0.27\% of confirmation's remains. The
+remaining patterns predict the new inputs poorly: their $R^2$ is negative for
+all three block pairs. Tables that keep positive and negative signs contain
+some information beyond individual-head effects, but a similar product pattern
+captures almost all of it. Only one small leftover pattern repeats positively,
+at about 0.66\% of that table's squared norm. These checks were designed after
+seeing the main results, rather than as independent confirmation tests.
+
+\subsection{The strongest pairs can be several steps apart}
+In case 97, the pair rankings repeat almost perfectly on new inputs: their
+rank correlation is 0.9973. Yet the pair scores find direct links less well
+than the simple product of two fitted part scores. Average precision is
+0.4899 versus 0.5370. Of the top six pairs, only two are known direct links,
+compared with three for the product model. Table~\ref{tab:gt} reports every
+method specified for this comparison.
+
+\begin{table}[t]
+\centering
+\caption{Ranking known direct links in case 97 on new inputs. Six of 87
+candidates are direct links. Higher AP and ROC area indicate better ranking.
+AP handles equal scores together; the fixed candidate order breaks ties when
+selecting the top six. Leftover scores subtract the fitted product model.}
+\label{tab:gt}
+\begin{tabular}{lrrr}
+\toprule
+Score & Average precision & ROC area & Direct links in top six\\
+\midrule
+Measured pair score & 0.4899 & 0.9486 & 2\\
+Product of fitted part scores & 0.5370 & 0.9588 & 3\\
+Product of single-part scores & 0.3922 & 0.9300 & 2\\
+Absolute leftover score & 0.2485 & 0.6420 & 2\\
+Positive leftover score & 0.0760 & 0.3210 & 0\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Looking at the known circuit explains many of the apparent mistakes. The ten
+strongest pairs contain five direct links and five pairs joined through
+several steps. All ten have some connecting path. Direct links receive 41.20\%
+of total score, indirect pairs 53.67\%, and the other 72 candidates 5.13\%.
+The 15 pairs with any connecting path therefore hold 94.87\% of the score.
+Ranking these pairs gives AP 0.8502, with 15/87 positive labels. This check
+was done after seeing the main results. It shows sensitivity to longer paths
+in this model, not a general method for recovering them. The highest-scoring
+pair, L0 MLP--L1 MLP, has no direct link in the reference circuit.
+
+The fitted product model explains 98.75\% of the sum of squared pair scores
+and chooses the same top 15 pairs as the measured table. Removing that product
+pattern does not improve the search for direct links. The positive leftover
+score finds none in its top six.
+
+\subsection{What happens on three more models?}
+All three new models repeat their pair rankings closely enough to pass the
+planned test (Table~\ref{tab:fresh}). But the other patterns vary. In cases 63
+and 82, the chosen 10\% of pairs capture at least 75\% of the new score, and
+the product of one number per part gives a fit above 90\%. Case 103 fails
+both tests. A repeatable table therefore need not be dominated by a few pairs
+or have a nearly exact product description.
+
+\begin{table}[t]
+\centering
+\caption{Three further models, each tested on 64 discovery and 128 new input
+pairs. The plan was fixed before measuring interactions. ``Top 10\% share''
+uses the first set's highest-scoring $\lceil0.1|E|\rceil$ pairs. Product fit
+describes squared score-table error on confirmation itself, not prediction of
+unseen scores. AP measures ranking of known direct links.}
+\label{tab:fresh}
+\begin{tabular}{lrrrrr}
+\toprule
+Case & Pairs tested & Rank corr. & Top 10\% share & Product fit & Direct AP\\
+\midrule
+63  & 33  & 0.9870 & 0.9991 & 1.0000 & 1.0000\\
+103 & 87  & 0.9908 & 0.6320 & 0.8709 & 0.6667\\
+82  & 166 & 0.9975 & 0.8346 & 0.9855 & 0.6186\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Case 63, our control, puts its only direct reference link first. That link
+receives 98.93\% of the total score. A table dominated by one pair is easy to
+fit with a product model. The result shows that pair scores can sometimes
+identify a direct link very well.
+
+In the two models with longer paths, indirectly linked pairs score much more
+highly on average than pairs with no path in the reference circuit. In case
+103, the means are 47.54 and 5.11. Resampling the same input pairs gives a
+95\% interval of $[40.80,44.35]$ for their difference. In case 82 the means
+are 69.95 and 5.06, with a difference interval of $[62.54,67.32]$. On average,
+an indirect pair receives $5.45\times$ and $6.43\times$ as much score as a
+uniformly chosen candidate pair in the respective models.
+
+However, most candidate pairs have no path in the reference circuit. Despite
+their lower average scores, together they receive 54.49\% and 43.71\% of the
+total (Figure~\ref{fig:fresh}). These models therefore do not repeat case 97's
+finding that almost all score lies on direct or indirect known connections.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=\linewidth]{figures/fresh_replication.pdf}
+\caption{Where the scores go in the three new models. Each pair of bars
+compares the share of total score with the share of candidate pairs. Indirectly
+linked pairs receive high scores for their small number, but pairs with no
+path in the known task circuit still receive substantial total score. These
+labels describe the benchmark circuit; effects outside it need not be noise.}
+\label{fig:fresh}
+\end{figure}
+
+Counting both direct and indirect paths gives a higher AP than counting direct
+links alone: 0.7861 versus 0.6667, and 0.6998 versus 0.6186. But it also marks
+more pairs as correct. Dividing AP by the fraction of positive labels reverses
+that comparison: the ratios are 11.40 and 11.62 for any path, versus 19.33 and
+25.67 for direct links. Higher unadjusted AP therefore does not establish that
+the scores recover indirect paths better. What repeats strongly is the score
+ranking, which mixes several kinds of connection.
+
+\subsection{Does a small selected circuit preserve the computation?}
+Three later tests found useful groups of parts under the specified internal
+replacements. The groups contain 8/15, 8/15, and 5/10 heads or MLPs in cases
+58, 129, and 25. Keeping only candidate connections between these parts reduces
+the search space to 25/87, 22/87, and 9/33 block-level links. All three groups
+pass the planned tests on new inputs. Yet the selection method beats its
+required comparisons in only case 129: finding a useful group does not prove
+that this method finds it better than simpler alternatives.
+
+The next experiment keeps at most 10\% of all candidate internal connections.
+It chooses them on discovery inputs and runs them together on new inputs.
+Only case 25 passes the full criterion (Table~\ref{tab:sets}). The other two
+fail, as do the claims that all models pass the alternative-replacement and
+full-input checks. This does not show that no suitable small circuit exists.
+It shows that the chosen scores, selections, and budgets did not establish one
+under the specified tests.
+
+\begin{table}[t]
+\centering\small
+\caption{Run the selected connections together. Scores are normalized by
+changing all internal connections under study. The $p$ columns measure output
+change, and the $\ell$ columns measure loss change; $N$ changes the selected
+set, while $K$ keeps it unchanged and changes the rest. The region check tests
+all connections between the shortlisted parts. A full pass requires every
+specified check, including squared-error and alternative-replacement tests.}
+\label{tab:sets}
+\begin{tabular}{lrrrrrrl}
+\toprule
+Case & Links kept & $p_N$ & $p_K$ & $\ell_N$ & $\ell_K$ & Region check & Full test\\
+\midrule
+58  & 20/207 & 0.7331 & 0.8952 & 0.2580 & 0.9982 & fail & fail\\
+129 & 20/207 & 0.9987 & 0.8872 & 0.9974 & 1.0000 & pass & fail\\
+25  & 7/73   & 0.9992 & 0.9545 & 0.9989 & 0.9996 & pass & pass\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The failures have different meanings. Case 129 preserves answer loss well,
+but its detailed output change scores 0.8872, below the required 0.90. In case
+58, even using all connections between the shortlisted parts fails the region
+check: its selected-change loss recovery is only 0.3926. The smaller choice
+therefore starts from a region that already failed one requirement.
+
+These experiments change inputs, interventions, normalization, and budgets
+between stages. They do not prove that selecting parts inherently works better
+than selecting connections. They show why earlier success at finding important
+parts or repeatable interactions is not enough to certify a working circuit.
+
+\section{Discussion}
+\paragraph{What researchers should check.}
+First test whether the same pairs stand out on new inputs. Then compare pair
+scores with individual-part tests and with a product of one number per part.
+Check direct links separately from longer paths, using known circuits or tests
+that target specific connections. Finally, run the selected parts and
+connections together. Each check answers a different question; repeatability
+cannot replace any of the later checks.
+
+\paragraph{Why the distinction matters.}
+Interaction maps can narrow the search to a manageable set of parts. That is
+useful even when the map is not a wiring diagram. But researchers also use
+small circuits to explain an algorithm or decide which connections can be
+removed. For those purposes, confusing a repeatable score with a direct link
+can produce the wrong explanation. Summarizing a block interaction is a
+weaker result than showing that a small circuit still performs the task.
+
+\paragraph{What to try next.}
+It may be possible to estimate one number per part from a few carefully chosen
+pair tests, then test individual connections only in that smaller region.
+This would need a new comparison at equal numbers of model runs: our current
+fits already used the full pair table. Another option is to search for sets
+by testing their combined effect, rather than adding up individual connection
+scores. We have not established that either approach works better.
+
+\paragraph{Limits of the evidence.}
+The language-model study uses one GPT-2 checkpoint, one name-completion task,
+one background setting for the head tests, and three block pairs chosen from
+earlier results. The other models are small and were chosen with knowledge of
+their reference circuits. Those circuits provide a known task solution, not
+proof of a unique explanation of every computation in the full model.
+
+Copying states between runs can also create combinations the model rarely
+encountered during training. Scores depend on the size of the replacement and
+on later operations, including outputs approaching a limit. Squaring removes
+effect signs. Tests designed after seeing earlier results are labeled, and
+the intervals measure variation across inputs within each fixed model. The
+evidence therefore supports conclusions about these tasks and changes, not
+a universal method for reading model wiring or assuring general model behavior.
+
+\section{Conclusion}
+A few strong interactions can repeat on new inputs without revealing a model's
+direct connections. In our tests, much of the pair table can be explained by
+one number per part; some strong pairs are linked only through several steps;
+and earlier success at finding useful parts does not establish that a smaller
+set of connections preserves the computation. Interaction scores help guide
+where to look. Direct connections and working circuits still need their own tests.
+
+\appendix
+\section{Which claims passed their planned tests?}
+\begin{table}[htbp]
+\centering\small
+\caption{The main questions fixed before each test and what the results support.
+A positive part of a test does not turn a failed full test into a pass.}
+\begin{tabular}{p{0.16\linewidth}p{0.36\linewidth}p{0.37\linewidth}}
+\toprule
+Study & Question fixed in advance & What passed or failed\\
+\midrule
+E31.1 & Do a few corrected block-pair scores repeat? & Main test failed;
+uncorrected scores suggested later tests.\\
+E31.2 & Do a few head pairs repeat and give a better choice of parts? & Full
+test failed; score coverage and reproduction of block interactions passed.\\
+E31.2 later check & Does a product of part scores explain the table? & Designed
+after the main result; no new model runs.\\
+E32.1 & Do pair scores find direct links better than simpler methods? & Main
+test failed; longer-path and product-fit checks were added afterward.\\
+E32.2 & Does choosing parts first help find direct links? & Both models failed
+the full requirements; all results retained.\\
+E32.3 & Do small part groups work, and is the selector better? & Groups passed
+3/3; the selection method beat comparisons in 1/3.\\
+E32.4 & Does a small connection set preserve the computation? & Full test
+passed in 1/3 models.\\
+E33 & Do scores repeat, concentrate in few pairs, and emphasize longer paths? &
+Repeatability passed 3/3; concentration and product fit passed 2/3;
+indirect pairs scored higher in both models with longer paths.\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section{Tests aimed at individual connections}
+Cases 2 and 21 first chose a short list of parts, then targeted changes at
+individual connections between them. We compared this with pair scores,
+products of fitted part scores, and EAP methods tested across all connections.
+Neither model met the full success requirements. Table~\ref{tab:directed}
+reports both cases. We favor the comparison method by reporting whichever
+specified EAP version scored best after evaluation. This does not tell us
+which version to choose on a new task. The final column counts separate
+query/key/value connections; AP instead scores links grouped by their whole
+head or MLP. These columns therefore use different counting units.
+
+\begin{table}[htbp]
+\centering\footnotesize
+\caption{Ranking direct links on new inputs after first choosing parts.
+``Best EAP'' is the best-scoring specified EAP version for that model.
+Neither case passes the full planned test.}
+\label{tab:directed}
+\input{figures/e32_2_localization_table.tex}
+\end{table}
+
+\section{Saved data and checks}
+\paragraph{Files and score checks.}
+The accompanying evidence file lists the original source files, their hashes,
+the exact scores, and whether an analysis was planned or added after the
+results. The numbers are read from saved experimental outputs rather than
+rounded research notes. Original plans, model outputs, and score files are
+unchanged. Figures and the manuscript are built from separate derived files.
+The fresh-study registration is
+\path{notes/E33-SPARSE-INTERACTION-DIAGNOSTICS-REGISTRATION.json};
+its complete score record is
+\path{runs/e33_sparse_interaction_diagnostics_v1/summary.json}.
+An independent internal check recomputed all six new pair tables and scores
+exactly from saved outputs. It also checked input identities, reference links,
+source-code and model hashes, and run counts. This checks the saved executions;
+it is not an external replication or a second collection of model responses.
+
+\paragraph{Changes to the execution plans.}
+The first block-pair study stopped because two file mappings used a different
+key order. A separately recorded repair reused discovery data and was fixed
+before measuring confirmation changes. The small-part-group study also used a
+documented input-repair version. These histories are saved with the experiments.
+Reusing data already seen is not counted as a new independent confirmation.
+
+\bibliographystyle{plainnat}
+\bibliography{references}
+\end{document}

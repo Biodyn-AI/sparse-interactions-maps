@@ -1,0 +1,13 @@
+{
+  "schema_version": "e31_1_split_acquisition_custody_v1",
+  "status": "discovery_labels_acquired_write_once",
+  "split": "discovery",
+  "registration_sha256": "a9600918bbeef14bf8db83c249106d888fd8bafbe8715cfc8787a4c877d1eb73",
+  "global_attempt_sha256": "865e649ed879344b61dd277e5f1f09c73f53ee62d06f2bb55f5c7bf1c4c1e9ac",
+  "clean_screen_sha256": "f6f649698d2f5d6d0434346187e6a0f11e895b5332df6e709847bc3f8ceb8033",
+  "labels_sha256": "e293f1c2895bf3ed3687a0f1aa7021cec453007d413ab6e0d1dde5082bb93e61",
+  "discovery_geometry_sha256": null,
+  "confirmation_authorization_sha256": null,
+  "all_registered_rows_retained": true,
+  "patched_response_clipping": false
+}
