@@ -2,7 +2,7 @@
 
 Research code, numerical results, and data for **Repeatable interaction scores do not guarantee a correct circuit**.
 
-[Read the manuscript](https://github.com/Biodyn-AI/sparse-interactions-maps/releases/download/v1.0.0/Manuscript.pdf) · [Download full data](https://github.com/Biodyn-AI/sparse-interactions-maps/releases/tag/v1.0.0) · [Reproduction guide](docs/reproduction.md) · [Claims and evidence](docs/claim_map.md)
+[Read the Scientific Reports-format draft](https://github.com/Biodyn-AI/sparse-interactions-maps/releases/download/v1.1.0/Manuscript.pdf) · [Download full data](https://github.com/Biodyn-AI/sparse-interactions-maps/releases/tag/v1.0.0) · [Reproduction guide](docs/reproduction.md) · [Claims and evidence](docs/claim_map.md)
 
 ## What does this study ask?
 
@@ -61,7 +61,7 @@ The downloader verifies the fixed SHA-256 before extraction. Replay verifies eve
 | `provenance/` | Immutable-file manifest, source-archive manifests, original project configuration, and release checksum |
 | `ENVIRONMENT.json`, `UPSTREAM.json` | Acquisition/checking environments and pinned third-party identities |
 
-The original manuscript source is retained as part of the archived scientific record; the release PDF linked above is the current submission version. No journal acceptance or external replication is implied. Some original provenance records contain historical machine paths. Public instructions use relative paths, and portable replay resolves the actual data location without rewriting those records.
+The manuscript link points to the Scientific Reports-format draft in `v1.1.0`. The earlier, superseded PLOS ONE-format draft remains archived in `v1.0.0`, together with the unchanged original scientific data and code. Original manuscript sources remain part of that archived record. No journal acceptance or external replication is implied. Some original provenance records contain historical machine paths. Public instructions use relative paths, and portable replay resolves the actual data location without rewriting those records.
 
 ## Documentation and reuse
 

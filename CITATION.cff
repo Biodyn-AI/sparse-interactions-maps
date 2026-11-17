@@ -2,14 +2,14 @@ cff-version: 1.2.0
 message: "Please cite this research code/data release and the accompanying manuscript. No journal acceptance or DOI is implied."
 type: software
 title: "Sparse interaction maps: code and data"
-version: 1.0.0
+version: 1.1.0
 date-released: '2026-11-17'
 authors:
   - family-names: Kendiukhov
     given-names: Ihor
     orcid: 'https://orcid.org/0000-0001-5342-1499'
 repository-code: 'https://github.com/Biodyn-AI/sparse-interactions-maps'
-url: 'https://github.com/Biodyn-AI/sparse-interactions-maps/releases/tag/v1.0.0'
+url: 'https://github.com/Biodyn-AI/sparse-interactions-maps/releases/tag/v1.1.0'
 license:
   - MIT
   - CC-BY-4.0

@@ -28,3 +28,5 @@ jobs:
           tests/test_e32_interpbench_scoring.py
           tests/test_e32_3_scoring.py
           tests/test_e32_4_scoring.py
+      - name: Render current manuscript figures from audited values
+        run: python papers/sparse-interaction-maps/scientific-reports/plot_figures.py --pdf-only
