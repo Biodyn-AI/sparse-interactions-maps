@@ -230,7 +230,7 @@ def fresh_figure(source: dict):
         bottoms += heights
     if not np.allclose(bottoms, np.ones(6), rtol=0, atol=1e-12):
         raise ValueError("Stacked bar totals differ from the source class partitions.")
-    axis.set(ylim=(0, 1.06), ylabel="Fraction of total score or tested pairs")
+    axis.set(ylim=(0, 1.06), ylabel="Fraction of total score\nor tested pairs")
     axis.set_yticks(np.linspace(0, 1, 6))
     axis.yaxis.set_major_formatter(PercentFormatter(1))
     axis.set_xticks(positions, ["Score\nshare", "Share of\npairs"] * 3)
@@ -238,7 +238,7 @@ def fresh_figure(source: dict):
         axis.text(center, -0.24, f"Case {row['case_id']} ({row['candidate_pair_count']} pairs)",
                   transform=axis.get_xaxis_transform(), ha="center", fontsize=9)
     axis.legend(loc="upper center", bbox_to_anchor=(0.5, -0.36), ncol=3, frameon=False)
-    figure.subplots_adjust(left=0.10, right=0.99, top=0.96, bottom=0.36)
+    figure.subplots_adjust(left=0.12, right=0.97, top=0.96, bottom=0.36)
     return figure
 
 
